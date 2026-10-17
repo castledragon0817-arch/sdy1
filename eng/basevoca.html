@@ -6201,23 +6201,27 @@
     <script>
         var vocaScrollY = 0;
         function openVoca(id) {
-            vocaScrollY = window.scrollY;
-            document.body.style.position = 'fixed';
-            document.body.style.top = (-vocaScrollY) + 'px';
-            document.body.style.width = '100%';
-            document.getElementById(id).showModal();
+            var d = document.getElementById(id);
+            if (!d || d.open) return;
+            if (document.body.style.position !== 'fixed') {
+                vocaScrollY = window.scrollY;
+                document.body.style.position = 'fixed';
+                document.body.style.top = (-vocaScrollY) + 'px';
+                document.body.style.width = '100%';
+            }
+            d.showModal();
         }
-        document.querySelectorAll('dialog').forEach(function (d) {
-            d.addEventListener('click', function (e) {
-                if (e.target === d) d.close();
-            });
-            d.addEventListener('close', function () {
-                document.body.style.position = '';
-                document.body.style.top = '';
-                document.body.style.width = '';
-                window.scrollTo(0, vocaScrollY);
-            });
+        document.addEventListener('click', function (e) {
+            if (e.target.tagName === 'DIALOG') e.target.close();
         });
+        document.addEventListener('close', function (e) {
+            if (e.target.tagName !== 'DIALOG') return;
+            if (document.querySelector('dialog[open]')) return;
+            document.body.style.position = '';
+            document.body.style.top = '';
+            document.body.style.width = '';
+            window.scrollTo(0, vocaScrollY);
+        }, true);
     </script>
     <dialog id="voca-0034-1" class="deepen-modal voca-modal">
         <form method="dialog">

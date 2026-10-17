@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Differential</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="./style-m-common.css">
+    <link rel="stylesheet" href="./style-b12.css">
+</head>
+
+<body class="note-page">
+    <div class="top-bar">
+        <a class="back-link" href="../index.html">&larr; 뒤로가기</a>
+    </div>
+
+    <main class="note-grid">
+
+        <section class="note">
+            <h2>#1 함수의 극한
+                <button type="button" class="deepen-btn"
+                    onclick="document.getElementById('deepen-limit').showModal()">심화</button>
+            </h2>
+
+            <h3>\(x \to a\)일 때 함수 \(f(x)\)의 극한값 또는 극한</h3>
+            <ul>
+                <li>함수 \(f(x)\)에서 \(x\)의 값이 \(a\)와 같지 않으면서 \(a\)에 한없이 가까워질 때, \(f(x)\)의 값이 일정한 값 \(L\)에 한없이
+                    가까워지면 <em>\(x\)의 값이 \(a\)에 한없이 가까워질 때, 함숫값 \(f(x)\)는 \(L\)에 수렴한다.</em></li>
+                <li>
+                    \[ \lim_{x \to a} f(x) = L \]
+                    또는 \(x \to a\)일 때 \(f(x) \to L\)
+                    <br>이때 \(L\)을 \(x \to a\)일 때 함수 \(f(x)\)의 극한값 또는 극한이라 한다.
+                </li>
+            </ul>
+
+            <h3>함숫값의 발산</h3>
+            <ul>
+                <li>함수 \(f(x)\)에서 \(x \to a\)일 때 \(f(x)\)의 값이 한없이 커지면 <em>\(x \to a\)일 때 \(f(x)\)는 양의 무한대로 발산한다.</em>고
+                    하고 다음과 같이 표현한다.
+                    \[ \lim_{x \to a} f(x) = \infty \]
+                </li>
+                <li>함수 \(f(x)\)에서 \(x \to a\)일 때 \(f(x)\)의 값이 음수이면서 그 절댓값이 한없이 커지면 <em>\(x \to a\)일 때 \(f(x)\)는
+                        음의 무한대로 발산한다.</em>고 하고 다음과 같이 표현한다.
+                    \[ \lim_{x \to a} f(x) = -\infty \]
+                </li>
+            </ul>
+        </section>
+
+        <section class="note">
+            <h2>#2 함수의 우극한과 좌극한</h2>
+
+            <h3>우극한</h3>
+            <ul>
+                <li>\(x \to a+\)일 때 함수 \(f(x)\)가 일정한 값 \(L\)에 한없이 가까워지면 \(L\)을 \(x \to a+\)일 때의 \(f(x)\)의
+                    우극한이라 한다.
+                    \[ \lim_{x \to a+} f(x) = L \]
+                </li>
+            </ul>
+
+            <h3>좌극한</h3>
+            <ul>
+                <li>\(x \to a-\)일 때 함수 \(f(x)\)가 일정한 값 \(M\)에 한없이 가까워지면 \(M\)을 \(x \to a-\)일 때의 \(f(x)\)의
+                    좌극한이라 한다.
+                    \[ \lim_{x \to a-} f(x) = M \]
+                </li>
+            </ul>
+
+            <h3>함수의 극한</h3>
+            <ul>
+                <li>\(x \to a\)일 때 함수 \(f(x)\)의 극한값이 \(L\)이면 \(x \to a+\)일 때의 우극한, \(x \to a-\)일 때의 좌극한이
+                    존재하면서 그 값이 모두 \(L\)과 같다.
+                    \[ \lim_{x \to a+} f(x) = \lim_{x \to a-} f(x) = L \]
+                    \[ \iff \lim_{x \to a} f(x) = L \]
+                </li>
+            </ul>
+        </section>
+
+        <section class="note">
+            <h2>#3 함수의 극한값의 성질</h2>
+
+            <h3>두 함수 \(f(x)\), \(g(x)\)에 대하여</h3>
+            <p>\(\displaystyle \lim_{x \to a} f(x) = L\), &nbsp;\(\displaystyle \lim_{x \to a} g(x) = M\)
+                &nbsp;(\(L\), \(M\)은 실수)</p>
+            <ul>
+                <li>\[ \lim_{x \to a} cf(x) = c \lim_{x \to a} f(x) = cL \]
+                    (\(c\)는 상수)
+                </li>
+                <li>\[ \lim_{x \to a} \{ f(x) + g(x) \} = L + M \]</li>
+                <li>\[ \lim_{x \to a} \{ f(x) - g(x) \} = L - M \]</li>
+                <li>\[ \lim_{x \to a} f(x)g(x) = LM \]</li>
+                <li>\[ \lim_{x \to a} \frac{f(x)}{g(x)} = \frac{L}{M} \quad (M \neq 0) \]</li>
+            </ul>
+        </section>
+
+        <section class="note">
+            <h2>#4 함수의 극한값의 계산</h2>
+
+            <h3>\(\dfrac{0}{0}\) 꼴</h3>
+            <ul>
+                <li>유리함수는 먼저 분모, 분자를 인수분해한 다음 약분한다.</li>
+                <li>무리함수는 먼저 분모, 분자 중 근호를 포함한 쪽을 유리화한다.</li>
+            </ul>
+
+            <h3>\(\dfrac{\infty}{\infty}\) 꼴</h3>
+            <ul>
+                <li>유리함수는 먼저 분모의 최고차항으로 분모, 분자를 나눈다.</li>
+                <li>무리함수는 근호 안의 \(x\)의 차수는 반으로 생각하고 분모의 최고차항으로 분모, 분자를 나눈다.</li>
+            </ul>
+
+            <h3>\(\infty - \infty\) 꼴</h3>
+            <ul>
+                <li>다항식은 최고차항으로 묶는다.</li>
+                <li>무리식은 근호를 포함한 쪽을 유리화한다.</li>
+            </ul>
+
+            <h3>\(\infty \times 0\) 꼴</h3>
+            <ul>
+                <li>적당히 변형하면 다음 꼴로 나타낼 수 있다.
+                    \[ \infty \times c, \quad \frac{\infty}{c}, \quad \frac{c}{\infty} \]
+                    \[ \frac{c}{0}, \quad \frac{0}{0}, \quad \frac{\infty}{\infty} \]
+                </li>
+            </ul>
+
+            <h3>※ 미정계수의 결정</h3>
+            <ul>
+                <li>\(\displaystyle \lim_{x \to a} \frac{f(x)}{g(x)} = \alpha\) (\(\alpha\)는 실수) 이고
+                    \(\displaystyle \lim_{x \to a} g(x) = 0\) 이면 \(\displaystyle \lim_{x \to a} f(x) = 0\)</li>
+                <li>\(\displaystyle \lim_{x \to a} \frac{f(x)}{g(x)} = \alpha\) (\(\alpha\)는 \(0\)이 아닌 실수) 이고
+                    \(\displaystyle \lim_{x \to a} f(x) = 0\) 이면 \(\displaystyle \lim_{x \to a} g(x) = 0\)</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <dialog id="deepen-limit" class="deepen-modal">
+        <form method="dialog">
+            <button type="submit" class="deepen-close" aria-label="닫기">&times;</button>
+        </form>
+
+        <h2>심화 · "극한"이 와닿지 않을 때</h2>
+
+        <h3>1. "한없이 가까워진다"는 얼버무림이다</h3>
+        <ul>
+            <li>교과서 정의는 직관을 말로 흉내 낸 것일 뿐, 실제 엄밀한 정의는 \(\varepsilon\)-\(\delta\) 논법이다.
+                \[ \lim_{x \to a} f(x) = L \iff \forall \varepsilon>0,\ \exists \delta>0 \text{ s.t. } 0<|x-a|<\delta
+                    \implies |f(x)-L|<\varepsilon \] </li>
+            <li>"가까워진다"는 느낌이 아니라, <em>아무리 좁은 오차 범위(\(\varepsilon\))를 요구해도 그걸 만족시키는 \(x\)의 범위(\(\delta\))를
+                    항상 찾아낼 수 있다</em>는 보장이 극한의 실체다.</li>
+        </ul>
+
+        <h3>2. 극한은 왜 필요했는가</h3>
+        <ul>
+            <li>순간변화율은 \(\dfrac{f(x+h)-f(x)}{h}\) 로 쓰는데, \(h \to 0\)이면 분모도 0이 되어 \(\dfrac{0}{0}\) 꼴이 된다.</li>
+            <li>뉴턴·라이프니츠는 이를 "무한소"라는 애매한 개념으로 넘어갔고, 150년 넘게 논리적 공격을 받았다. 코시·바이어슈트라스가
+                극한을 엄밀히 정의하면서 미적분 전체가 비로소 정당화됐다.</li>
+            <li>즉 극한은 <em>0으로 나누는 문제를 피하면서 순간변화율을 합법적으로 정의하기 위한 장치</em>다.</li>
+        </ul>
+
+        <h3>3. 함숫값 ≠ 극한값</h3>
+        <ul>
+            <li>\(\displaystyle \lim_{x \to a} f(x)\)는 \(x=a\)에서의 함숫값과 무관하다. \(f(a)\)가 정의되지 않아도 극한은 존재할 수 있다.</li>
+            <li>예) \(f(x) = \dfrac{x^2-1}{x-1}\)은 \(x=1\)에서 정의되지 않지만 \(\displaystyle \lim_{x \to 1} f(x) = 2\)이다.
+                미분의 difference quotient도 \(h=0\)에서 정의되지 않지만 극한은 존재한다는 점이 바로 이 분리에서 온다.</li>
+        </ul>
+
+        <h3>4. 직관이 깨지는 예시</h3>
+        <ul>
+            <li>\(f(x) = \sin(1/x)\)를 \(x \to 0\)에서 보면 발산도 수렴도 아니고 무한히 진동한다.</li>
+            <li>"한없이 가까워진다"는 말로는 이런 경우를 걸러낼 수 없고, \(\varepsilon\)-\(\delta\)로만 "극한이 존재하지 않음"을 엄밀히
+                증명할 수 있다.</li>
+        </ul>
+    </dialog>
+
+    <script>
+        // 구분자를 JS 문자열로 적을 때는 백슬래시를 두 번 써야 한다.
+        // '\(' 로 쓰면 JS 가 '(' 로 읽어 본문의 모든 괄호를 수식으로 잡아먹는다.
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+
+</html>

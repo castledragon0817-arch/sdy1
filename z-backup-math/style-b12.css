@@ -1,0 +1,20 @@
+/* 수학 b1·b2 (미분·적분) 전용 스타일. */
+
+/* ===== 심화 버튼 / 모달 ===== */
+.deepen-btn {
+    flex: none;
+    padding: 4px 10px;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.deepen-btn:hover {
+    background: var(--accent);
+    color: #fff;
+}
