@@ -7,6 +7,8 @@
     <title>정리</title>
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./math/style-m-common.css">
+    <link rel="stylesheet" href="./math/style-a123.css">
 </head>
 
 <body>
@@ -15,34 +17,43 @@
         </header>
 
         <div class="category-tabs">
-            <button type="button" class="tab-btn tab-math active" onclick="showCategory('math')">수학</button>
-            <button type="button" class="tab-btn tab-eng" onclick="showCategory('eng')">영어</button>
+            <button type="button" class="tab-btn tab-math active" onclick="showCategory('math')">M</button>
+            <button type="button" class="tab-btn tab-eng" onclick="showCategory('eng')">E</button>
         </div>
 
         <nav class="subject-grid" id="math-group">
-            <a class="subject-card" href="./algebra.html">
-                <strong>지수 로그</strong>
+            <a class="subject-card" href="./math/a1-exponentLogarithm.html">
+                <strong>ExponentLogarithm</strong>
             </a>
             <button type="button" class="subject-card" onclick="document.getElementById('trig-modal').showModal()">
-                <strong>삼각함수</strong>
+                <strong>Trigonometric</strong>
             </button>
             <button type="button" class="subject-card" onclick="document.getElementById('seq-modal').showModal()">
-                <strong>수열</strong>
+                <strong>Sequence</strong>
             </button>
-            <a class="subject-card" href="./calculus.html">
-                <strong>미적분</strong>
+            <a class="subject-card" href="./math/b1-differential.html">
+                <strong>Differential</strong>
             </a>
-            <a class="subject-card" href="./probStat.html">
-                <strong>확률과 통계</strong>
+            <a class="subject-card" href="./math/b2-integration.html">
+                <strong>Integration</strong>
+            </a>
+            <a class="subject-card" href="./math/c1-numberOfCase.html">
+                <strong>NumberOfCase</strong>
+            </a>
+            <a class="subject-card" href="./math/c2-probability.html">
+                <strong>Probability</strong>
+            </a>
+            <a class="subject-card" href="./math/c3-statistics.html">
+                <strong>Statistics</strong>
             </a>
         </nav>
 
         <nav class="subject-grid" id="eng-group" style="display:none">
-            <a class="subject-card" href="./basevoca.html">
-                <strong>기본 단어</strong>
+            <a class="subject-card" href="./eng/basevoca.html">
+                <strong>Basevoca</strong>
             </a>
             <button type="button" class="subject-card" onclick="document.getElementById('sentence-modal').showModal()">
-                <strong>듀냐 문장</strong>
+                <strong>듀냐</strong>
             </button>
         </nav>
     </div>
@@ -779,7 +790,7 @@
         <form method="dialog">
             <button type="submit" class="deepen-close" aria-label="닫기">&times;</button>
         </form>
-        <h2>수열</h2>
+        <h2>sequence</h2>
         <p>아직 준비 중이에요.</p>
     </dialog>
 
@@ -787,7 +798,7 @@
         <form method="dialog">
             <button type="submit" class="deepen-close" aria-label="닫기">&times;</button>
         </form>
-        <h2>듀냐 문장</h2>
+        <h2>듀냐</h2>
         <p>아직 준비 중이에요.</p>
     </dialog>
 

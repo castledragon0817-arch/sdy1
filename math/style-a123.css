@@ -1,0 +1,86 @@
+/* 수학 a1·a2·a3 (지수로그·삼각함수·수열) 전용 스타일. */
+
+.wrongnote-btn {
+    padding: 6px 14px;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.wrongnote-btn:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+.callout {
+    margin: 12px 0;
+    padding: 10px 14px;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    background: var(--accent-soft);
+    font-size: 14px;
+    word-break: keep-all;
+}
+
+.callout .tag {
+    display: inline-block;
+    margin-bottom: 4px;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.problem-entry+.problem-entry {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+}
+
+/* ===== 그래프 ===== */
+.graph-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 12px 0;
+}
+
+.graph {
+    margin: 0;
+    text-align: center;
+}
+
+.graph svg {
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.graph figcaption {
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.glabel {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.glabel.accent {
+    color: var(--accent);
+}
+
+.glabel.faint {
+    opacity: 0.7;
+}

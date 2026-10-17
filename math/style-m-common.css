@@ -1,0 +1,254 @@
+/* 수학 페이지 공통 스타일(a·b·c 전부). 파트별 차이는 style-a123 / style-b12 / style-c123 에 둔다. */
+
+:root {
+    --bg: #f5f7f6;
+    --surface: #ffffff;
+    --line: #dfe5e2;
+    --text: #1d2a24;
+    --muted: #65756d;
+    --accent: #2f6d55;
+    --accent-soft: #e8f1ed;
+
+    --radius: 14px;
+    --content: 880px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0 16px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* 과목 페이지 상단의 홈으로 돌아가기 */
+.back-link {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--muted);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: var(--accent);
+}
+
+/* ===== 본문 펼침 페이지 ===== */
+/* 좌측 끝에 붙는 뒤로가기 줄. 내용 폭과 무관하게 화면 왼쪽 끝을 쓴다. */
+.note-page {
+    padding: 0 0 48px;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+}
+
+.note-page .back-link {
+    margin: 0;
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* 왼쪽→오른쪽으로 먼저 읽고 그다음 위→아래로 넘어가도록 grid 기본 auto-flow(row)를 쓴다.
+   align-items:start라서 카드마다 높이가 달라도 grid 셀만 비고, .note 테두리는 내용만큼만
+   그려지니 전에 겪은 "짧은 카드 밑에 테두리 있는 빈 박스" 문제는 생기지 않는다. */
+.note-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 16px;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+@media (min-width: 700px) {
+    .note-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1100px) {
+    .note-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.note {
+    padding: 18px 22px 22px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+}
+
+.note>h2 {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 0 0 4px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+    font-size: 17px;
+    letter-spacing: -0.02em;
+}
+
+.deepen-modal {
+    position: relative;
+    width: min(640px, 90vw);
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 24px 26px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--text);
+}
+
+.deepen-modal::backdrop {
+    background: rgba(29, 42, 36, 0.45);
+}
+
+.deepen-modal h2 {
+    margin: 0 0 14px;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+}
+
+.deepen-modal h3 {
+    margin: 18px 0 8px;
+    padding-left: 11px;
+    border-left: 3px solid var(--accent);
+    font-size: 15px;
+    letter-spacing: -0.02em;
+}
+
+.deepen-modal ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.deepen-modal li {
+    margin-bottom: 10px;
+    word-break: keep-all;
+}
+
+.deepen-modal em {
+    color: var(--accent);
+    font-style: normal;
+}
+
+.deepen-modal h4 {
+    margin: 14px 0 6px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.deepen-modal p {
+    margin: 0 0 10px;
+    word-break: keep-all;
+}
+
+.deepen-modal table {
+    width: 100%;
+    margin: 4px 0 14px;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: center;
+}
+
+.deepen-modal th,
+.deepen-modal td {
+    padding: 8px 10px;
+    border: 1px solid var(--line);
+}
+
+.deepen-modal th {
+    background: var(--accent-soft);
+}
+
+.deepen-close {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    border: none;
+    background: none;
+    color: var(--muted);
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.deepen-close:hover {
+    color: var(--text);
+}
+
+/* 소제목은 PDF 의 ◈ 자리다. */
+.note h3 {
+    margin: 18px 0 8px;
+    padding-left: 11px;
+    border-left: 3px solid var(--accent);
+    font-size: 15px;
+    letter-spacing: -0.02em;
+}
+
+.note ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.note li {
+    margin-bottom: 10px;
+    word-break: keep-all;
+}
+
+.note p {
+    margin: 0 0 10px;
+}
+
+.note em {
+    color: var(--accent);
+    font-style: normal;
+}
+
+.note h4 {
+    margin: 14px 0 6px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.note table {
+    width: 100%;
+    margin: 4px 0 14px;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: center;
+}
+
+.note th,
+.note td {
+    padding: 8px 10px;
+    border: 1px solid var(--line);
+}
+
+.note th {
+    background: var(--accent-soft);
+}
+
+/* 긴 수식이 칸을 밀어내지 않도록 그 줄만 가로로 넘긴다. */
+.note mjx-container[display="true"] {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 2px 0;
+}
