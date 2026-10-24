@@ -84,3 +84,159 @@
 .glabel.faint {
     opacity: 0.7;
 }
+
+/* ===== a1 버전 탭 (v1 원본 / v2 정의 중심 / v3 대기) ===== */
+.ver-tabs {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin: 0 24px;
+}
+
+.ver-btn {
+    padding: 8px;
+    border: none;
+    border-radius: var(--radius);
+    background: var(--accent);
+    color: #fff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    opacity: 0.45;
+    transition: opacity 0.15s;
+}
+
+.ver-btn.active {
+    opacity: 1;
+}
+
+.note-grid[hidden] {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .top-bar {
+        flex-wrap: wrap;
+    }
+
+    .ver-tabs {
+        order: 3;
+        flex-basis: 100%;
+        margin: 10px 0 0;
+    }
+}
+
+/* v2 — 정의 박스와 접는 증명/예제 */
+.callout.def {
+    border-left-color: #2b6cb0;
+    background: #eaf2fb;
+}
+
+.callout.def .tag {
+    color: #2b6cb0;
+}
+
+.note details {
+    margin: 8px 0;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+}
+
+.note summary {
+    padding: 7px 12px;
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.note details[open]>summary {
+    border-bottom: 1px solid var(--line);
+}
+
+.note .det-body {
+    padding: 10px 12px 2px;
+}
+
+/* v2 — 한 장짜리 큰 카드 */
+.paper-wrap {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.paper {
+    padding: 28px 36px 36px;
+}
+
+.paper h3 {
+    margin-top: 32px;
+    font-size: 17px;
+}
+
+/* v2 표는 화면 폭이 아니라 내용 폭에 맞춘다. 좁은 화면에서만 가로 스크롤 */
+.paper table {
+    width: auto;
+    max-width: 100%;
+    display: block;
+    overflow-x: auto;
+}
+
+/* v2 박스(정의·성질·주의, 접는 증명)도 내용 폭만큼만 차지한다 */
+.paper .callout,
+.paper details {
+    width: fit-content;
+    max-width: 100%;
+}
+
+/* v2 도식: 흐름 화살표, 강조 박스 */
+.paper .flow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 8px;
+    margin: 14px 0 4px;
+}
+
+.paper .flow .step {
+    padding: 8px 12px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--surface);
+    font-size: 14px;
+    text-align: center;
+}
+
+.paper .flow .step b {
+    display: block;
+    color: var(--accent);
+}
+
+.paper .flow .arrow {
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.paper .figcap {
+    margin: 4px 0 14px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.paper .figbox {
+    width: fit-content;
+    max-width: 100%;
+    margin: 12px 0;
+    padding: 4px 20px 10px;
+    border: 1px dashed var(--accent);
+    border-radius: 12px;
+}
+
+.paper .figbox .legend {
+    margin: 2px 0;
+    font-size: 13px;
+    text-align: center;
+}
