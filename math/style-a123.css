@@ -240,3 +240,10 @@
     font-size: 13px;
     text-align: center;
 }
+
+/* v3: 카드 여러 장을 한 장의 큰 카드에 이어 붙일 때 카드 제목 사이 구분 */
+.paper > h2:not(:first-child) {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+}
