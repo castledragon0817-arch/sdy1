@@ -17,6 +17,122 @@
     color: #fff;
 }
 
+/* v3 [예] 말풍선: 배경을 가리지 않고 버튼 바로 아래에 뜬다. dialog를 쓰지 않아 포커스 이동에 따른 스크롤도 없다. */
+.ex-anchor {
+    position: relative;
+}
+
+.wrongnote-btn.ex-btn {
+    border-radius: 4px;
+}
+
+.ex-bubble {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: -16px;
+    z-index: 50;
+    width: max-content;
+    max-width: min(600px, 90vw);
+    padding: 16px 44px 6px 18px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--surface);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.ex-bubble[hidden] {
+    display: none;
+}
+
+/* 말풍선 꼬리 — 테두리용 삼각형 위에 배경색 삼각형을 겹친다. */
+.ex-bubble::before,
+.ex-bubble::after {
+    content: "";
+    position: absolute;
+    left: 28px;
+    border: 9px solid transparent;
+    border-top: none;
+}
+
+.ex-bubble::before {
+    top: -10px;
+    border-bottom: 10px solid var(--line);
+}
+
+.ex-bubble::after {
+    top: -9px;
+    border-bottom: 10px solid var(--surface);
+}
+
+.ex-close {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    border: none;
+    background: none;
+    color: var(--muted);
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.ex-close:hover {
+    color: var(--text);
+}
+
+/* v3 문구 위 작은 말풍선: [예] 말풍선과 같은 디자인, 항상 떠 있고 꼬리는 아래로 문구를 가리킨다. */
+.tip-anchor {
+    position: relative;
+    padding: 0 3px;
+    border-radius: 3px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 700;
+}
+
+/* '개'를 수식 밖 일반 글자로 두어야 드래그 선택 때 한글이 찌그러지지 않는다. */
+.tip-bubble {
+    position: absolute;
+    bottom: calc(100% + 12px);
+    left: 50%;
+    z-index: 40;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-50%);
+    padding: 8px 20px 10px;
+    color: var(--text);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.3;
+    user-select: none;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--surface);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    white-space: nowrap;
+}
+
+.tip-bubble::before,
+.tip-bubble::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -9px;
+    border: 9px solid transparent;
+    border-bottom: none;
+}
+
+.tip-bubble::before {
+    bottom: -10px;
+    border-top: 10px solid var(--line);
+}
+
+.tip-bubble::after {
+    bottom: -9px;
+    border-top: 10px solid var(--surface);
+}
+
 .callout {
     margin: 12px 0;
     padding: 10px 14px;
@@ -98,7 +214,7 @@
     padding: 8px;
     border: none;
     border-radius: var(--radius);
-    background: var(--accent);
+    background: #ef455a;
     color: #fff;
     font-family: inherit;
     font-size: 15px;
@@ -125,6 +241,11 @@
         order: 3;
         flex-basis: 100%;
         margin: 10px 0 0;
+    }
+
+    /* 탭이 다음 줄로 내려가면 아래쪽 음수 마진이 탭과 겹치므로 없앤다. */
+    .note-page .back-link {
+        margin-bottom: 0;
     }
 }
 
@@ -185,6 +306,29 @@
 }
 
 /* v2 박스(정의·성질·주의, 접는 증명)도 내용 폭만큼만 차지한다 */
+/* v3 테마색: 홈의 대수 버튼색(#ef455a)에 맞춘다. v3 안 강조·박스·그래프가 모두 --accent를 쓴다. */
+#v3 {
+    --accent: #ef455a;
+    --accent-soft: #fdecee;
+}
+
+/* v3 두 칸 배치: 왼쪽·오른쪽 내용을 나란히 두고, 좁은 화면에서는 아래로 내려간다. */
+.paper .two-col {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 24px 64px;
+}
+
+.paper .two-col > div {
+    flex: 0 1 540px;
+    min-width: 0;
+}
+
+.paper .two-col > div > :first-child {
+    margin-top: 0;
+}
+
 .paper .callout,
 .paper details {
     width: fit-content;
