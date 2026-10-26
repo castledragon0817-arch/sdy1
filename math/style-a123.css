@@ -113,6 +113,64 @@
     white-space: nowrap;
 }
 
+/* 강조 없이 말풍선만 다는 문구 */
+.tip-anchor.plain {
+    padding: 0;
+    background: none;
+    color: inherit;
+    font-weight: inherit;
+}
+
+/* a^n 말풍선: 왼쪽 '밑 →'은 a를, 위쪽 '지수 ↙'는 n을 가리킨다. */
+.an-grid {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    align-items: end;
+    column-gap: 4px;
+}
+
+.an-lab {
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.an-grid > .an-lab:nth-child(2) {
+    padding-left: 18px;
+}
+
+.an-big {
+    font-size: 24px;
+    line-height: 1.1;
+}
+
+/* v3 짧은 식 박스: 가운데 한 줄을 통째로 쓰지 않고 식 크기만큼만 차지한다. */
+.eq-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 14px;
+    margin: 6px 0 12px;
+}
+
+.eq-row .callout {
+    margin: 0;
+}
+
+.eq-box {
+    display: inline-block;
+    padding: 6px 18px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--accent-soft);
+    font-size: 17px;
+}
+
+.eq-note {
+    color: var(--muted);
+    font-size: 14px;
+}
+
 .tip-bubble::before,
 .tip-bubble::after {
     content: "";

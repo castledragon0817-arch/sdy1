@@ -4896,22 +4896,43 @@
                     <h4>1) 거듭제곱, 밑, 지수</h4>
                     <p>실수 \(a\)와 자연수 \(n\)에 대하여 <span class="tip-anchor">\(a\)를 \(n\)번 곱한 것<span
                                 class="tip-bubble"><span class="tip-top">\(n\)개</span>\(\overbrace{a\times a\times\cdots\times a}\)</span></span>을
-                        \(a\)의 \(n\)제곱이라 하고, \(a^n\)으로 나타낸다.
+                        \(a\)의 \(n\)제곱이라 하고, <span class="tip-anchor plain">\(a^n\)<span class="tip-bubble"><span
+                                    class="an-grid"><span></span><span class="an-lab">지수 ↙</span><span
+                                        class="an-lab">밑 →</span><span class="an-big">\(a^{n}\)</span></span></span></span>으로 나타낸다.
                         이때 \(a, a^2, a^3, \cdots, a^n, \cdots\)을 통틀어 \(a\)의 <em>거듭제곱</em>이라 하고, \(a^n\)에서 \(a\)를 거듭제곱의
                         <em>밑</em>, \(n\)을 거듭제곱의 <em>지수</em>라고 한다.</p>
 
                     <h4>2) 제곱근</h4>
-                    <p>어떤 수 \(x\)를 제곱하여 \(a\)가 될 때, 즉
-                        \[ x^2=a \]
-                        일 때, \(x\)를 \(a\)의 <em>제곱근</em>이라고 한다.
+                    <p>어떤 수 \(x\)를 제곱하여 \(a\)가 될 때, 즉</p>
+                    <div class="eq-row">
+                        <span class="eq-box">\(x^2=a\)</span>
+                        <span class="eq-note">\(4\)의 제곱근 \(\pm2\) · \(25\)의 제곱근 \(\pm5\) · \(3\)의 제곱근 \(\pm\sqrt3\)</span>
+                    </div>
+                    <p>일 때, \(x\)를 \(a\)의 <em>제곱근</em>이라고 한다.
                         양수 \(a\)의 제곱근은 양수와 음수 두 개가 있고, 이 두 수의 절댓값은 서로 같다.</p>
+                    <div class="eq-row">
+                        <span class="ex-anchor">
+                            <button type="button" class="wrongnote-btn ex-btn"
+                                onclick="var b=document.getElementById('v3-neg-sqrt');b.hidden=!b.hidden">음수 \(a\)는?</button>
+                            <div class="ex-bubble" id="v3-neg-sqrt" hidden>
+                                <button type="button" class="ex-close" aria-label="닫기"
+                                    onclick="this.parentNode.hidden=true">&times;</button>
+                                <p><strong>음수 \(a\)의 제곱근은 왜 없을까?</strong><br>
+                                    실수 \(x\)는 양수든 음수든 0이든 제곱하면 \(x^2\ge0\)이다.<br>
+                                    그래서 \(x^2=-4\)처럼 제곱해서 음수가 되는 실수는 없다.<br>
+                                    즉 음수의 제곱근은 실수 중에는 없다.</p>
+                                <p>(허수 \(i\ (i^2=-1)\)까지 넓히면 \(-4\)의 제곱근은 \(\pm2i\)이다. 이건 거듭제곱근에서 다시 나온다.)</p>
+                            </div>
+                        </span>
+                        <div class="callout">\(x^2=9\) \(\Rightarrow\) \(x=+3\) 또는 \(x=-3\) &nbsp;(\(|+3|=|-3|=3\))</div>
+                    </div>
                 </div>
                 <div>
                     <h3>거듭제곱근</h3>
                     <p>양수 \(a\)의 제곱근을 실수 \(a\)의 \(n\)제곱근으로 확장해보자.<br>
-                        \(n\)이 2 이상의 자연수일 때, \(n\)제곱하여 실수 \(a\)가 되는 수, 즉 방정식
-                        \[ x^n=a \]
-                        를 만족시키는 수 \(x\)를 \(a\)의 \(n\)제곱근이라고 한다.<br>
+                        \(n\)이 2 이상의 자연수일 때, \(n\)제곱하여 실수 \(a\)가 되는 수, 즉 방정식</p>
+                    <div class="eq-row"><span class="eq-box">\(x^n=a\)</span></div>
+                    <p>를 만족시키는 수 \(x\)를 \(a\)의 \(n\)제곱근이라고 한다.<br>
                         또 \(a\)의 제곱근, 세제곱근, 네제곱근, \(\cdots\), \(n\)제곱근, \(\cdots\)을 통틀어 \(a\)의 <em>거듭제곱근</em>이라고 한다.</p>
 
                     <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">

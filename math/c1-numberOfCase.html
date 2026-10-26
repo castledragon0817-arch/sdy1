@@ -15,9 +15,1034 @@
         <a class="back-link" href="../index.html">&larr; 뒤로가기</a>
     </div>
 
-    <main class="note-grid">
-        <!-- 아직 내용 없음. 대수/미적분과 같은 note 구조로 이어서 채운다. -->
+    <main class="note-grid" id="v1">
+
+        <section class="note">
+            <h2>#1 경우의 수에서의 사칙연산 / 순열과 조합</h2>
+
+            <p>'공통수학1'의 순열과 조합은 완벽하게 익혀 두어야 한다. '확률과 통계'부터 잘 하면 되는 것 아니냐고 반문할 수도 있겠으나 '공통수학1'의 경우의
+                수에서의 사칙연산의 의미, 순열과 조합의 기본이 잘 갖춰져 있지 않으면 '확률과 통계'를 제대로 학습할 수 없다. 확률에서 계산 상황의 대부분이
+                '공통수학1'의 순열과 조합을 이용하는 것이기도 하다.<br>
+                또한 현행 교육과정에서 '공통수학1'의 순열과 조합을 배우는 것이 '공통수학2'의 집합, 함수를 배우기 전이어서 집합의 연산과 벤 다이어그램, 드모르간의
+                법칙 등을 이용하여 경우의 수, 여사건을 다룰 수 없었고, 순열과 조합의 필수 활용 소재인 함수의 개수를 제대로 다룰 수 없었다. '공통수학1'의 순열과
+                조합의 필수적인 내용 체계를 집합을 이용한 이해와 함께 제대로 정리하고 시작해 보자.</p>
+            <p>실전에서 경우의 수의 문제에 대한 대표적인 접근법으로<br>
+                ① 적절한 기준에 따른 케이스 구분<br>
+                ② 체계적으로 써보기<br>
+                ③ 여사건의 활용<br>
+                의 세 가지를 꼽을 수 있다.<br>
+                적절한 기준을 정하여 케이스를 구분하고 체계적으로 써볼 때 '수형도'를 이용하면 도움이 되는 경우가 많다.<br>
+                또한 경우의 수의 계산 구조가 반복되는 경우가 많으므로 케이스 구분과 체계적인 써보기의 과정에서 이를 놓치지 않고 경우의 수의 핵심 계산인 덧셈과 곱셈을
+                이용하여 효율적으로 다루는 것도 매우 중요하다.</p>
+            <p>경우의 수에서 덧셈과 곱셈의 이용 방법은 기본적으로는 합의 법칙과 곱의 법칙으로 설명하고 있고, 이들 법칙에 대한 이해를 바탕으로 여러 상황을 경험하며
+                자연스럽게 구사할 수 있도록 충분히 연습해야 한다. 실전에서 덧셈과 곱셈 자체를 혼동하는 일은 잘 일어나지 않지만 곱셈에서 의미 파악을 제대로 하지
+                못해 순서를 이중으로 부여하는 등 실수하는 경우가 많으므로 곱셈에 특히 많은 주의를 기울여야 한다.</p>
+        </section>
+
+        <section class="note">
+            <h2>#2 합의 법칙과 곱의 법칙</h2>
+
+            <h3>1. 합의 법칙과 곱의 법칙</h3>
+            <p>합의 법칙과 곱의 법칙은 다음과 같다.</p>
+            <div class="callout">
+                <span class="tag">합의 법칙</span><br>
+                두 사건 \(A,\ B\)가 동시에 일어나지 않을 때, 두 사건 \(A,\ B\)가 일어나는 경우의 수가 각각 \(m,\ n\)이면 사건 \(A\) 또는 사건 \(B\)가 일어나는 경우의
+                수는 \(m+n\)이다.
+            </div>
+            <div class="callout">
+                <span class="tag">곱의 법칙</span><br>
+                두 사건 \(A,\ B\)에 대하여 사건 \(A\)가 일어나는 경우의 수가 \(m\)이고, 그 각각에 대하여 사건 \(B\)가 일어나는 경우의 수가 \(n\)일 때, 두 사건
+                \(A,\ B\)가 잇달아 일어나는 경우의 수는 \(m\times n\)이다.
+            </div>
+            <p>이를 다음과 같이 경우의 수에서의 덧셈과 곱셈의 의미로 재해석할 수 있다.<br>
+                ① 각 사건의 <strong>계산 구조가 다를 때</strong> 케이스 구분의 관점에서 덧셈을 한다.<br>
+                ② 각 사건의 <strong>계산 구조가 같을 때</strong> 전체 사건을 완성한다는 의미에서 곱셈을 한다.<br>
+                \(\Rightarrow\) 케이스를 구분하여 체계적으로 써보거나 수형도를 그려보면서 각 사건의 계산 구조의 동일성 여부를 파악할 수 있다.<br>
+                ③ <strong>잇달아 일어나는 사건들 전체</strong>가 주어진 조건을 만족시킬 때 곱셈을 한다.</p>
+
+            <p><strong>[예1]</strong> 네 개의 지점 A, B, C, D 사이에 그림과 같은 도로망이 있다. 이 도로망을 따라 A지점에서 출발하여 같은 지점을 두 번 지나지 않고
+                C지점으로 가는 경우의 수를 구해보자.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 270 170" style="max-width:270px"><path d="M20,80 Q40,10 130,14" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="46.0" y="2.0" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">①</div></foreignObject><path d="M20,80 Q75,45 130,14" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="62.0" y="28.0" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">②</div></foreignObject><path d="M20,80 Q100,70 130,14" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="86.0" y="50.0" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">③</div></foreignObject><path d="M130,14 Q230,10 240,80" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="196.0" y="2.0" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">ⓐ</div></foreignObject><path d="M130,14 Q160,70 240,80" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="158.0" y="46.0" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">ⓑ</div></foreignObject><path d="M20,80 Q80,100 130,146" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="72.0" y="92.0" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">④</div></foreignObject><path d="M20,80 Q40,150 130,146" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="46.0" y="128.0" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">⑤</div></foreignObject><path d="M130,146 Q160,100 240,80" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="164.0" y="76.0" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">ⓒ</div></foreignObject><path d="M130,146 Q180,110 240,80" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="184.0" y="92.0" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">ⓓ</div></foreignObject><path d="M130,146 Q200,130 240,80" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="198.0" y="108.0" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">ⓔ</div></foreignObject><path d="M130,146 Q230,150 240,80" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="214.0" y="128.0" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">ⓕ</div></foreignObject><circle cx="20" cy="80" r="3" style="fill:var(--text)" /><circle cx="130" cy="14" r="3" style="fill:var(--text)" /><circle cx="240" cy="80" r="3" style="fill:var(--text)" /><circle cx="130" cy="146" r="3" style="fill:var(--text)" /><foreignObject x="4.0" y="70.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="124.0" y="-4.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><foreignObject x="246.0" y="70.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{C}\)</div></foreignObject><foreignObject x="124.0" y="148.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{D}\)</div></foreignObject></svg>
+</figure>
+            </div>
+            <p><strong>[Case 1]</strong> \(\mathrm{A}\to\mathrm{B}\to\mathrm{C}\)<br>
+                A지점에서 B지점까지 ①, ②, ③ 중 하나의 도로를 이용하는 경우 각각에 대하여 B지점에서 C지점까지 ⓐ, ⓑ 중 하나의 도로를 이용할 수 있다. 이 경우의 수를
+                덧셈으로 계산하면 \(2+2+2\)이고, 곱셈으로 계산하면 \(3\times2\)이다. 곱셈으로 계산하기 위해 '\(3\times\)'로 쓰면서<br>
+                &nbsp;&nbsp;\(-\) 각 사건에 잇달아 일어나는 사건의 경우의 수가 같으므로(수형도가 일치)<br>
+                &nbsp;&nbsp;\(-\) 한 사건에 잇달아 일어나는 사건의 경우의 수만 파악해서 곱셈으로 효율적으로 처리하겠다고 판단해야 한다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 60 142" style="max-width:81px;width:81px"><foreignObject x="10.0" y="11.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">①</div></foreignObject><line x1="26.0" y1="22.0" x2="50.0" y2="13.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="52.0" y="2.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">ⓐ</div></foreignObject><line x1="26.0" y1="22.0" x2="50.0" y2="31.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="52.0" y="20.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">ⓑ</div></foreignObject><foreignObject x="10.0" y="57.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">②</div></foreignObject><line x1="26.0" y1="68.0" x2="50.0" y2="59.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="52.0" y="48.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">ⓐ</div></foreignObject><line x1="26.0" y1="68.0" x2="50.0" y2="77.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="52.0" y="66.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">ⓑ</div></foreignObject><foreignObject x="10.0" y="103.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">③</div></foreignObject><line x1="26.0" y1="114.0" x2="50.0" y2="105.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="52.0" y="94.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">ⓐ</div></foreignObject><line x1="26.0" y1="114.0" x2="50.0" y2="123.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="52.0" y="112.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">ⓑ</div></foreignObject></svg>
+</figure>
+            </div>
+            <p><strong>[Case 2]</strong> \(\mathrm{A}\to\mathrm{D}\to\mathrm{C}\)<br>
+                [Case 1]에서와 마찬가지로 A지점에서 D지점까지 ④, ⑤ 중 하나의 도로를 이용하는 경우 각각에 대하여 D지점에서 C지점까지 ⓒ, ⓓ, ⓔ, ⓕ 중 하나의 도로를
+                이용할 수 있다. 이 경우의 수를 덧셈으로 계산하면 \(4+4\)이고, 곱셈으로 계산하면 \(2\times4\)이다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 60 168" style="max-width:81px;width:81px"><foreignObject x="10.0" y="29.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">④</div></foreignObject><line x1="26.0" y1="40.0" x2="50.0" y2="13.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="52.0" y="2.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">ⓒ</div></foreignObject><line x1="26.0" y1="40.0" x2="50.0" y2="31.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="52.0" y="20.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">ⓓ</div></foreignObject><line x1="26.0" y1="40.0" x2="50.0" y2="49.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="52.0" y="38.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">ⓔ</div></foreignObject><line x1="26.0" y1="40.0" x2="50.0" y2="67.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="52.0" y="56.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">ⓕ</div></foreignObject><foreignObject x="10.0" y="111.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">⑤</div></foreignObject><line x1="26.0" y1="122.0" x2="50.0" y2="95.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="52.0" y="84.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">ⓒ</div></foreignObject><line x1="26.0" y1="122.0" x2="50.0" y2="113.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="52.0" y="102.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">ⓓ</div></foreignObject><line x1="26.0" y1="122.0" x2="50.0" y2="131.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="52.0" y="120.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">ⓔ</div></foreignObject><line x1="26.0" y1="122.0" x2="50.0" y2="149.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="52.0" y="138.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">ⓕ</div></foreignObject></svg>
+</figure>
+            </div>
+            <p>[Case 1]과 [Case 2]의 경우의 수의 계산 구조가 다르고 중복되는 것이 없으므로 합의 법칙을 이용한 덧셈에서
+                \[ 3\times2+2\times4=14 \]</p>
+
+            <p><strong>[예2]</strong> 두 자리의 자연수 중 십의 자리의 수와 일의 자리의 수의 합이 짝수인 자연수의 개수를 구해보자.<br>
+                <strong>[Case 1]</strong> 십의 자리의 수가 짝수이고 일의 자리의 수가 0 또는 짝수인 경우<br>
+                십의 자리의 수는 2, 4, 6, 8 중에서 택하고 일의 자리의 수는 0, 2, 4, 6, 8 중에서 택하는 경우의 수는<br>
+                \(4\times5=20\) (곱의 법칙)<br>
+                <strong>[Case 2]</strong> 십의 자리의 수와 일의 자리의 수가 모두 홀수인 경우<br>
+                십의 자리의 수와 일의 자리의 수를 각각 1, 3, 5, 7, 9 중에서 택하는 경우의 수는<br>
+                \(5\times5=25\) (곱의 법칙)<br>
+                \(\therefore\ 20+25=45\) (합의 법칙)</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 230 449" style="max-width:310px;width:310px"><foreignObject x="10.0" y="52.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(2\)</div></foreignObject><line x1="26.0" y1="63.0" x2="60.0" y2="33.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="62.0" y="22.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(0\)</div></foreignObject><line x1="26.0" y1="63.0" x2="60.0" y2="48.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="62.0" y="37.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(2\)</div></foreignObject><line x1="26.0" y1="63.0" x2="60.0" y2="63.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="62.0" y="52.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(4\)</div></foreignObject><line x1="26.0" y1="63.0" x2="60.0" y2="78.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="62.0" y="67.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(6\)</div></foreignObject><line x1="26.0" y1="63.0" x2="60.0" y2="93.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="62.0" y="82.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(8\)</div></foreignObject><foreignObject x="10.0" y="137.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(4\)</div></foreignObject><line x1="26.0" y1="148.0" x2="60.0" y2="118.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="62.0" y="107.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(0\)</div></foreignObject><line x1="26.0" y1="148.0" x2="60.0" y2="133.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="62.0" y="122.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(2\)</div></foreignObject><line x1="26.0" y1="148.0" x2="60.0" y2="148.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="62.0" y="137.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(4\)</div></foreignObject><line x1="26.0" y1="148.0" x2="60.0" y2="163.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="62.0" y="152.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(6\)</div></foreignObject><line x1="26.0" y1="148.0" x2="60.0" y2="178.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="62.0" y="167.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(8\)</div></foreignObject><foreignObject x="10.0" y="222.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(6\)</div></foreignObject><line x1="26.0" y1="233.0" x2="60.0" y2="203.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="62.0" y="192.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(0\)</div></foreignObject><line x1="26.0" y1="233.0" x2="60.0" y2="218.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="62.0" y="207.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(2\)</div></foreignObject><line x1="26.0" y1="233.0" x2="60.0" y2="233.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="62.0" y="222.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(4\)</div></foreignObject><line x1="26.0" y1="233.0" x2="60.0" y2="248.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="62.0" y="237.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(6\)</div></foreignObject><line x1="26.0" y1="233.0" x2="60.0" y2="263.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="62.0" y="252.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(8\)</div></foreignObject><foreignObject x="10.0" y="307.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(8\)</div></foreignObject><line x1="26.0" y1="318.0" x2="60.0" y2="288.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="62.0" y="277.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(0\)</div></foreignObject><line x1="26.0" y1="318.0" x2="60.0" y2="303.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="62.0" y="292.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(2\)</div></foreignObject><line x1="26.0" y1="318.0" x2="60.0" y2="318.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="62.0" y="307.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(4\)</div></foreignObject><line x1="26.0" y1="318.0" x2="60.0" y2="333.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="62.0" y="322.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(6\)</div></foreignObject><line x1="26.0" y1="318.0" x2="60.0" y2="348.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="62.0" y="337.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(8\)</div></foreignObject><foreignObject x="4.0" y="0.0" width="50" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">십의 자리</div></foreignObject><foreignObject x="54.0" y="0.0" width="50" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">일의 자리</div></foreignObject><foreignObject x="120.0" y="52.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(1\)</div></foreignObject><line x1="136.0" y1="63.0" x2="170.0" y2="33.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="22.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(1\)</div></foreignObject><line x1="136.0" y1="63.0" x2="170.0" y2="48.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="37.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(3\)</div></foreignObject><line x1="136.0" y1="63.0" x2="170.0" y2="63.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="52.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(5\)</div></foreignObject><line x1="136.0" y1="63.0" x2="170.0" y2="78.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="67.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(7\)</div></foreignObject><line x1="136.0" y1="63.0" x2="170.0" y2="93.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="82.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(9\)</div></foreignObject><foreignObject x="120.0" y="137.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(3\)</div></foreignObject><line x1="136.0" y1="148.0" x2="170.0" y2="118.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="107.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(1\)</div></foreignObject><line x1="136.0" y1="148.0" x2="170.0" y2="133.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="122.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(3\)</div></foreignObject><line x1="136.0" y1="148.0" x2="170.0" y2="148.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="137.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(5\)</div></foreignObject><line x1="136.0" y1="148.0" x2="170.0" y2="163.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="152.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(7\)</div></foreignObject><line x1="136.0" y1="148.0" x2="170.0" y2="178.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="167.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(9\)</div></foreignObject><foreignObject x="120.0" y="222.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(5\)</div></foreignObject><line x1="136.0" y1="233.0" x2="170.0" y2="203.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="192.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(1\)</div></foreignObject><line x1="136.0" y1="233.0" x2="170.0" y2="218.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="207.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(3\)</div></foreignObject><line x1="136.0" y1="233.0" x2="170.0" y2="233.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="222.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(5\)</div></foreignObject><line x1="136.0" y1="233.0" x2="170.0" y2="248.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="237.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(7\)</div></foreignObject><line x1="136.0" y1="233.0" x2="170.0" y2="263.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="252.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(9\)</div></foreignObject><foreignObject x="120.0" y="307.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(7\)</div></foreignObject><line x1="136.0" y1="318.0" x2="170.0" y2="288.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="277.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(1\)</div></foreignObject><line x1="136.0" y1="318.0" x2="170.0" y2="303.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="292.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(3\)</div></foreignObject><line x1="136.0" y1="318.0" x2="170.0" y2="318.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="307.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(5\)</div></foreignObject><line x1="136.0" y1="318.0" x2="170.0" y2="333.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="322.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(7\)</div></foreignObject><line x1="136.0" y1="318.0" x2="170.0" y2="348.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="337.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(9\)</div></foreignObject><foreignObject x="120.0" y="392.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(9\)</div></foreignObject><line x1="136.0" y1="403.0" x2="170.0" y2="373.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="362.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(1\)</div></foreignObject><line x1="136.0" y1="403.0" x2="170.0" y2="388.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="377.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(3\)</div></foreignObject><line x1="136.0" y1="403.0" x2="170.0" y2="403.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="392.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(5\)</div></foreignObject><line x1="136.0" y1="403.0" x2="170.0" y2="418.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="407.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(7\)</div></foreignObject><line x1="136.0" y1="403.0" x2="170.0" y2="433.0" style="stroke:var(--text);stroke-width:0.9" /><foreignObject x="172.0" y="422.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(9\)</div></foreignObject><foreignObject x="114.0" y="0.0" width="50" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">십의 자리</div></foreignObject><foreignObject x="164.0" y="0.0" width="50" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">일의 자리</div></foreignObject></svg>
+</figure>
+            </div>
+        </section>
+
+        <section class="note">
+            <h2>#3 집합을 이용한 경우의 수의 이해 — 사건 \(A\)</h2>
+
+            <h3>2. 집합을 이용한 경우의 수의 이해</h3>
+            <p>집합의 연산과 벤 다이어그램, 드모르간의 법칙 등을 이용하여 사건을 표현하고 사건 사이의 관계를 이해하는 것은 경우의 수뿐만 아니라 확률에서도 매우
+                중요하다.</p>
+
+            <h4>1) 사건 \(A\)</h4>
+            <p>한 사건 \(A\)의 경우의 수는 다음과 같은 방법으로 구할 수 있다.<br>
+                <strong>[방법 1]</strong> 사건 \(A\)의 경우의 수를 직접 구한다.<br>
+                <strong>[방법 2]</strong> 모든 경우의 수에서 \(A\)의 여사건의 경우의 수를 뺀다.</p>
+            <p>어떤 시행에서 사건 \(A\)에 대하여 '\(A\)가 일어나지 않는다.'라는 사건을 사건 \(A\)의 여사건이라 하고 \(A^C\)으로 나타낸다.<br>
+                사건 \(A\)와 사건 \(A\)의 여사건은 동시에 일어나지 않고, 어떤 시행에서 일어날 수 있는 모든 경우의 집합을 \(S\)라 하면 \(n(S)=n(A)+n(A^C)\)이므로
+                \[ n(A)=n(S)-n(A^C) \]
+                과 같이 이용한다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 170 110" style="max-width:170px"><rect x="4" y="8" width="162" height="98" rx="8" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="10.0" y="-2.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(S\)</div></foreignObject><circle cx="70" cy="60" r="36" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="62.0" y="8.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\)</div></foreignObject><foreignObject x="140.0" y="46.0" width="24" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A^C\)</div></foreignObject></svg>
+</figure>
+            </div>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                두 집합 \(A,\ B\)가 \(A\cap B=\varnothing\), 즉 서로소인 것을 확률에서는 두 사건 \(A,\ B\)가 서로 배반사건이라고 한다. 두 사건 \(A,\ B\)가 동시에
+                일어나지 않는다는 것이다. 이를 곱사건이 공사건이라고 표현하기도 한다.
+            </div>
+
+            <p>여사건을 이용하는 일반적인 원칙은 없다. 주어진 조건을 그대로 적용하기에는 너무 복잡하다는 생각이 들 때 여사건을 생각해 보면 된다. 여사건이 더
+                단순하다면 여사건을 이용하고, 여사건이 더 복잡하다면 주어진 조건을 그대로 적용한다.<br>
+                이때 여사건의 경우의 수로 그대로 답하는 실수를 범할 때가 많으므로 모든 경우의 수에서 여사건의 경우의 수를 빼서 답한다는 것에 특히 주의하자!</p>
+            <p>여사건을 생각해 볼 수 있는 대표적인 상황 몇 가지는 다음과 같다.<br>
+                ① 적어도 하나가 ~이다. \(\Rightarrow\) 모두 ~이 아니다.<br>
+                ② ~이 아니고 ~이 아니다. \(\Rightarrow\) ~이거나 ~이다.<br>
+                ③ 곱이 짝수이다. \(\Rightarrow\) 곱이 홀수이다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;곱이 소수 ~의 배수이다. \(\Rightarrow\) 곱이 소수 ~의 배수가 아니다.</p>
+
+            <p><strong>[예1]</strong> 1부터 10까지의 자연수 중에서 서로 다른 두 수를 선택할 때, 선택된 두 수의 곱이 짝수가 되는 경우의 수를 구해보자.<br>
+                <strong>[방법 1]</strong> 두 수의 곱이 짝수가 되려면 두 수 중 적어도 하나는 짝수이어야 하므로 짝수가 1개인 경우와 짝수가 2개인 경우로 케이스를
+                구분하면<br>
+                짝수 1개, 홀수 1개를 선택하는 경우의 수는<br>
+                \({}_5\mathrm{C}_1\times{}_5\mathrm{C}_1=5\times5=25\)<br>
+                짝수 2개를 선택하는 경우의 수는<br>
+                \({}_5\mathrm{C}_2=10\)<br>
+                \(\therefore\ 25+10=35\)<br>
+                <strong>[방법 2]</strong> 여사건의 이용<br>
+                모든 경우의 수는<br>
+                \({}_{10}\mathrm{C}_2=45\)<br>
+                두 수의 곱이 짝수인 사건의 여사건은 두 수의 곱이 홀수인 사건이고, 홀수가 2개인 경우뿐이므로 홀수 2개를 선택하는 경우의 수는<br>
+                \({}_5\mathrm{C}_2=10\)<br>
+                \(\therefore\ 45-10=35\)</p>
+        </section>
+
+        <section class="note">
+            <h2>#4 집합을 이용한 경우의 수의 이해 — 사건 \(A\cup B\)</h2>
+
+            <h4>2) 사건 \(A\cup B\)</h4>
+            <p>사건 \(A\cup B\)는 사건 \(A\) '또는' 사건 \(B\)가 일어나는 사건이다.<br>
+                두 사건 \(A,\ B\)가 동시에 일어나지 않을 때, 두 사건 \(A,\ B\)는 서로 배반사건이라고 한다.<br>
+                이때 \(A\cap B=\varnothing\)이므로
+                \[ n(A\cup B)=n(A)+n(B)\ (\text{합의 법칙}) \]
+                이다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 190 110" style="max-width:190px"><rect x="4" y="8" width="182" height="98" rx="8" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="10.0" y="-2.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(S\)</div></foreignObject><g style="opacity:0.4"><circle cx="62" cy="60" r="32" style="fill:var(--muted)" /><circle cx="130" cy="60" r="32" style="fill:var(--muted)" /></g><circle cx="62" cy="60" r="32" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="54.0" y="16.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\)</div></foreignObject><circle cx="130" cy="60" r="32" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="122.0" y="16.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(B\)</div></foreignObject></svg>
+<figcaption>\(A\cup B\)</figcaption>
+</figure>
+            </div>
+            <p>일반적으로 두 사건 \(A,\ B\)에 대하여
+                \[ n(A\cup B)=n(A)+n(B)-n(A\cap B)\ (\text{포함 배제 원리}) \]
+                이다. 즉 '또는'으로 연결된 사건에서 중복되는 경우의 수가 있다면 반드시 제외해야 한다.<br>
+                이때 '뺄셈'은 '중복을 제외'하는 의미가 있다. 이를 포함 배제 원리라고 한다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 190 110" style="max-width:190px"><rect x="4" y="8" width="182" height="98" rx="8" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="10.0" y="-2.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(S\)</div></foreignObject><g style="opacity:0.4"><circle cx="78" cy="60" r="34" style="fill:var(--muted)" /><circle cx="118" cy="60" r="34" style="fill:var(--muted)" /></g><circle cx="78" cy="60" r="34" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="64.0" y="16.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\)</div></foreignObject><circle cx="118" cy="60" r="34" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="116.0" y="16.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(B\)</div></foreignObject></svg>
+<figcaption>\(A\cup B\)</figcaption>
+</figure>
+            </div>
+            <p>또한 드모르간의 법칙에서 \((A\cup B)^C=A^C\cap B^C\)이므로 사건 \(A\cup B\)의 여사건을 이용하여
+                \[ n(A\cup B)=n(S)-n(A^C\cap B^C) \]
+                으로 계산할 수도 있다.</p>
+
+            <p><strong>[예2]</strong> 1부터 20까지의 자연수 중 다음 자연수의 개수를 구해보자.<br>
+                ① 3의 배수 또는 7의 배수인 자연수<br>
+                3의 배수의 개수는 6, 7의 배수의 개수는 2이고, 1부터 20까지의 자연수 중 3과 7의 공배수가 없으므로, 즉 3의 배수인 사건과 7의 배수인 사건은 서로
+                배반사건이므로 중복되는 경우가 없다.<br>
+                \(\therefore\ 6+2=8\)<br>
+                ② 2의 배수 또는 3의 배수인 자연수<br>
+                <strong>[방법 1]</strong> 2의 배수의 개수는 10, 3의 배수의 개수는 6, 2와 3의 공배수, 즉 6의 배수의 개수는 3이므로<br>
+                \(10+6-3=13\)<br>
+                <strong>[방법 2]</strong> 여사건의 이용<br>
+                2의 배수가 아니고 3의 배수가 아닌 수, 즉 홀수이고 3의 배수가 아닌 수는 1, 5, 7, 11, 13, 17, 19(7개)이므로<br>
+                \(20-7=13\)</p>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                세 사건 \(A,\ B,\ C\)에 대하여 사건 \(A\cup B\cup C\)의 경우의 수는 포함 배제 원리 또는 여사건을 이용하여 다음과 같이 계산할 수 있다.<br>
+                \(n(A\cup B\cup C)\)<br>
+                \(=n(A)+n(B)+n(C)\ \Rightarrow\) 1개인 경우는 모두 더한다.<br>
+                \(\quad-n(A\cap B)-n(B\cap C)-n(C\cap A)\ \Rightarrow\) 2개인 경우는 모두 뺀다.<br>
+                \(\quad+n(A\cap B\cap C)\ \Rightarrow\) 3개인 경우는 다시 더한다.<br>
+                \(n(A\cup B\cup C)=n(S)-n(A^C\cap B^C\cap C^C)\ \Rightarrow\) 여사건의 이용<br>
+                또는 \(A,\ B,\ C\) 중 어느 두 사건의 합사건을 한 사건으로 보고 남은 한 사건과의 합사건으로 \((A\cup B)\cup C,\ A\cup(B\cup C),\ (A\cup C)\cup B\)와 같이
+                다룰 수도 있다.
+            </div>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 180 130" style="max-width:180px"><rect x="4" y="8" width="172" height="118" rx="8" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="10.0" y="-2.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(S\)</div></foreignObject><g style="opacity:0.4"><circle cx="90" cy="52" r="30" style="fill:var(--muted)" /><circle cx="70" cy="86" r="30" style="fill:var(--muted)" /><circle cx="110" cy="86" r="30" style="fill:var(--muted)" /></g><circle cx="90" cy="52" r="30" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="92.0" y="6.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\)</div></foreignObject><circle cx="70" cy="86" r="30" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="20.0" y="100.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(B\)</div></foreignObject><circle cx="110" cy="86" r="30" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="150.0" y="100.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(C\)</div></foreignObject></svg>
+</figure>
+            </div>
+        </section>
+
+        <section class="note">
+            <h2>#5 집합을 이용한 경우의 수의 이해 — 사건 \(A\cap B\)</h2>
+
+            <h4>3) 사건 \(A\cap B\)</h4>
+            <p>사건 \(A\cap B\)는 두 사건 \(A,\ B\)가 동시에 일어나는 사건이다. 이를 사건 \(A\) '그리고' 사건 \(B\)가 일어나는 것으로 표현할 수 있다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 190 110" style="max-width:190px"><rect x="4" y="8" width="182" height="98" rx="8" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="10.0" y="-2.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(S\)</div></foreignObject><clipPath id="v1"><circle cx="78" cy="60" r="34" /></clipPath><circle cx="118" cy="60" r="34" clip-path="url(#v1)" style="fill:var(--muted);opacity:0.4" /><circle cx="78" cy="60" r="34" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="64.0" y="16.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\)</div></foreignObject><circle cx="118" cy="60" r="34" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="116.0" y="16.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(B\)</div></foreignObject></svg>
+<figcaption>\(A\cap B\)</figcaption>
+</figure>
+            </div>
+            <p>사건 \(A\cap B\)의 경우의 수는 두 사건 \(A,\ B\)가 동시에 일어나는 상황을 이해하여 직접 구하기도 하지만 여사건을 이용할 때가 많다.<br>
+                여사건을 이용하여 사건 \(A\cap B\)의 경우의 수를 구하는 대표적인 방법은 다음과 같다.</p>
+            <p><strong>[방법 1]</strong> \(\boldsymbol{n(A\cap B)=n(A)-n(A\cap B^C)=n(B)-n(B\cap A^C)}\)<br>
+                \(A\cap B^C\)의 경우의 수, 즉 \(A\) 중에서 \(B\)가 아닌 경우의 수를 \(A\)의 경우의 수에서 빼거나, \(B\cap A^C\)의 경우의 수, 즉 \(B\) 중에서 \(A\)가 아닌
+                경우의 수를 \(B\)의 경우의 수에서 빼서 구할 수 있다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 190 110" style="max-width:190px"><rect x="4" y="8" width="182" height="98" rx="8" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="10.0" y="-2.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(S\)</div></foreignObject><mask id="v2"><circle cx="78" cy="60" r="34" fill="white" /><circle cx="118" cy="60" r="34" fill="black" /></mask><circle cx="78" cy="60" r="34" mask="url(#v2)" style="fill:var(--muted);opacity:0.4" /><circle cx="78" cy="60" r="34" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="64.0" y="16.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\)</div></foreignObject><circle cx="118" cy="60" r="34" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="116.0" y="16.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(B\)</div></foreignObject></svg>
+<figcaption>\(A\cap B^C\)</figcaption>
+</figure>
+                <figure class="graph">
+<svg viewBox="0 0 190 110" style="max-width:190px"><rect x="4" y="8" width="182" height="98" rx="8" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="10.0" y="-2.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(S\)</div></foreignObject><mask id="v3"><circle cx="118" cy="60" r="34" fill="white" /><circle cx="78" cy="60" r="34" fill="black" /></mask><circle cx="118" cy="60" r="34" mask="url(#v3)" style="fill:var(--muted);opacity:0.4" /><circle cx="78" cy="60" r="34" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="64.0" y="16.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\)</div></foreignObject><circle cx="118" cy="60" r="34" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="116.0" y="16.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(B\)</div></foreignObject></svg>
+<figcaption>\(B\cap A^C\)</figcaption>
+</figure>
+            </div>
+            <p>이때 두 사건 \(A,\ B\) 중에서 어떤 사건을 모든 경우로 두는 것이 유리한지에 대한 판단이 중요하다.</p>
+            <p><strong>[방법 2] 드모르간의 법칙</strong><br>
+                \(A\cap B\)의 여사건 \((A\cap B)^C\), 즉 \(A^C\cup B^C\)의 경우의 수를 포함 배제의 원리를 이용하여
+                \[ n(A^C\cup B^C)=n(A^C)+n(B^C)-n(A^C\cap B^C) \]
+                으로 구한 후,
+                \[ n(A\cap B)=n(S)-n(A^C\cup B^C) \]
+                을 구할 수 있다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 190 110" style="max-width:190px"><rect x="4" y="8" width="182" height="98" rx="8" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="10.0" y="-2.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(S\)</div></foreignObject><mask id="v4"><rect x="4" y="8" width="182" height="98" fill="white" /><circle cx="78" cy="60" r="34" fill="black" /><circle cx="118" cy="60" r="34" fill="black" /></mask><rect x="4" y="8" width="182" height="98" rx="8" mask="url(#v4)" style="fill:var(--muted);opacity:0.4" /><circle cx="78" cy="60" r="34" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="64.0" y="16.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\)</div></foreignObject><circle cx="118" cy="60" r="34" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="116.0" y="16.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(B\)</div></foreignObject></svg>
+<figcaption>\(A^C\cup B^C\)</figcaption>
+</figure>
+            </div>
+
+            <p><strong>[예3]</strong> 1부터 20까지의 자연수 중에서 서로 다른 두 수를 선택할 때, 선택된 두 수의 곱이 홀수이고 3의 배수인 경우의 수를 구해보자.<br>
+                10개의 홀수 중에서 2개를 선택하는 경우의 수는<br>
+                \({}_{10}\mathrm{C}_2=45\)<br>
+                3, 9, 15가 아닌 7개의 홀수 중에서 2개를 선택하는 경우의 수는<br>
+                \({}_7\mathrm{C}_2=21\)<br>
+                \(\therefore\ 45-21=24\)</p>
+
+            <p><strong>[예4]</strong> 1부터 72까지의 자연수 중에서 72와 서로소인 자연수의 개수를 구해보자.<br>
+                \(72=2^3\times3^2\)이므로 72와 서로소이려면 2와 3을 모두 약수로 가지면 안 된다. 즉 2의 배수여도 안 되고 3의 배수여도 안 된다. 이를 직접
+                계산하려면 2의 배수와 3의 배수를 지워가며 일일이 세보는 수밖에 없다.<br>
+                여사건은 '2의 배수 또는 3의 배수'이고<br>
+                2의 배수의 개수는 36, 3의 배수의 개수는 24, 2와 3의 공배수, 즉 6의 배수의 개수는 12이므로<br>
+                \(72-(36+24-12)=24\)</p>
+        </section>
+
+        <section class="note">
+            <h2>#6 순열과 계승</h2>
+
+            <h3>3. 순열과 조합</h3>
+            <h4>1) 순열</h4>
+            <p>서로 다른 \(n\)개에서 \(r\ (r\le n)\)개를 택하여 일렬로 나열하는 것을 \(n\)개에서 \(r\)개를 택하는 순열이라 하고, 이 순열의 수를 기호로
+                \[ {}_n\mathrm{P}_r \]
+                과 같이 나타낸다.
+                \[ {}_n\mathrm{P}_r=\underbrace{n(n-1)(n-2)\times\cdots\times(n-r+1)}_{r\text{개}}\ (\text{단, }r\le n) \]</p>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                \({}_n\mathrm{P}_r\)에서 P는 순열을 뜻하는 'Permutation'의 첫 글자이다.
+            </div>
+
+            <h4>2) 계승</h4>
+            <p>서로 다른 \(n\)개에서 \(n\)개 모두를 택하는 순열의 수는
+                \[ {}_n\mathrm{P}_n=n(n-1)(n-2)\times\cdots\times3\times2\times1 \]
+                이다. 이와 같이 1부터 \(n\)까지의 자연수를 차례로 곱한 것을 \(n\)의 계승이라 하고, 이것을 기호로
+                \[ n! \]
+                과 같이 나타낸다. 즉
+                \[ {}_n\mathrm{P}_n=n(n-1)(n-2)\times\cdots\times3\times2\times1=n! \]
+                ① \({}_n\mathrm{P}_r=\dfrac{n!}{(n-r)!}\) (단, \(0\le r\le n\))<br>
+                ② \({}_n\mathrm{P}_n=n!,\quad 0!=1,\quad {}_n\mathrm{P}_0=1\)</p>
+        </section>
+
+        <section class="note">
+            <h2>#7 조합</h2>
+
+            <h4>3) 조합</h4>
+            <p>서로 다른 \(n\)개에서 순서를 생각하지 않고 \(r\ (r\le n)\)개를 택하는 것을 \(n\)개에서 \(r\)개를 택하는 조합이라 하고, 이 조합의 수를 기호로
+                \[ {}_n\mathrm{C}_r \]
+                과 같이 나타낸다.
+                \[ {}_n\mathrm{C}_r=\dfrac{{}_n\mathrm{P}_r}{r!}=\dfrac{\overbrace{n(n-1)(n-2)\times\cdots\times(n-r+1)}^{r\text{개}}}{r!} \]
+                \[ =\dfrac{n!}{r!\,(n-r)!}\ (\text{단, }0\le r\le n) \]
+                ① \({}_n\mathrm{C}_0=1,\quad {}_n\mathrm{C}_n=1,\quad {}_n\mathrm{C}_1=n\)<br>
+                ② \({}_n\mathrm{C}_r={}_n\mathrm{C}_{n-r}\)</p>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                \({}_n\mathrm{C}_r\)에서 C는 조합을 뜻하는 'Combination'의 첫 글자이다.<br>
+                \({}_n\mathrm{C}_r\)은 choice의 의미로 'n choose r'로 읽기도 한다.
+            </div>
+
+            <div class="callout">
+                <span class="tag">REMARK 1 · 곱셈의 순서 부여의 의미</span><br>
+                순열의 수는 기호 \({}_n\mathrm{P}_r\)을 이용하여 나타내고 계산하기도 하지만, 이미 택한 것은 제외해 가며 자동으로 순서가 부여되는 곱의 법칙으로 이해하고
+                활용하는 것이 더 좋다.<br>
+                예를 들어 문자 \(a,\ b,\ c,\ d,\ e\) 중에서 3개를 택하여 일렬로 나열하는 경우의 수는 택한 것은 제외해 가며 1개씩 잇달아 택하는 것의 의미로
+                \({}_5\mathrm{C}_1\times{}_4\mathrm{C}_1\times{}_3\mathrm{C}_1=5\times4\times3={}_5\mathrm{P}_3\)이고, 이때 자동으로 순서가 부여되므로 중복해서 순서를
+                부여하지 말아야 한다.<br>
+                선택과 순서 부여를 구분한다면 3개를 택하는 의미의 \({}_5\mathrm{C}_3\)과 3개의 순서를 부여하는 의미의 \(3!\)에서
+                \[ {}_5\mathrm{C}_3\times3!=\dfrac{5\times4\times3}{3!}\times3!=5\times4\times3={}_5\mathrm{P}_3\text{이다.} \]
+            </div>
+
+            <div class="callout">
+                <span class="tag">REMARK 2 · \(\div\,n!\)</span><br>
+                경우의 수에서 \(n!\)로 나눈다는 것은 \(n!\)가지씩을 묶어서 1가지로 생각한다는 것이다.<br>
+                여기서 \(n!\)은 \(n\)개를 모두 배열하는 경우의 수이므로 \(n!\)로 나눈다는 것은 \(n\)개의 순서를 고려하지 않는다. 즉 순서를 무시한다는 뜻이 된다.
+                <span style="display:block;margin:6px 0 6px 2em">\(\div\,n!\ \Rightarrow\ n\)개의 순서 무시</span>
+                따라서 \({}_n\mathrm{C}_r\)의 계산에서 \({}_n\mathrm{P}_r\)을 \(r!\)로 나눈 것은 배열된 \(r\)개의 순서를 무시한 것이다.
+            </div>
+        </section>
+
+        <section class="note">
+            <h2>#8 이웃하는 것, 이웃하지 않는 것이 있는 배열</h2>
+
+            <h4>4) 이웃하는 것, 이웃하지 않는 것이 있는 배열</h4>
+            <p>일렬로 배열할 때<br>
+                ① 서로 다른 \(r\)개가 이웃하는 배열<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(r\)개를 1개로 보고 배열의 수를 계산한 후, \(r!\)을 곱한다.<br>
+                ② 서로 다른 \(r\)개가 이웃하지 않는 배열<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(r\)개를 제외한 배열의 수를 계산한 후, 각각의 양 끝과 사이사이의 빈자리에 \(r\)개를 배열하는 경우의 수를 곱한다.</p>
+
+            <p><strong>[예]</strong> 서로 다른 수학책 4권, 서로 다른 영어책 3권을 모두 일렬로 책꽂이에 꽂을 때, 다음 경우의 수를 구해보자.<br>
+                ① 영어책 3권을 연이어 꽂는 경우의 수<br>
+                영어책 3권을 영어책 1권으로 보고 수학책 4권과 함께 일렬로 나열하는 경우의 수는<br>
+                \((1+4)!=5!\)<br>
+                영어책 3권을 일렬로 나열하는 경우의 수는<br>
+                \(3!\)<br>
+                \(\therefore\ 5!\times3!=720\)<br>
+                ② 수학책 4권을 연이어 꽂고 영어책 3권도 연이어 꽂는 경우의 수<br>
+                수학책 4권을 수학책 1권으로, 영어책 3권을 영어책 1권으로 보고 일렬로 나열하는 경우의 수는<br>
+                \((1+1)!=2!\)<br>
+                수학책 4권, 영어책 3권을 각각 일렬로 나열하는 경우의 수는<br>
+                \(4!\times3!\)<br>
+                \(\therefore\ 2!\times(4!\times3!)=288\)<br>
+                ③ 영어책끼리 이웃하지 않도록 꽂는 경우의 수<br>
+                수학책 4권을 일렬로 나열하는 경우의 수는<br>
+                \(4!\)<br>
+                수학책의 양 끝과 사이사이의 5개의 자리 중 3개를 택하여 영어책 3권을 배열하는 경우의 수는<br>
+                \({}_5\mathrm{P}_3\)<br>
+                \(\therefore\ 4!\times{}_5\mathrm{P}_3=1440\)</p>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                앞의 [예]의 ③은 여사건을 이용하는 것이 더 불편하다. 영어책끼리 이웃하지 않도록 꽂는 사건의 여사건은 영어책 중 2권만 서로 이웃하도록 꽂는 경우와
+                영어책 3권을 연이어 꽂는 경우로 나누어진다.<br>
+                영어책 중 2권만 서로 이웃하도록 꽂는 경우의 수는<br>
+                이웃할 영어책 2권을 택하고, 수학책 4권을 배열하고, 수학책의 양 끝과 사이사이의 5개의 자리 중 2개를 택하여 이웃하는 영어책 2권과 남은 영어책 1권을
+                놓고, 이웃하는 영어책 2권을 배열하면<br>
+                \({}_3\mathrm{C}_2\times4!\times{}_5\mathrm{P}_2\times2!=2880\)<br>
+                영어책 3권을 연이어 꽂는 경우의 수는<br>
+                영어책 3권을 영어책 1권으로 보고 수학책 4권과 함께 일렬로 나열하고, 영어책 3권을 배열하면<br>
+                \(5!\times3!=720\)<br>
+                수학책 4권과 영어책 3권을 꽂는 모든 경우의 수는<br>
+                \(7!=5040\)<br>
+                이므로<br>
+                \(5040-2880-720=1440\)<br>
+                이다.<br>
+                영어책이 4권 이상이면 영어책끼리 이웃하지 않는 사건의 여사건은 더 많은 케이스로 나누어진다.
+            </div>
+
+            <div class="callout">
+                <span class="tag">REMARK 3</span><br>
+                2개가 서로 이웃하지 않는 것의 여사건은 2개가 서로 이웃하는 것이지만, 3개가 서로 이웃하지 않는 것의 여사건은 3개가 연이어 있는 것이 아니다. 3개 중 어느
+                2개만 서로 이웃하는 경우가 있기 때문이다. 일반적으로 \(r\ge3\)일 때 \(r\)개가 서로 이웃하지 않는 것의 여사건은 \(r\)개가 연이어 있는 것이 아니다.<br>
+                따라서 2개가 서로 이웃하지 않는 것은 여사건인 2개가 서로 이웃하는 것을 이용해도 좋지만,<br>
+                3개 이상이 서로 이웃하지 않는 것은 다른 것을 우선 배열한 후 양 끝과 사이사이에 이웃하지 않는 것을 배열하는 원칙을 지키자.<br>
+                뒤에서 배우는 중복조합을 이용하면 이웃하지 않는 것을 우선 배열하고 양 끝과 사이사이에 남은 것을 배열할 수도 있다.
+            </div>
+        </section>
+
+        <section class="note">
+            <h2>#9 곱셈의 두 가지 의미</h2>
+
+            <h3>4. 곱셈의 두 가지 의미</h3>
+            <p>경우의 수에서의 곱셈은 주로
+                <span style="display:block;margin:6px 0 6px 2em">① <strong>행위의 연속성</strong>&nbsp;&nbsp;&nbsp;&nbsp;② <strong>순서 부여</strong></span>
+                의 의미를 갖고 있다.<br>
+                행위의 연속성이란 잇달아 발생하는 사건들 전체가 주어진 조건을 만족시킬 때까지 곱셈을 하는 것이고,<br>
+                경우의 수에서 곱셈은 모두 이러한 행위의 연속성의 의미를 갖는다.<br>
+                그러나 경우의 수에서 곱셈이 항상 순서 부여의 의미를 갖는 것은 아니다. 이는 집합의 구분에 따라<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;같은 집합에서 같은 개수로 잇달아 선택할 때의 곱셈 \(\Rightarrow\) 행위의 연속성, 순서 부여<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;같은 집합에서 다른 개수로 잇달아 선택할 때의 곱셈 \(\Rightarrow\) 행위의 연속성<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;다른 집합에서 선택할 때의 곱셈 \(\Rightarrow\) 행위의 연속성<br>
+                으로 구분해 볼 수 있다.</p>
+            <p>간단한 예로 2명의 남자 A, B와 3명의 여자 C, D, E 중에서<br>
+                남자 2명을 대표로 뽑는 경우의 수
+                \[ 2\times1\,(={}_2\mathrm{C}_1\times{}_1\mathrm{C}_1) \]
+                은 잘못된 계산이다. 같은 집합에서 같은 개수로 잇달아 선택할 때의 곱셈이므로 순서가 부여된다. 예를 들어 남자 A는 이 계산의 첫 번째 자리와 두 번째 자리에
+                모두 올 수 있고, 이를 다른 경우로 보기 때문이다. 이를 바로 잡으려면 뽑힌 2명의 순서를 무시하기 위해 \(2!\)로 나누어야 한다.
+                \(\left(\dfrac{2\times1}{2!}\right)\)<br>
+                남자 1명, 여자 1명을 대표로 뽑는 경우의 수
+                \[ 2\times3\,(={}_2\mathrm{C}_1\times{}_3\mathrm{C}_1) \]
+                은 올바른 계산이다. 다른 집합에서 선택할 때의 곱셈이므로 순서는 부여되지 않고 행위의 연속성의 의미만 갖는다. 예를 들어 남자 A는 이 계산의 두 번째 자리에
+                오지 못하고, 여자 C는 이 계산의 첫 번째 자리에 오지 못한다.<br>
+                남자 1명, 여자 2명을 대표로 뽑는 경우의 수
+                \[ 2\times(3\times2) \]
+                에서 첫 번째 곱셈은 다른 집합에서 선택하는 것이므로 순서는 부여되지 않고 행위의 연속성의 의미만 가지는 올바른 계산이다. 두 번째 곱셈은 같은 집합에서
+                같은 개수로 잇달아 선택하는 것이므로 순서가 부여된 잘못된 계산이다. 이를 바로 잡으려면 뽑힌 여자 2명의 순서를 무시하기 위해 \(2!\)로 나누어야 한다.
+                \(\left(2\times\dfrac{3\times2}{2!}\right)\)<br>
+                여자 3명을 2명, 1명으로 나누는 경우의 수
+                \[ {}_3\mathrm{C}_2\times{}_1\mathrm{C}_1 \]
+                은 올바른 계산이다. 같은 집합에서의 선택이지만 개수가 다르므로 순서는 부여되지 않고 행위의 연속성의 의미만 갖는다. 함께 묶인 2명은 이 계산의 두 번째
+                자리에 오지 못하고, 남은 1명은 이 계산의 첫 번째 자리에 오지 못한다. 생각의 순서를 바꿔서 \({}_3\mathrm{C}_1\times{}_2\mathrm{C}_2\)로 계산해도
+                마찬가지이다.</p>
+            <p>이번에는 5명을 성별을 구분하지 않고 2명, 2명, 1명으로 나누는 경우의 수를 생각해보자.
+                \[ {}_5\mathrm{C}_2\times{}_3\mathrm{C}_2\times{}_1\mathrm{C}_1 \]
+                에서 첫 번째 곱셈은 잘못된 계산이고 두 번째 곱셈은 올바른 계산이다. 성별을 구분하지 않으므로 첫 번째 곱셈은 같은 집합에서 같은 개수로 잇달아 선택하는
+                것이고 순서가 부여된다. 예를 들어 함께 묶인 A, C는 이 계산의 첫 번째 자리와 두 번째 자리에 모두 올 수 있고, 이를 다른 경우로 보기 때문이다. 이를 바로
+                잡으려면 앞의 2명과 뒤의 2명의 순서를 무시하기 위해 \(2!\)로 나누어야 한다. 두 번째 곱셈은 같은 집합에서의 선택이지만 개수가 다르므로 순서는 부여되지
+                않고 행위의 연속성의 의미만 갖는다. \(\left(\dfrac{{}_5\mathrm{C}_2\times{}_3\mathrm{C}_2}{2!}\times{}_1\mathrm{C}_1\right)\)</p>
+        </section>
+
+        <section class="note">
+            <h2>#10 분할과 분배</h2>
+
+            <h3>5. 분할과 분배</h3>
+            <h4>1) 분할</h4>
+            <p>서로 다른 5개를 2개와 3개의 두 그룹, 1개와 2개와 2개의 세 그룹 등으로 나누는 것과 같이 서로 다른 \(n\)개를 몇 개의 그룹으로 나누는 것을 '분할'이라
+                하기로 하고, 분할은 그룹 내의 순서와 그룹 간의 순서를 모두 구별하지 않는 개념으로 사용하기로 하자.<br>
+                분할에서 각 그룹을 만드는 경우의 수는 그룹 내의 순서를 구별하지 않으므로 조합으로 계산하게 된다. 이때 구성원의 수가 같은 그룹이 \(k\)개 있으면 \(k!\)로
+                나눈다. 구성원의 수가 같은 \(k\)개의 그룹 간의 순서 역시 구별하지 않기 때문이다.<br>
+                ① 그룹 내의 순서 무시: \({}_n\mathrm{C}_r\)<br>
+                ② 그룹 간의 순서 무시: 구성원의 수가 같은 집합이 \(k\)개일 때 \(\times\dfrac{1}{k!}\)</p>
+
+            <p><strong>[예1]</strong> ① 서로 다른 6개를 3개, 2개, 1개로 분할하는 경우의 수는<br>
+                \({}_6\mathrm{C}_3\times{}_3\mathrm{C}_2\times{}_1\mathrm{C}_1\)<br>
+                ② 서로 다른 5개를 2개, 2개, 1개로 분할하는 경우의 수는
+                \[ \dfrac{{}_5\mathrm{C}_2\times{}_3\mathrm{C}_2\times{}_1\mathrm{C}_1}{2!} \]
+                ③ 서로 다른 11개를 3개, 2개, 2개, 2개, 1개, 1개로 분할하는 경우의 수는
+                \[ \dfrac{{}_{11}\mathrm{C}_3\times{}_8\mathrm{C}_2\times{}_6\mathrm{C}_2\times{}_4\mathrm{C}_2\times{}_2\mathrm{C}_1\times{}_1\mathrm{C}_1}{3!\times2!} \]</p>
+
+            <h4>2) 분배</h4>
+            <p>분할된 그룹 간의 순서를 부여하는 것을 '분배'라 하기로 하자.<br>
+                분할은 선택만으로 '구성'하는 단계로, 분배는 순서를 부여하여 '나열'하는 단계로 명확히 구분하면 순서를 부여하지 않거나 순서를 이중 부여하는 실수를 방지할
+                수 있다.<br>
+                분할과 분배는 다음과 같은 문제 상황에서 활용될 수 있다.</p>
+
+            <p><strong>[예2]</strong> 5명을 3개의 조로 나누어 서로 다른 4개의 지역 중 3개의 지역에 봉사 활동을 보내는 경우의 수를 구해보자.<br>
+                우선 3명, 1명, 1명 또는 2명, 2명, 1명의 3개의 조로 분할하면
+                \[ \dfrac{{}_5\mathrm{C}_3\times{}_2\mathrm{C}_1\times{}_1\mathrm{C}_1}{2!}+\dfrac{{}_5\mathrm{C}_2\times{}_3\mathrm{C}_2\times{}_1\mathrm{C}_1}{2!}=10+15=25 \]
+                4개의 지역 중 3개의 지역을 골라 3개의 조에 각각 분배하면<br>
+                \({}_4\mathrm{P}_3=4\times3\times2=24\)<br>
+                \(\therefore\ 25\times24=600\)</p>
+        </section>
+
+        <section class="note">
+            <h2>#11 중복순열의 뜻과 계산</h2>
+
+            <h3>1. 중복순열의 뜻과 계산</h3>
+            <p>'공통수학1'에서 다룬 순열은 서로 다른 것의 나열이었다. 여기에 '중복'을 허락한 것이 중복순열이다.<br>
+                순열에서와 마찬가지로 중복순열의 수도 곱의 법칙의 관점에서 다루는 것이 기본이다.</p>
+            <p>예를 들어 두 개의 숫자 1, 2 중에서 중복을 허락하여 4개를 택해 일렬로 나열하여 만들 수 있는 네 자리의 자연수의 개수에 대하여 알아보자.<br>
+                천의 자리, 백의 자리, 십의 자리, 일의 자리에 모두 2가지가 올 수 있으므로 구하는 네 자리의 자연수의 개수는 곱의 법칙에 의하여
+                \[ 2\times2\times2\times2=2^4=16 \]
+                이다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 314 78" style="max-width:471px;width:471px"><rect x="10" y="6" width="56" height="30" rx="3" style="fill:var(--accent-soft);stroke:var(--line)" /><foreignObject x="10" y="8" width="56" height="30"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);line-height:1.1">천의<br>자리</div></foreignObject><foreignObject x="6" y="42" width="64" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center">↑<br>2가지</div></foreignObject><rect x="86" y="6" width="56" height="30" rx="3" style="fill:var(--accent-soft);stroke:var(--line)" /><foreignObject x="86" y="8" width="56" height="30"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);line-height:1.1">백의<br>자리</div></foreignObject><foreignObject x="82" y="42" width="64" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center">↑<br>2가지</div></foreignObject><rect x="162" y="6" width="56" height="30" rx="3" style="fill:var(--accent-soft);stroke:var(--line)" /><foreignObject x="162" y="8" width="56" height="30"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);line-height:1.1">십의<br>자리</div></foreignObject><foreignObject x="158" y="42" width="64" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center">↑<br>2가지</div></foreignObject><rect x="238" y="6" width="56" height="30" rx="3" style="fill:var(--accent-soft);stroke:var(--line)" /><foreignObject x="238" y="8" width="56" height="30"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);line-height:1.1">일의<br>자리</div></foreignObject><foreignObject x="234" y="42" width="64" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center">↑<br>2가지</div></foreignObject></svg>
+</figure>
+            </div>
+            <p>이와 같이 서로 다른 \(n\)개에서 중복을 허락하여 \(r\)개를 택하는 순열을 <strong>중복순열</strong>이라 하고, 이 중복순열의 수를 기호로
+                \[ \boldsymbol{{}_n\Pi_r} \]
+                과 같이 나타낸다.<br>
+                서로 다른 \(n\)개에서 중복을 허락하여 \(r\)개를 택하여 일렬로 나열할 때, 각 자리에 올 수 있는 것은 모두 \(n\)가지이다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 400 70" style="max-width:600px;width:600px"><rect x="10" y="6" width="64" height="30" rx="14" style="fill:var(--accent-soft);stroke:var(--line)" /><foreignObject x="10" y="8" width="64" height="30"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);line-height:1.1">첫 번째</div></foreignObject><foreignObject x="6" y="42" width="72" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center">\(n\)가지</div></foreignObject><rect x="88" y="6" width="64" height="30" rx="14" style="fill:var(--accent-soft);stroke:var(--line)" /><foreignObject x="88" y="8" width="64" height="30"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);line-height:1.1">두 번째</div></foreignObject><foreignObject x="84" y="42" width="72" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center">\(n\)가지</div></foreignObject><rect x="166" y="6" width="64" height="30" rx="14" style="fill:var(--accent-soft);stroke:var(--line)" /><foreignObject x="166" y="8" width="64" height="30"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);line-height:1.1">세 번째</div></foreignObject><foreignObject x="162" y="42" width="72" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center">\(n\)가지</div></foreignObject><foreignObject x="254.0" y="10.0" width="40" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\cdots\)</div></foreignObject><foreignObject x="254.0" y="44.0" width="40" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\cdots\)</div></foreignObject><rect x="322" y="6" width="64" height="30" rx="14" style="fill:var(--accent-soft);stroke:var(--line)" /><foreignObject x="322" y="8" width="64" height="30"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);line-height:1.1">\(r\)번째</div></foreignObject><foreignObject x="318" y="42" width="72" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center">\(n\)가지</div></foreignObject></svg>
+</figure>
+            </div>
+            <p>따라서 곱의 법칙에 의하여 다음이 성립함을 알 수 있다.
+                \[ {}_n\Pi_r=\underbrace{n\times n\times n\times\cdots\times n}_{r\text{개}}=n^r \]
+                이상을 정리하면 다음과 같다.</p>
+
+            <div class="callout">
+                <span class="tag">중복순열의 수</span><br>
+                서로 다른 \(n\)개에서 \(r\)개를 택하는 중복순열의 수는
+                \[ {}_n\Pi_r=n^r \]
+            </div>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                \({}_n\Pi_r\)의 \(\Pi\)는 곱을 뜻하는 'Product'의 첫 글자 P에 해당하는 그리스 문자로 '파이'라고 읽는다.
+            </div>
+
+            <div class="callout">
+                <span class="tag">REMARK 1</span><br>
+                \({}_n\mathrm{P}_r\)에서는 \(0\le r\le n\)이어야 하지만, \({}_n\Pi_r\)에서는 중복을 허락하기 때문에 \(r&gt;n\)일 수 있다.
+            </div>
+
+            <p><strong>[예1]</strong> 문자 \(a,\ b,\ c\) 중에서 중복을 허락하여 4개를 택하는 중복순열의 수는<br>
+                \({}_3\Pi_4=3^4=81\)</p>
+            <div class="callout">
+                <span class="tag">REMARK 2</span><br>
+                서로 다른 \(n\)개에서 \(r\)개를 택하는 중복순열에 조건이 추가되면 단순히 \({}_n\Pi_r\)로 나타내고 계산할 수 없는 경우가 대부분이다.<br>
+                이때는 조건 우선으로 순서대로 각 자리의 경우의 수를 생각해서 '곱의 법칙'을 적용하도록 한다.<br>
+                경우의 수가 일반적으로 곱의 법칙에 기반을 둔 것이기도 하고, 특히 중복순열은 기계적인 적용보다는 곱의 법칙의 관점으로 다루는 것이 유리할 때가 많다.
+                간혹 \(n^r\)인지 \(r^n\)인지 헷갈릴 때도 있는데, 이 역시 곱의 법칙으로 조금 써보다 보면 쉽게 가닥을 잡을 수 있고, '선택 대상의 개수'가 \(n\)이라고
+                기억하는 것도 좋다.
+            </div>
+
+            <p><strong>[예2]</strong> 숫자 1, 2, 3, 4, 5 중에서 중복을 허락하여 3개를 택해 일렬로 나열하여 만든 세 자리의 자연수 중 5의 배수의 개수를 구해보자.<br>
+                백의 자리, 십의 자리의 수는 각각 1, 2, 3, 4, 5 중에서 1개를 택하고 일의 자리의 수는 5이므로<br>
+                \(5^2\times1=25\)</p>
+
+            <p><strong>[예3]</strong> 숫자 0, 1, 2, 3, 4 중에서 중복을 허락하여 4개를 택해 일렬로 나열하여 만들 수 있는 네 자리의 자연수 중 짝수의 개수를 구해보자.<br>
+                천의 자리의 수는 1, 2, 3, 4 중에서 1개, 백의 자리, 십의 자리의 수는 각각 0, 1, 2, 3, 4 중에서 1개, 일의 자리의 수는 0, 2, 4 중에서 1개를 택하면
+                되므로<br>
+                \(4\times5^2\times3=300\)</p>
+        </section>
+
+        <section class="note">
+            <h2>#12 ~을 포함하는 중복순열</h2>
+
+            <h3>2. ~을 포함하는 중복순열</h3>
+            <p>~을 포함하는 중복순열은 아무리 단순한 조건이라도 직접 다루기 복잡할 때가 많다. 따라서 반드시 여사건을 생각해보도록 한다.</p>
+
+            <p><strong>[예1]</strong> 숫자 1, 2, 3, 4, 5 중에서 중복을 허락하여 3개를 택해 일렬로 나열하여 세 자리의 자연수를 만들 때, 다음 자연수의 개수를
+                구해보자.<br>
+                ① 1을 포함하는 자연수의 개수<br>
+                1을 제외하고 2, 3, 4, 5를 중복 사용하여 만들 수 있는 세 자리의 자연수의 개수는 \(4^3\)<br>
+                \(\therefore\ 5^3-4^3=61\)<br>
+                ② 1 또는 2를 포함하는 자연수의 개수<br>
+                1, 2를 모두 제외하고 3, 4, 5를 중복 사용하여 만들 수 있는 세 자리의 자연수의 개수는 \(3^3\)<br>
+                \(\therefore\ 5^3-3^3=98\)<br>
+                ③ 1, 2를 모두 포함하는 자연수의 개수<br>
+                1 또는 2를 제외하고 만들 수 있는 세 자리의 자연수의 개수는 \(4^3+4^3-3^3\)<br>
+                \(\therefore\ 5^3-(4^3+4^3-3^3)=24\)</p>
+
+            <div class="callout">
+                <span class="tag">REMARK · 어떤 범위의 자연수와 중복순열</span><br>
+                어떤 범위의 자연수에 대해 다룰 때 중복순열을 이용해야 할 때가 많다. 어떤 범위의 자연수의 개수를 직접 셀 수도 있지만 각 자리의 경우의 수로
+                구분해보면 중복순열로 계산되기 때문이다.<br>
+                예를 들어 1부터 999까지의 자연수의 개수는<br>
+                0을 사용하지 못하는 경우를 감안하여 한 자리의 수 9, 두 자리의 수 \(9\times10\), 세 자리의 수 \(9\times10\times10\)에서
+                <span style="display:block;margin:6px 0 6px 2em">\(9+9\times10+9\times10\times10\)</span>
+                으로 계산하거나, 모든 자리에 0까지 사용한다고 생각한 후 000을 제외하여
+                <span style="display:block;margin:6px 0 6px 2em">\(10\times10\times10-1\)</span>
+                로 계산할 수 있다. (이때 002는 2, 020은 20 등으로 생각하면 된다.)
+            </div>
+
+            <p><strong>[예2]</strong> 각 자리의 수 중 적어도 하나가 1인 세 자리의 자연수의 개수를 구해보자.<br>
+                세 자리의 자연수의 개수는<br>
+                \(9\times10\times10=900\)<br>
+                각 자리의 수가 모두 1이 아닌 세 자리의 자연수의 개수는<br>
+                \(8\times9\times9=648\)<br>
+                \(\therefore\ 900-648=252\)</p>
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                앞의 [예2]는 여사건을 이용하지 않고 다음과 같이 1의 개수에 따라 케이스를 구분하는 방법으로 풀면 더 복잡해진다.<br>
+                각 자리의 수 중 1개가 1인 세 자리의 자연수의 개수는<br>
+                백의 자리의 수가 1이면 십의 자리, 일의 자리의 수는 각각 \(0,\ 2,\ 3,\ \cdots,\ 9\) 중에서 중복을 허락하여 택하면 되고,<br>
+                십의 자리와 일의 자리 중 한 자리의 수가 1이면 백의 자리의 수는 \(2,\ 3,\ 4,\ \cdots,\ 9\) 중에서, 십의 자리와 일의 자리 중 남은 한 자리의 수는
+                \(0,\ 2,\ 3,\ \cdots,\ 9\) 중에서 중복을 허락하여 택하면 되므로<br>
+                \(9^2+2\times8\times9=225\)<br>
+                각 자리의 수 중 2개가 1인 세 자리의 자연수의 개수는<br>
+                백의 자리의 수가 1이고 십의 자리와 일의 자리 중 한 자리의 수가 1이면 십의 자리와 일의 자리 중 남은 한 자리의 수는 \(0,\ 2,\ 3,\ \cdots,\ 9\) 중에서
+                택하면 되고,<br>
+                십의 자리와 일의 자리의 수가 1이면 백의 자리의 수는 \(2,\ 3,\ 4,\ \cdots,\ 9\) 중에서 택하면 되므로<br>
+                \(2\times9+8=26\)<br>
+                모든 자리의 수가 1인 세 자리의 자연수의 개수는<br>
+                1<br>
+                \(\therefore\ 225+26+1=252\)
+            </div>
+        </section>
+
+        <section class="note">
+            <h2>#13 함수의 개수</h2>
+
+            <h3>3. 함수의 개수</h3>
+            <p>두 집합 \(X\)와 \(Y\)에 대하여 \(n(X)=a,\ n(Y)=b\)일 때, \(X\)에서 \(Y\)로의 함수 \(f\)의 개수는 다음과 같다.<br>
+                ① 모든 함수 \(f\)의 개수는<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\({}_b\Pi_a\ \Rightarrow\) 곱의 법칙 (중복순열)<br>
+                ② 상수함수 \(f\)의 개수는<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(b\)<br>
+                ③ \(a\le b\)일 때, \(x_1\ne x_2\)이면 \(f(x_1)\ne f(x_2)\)인 함수 \(f\)(일대일함수)의 개수는<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\({}_b\mathrm{P}_a\ \Rightarrow\) 곱의 법칙 (순열)<br>
+                &nbsp;&nbsp;\(a=b\)일 때, \(x_1\ne x_2\)이면 \(f(x_1)\ne f(x_2)\)인 함수 \(f\)(일대일대응)의 개수는<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(b!\ \Rightarrow\) 곱의 법칙 (순열)<br>
+                ④ \(x_1&lt;x_2\)이면 \(f(x_1)&lt;f(x_2)\) (또는 \(f(x_1)&gt;f(x_2)\))인 함수 \(f\)의 개수는<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\({}_b\mathrm{C}_a\) (단, \(a\le b\)) \(\Rightarrow\) 순서가 정해진 배열 (조합)</p>
+
+            <p><strong>[예1]</strong> 두 집합 \(X=\{1,\ 2,\ 3\},\ Y=\{4,\ 5,\ 6,\ 7,\ 8\}\)에 대하여 다음과 같은 함수 \(f:X\to Y\)의 개수를 구해보자.<br>
+                ① 모든 함수 \(f\)의 개수는<br>
+                \({}_5\Pi_3=5^3=125\)<br>
+                ② \(x_1\ne x_2\)이면 \(f(x_1)\ne f(x_2)\)인 함수 \(f\)의 개수는<br>
+                \({}_5\mathrm{P}_3=5\times4\times3=60\)<br>
+                ③ \(x_1&lt;x_2\)이면 \(f(x_1)&gt;f(x_2)\)인 함수 \(f\)의 개수는<br>
+                \({}_5\mathrm{C}_3=10\)</p>
+
+            <div class="callout">
+                <span class="tag">REMARK 1</span><br>
+                함수의 개수에 관한 문제는 위의 기본 계산을 바탕으로 하되, 조건에 따라 정의역의 각 원소가 대응하는 방법의 수에 대하여 곱의 법칙을 이용하는 것이
+                기본이다. 위의 내용을 단순히 암기해서는 안 된다.
+            </div>
+
+            <div class="callout">
+                <span class="tag">REMARK 2 · 대응의 문제: 짝짓기</span><br>
+                한 집단의 각 개체가 다른 집단의 개체에 하나씩 대응하는 것은 함수의 개수를 구하는 것과 같이 생각할 수 있다.<br>
+                특히 인원수가 \(n\)으로 같은 두 집단 A, B를 A의 한 명과 B의 한 명으로 이루어진 \(n\)개의 조로 나누는 경우의 수는 '일대일대응'의 개수를 구하는 것과
+                같으므로 \(n!\)이다. (\(n\)명 : \(n\)명의 짝짓기 \(\Rightarrow n!\)가지)
+            </div>
+
+            <div class="callout">
+                <span class="tag">REMARK 3 · 치역의 원소의 개수의 조건</span><br>
+                두 집합 \(X\)와 \(Y\)에 대하여 \(n(X)=a,\ n(Y)=b\)일 때, \(X\)에서 \(Y\)로의 함수 \(f\) 중에서<br>
+                ① \(a\ge2,\ b\ge2\)일 때, 치역의 원소의 개수가 2인 함수 \(f\)의 개수<br>
+                공역 \(Y\)의 원소 중에서 2개를 택하는 경우의 수는 \({}_b\mathrm{C}_2\)이고,<br>
+                이때 택한 2개의 원소가 정의역 \(X\)의 원소에 대응하는 모든 경우에서 치역의 원소의 개수가 1인 경우를 제외한 경우의 수는 \(2^a-2\)이므로
+                <span style="display:block;margin:6px 0 6px 2em">\({}_b\mathrm{C}_2\times(2^a-2)\)</span>
+                ② \(a\ge3,\ b\ge3\)일 때, 치역의 원소의 개수가 3인 함수 \(f\)의 개수<br>
+                공역 \(Y\)의 원소 중에서 3개를 택하는 경우의 수는 \({}_b\mathrm{C}_3\)이고,<br>
+                이때 택한 3개의 원소가 정의역 \(X\)의 원소에 대응하는 모든 경우에서 치역의 원소의 개수가 2인 경우와 치역의 원소의 개수가 1인 경우를 제외한 경우의
+                수는 \(3^a-{}_3\mathrm{C}_2\times(2^a-2)-3\)이므로
+                <span style="display:block;margin:6px 0 6px 2em">\({}_b\mathrm{C}_3\times\{3^a-{}_3\mathrm{C}_2\times(2^a-2)-3\}\)</span>
+            </div>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                치역의 원소의 개수의 조건은 정의역의 원소의 개수가 적당히 작은 경우에는 조합을 활용한 분할과 분배로 다룰 수도 있다.
+            </div>
+
+            <p><strong>[예2]</strong> 집합 \(X=\{1,\ 2,\ 3,\ 4\}\)에서 집합 \(Y=\{1,\ 2,\ 3,\ 4,\ 5\}\)로의 함수 \(f\) 중에서<br>
+                ① 치역의 원소의 개수가 2인 함수 \(f\)의 개수는<br>
+                \({}_5\mathrm{C}_2\times(2^4-2)=140\)<br>
+                \(\Rightarrow\) 다음과 같이 조합을 활용한 분할과 분배로 다룰 수 있다.<br>
+                치역의 원소를 2개 선택하는 경우의 수는<br>
+                \({}_5\mathrm{C}_2=10\)<br>
+                정의역의 원소를 1개, 3개 또는 2개, 2개의 두 그룹으로 분할하고, 분할한 두 그룹에 치역의 원소가 1개씩 대응하도록 분배하는 경우의 수는
+                \[ \left({}_4\mathrm{C}_1\times{}_3\mathrm{C}_3+\dfrac{{}_4\mathrm{C}_2\times{}_2\mathrm{C}_2}{2!}\right)\times2!=14 \]
+                \(\therefore\ 10\times14=140\)<br>
+                ② 치역의 원소의 개수가 3인 함수 \(f\)의 개수는<br>
+                \({}_5\mathrm{C}_3\times\{3^4-{}_3\mathrm{C}_2\times(2^4-2)-3\}=360\)<br>
+                \(\Rightarrow\) 다음과 같이 조합을 활용한 분할과 분배로 다룰 수 있다.<br>
+                치역의 원소를 3개 선택하는 경우의 수는<br>
+                \({}_5\mathrm{C}_3=10\)<br>
+                정의역의 원소를 1개, 1개, 2개의 세 그룹으로 분할하고, 분할한 세 그룹에 치역의 원소가 1개씩 대응하도록 분배하는 경우의 수는
+                \[ \dfrac{{}_4\mathrm{C}_1\times{}_3\mathrm{C}_1\times{}_2\mathrm{C}_2}{2!}\times3!=36 \]
+                \(\therefore\ 10\times36=360\)</p>
+        </section>
+
+        <section class="note">
+            <h2>#14 분할의 상황 구분</h2>
+
+            <h3>4. 분할의 상황 구분</h3>
+            <p>예를 들어 서로 다른 공을 상자에 나누어 넣는 경우의 수를 구할 때, 상자가 서로 같은 것인지 서로 다른 것인지에 따라 조합과 중복순열 중 어느 것을
+                이용할지 구분해야 한다.</p>
+            <p>① 서로 다른 5개의 공을 서로 <u>같은</u> 3개의 상자에 나누어 넣을 때<br>
+                상자가 서로 같으므로 공을 분할하기만 하면 된다.<br>
+                빈 상자가 없다면<br>
+                5개의 공을 3개, 1개, 1개 또는 2개, 2개, 1개로 분할하여 3개의 상자에 넣으면 되므로
+                \[ \dfrac{{}_5\mathrm{C}_3\times{}_2\mathrm{C}_1\times{}_1\mathrm{C}_1}{2!}+\dfrac{{}_5\mathrm{C}_2\times{}_3\mathrm{C}_2\times{}_1\mathrm{C}_1}{2!}=25 \]
+                \(\Rightarrow\) 조합을 활용한 분할<br>
+                빈 상자가 있을 수 있다면<br>
+                5개의 공을 어느 1개의 상자에 모두 넣거나, 5개의 공을 4개, 1개 또는 3개, 2개로 분할하여 어느 2개의 상자에 넣거나, 5개의 공을 3개, 1개, 1개 또는 2개,
+                2개, 1개로 분할하여 3개의 상자에 넣으면 되므로
+                \[ {}_5\mathrm{C}_5+{}_5\mathrm{C}_4\times{}_1\mathrm{C}_1+{}_5\mathrm{C}_3\times{}_2\mathrm{C}_2+\dfrac{{}_5\mathrm{C}_3\times{}_2\mathrm{C}_1\times{}_1\mathrm{C}_1}{2!}
+                +\dfrac{{}_5\mathrm{C}_2\times{}_3\mathrm{C}_2\times{}_1\mathrm{C}_1}{2!}=41 \]
+                \(\Rightarrow\) 조합을 활용한 분할</p>
+            <p>② 서로 다른 5개의 공을 서로 <u>다른</u> 3개의 상자에 나누어 넣을 때<br>
+                상자가 서로 다르므로 공을 분할한 후 어느 상자에 넣을지 순서를 정해주어야 한다.<br>
+                빈 상자가 없다면<br>
+                5개의 공을 3개, 1개, 1개 또는 2개, 2개, 1개로 분할하여 각각을 3개의 상자 중 어느 상자에 넣을지 순서를 정해 주어야 하므로
+                \[ \dfrac{{}_5\mathrm{C}_3\times{}_2\mathrm{C}_1\times{}_1\mathrm{C}_1}{2!}\times3!+\dfrac{{}_5\mathrm{C}_2\times{}_3\mathrm{C}_2\times{}_1\mathrm{C}_1}{2!}\times3!=150 \]
+                \(\Rightarrow\) 조합을 활용한 분할과 분배<br>
+                \(\Rightarrow\) 치역이 공역과 같은, 즉 치역의 원소의 개수가 3인 함수의 개수를 구하는 것과 같고,
+                \({}_3\mathrm{C}_3\times\{3^5-{}_3\mathrm{C}_2\times(2^5-2)-3\}=150\)으로 계산할 수도 있다.<br>
+                빈 상자가 있을 수 있다면<br>
+                5개의 공 각각이 3개의 상자 중 하나를 선택하면 되므로<br>
+                \(3\times3\times3\times3\times3=3^5={}_3\Pi_5=243\ \Rightarrow\) 중복순열 (함수의 개수)<br>
+                \(\Rightarrow\) 모든 함수의 개수를 구하는 것과 같고 치역의 원소의 개수가 1, 2, 3인 함수를 모두 포함한다.</p>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                '서로 다른 것'을 '서로 다른 것'에 나누어 주는 상황은 함수의 개수를 구하는 상황으로 이해할 수 있다.
+            </div>
+
+            <div class="callout">
+                <span class="tag">REMARK</span><br>
+                '서로 다른 것'을 '서로 다른 것'에 나누어 줄 때, 몰빵이 가능하다는 조건이 있으면, 즉 '빈 상자, 빈 주머니가 있을 수 있다, 못 받는 사람이 있을 수 있다' 등의
+                표현이 있으면 중복순열의 상황임을 분명히 기억해야 한다. 중복순열을 사용하지 않는다면 조합을 활용한 분할과 분배의 방법으로 다룰 수밖에 없는데, 이렇게
+                되면 무척 슬퍼진다.<br>
+                예를 들어 서로 다른 5개의 공을 3명에게 나누어 줄 때 못 받는 사람이 있을 수 있는 경우의 수를 조합을 활용한 분할과 분배의 방법으로 다룬다면, 공을 5개,
+                0개, 0개 또는 4개, 1개, 0개 또는 3개, 2개, 0개 또는 3개, 1개, 1개 또는 2개, 2개, 1개로 분할한 후 3명에게 분배하는 것으로 계산해야 한다.
+                \(3^5=243\)으로 계산하면 될 것을…
+            </div>
+        </section>
+
+        <section class="note">
+            <h2>#15 같은 것이 있는 순열의 뜻과 계산</h2>
+
+            <h3>1. 같은 것이 있는 순열의 뜻과 계산</h3>
+            <p>5개의 문자 \(a,\ a,\ a,\ b,\ b\)를 일렬로 배열하는 순열을 생각해보자.<br>
+                3개의 \(a\)를 \(a_1,\ a_2,\ a_3\), 2개의 \(b\)를 \(b_1,\ b_2\)라 하고, 모두 서로 다른 것으로 생각하여 일렬로 배열하는 순열의 수는 \(5!\)이다.<br>
+                이때 \(5!\)가지 중 다음과 같은 \(3!\,2!\)가지의 순열은 모두 \(aaabb\)와 같다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 394 172" style="max-width:394px"><rect x="60" y="6" width="104" height="128" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="64.0" y="8.0" width="100" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(a_1\,a_2\,a_3\,b_1\,b_2\)</div></foreignObject><foreignObject x="64.0" y="28.0" width="100" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(a_1\,a_3\,a_2\,b_1\,b_2\)</div></foreignObject><foreignObject x="64.0" y="48.0" width="100" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(a_2\,a_1\,a_3\,b_1\,b_2\)</div></foreignObject><foreignObject x="64.0" y="68.0" width="100" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(a_2\,a_3\,a_1\,b_1\,b_2\)</div></foreignObject><foreignObject x="64.0" y="88.0" width="100" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(a_3\,a_1\,a_2\,b_1\,b_2\)</div></foreignObject><foreignObject x="64.0" y="108.0" width="100" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(a_3\,a_2\,a_1\,b_1\,b_2\)</div></foreignObject><rect x="172" y="6" width="104" height="128" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="176.0" y="8.0" width="100" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(a_1\,a_2\,a_3\,b_2\,b_1\)</div></foreignObject><foreignObject x="176.0" y="28.0" width="100" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(a_1\,a_3\,a_2\,b_2\,b_1\)</div></foreignObject><foreignObject x="176.0" y="48.0" width="100" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(a_2\,a_1\,a_3\,b_2\,b_1\)</div></foreignObject><foreignObject x="176.0" y="68.0" width="100" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(a_2\,a_3\,a_1\,b_2\,b_1\)</div></foreignObject><foreignObject x="176.0" y="88.0" width="100" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(a_3\,a_1\,a_2\,b_2\,b_1\)</div></foreignObject><foreignObject x="176.0" y="108.0" width="100" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(a_3\,a_2\,a_1\,b_2\,b_1\)</div></foreignObject><path d="M54,8 Q46,8 46,70 Q46,132 54,132" style="fill:none;stroke:var(--text)" /><foreignObject x="8.0" y="60.0" width="40" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(3!\)가지</div></foreignObject><path d="M62,140 Q62,148 168,148 Q274,148 274,140" style="fill:none;stroke:var(--text)" /><foreignObject x="150.0" y="150.0" width="50" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(2!\)가지</div></foreignObject><foreignObject x="284.0" y="60.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\Rightarrow\)</div></foreignObject><rect x="306" y="58" width="80" height="24" style="fill:none;stroke:var(--text)" /><foreignObject x="312.0" y="60.0" width="74" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(a\ a\ a\ b\ b\)</div></foreignObject></svg>
+</figure>
+            </div>
+            <p>이와 같이 생각하면 \(5!\)가지 중 \(3!\,2!\)가지씩을 묶어서 1가지로 생각하게 되므로 3개의 \(a\)와 2개의 \(b\)를 일렬로 배열하는 순열의 수는
+                \[ \dfrac{5!}{3!\,2!} \]
+                이다.<br>
+                이상을 정리하면 다음과 같다.</p>
+
+            <div class="callout">
+                <span class="tag">같은 것이 있는 순열의 수</span><br>
+                \(n\)개 중에 서로 같은 것이 각각 \(p\)개, \(q\)개, \(\cdots\), \(r\)개씩 있을 때, \(n\)개를 모두 일렬로 배열하는 순열의 수는
+                \[ \dfrac{n!}{p!\,q!\cdots r!}\ (\text{단, }p+q+\cdots+r=n) \]
+            </div>
+
+            <div class="callout">
+                <span class="tag">REMARK 1 · \(\div\,n!\)</span><br>
+                경우의 수에서 \(n!\)로 나눈다는 것은 \(n!\)가지씩을 묶어서 1가지로 생각한다는 것이다.<br>
+                여기서 \(n!\)은 \(n\)개를 모두 배열하는 경우의 수이므로 \(n!\)로 나눈다는 것은 \(n\)개의 순서를 고려하지 않는다. 즉 순서를 무시한다는 뜻이 된다.
+            </div>
+
+            <p><strong>[예1]</strong> 1, 1, 1, 2, 2, 3, 3을 일렬로 배열하는 경우의 수는 \(\dfrac{7!}{3!\,2!\,2!}\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1, 1, 1, 2, 2, 3, 4를 일렬로 배열하는 경우의 수는 \(\dfrac{7!}{3!\,2!}\)</p>
+
+            <div class="callout">
+                <span class="tag">REMARK 2 · 같은 것이 있는 순열 vs 조합</span><br>
+                1, 1, 1, 1, 2, 2, 2를 일렬로 배열하는 경우의 수는
+                \[ \dfrac{7!}{4!\,3!}={}_7\mathrm{C}_4={}_7\mathrm{C}_3 \]
+                이다. 여기서 \({}_7\mathrm{C}_4\)의 의미는 7개의 자리 □□□□□□□에서 1을 써넣을 4개의 자리를 선택한다는 의미이다. (남은 3개의 자리에 2를 쓰면 된다.)
+                \({}_7\mathrm{C}_3\)의 의미는 7개의 자리 □□□□□□□에서 2를 써넣을 3개의 자리를 선택한다는 의미이다. (남은 4개의 자리에 1을 쓰면 된다.)<br>
+                이와 같이 같은 것이 있는 순열에서 서로 다른 두 종류의 배열일 때는 조합으로 생각하는 것이 편리할 수 있다.<br><br>
+                물론 서로 다른 것이 세 종류 이상일 때도 조합으로 계산할 수 있다. 예를 들어<br>
+                1, 1, 1, 2, 2, 3, 3을 일렬로 배열하는 경우의 수는 7개의 자리 □□□□□□□에서 2를 써넣을 2개의 자리와 남은 5개의 자리 중 3을 써넣을 2개의 자리를 잇달아
+                선택하고 남은 3개의 자리에 1을 써넣으면 되므로
+                <span style="display:block;margin:6px 0 6px 2em">\({}_7\mathrm{C}_2\times{}_5\mathrm{C}_2\)</span>
+                1, 1, 1, 2, 2, 3, 4를 일렬로 배열하는 경우의 수는 7개의 자리 □□□□□□□에서 3을 써넣을 1개의 자리와 남은 6개의 자리 중 4를 써넣을 1개의 자리와 남은
+                5개의 자리 중 2를 써넣을 2개의 자리를 잇달아 선택하고, 남은 3개의 자리에 1을 써넣으면 되므로
+                <span style="display:block;margin:6px 0 6px 2em">\({}_7\mathrm{C}_1\times{}_6\mathrm{C}_1\times{}_5\mathrm{C}_2\)</span>
+                와 같이 계산할 수도 있다. (조합의 계산이 쉽도록 선택의 개수가 작은 것부터 생각했다.)<br>
+                앞의 두 계산에서 \({}_7\mathrm{C}_2\times{}_5\mathrm{C}_2,\ {}_7\mathrm{C}_1\times{}_6\mathrm{C}_1\)은 분할의 단계에서 동시에 그룹 간의 순서를 고정한 것과 같은
+                의미이므로 순서 부여 여부로 괜히 헷갈리지 않도록 주의하자.
+            </div>
+
+            <p><strong>[예2]</strong> 흰색 깃발 5개, 파란색 깃발 5개를 모두 일렬로 나열할 때, 양 끝에 흰색 깃발이 놓이는 경우의 수를 구해보자. (단, 같은 색 깃발끼리는
+                서로 구별하지 않는다.)<br>
+                양 끝에 흰색 깃발을 놓고 남은 흰색 깃발 3개, 파란색 깃발 5개를 일렬로 나열하는 경우의 수를 생각하면
+                \[ \dfrac{8!}{3!\,5!}=56 \]
+                양 끝을 제외한 8개의 자리 중 흰색 깃발 3개를 놓을 자리를 택하는 경우의 수를 생각하면<br>
+                \({}_8\mathrm{C}_3=56\)</p>
+            <p><strong>[예3]</strong> 숫자 0, 1, 1, 1, 2를 모두 일렬로 나열하여 만들 수 있는 다섯 자리의 자연수의 개수를 구해보자.<br>
+                만의 자리가 아닌 자리에 0을 놓고 남은 네 자리에 1, 1, 1, 2를 놓는다고 생각하면
+                \[ 4\times\dfrac{4!}{3!}=4\times4=16 \]
+                모든 경우의 수 \(\dfrac{5!}{3!}\)에서 만의 자리에 0을 놓고 남은 네 자리에 1, 1, 1, 2를 놓는 경우의 수
+                \(\dfrac{4!}{3!}\,(={}_4\mathrm{C}_1={}_4\mathrm{C}_3)\)을 뺀다고 생각하면
+                \[ \dfrac{5!}{3!}-\dfrac{4!}{3!}=20-4=16 \]</p>
+
+            <p><strong>[예4]</strong> 문자 b, a, n, a, n, a를 모두 일렬로 나열할 때, 다음 경우의 수를 구해보자.<br>
+                ① n끼리 서로 이웃하는 경우의 수<br>
+                n, n을 1개의 문자로 보고 b, a, a, a와 함께 일렬로 나열하는 경우의 수는
+                \[ \dfrac{5!}{3!}=20 \]
+                ② n끼리 서로 이웃하지 않는 경우의 수<br>
+                b, a, a, a를 일렬로 나열하는 경우의 수는
+                \[ \dfrac{4!}{3!}=4 \]
+                양 끝과 사이사이의 5개의 자리 중에서 2개를 택해 n, n을 배열하는 경우의 수는<br>
+                \({}_5\mathrm{C}_2=10\)<br>
+                \(\therefore\ 4\times10=40\)<br>
+                \(\Rightarrow\) 2개가 이웃하지 않는 것이므로 여사건을 이용해도 좋다. 모든 경우의 수 \(\dfrac{6!}{3!\,2!}\)에서 n끼리 서로 이웃하는 경우의 수
+                \(\dfrac{5!}{3!}\)을 빼면 \(\dfrac{6!}{3!\,2!}-\dfrac{5!}{3!}=60-20=40\)이다.<br>
+                ③ a 중 어느 2개도 서로 이웃하지 않는 경우의 수<br>
+                b, n, n을 일렬로 나열하는 경우의 수는
+                \[ \dfrac{3!}{2!}=3 \]
+                양 끝과 사이사이의 4개의 자리 중에서 3개를 택해 a, a, a를 배열하는 경우의 수는<br>
+                \({}_4\mathrm{C}_3=4\)<br>
+                \(\therefore\ 3\times4=12\)<br>
+                \(\Rightarrow\) 3개가 이웃하지 않는 것이므로 여사건을 이용하는 것이 더 불편하다.</p>
+
+            <div class="callout">
+                <span class="tag">REMARK 3 · 같은 것이 있는 순열 vs 중복순열</span><br>
+                중복을 허락하는 순열에서 무작정 중복순열을 떠올리면 안 된다. 중복을 허락하는 순열에서 개수, 자리 등에 대한 조건이 있으면 케이스를 구분하여 같은 것이
+                있는 순열이나 조합으로 다루어야 할 때가 많다.
+            </div>
+
+            <p><strong>[예5]</strong> 문자 \(a,\ b,\ c\) 중에서 중복을 허락하여 4개를 택해 일렬로 나열할 때, 같은 문자의 개수가 2 이하인 경우의 수를 구해보자.<br>
+                예를 들어 \(a,\ a,\ b,\ c\)와 같이 한 문자를 2개 택해 일렬로 나열하는 경우의 수는
+                \[ {}_3\mathrm{C}_1\times\dfrac{4!}{2!}=36 \]
+                예를 들어 \(a,\ a,\ b,\ b\)와 같이 두 문자를 각각 2개씩 택해 일렬로 나열하는 경우의 수는
+                \[ {}_3\mathrm{C}_2\times\dfrac{4!}{2!\,2!}=18 \]
+                \(\therefore\ 36+18=54\)<br>
+                \(\Rightarrow\) 여사건을 이용한다면 모든 경우의 수 \(3^4\)에서 같은 문자의 개수가 3, 4인 경우의 수를 빼면 된다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;예를 들어 \(a,\ a,\ a,\ b\)와 같이 한 문자를 3개, 다른 한 문자를 1개 택하고 일렬로 나열하는 경우의 수는
+                \[ {}_3\mathrm{P}_2\times\dfrac{4!}{3!}=24 \]
+                &nbsp;&nbsp;&nbsp;&nbsp;예를 들어 \(a,\ a,\ a,\ a\)와 같이 한 문자를 4개 택하는 경우의 수는<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\({}_3\mathrm{C}_1=3\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\therefore\ 3^4-24-3=54\)</p>
+        </section>
+
+        <section class="note">
+            <h2>#16 순서가 정해진 배열</h2>
+
+            <h3>2. 순서가 정해진 배열</h3>
+            <p>① 전체 중 \(r\)개의 순서가 정해진 배열의 경우의 수
+                \[ (\text{전체의 배열})\times\dfrac{1}{r!} \]
+                \(\Rightarrow r\)개의 순서를 무시하고 정해진 순서 1가지로 취급한다. 즉 \(r\)개를 같은 것으로 본다.<br>
+                ② 서로 다른 \(n\)개에서 순서가 정해진 \(r\)개를 선택하는 경우의 수
+                \[ {}_n\mathrm{C}_r \]
+                \(\Rightarrow r\)개를 선택하면 정해진 순서대로 배열하는 경우의 수는 1이므로 \({}_n\mathrm{C}_r\times1\)이다.</p>
+
+            <p><strong>[예1]</strong> 1, 2, 3, 4, 5, 6을 모두 일렬로 배열할 때<br>
+                1의 뒤에 2, 2의 뒤에 3이 오는 경우의 수는 \(\dfrac{6!}{3!}={}_6\mathrm{C}_3\times3!\)<br>
+                1의 뒤에 2, 3의 뒤에 4가 오는 경우의 수는 \(\dfrac{6!}{2!\,2!}={}_6\mathrm{C}_2\times{}_4\mathrm{C}_2\times2!\)</p>
+
+            <p><strong>[예2]</strong> 숫자 1, 2, 3, 4, 5 중에서 3개를 택해 일렬로 나열하여 만든 세 자리의 자연수 중 백의 자리의 수 \(a\), 십의 자리의 수 \(b\), 일의
+                자리의 수 \(c\)가 \(a&lt;b&lt;c\)인 자연수의 개수는<br>
+                \({}_5\mathrm{C}_3=10\)</p>
+
+            <div class="callout">
+                <span class="tag">REMARK</span><br>
+                전체의 배열 중 부분적으로 순서가 정해진 경우에는 기본적으로 같은 것이 있는 순열의 관점에서 접근해도 좋지만 일반적으로는 조합의 관점으로 통합하는 것이
+                상황 해석과 계산에 더 유리하다.
+            </div>
+        </section>
+
+        <section class="note">
+            <h2>#17 최단 거리로 가는 경우의 수</h2>
+
+            <h3>3. 최단 거리로 가는 경우의 수</h3>
+            <p>그림과 같이 가로 \(m\)개, 세로 \(n\)개의 직사각형 모양으로 연결된 도로망을 따라 A지점에서 출발하여 B지점까지 최단 거리로 가는 경우의 수는<br>
+                \(m\)개의 \(\rightarrow\)와 \(n\)개의 \(\uparrow\)를 모두 일렬로 배열하는 순열의 수와 같다.
+                \[ \dfrac{(m+n)!}{m!\,n!}={}_{m+n}\mathrm{C}_m={}_{m+n}\mathrm{C}_n \]</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 210 140" style="max-width:210px"><line x1="24" y1="118" x2="24" y2="14" style="stroke:var(--text);stroke-width:1" /><line x1="50" y1="118" x2="50" y2="14" style="stroke:var(--text);stroke-width:1" /><line x1="76" y1="118" x2="76" y2="14" style="stroke:var(--text);stroke-width:1" /><line x1="102" y1="118" x2="102" y2="14" style="stroke:var(--text);stroke-width:1" /><line x1="128" y1="118" x2="128" y2="14" style="stroke:var(--text);stroke-width:1" /><line x1="154" y1="118" x2="154" y2="14" style="stroke:var(--text);stroke-width:1" /><line x1="180" y1="118" x2="180" y2="14" style="stroke:var(--text);stroke-width:1" /><line x1="24" y1="118" x2="180" y2="118" style="stroke:var(--text);stroke-width:1" /><line x1="24" y1="92" x2="180" y2="92" style="stroke:var(--text);stroke-width:1" /><line x1="24" y1="66" x2="180" y2="66" style="stroke:var(--text);stroke-width:1" /><line x1="24" y1="40" x2="180" y2="40" style="stroke:var(--text);stroke-width:1" /><line x1="24" y1="14" x2="180" y2="14" style="stroke:var(--text);stroke-width:1" /><circle cx="24" cy="118" r="3" style="fill:var(--text)" /><circle cx="180" cy="14" r="3" style="fill:var(--text)" /><foreignObject x="6.0" y="112.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="186.0" y="-2.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><foreignObject x="88.0" y="122.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(m\text{칸}\)</div></foreignObject><foreignObject x="188.0" y="56.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(n\text{칸}\)</div></foreignObject></svg>
+</figure>
+            </div>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                경로의 모양은 평행사변형, 마름모 등으로 주어질 수도 있으나 모두 직사각형으로 보면 된다. 또한 좌표평면에서 출발 지점 A를 원점, 도착 지점 B를 점
+                \((m,\ n)\)으로 잡아 \(x\)축의 양의 방향 또는 \(y\)축의 양의 방향으로 1만큼씩 이동하는 것으로도 볼 수 있다.
+            </div>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 220 150" style="max-width:220px"><line x1="24" y1="128" x2="24" y2="24" style="stroke:var(--text);stroke-width:1" /><line x1="50" y1="128" x2="50" y2="24" style="stroke:var(--text);stroke-width:1" /><line x1="76" y1="128" x2="76" y2="24" style="stroke:var(--text);stroke-width:1" /><line x1="102" y1="128" x2="102" y2="24" style="stroke:var(--text);stroke-width:1" /><line x1="128" y1="128" x2="128" y2="24" style="stroke:var(--text);stroke-width:1" /><line x1="154" y1="128" x2="154" y2="24" style="stroke:var(--text);stroke-width:1" /><line x1="180" y1="128" x2="180" y2="24" style="stroke:var(--text);stroke-width:1" /><line x1="24" y1="128" x2="180" y2="128" style="stroke:var(--text);stroke-width:1" /><line x1="24" y1="102" x2="180" y2="102" style="stroke:var(--text);stroke-width:1" /><line x1="24" y1="76" x2="180" y2="76" style="stroke:var(--text);stroke-width:1" /><line x1="24" y1="50" x2="180" y2="50" style="stroke:var(--text);stroke-width:1" /><line x1="24" y1="24" x2="180" y2="24" style="stroke:var(--text);stroke-width:1" /><circle cx="24" cy="128" r="3" style="fill:var(--text)" /><circle cx="180" cy="24" r="3" style="fill:var(--text)" /><foreignObject x="6.0" y="130.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="184.0" y="4.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}(m,\ n)\)</div></foreignObject><foreignObject x="174.0" y="130.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(m\)</div></foreignObject><foreignObject x="8.0" y="14.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(n\)</div></foreignObject><line x1="24" y1="128" x2="202" y2="128" style="stroke:var(--muted);stroke-width:1.2" /><line x1="24" y1="138" x2="24" y2="8" style="stroke:var(--muted);stroke-width:1.2" /><foreignObject x="196.0" y="124.0" width="14" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(x\)</div></foreignObject><foreignObject x="10.0" y="2.0" width="14" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(y\)</div></foreignObject></svg>
+</figure>
+            </div>
+
+            <p><strong>[예1]</strong> 그림과 같이 오른쪽으로 한 칸 가는 것을 \(a\), 위쪽으로 한 칸 가는 것을 \(b\)로 나타내면 A지점에서 B지점까지 최단 거리로 가는 경우의
+                수는 4개의 \(a\)와 3개의 \(b\)를 모두 일렬로 배열하는 순열의 수와 같다.<br>
+                따라서 구하는 경우의 수는
+                \[ \dfrac{7!}{4!\,3!}=35 \]</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 174 126" style="max-width:174px"><line x1="24" y1="104" x2="24" y2="14" style="stroke:var(--text);stroke-width:1" /><line x1="54" y1="104" x2="54" y2="14" style="stroke:var(--text);stroke-width:1" /><line x1="84" y1="104" x2="84" y2="14" style="stroke:var(--text);stroke-width:1" /><line x1="114" y1="104" x2="114" y2="14" style="stroke:var(--text);stroke-width:1" /><line x1="144" y1="104" x2="144" y2="14" style="stroke:var(--text);stroke-width:1" /><line x1="24" y1="104" x2="144" y2="104" style="stroke:var(--text);stroke-width:1" /><line x1="24" y1="74" x2="144" y2="74" style="stroke:var(--text);stroke-width:1" /><line x1="24" y1="44" x2="144" y2="44" style="stroke:var(--text);stroke-width:1" /><line x1="24" y1="14" x2="144" y2="14" style="stroke:var(--text);stroke-width:1" /><circle cx="24" cy="104" r="3" style="fill:var(--text)" /><circle cx="144" cy="14" r="3" style="fill:var(--text)" /><foreignObject x="6.0" y="100.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="150.0" y="-2.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><defs><marker id="gp-ar" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" style="fill:var(--text)" /></marker></defs><line x1="24" y1="104" x2="54" y2="104" style="stroke:var(--text);stroke-width:1.4" marker-end="url(#gp-ar)" /><foreignObject x="35.0" y="86.0" width="14" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(a\)</div></foreignObject><line x1="54" y1="104" x2="84" y2="104" style="stroke:var(--text);stroke-width:1.4" marker-end="url(#gp-ar)" /><foreignObject x="65.0" y="86.0" width="14" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(a\)</div></foreignObject><line x1="84" y1="104" x2="84" y2="74" style="stroke:var(--text);stroke-width:1.4" marker-end="url(#gp-ar)" /><foreignObject x="86.0" y="79.0" width="14" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(b\)</div></foreignObject><line x1="84" y1="74" x2="114" y2="74" style="stroke:var(--text);stroke-width:1.4" marker-end="url(#gp-ar)" /><foreignObject x="95.0" y="56.0" width="14" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(a\)</div></foreignObject><line x1="114" y1="74" x2="114" y2="44" style="stroke:var(--text);stroke-width:1.4" marker-end="url(#gp-ar)" /><foreignObject x="116.0" y="49.0" width="14" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(b\)</div></foreignObject><line x1="114" y1="44" x2="144" y2="44" style="stroke:var(--text);stroke-width:1.4" marker-end="url(#gp-ar)" /><foreignObject x="125.0" y="26.0" width="14" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(a\)</div></foreignObject><line x1="144" y1="44" x2="144" y2="14" style="stroke:var(--text);stroke-width:1.4" marker-end="url(#gp-ar)" /><foreignObject x="146.0" y="19.0" width="14" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(b\)</div></foreignObject></svg>
+</figure>
+            </div>
+
+            <p><strong>[예2]</strong> '꿈', '은', '이', '루', '어', '진', '다'라는 글자를 그림과 같이 배열하였다.<br>
+                '꿈'에서 출발하여 선을 따라 '다'까지 이을 때, '꿈은이루어진다'를 만들 수 있는 경우의 수는 '꿈'에서 출발하여 '다'까지 최단 거리로 가는 경우의 수와
+                같으므로
+                \[ \dfrac{6!}{3!\,3!}=20\text{이다.} \]</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 260 210" style="max-width:260px"><line x1="130" y1="18" x2="160" y2="48" style="stroke:var(--text)" /><line x1="130" y1="18" x2="100" y2="48" style="stroke:var(--text)" /><line x1="100" y1="48" x2="130" y2="78" style="stroke:var(--text)" /><line x1="100" y1="48" x2="70" y2="78" style="stroke:var(--text)" /><line x1="70" y1="78" x2="100" y2="108" style="stroke:var(--text)" /><line x1="70" y1="78" x2="40" y2="108" style="stroke:var(--text)" /><line x1="40" y1="108" x2="70" y2="138" style="stroke:var(--text)" /><line x1="160" y1="48" x2="190" y2="78" style="stroke:var(--text)" /><line x1="160" y1="48" x2="130" y2="78" style="stroke:var(--text)" /><line x1="130" y1="78" x2="160" y2="108" style="stroke:var(--text)" /><line x1="130" y1="78" x2="100" y2="108" style="stroke:var(--text)" /><line x1="100" y1="108" x2="130" y2="138" style="stroke:var(--text)" /><line x1="100" y1="108" x2="70" y2="138" style="stroke:var(--text)" /><line x1="70" y1="138" x2="100" y2="168" style="stroke:var(--text)" /><line x1="190" y1="78" x2="220" y2="108" style="stroke:var(--text)" /><line x1="190" y1="78" x2="160" y2="108" style="stroke:var(--text)" /><line x1="160" y1="108" x2="190" y2="138" style="stroke:var(--text)" /><line x1="160" y1="108" x2="130" y2="138" style="stroke:var(--text)" /><line x1="130" y1="138" x2="160" y2="168" style="stroke:var(--text)" /><line x1="130" y1="138" x2="100" y2="168" style="stroke:var(--text)" /><line x1="100" y1="168" x2="130" y2="198" style="stroke:var(--text)" /><line x1="220" y1="108" x2="190" y2="138" style="stroke:var(--text)" /><line x1="190" y1="138" x2="160" y2="168" style="stroke:var(--text)" /><line x1="160" y1="168" x2="130" y2="198" style="stroke:var(--text)" /><circle cx="130" cy="18" r="11" style="fill:var(--accent-soft);stroke:var(--text)" /><foreignObject x="119" y="9" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);font-size:12px">꿈</div></foreignObject><circle cx="100" cy="48" r="11" style="fill:var(--accent-soft);stroke:var(--text)" /><foreignObject x="89" y="39" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);font-size:12px">은</div></foreignObject><circle cx="70" cy="78" r="11" style="fill:var(--accent-soft);stroke:var(--text)" /><foreignObject x="59" y="69" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);font-size:12px">이</div></foreignObject><circle cx="40" cy="108" r="11" style="fill:var(--accent-soft);stroke:var(--text)" /><foreignObject x="29" y="99" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);font-size:12px">루</div></foreignObject><circle cx="160" cy="48" r="11" style="fill:var(--accent-soft);stroke:var(--text)" /><foreignObject x="149" y="39" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);font-size:12px">은</div></foreignObject><circle cx="130" cy="78" r="11" style="fill:var(--accent-soft);stroke:var(--text)" /><foreignObject x="119" y="69" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);font-size:12px">이</div></foreignObject><circle cx="100" cy="108" r="11" style="fill:var(--accent-soft);stroke:var(--text)" /><foreignObject x="89" y="99" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);font-size:12px">루</div></foreignObject><circle cx="70" cy="138" r="11" style="fill:var(--accent-soft);stroke:var(--text)" /><foreignObject x="59" y="129" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);font-size:12px">어</div></foreignObject><circle cx="190" cy="78" r="11" style="fill:var(--accent-soft);stroke:var(--text)" /><foreignObject x="179" y="69" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);font-size:12px">이</div></foreignObject><circle cx="160" cy="108" r="11" style="fill:var(--accent-soft);stroke:var(--text)" /><foreignObject x="149" y="99" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);font-size:12px">루</div></foreignObject><circle cx="130" cy="138" r="11" style="fill:var(--accent-soft);stroke:var(--text)" /><foreignObject x="119" y="129" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);font-size:12px">어</div></foreignObject><circle cx="100" cy="168" r="11" style="fill:var(--accent-soft);stroke:var(--text)" /><foreignObject x="89" y="159" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);font-size:12px">진</div></foreignObject><circle cx="220" cy="108" r="11" style="fill:var(--accent-soft);stroke:var(--text)" /><foreignObject x="209" y="99" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);font-size:12px">루</div></foreignObject><circle cx="190" cy="138" r="11" style="fill:var(--accent-soft);stroke:var(--text)" /><foreignObject x="179" y="129" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);font-size:12px">어</div></foreignObject><circle cx="160" cy="168" r="11" style="fill:var(--accent-soft);stroke:var(--text)" /><foreignObject x="149" y="159" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);font-size:12px">진</div></foreignObject><circle cx="130" cy="198" r="11" style="fill:var(--accent-soft);stroke:var(--text)" /><foreignObject x="119" y="189" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="text-align:center;color:var(--text);font-size:12px">다</div></foreignObject></svg>
+</figure>
+            </div>
+
+            <p><strong>[예3]</strong> 그림과 같이 직사각형 모양으로 연결된 도로망을 따라 A지점에서 출발하여 B지점까지 최단 거리로 갈 때, 다음 경우의 수를 구해보자.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 184 114" style="max-width:184px"><line x1="24" y1="92" x2="24" y2="14" style="stroke:var(--text);stroke-width:1" /><line x1="50" y1="92" x2="50" y2="14" style="stroke:var(--text);stroke-width:1" /><line x1="76" y1="92" x2="76" y2="14" style="stroke:var(--text);stroke-width:1" /><line x1="102" y1="92" x2="102" y2="14" style="stroke:var(--text);stroke-width:1" /><line x1="128" y1="92" x2="128" y2="14" style="stroke:var(--text);stroke-width:1" /><line x1="154" y1="92" x2="154" y2="14" style="stroke:var(--text);stroke-width:1" /><line x1="24" y1="92" x2="154" y2="92" style="stroke:var(--text);stroke-width:1" /><line x1="24" y1="66" x2="154" y2="66" style="stroke:var(--text);stroke-width:1" /><line x1="24" y1="40" x2="154" y2="40" style="stroke:var(--text);stroke-width:1" /><line x1="24" y1="14" x2="154" y2="14" style="stroke:var(--text);stroke-width:1" /><circle cx="24" cy="92" r="3" style="fill:var(--text)" /><circle cx="154" cy="14" r="3" style="fill:var(--text)" /><circle cx="76" cy="66" r="3" style="fill:var(--text)" /><foreignObject x="6.0" y="86.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="160.0" y="-2.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><foreignObject x="80.0" y="66.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}\)</div></foreignObject></svg>
+</figure>
+            </div>
+            <p>① P지점을 지나는 경우의 수<br>
+                A지점에서 P지점까지 최단 거리로 가는 경우의 수는
+                \[ \dfrac{3!}{2!}=3 \]
+                P지점에서 B지점까지 최단 거리로 가는 경우의 수는
+                \[ \dfrac{5!}{3!\,2!}=10 \]
+                \(\therefore\ 3\times10=30\)<br>
+                ② P지점을 지나지 않는 경우의 수<br>
+                A지점에서 B지점까지 최단 거리로 가는 모든 경우의 수는
+                \[ \dfrac{8!}{5!\,3!}=56 \]
+                \(\therefore\ 56-30=26\)</p>
+            <div class="callout">
+                <span class="tag">REMARK 1 · 합의 법칙의 이용</span><br>
+                경로의 모양이 심하게 망가져 있을 때, 즉 한두 개의 직사각형 모양이나 평행사변형 모양으로 단순화할 수 없을 때 합의 법칙을 이용하여 출발 지점으로부터
+                도착 지점까지 순차적으로 경로의 수를 더해 나가는 방법으로 최단 거리로 가는 경우의 수를 구할 수 있다.<br>
+                간단한 예에서 그 원리를 생각해보자.<br>
+                다음 그림과 같은 도로망에서 A지점에서 B지점까지 최단 거리로 가려면 마지막에 P지점을 거쳐 B지점에 도착하거나 Q지점을 거쳐 B지점에 도착해야 하므로 합의
+                법칙에서
+                <span style="display:block;margin:6px 0 6px 2em">(P지점까지 최단 거리로 가는 경우의 수)\(+\)(Q지점까지 최단 거리로 가는 경우의 수)</span>
+                로 최단 거리로 가는 경우의 수를 계산할 수 있다.
+            </div>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 180 116" style="max-width:180px"><defs><marker id="na1" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" style="fill:var(--accent)" /></marker></defs><line x1="24.0" y1="92.0" x2="24.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="58.0" y1="92.0" x2="58.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="92.0" y1="92.0" x2="92.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="126.0" y1="92.0" x2="126.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="92.0" x2="126.0" y2="92.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="58.0" x2="126.0" y2="58.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="24.0" x2="126.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><circle cx="24.0" cy="92.0" r="3" style="fill:var(--text)" /><circle cx="126.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="92.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="126.0" cy="58.0" r="3" style="fill:var(--text)" /><foreignObject x="8.0" y="86.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="132.0" y="16.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><foreignObject x="88.0" y="4.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}\)</div></foreignObject><foreignObject x="132.0" y="50.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}\)</div></foreignObject></svg>
+<figcaption>P 또는 Q를 거쳐 B로 간다</figcaption>
+</figure>
+            </div>
+            <p>이와 같은 원리를 A지점으로부터 순차적으로 적용해보면 다음과 같다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 180 116" style="max-width:180px"><defs><marker id="na2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" style="fill:var(--accent)" /></marker></defs><line x1="24.0" y1="92.0" x2="24.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="58.0" y1="92.0" x2="58.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="92.0" y1="92.0" x2="92.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="126.0" y1="92.0" x2="126.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="92.0" x2="126.0" y2="92.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="58.0" x2="126.0" y2="58.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="24.0" x2="126.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="92.0" x2="24.0" y2="58.0" style="stroke:var(--accent);stroke-width:2" marker-end="url(#na2)" /><line x1="24.0" y1="92.0" x2="58.0" y2="92.0" style="stroke:var(--accent);stroke-width:2" marker-end="url(#na2)" /><circle cx="24.0" cy="92.0" r="3" style="fill:var(--text)" /><circle cx="126.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="92.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="126.0" cy="58.0" r="3" style="fill:var(--text)" /><foreignObject x="8.0" y="86.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="132.0" y="16.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><foreignObject x="88.0" y="4.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}\)</div></foreignObject><foreignObject x="132.0" y="50.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}\)</div></foreignObject><foreignObject x="12.0" y="50.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject><foreignObject x="54.0" y="94.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject></svg>
+</figure>
+                <figure class="graph" style="align-self:center"><span style="font-size:20px">\(\Rightarrow\)</span></figure>
+                <figure class="graph">
+<svg viewBox="0 0 180 116" style="max-width:180px"><defs><marker id="na3" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" style="fill:var(--accent)" /></marker></defs><line x1="24.0" y1="92.0" x2="24.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="58.0" y1="92.0" x2="58.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="92.0" y1="92.0" x2="92.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="126.0" y1="92.0" x2="126.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="92.0" x2="126.0" y2="92.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="58.0" x2="126.0" y2="58.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="24.0" x2="126.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="58.0" x2="24.0" y2="24.0" style="stroke:var(--accent);stroke-width:2" marker-end="url(#na3)" /><line x1="24.0" y1="58.0" x2="58.0" y2="58.0" style="stroke:var(--accent);stroke-width:2" marker-end="url(#na3)" /><line x1="58.0" y1="92.0" x2="58.0" y2="58.0" style="stroke:var(--accent);stroke-width:2" marker-end="url(#na3)" /><line x1="58.0" y1="92.0" x2="92.0" y2="92.0" style="stroke:var(--accent);stroke-width:2" marker-end="url(#na3)" /><circle cx="24.0" cy="92.0" r="3" style="fill:var(--text)" /><circle cx="126.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="92.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="126.0" cy="58.0" r="3" style="fill:var(--text)" /><foreignObject x="8.0" y="86.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="132.0" y="16.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><foreignObject x="88.0" y="4.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}\)</div></foreignObject><foreignObject x="132.0" y="50.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}\)</div></foreignObject><foreignObject x="12.0" y="16.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject><foreignObject x="12.0" y="50.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject><foreignObject x="60.0" y="42.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(2\)</div></foreignObject><foreignObject x="54.0" y="94.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject><foreignObject x="88.0" y="94.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject></svg>
+</figure>
+                <figure class="graph" style="align-self:center"><span style="font-size:20px">\(\Rightarrow\)</span></figure>
+                <figure class="graph">
+<svg viewBox="0 0 180 116" style="max-width:180px"><defs><marker id="na4" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" style="fill:var(--accent)" /></marker></defs><line x1="24.0" y1="92.0" x2="24.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="58.0" y1="92.0" x2="58.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="92.0" y1="92.0" x2="92.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="126.0" y1="92.0" x2="126.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="92.0" x2="126.0" y2="92.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="58.0" x2="126.0" y2="58.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="24.0" x2="126.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="24.0" x2="58.0" y2="24.0" style="stroke:var(--accent);stroke-width:2" marker-end="url(#na4)" /><line x1="58.0" y1="58.0" x2="58.0" y2="24.0" style="stroke:var(--accent);stroke-width:2" marker-end="url(#na4)" /><line x1="58.0" y1="58.0" x2="92.0" y2="58.0" style="stroke:var(--accent);stroke-width:2" marker-end="url(#na4)" /><line x1="92.0" y1="92.0" x2="92.0" y2="58.0" style="stroke:var(--accent);stroke-width:2" marker-end="url(#na4)" /><line x1="92.0" y1="92.0" x2="126.0" y2="92.0" style="stroke:var(--accent);stroke-width:2" marker-end="url(#na4)" /><circle cx="24.0" cy="92.0" r="3" style="fill:var(--text)" /><circle cx="126.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="92.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="126.0" cy="58.0" r="3" style="fill:var(--text)" /><foreignObject x="8.0" y="86.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="132.0" y="16.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><foreignObject x="88.0" y="4.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}\)</div></foreignObject><foreignObject x="132.0" y="50.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}\)</div></foreignObject><foreignObject x="12.0" y="16.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject><foreignObject x="12.0" y="50.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject><foreignObject x="54.0" y="6.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(3\)</div></foreignObject><foreignObject x="60.0" y="42.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(2\)</div></foreignObject><foreignObject x="94.0" y="42.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(3\)</div></foreignObject><foreignObject x="54.0" y="94.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject><foreignObject x="88.0" y="94.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject><foreignObject x="122.0" y="94.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject></svg>
+</figure>
+            </div>
+            <div class="graph-row">
+                <figure class="graph" style="align-self:center"><span style="font-size:20px">\(\Rightarrow\)</span></figure>
+                <figure class="graph">
+<svg viewBox="0 0 180 116" style="max-width:180px"><defs><marker id="na5" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" style="fill:var(--accent)" /></marker></defs><line x1="24.0" y1="92.0" x2="24.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="58.0" y1="92.0" x2="58.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="92.0" y1="92.0" x2="92.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="126.0" y1="92.0" x2="126.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="92.0" x2="126.0" y2="92.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="58.0" x2="126.0" y2="58.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="24.0" x2="126.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="58.0" y1="24.0" x2="92.0" y2="24.0" style="stroke:var(--accent);stroke-width:2" marker-end="url(#na5)" /><line x1="92.0" y1="58.0" x2="92.0" y2="24.0" style="stroke:var(--accent);stroke-width:2" marker-end="url(#na5)" /><line x1="92.0" y1="58.0" x2="126.0" y2="58.0" style="stroke:var(--accent);stroke-width:2" marker-end="url(#na5)" /><line x1="126.0" y1="92.0" x2="126.0" y2="58.0" style="stroke:var(--accent);stroke-width:2" marker-end="url(#na5)" /><circle cx="24.0" cy="92.0" r="3" style="fill:var(--text)" /><circle cx="126.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="92.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="126.0" cy="58.0" r="3" style="fill:var(--text)" /><foreignObject x="8.0" y="86.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="132.0" y="16.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><foreignObject x="88.0" y="4.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}\)</div></foreignObject><foreignObject x="132.0" y="50.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}\)</div></foreignObject><foreignObject x="12.0" y="16.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject><foreignObject x="12.0" y="50.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject><foreignObject x="54.0" y="6.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(3\)</div></foreignObject><foreignObject x="98.0" y="6.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(6\)</div></foreignObject><foreignObject x="60.0" y="42.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(2\)</div></foreignObject><foreignObject x="94.0" y="42.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(3\)</div></foreignObject><foreignObject x="112.0" y="54.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(4\)</div></foreignObject><foreignObject x="54.0" y="94.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject><foreignObject x="88.0" y="94.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject><foreignObject x="122.0" y="94.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject></svg>
+</figure>
+                <figure class="graph" style="align-self:center"><span style="font-size:20px">\(\Rightarrow\)</span></figure>
+                <figure class="graph">
+<svg viewBox="0 0 180 116" style="max-width:180px"><defs><marker id="na6" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" style="fill:var(--accent)" /></marker></defs><line x1="24.0" y1="92.0" x2="24.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="58.0" y1="92.0" x2="58.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="92.0" y1="92.0" x2="92.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="126.0" y1="92.0" x2="126.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="92.0" x2="126.0" y2="92.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="58.0" x2="126.0" y2="58.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="24.0" x2="126.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="92.0" y1="24.0" x2="126.0" y2="24.0" style="stroke:var(--accent);stroke-width:2" marker-end="url(#na6)" /><line x1="126.0" y1="58.0" x2="126.0" y2="24.0" style="stroke:var(--accent);stroke-width:2" marker-end="url(#na6)" /><circle cx="24.0" cy="92.0" r="3" style="fill:var(--text)" /><circle cx="126.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="92.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="126.0" cy="58.0" r="3" style="fill:var(--text)" /><foreignObject x="8.0" y="86.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="132.0" y="16.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><foreignObject x="88.0" y="4.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}\)</div></foreignObject><foreignObject x="132.0" y="50.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}\)</div></foreignObject><foreignObject x="12.0" y="16.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject><foreignObject x="12.0" y="50.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject><foreignObject x="54.0" y="6.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(3\)</div></foreignObject><foreignObject x="80.0" y="20.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(6\)</div></foreignObject><foreignObject x="60.0" y="42.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(2\)</div></foreignObject><foreignObject x="94.0" y="42.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(3\)</div></foreignObject><foreignObject x="112.0" y="60.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(4\)</div></foreignObject><foreignObject x="122.0" y="6.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(10\)</div></foreignObject><foreignObject x="54.0" y="94.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject><foreignObject x="88.0" y="94.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject><foreignObject x="122.0" y="94.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject></svg>
+</figure>
+            </div>
+            <p>이는 \({}_5\mathrm{C}_2=10\)으로 계산한 것과 같은 결과이다.</p>
+
+            <div class="callout">
+                <span class="tag">REMARK 2 · 경유 지점을 정하여 케이스 구분</span><br>
+                경로의 모양이 심하게 망가져 있을 때, 즉 한두 개의 직사각형 모양이나 평행사변형 모양으로 단순화할 수 없을 때 경유 지점을 정하고 케이스를 구분하여 최단
+                거리로 가는 경우의 수를 구할 수 있다.<br>
+                이때 경유 지점은 최단 거리로 가는 경우의 수가 중복되거나 누락되지 않도록 정해야 하며 이를 위해 좌표평면 위의 정사각형 모양의 경로에서 \(x\)축의 양의
+                방향(\(\rightarrow\)), \(y\)축의 양의 방향(\(\uparrow\))으로 갈 때 경유 지점이 기울기가 \(-1\)인 한 직선 위에 빠짐없이 있도록 해야 한다.<br>
+                A지점에서 B지점까지 최단 거리로 갈 때 경유 지점을 잘못 정한 예는 다음과 같다. (경유 지점은 P, Q, R이고, 굵은 실선으로 표시된 경로가 중복되고, 굵은
+                점선으로 표시된 경로가 누락된다.)
+            </div>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 168 108" style="max-width:168px"><defs><marker id="na7" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" style="fill:var(--accent)" /></marker></defs><line x1="24.0" y1="84.0" x2="24.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="54.0" y1="84.0" x2="54.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="84.0" y1="84.0" x2="84.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="114.0" y1="84.0" x2="114.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="84.0" x2="114.0" y2="84.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="54.0" x2="114.0" y2="54.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="24.0" x2="114.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="54.0" x2="24.0" y2="24.0" style="stroke:var(--text);stroke-width:3" /><line x1="24.0" y1="24.0" x2="54.0" y2="24.0" style="stroke:var(--text);stroke-width:3" /><line x1="54.0" y1="54.0" x2="54.0" y2="24.0" style="stroke:var(--text);stroke-width:3" /><line x1="84.0" y1="84.0" x2="114.0" y2="84.0" style="stroke:var(--surface);stroke-width:3" /><line x1="84.0" y1="84.0" x2="114.0" y2="84.0" style="stroke:var(--text);stroke-width:2;stroke-dasharray:3 3" /><line x1="114.0" y1="84.0" x2="114.0" y2="54.0" style="stroke:var(--surface);stroke-width:3" /><line x1="114.0" y1="84.0" x2="114.0" y2="54.0" style="stroke:var(--text);stroke-width:2;stroke-dasharray:3 3" /><circle cx="24.0" cy="84.0" r="3" style="fill:var(--text)" /><circle cx="114.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="54.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="24.0" cy="54.0" r="3" style="fill:var(--text)" /><foreignObject x="8.0" y="78.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="120.0" y="16.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><foreignObject x="50.0" y="4.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}\)</div></foreignObject><foreignObject x="8.0" y="46.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}\)</div></foreignObject></svg>
+</figure>
+                <figure class="graph">
+<svg viewBox="0 0 168 108" style="max-width:168px"><defs><marker id="na8" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" style="fill:var(--accent)" /></marker></defs><line x1="24.0" y1="84.0" x2="24.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="54.0" y1="84.0" x2="54.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="84.0" y1="84.0" x2="84.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="114.0" y1="84.0" x2="114.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="84.0" x2="114.0" y2="84.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="54.0" x2="114.0" y2="54.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="24.0" x2="114.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="54.0" x2="54.0" y2="54.0" style="stroke:var(--text);stroke-width:3" /><line x1="54.0" y1="54.0" x2="54.0" y2="24.0" style="stroke:var(--text);stroke-width:3" /><line x1="54.0" y1="24.0" x2="114.0" y2="24.0" style="stroke:var(--text);stroke-width:3" /><line x1="24.0" y1="84.0" x2="24.0" y2="54.0" style="stroke:var(--text);stroke-width:3" /><circle cx="24.0" cy="84.0" r="3" style="fill:var(--text)" /><circle cx="114.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="54.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="54.0" cy="54.0" r="3" style="fill:var(--text)" /><circle cx="54.0" cy="84.0" r="3" style="fill:var(--text)" /><foreignObject x="8.0" y="78.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="120.0" y="16.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><foreignObject x="50.0" y="4.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}\)</div></foreignObject><foreignObject x="58.0" y="34.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}\)</div></foreignObject><foreignObject x="50.0" y="86.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{R}\)</div></foreignObject></svg>
+</figure>
+                <figure class="graph">
+<svg viewBox="0 0 168 108" style="max-width:168px"><defs><marker id="na9" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" style="fill:var(--accent)" /></marker></defs><line x1="24.0" y1="84.0" x2="24.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="54.0" y1="84.0" x2="54.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="84.0" y1="84.0" x2="84.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="114.0" y1="84.0" x2="114.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="84.0" x2="114.0" y2="84.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="54.0" x2="114.0" y2="54.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="24.0" x2="114.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="54.0" y1="54.0" x2="54.0" y2="24.0" style="stroke:var(--surface);stroke-width:3" /><line x1="54.0" y1="54.0" x2="54.0" y2="24.0" style="stroke:var(--text);stroke-width:2;stroke-dasharray:3 3" /><line x1="84.0" y1="84.0" x2="114.0" y2="84.0" style="stroke:var(--surface);stroke-width:3" /><line x1="84.0" y1="84.0" x2="114.0" y2="84.0" style="stroke:var(--text);stroke-width:2;stroke-dasharray:3 3" /><circle cx="24.0" cy="84.0" r="3" style="fill:var(--text)" /><circle cx="114.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="24.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="84.0" cy="54.0" r="3" style="fill:var(--text)" /><foreignObject x="8.0" y="78.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="120.0" y="16.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><foreignObject x="20.0" y="4.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}\)</div></foreignObject><foreignObject x="88.0" y="34.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}\)</div></foreignObject></svg>
+</figure>
+            </div>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 168 108" style="max-width:168px"><defs><marker id="na10" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" style="fill:var(--accent)" /></marker></defs><line x1="24.0" y1="84.0" x2="24.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="54.0" y1="84.0" x2="54.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="84.0" y1="84.0" x2="84.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="114.0" y1="84.0" x2="114.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="84.0" x2="114.0" y2="84.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="54.0" x2="114.0" y2="54.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="24.0" x2="114.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="54.0" y1="54.0" x2="84.0" y2="54.0" style="stroke:var(--surface);stroke-width:3" /><line x1="54.0" y1="54.0" x2="84.0" y2="54.0" style="stroke:var(--text);stroke-width:2;stroke-dasharray:3 3" /><circle cx="24.0" cy="84.0" r="3" style="fill:var(--text)" /><circle cx="114.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="54.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="84.0" cy="84.0" r="3" style="fill:var(--text)" /><foreignObject x="8.0" y="78.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="120.0" y="16.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><foreignObject x="50.0" y="4.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}\)</div></foreignObject><foreignObject x="80.0" y="86.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}\)</div></foreignObject></svg>
+</figure>
+                <figure class="graph">
+<svg viewBox="0 0 168 108" style="max-width:168px"><defs><marker id="na11" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" style="fill:var(--accent)" /></marker></defs><line x1="24.0" y1="84.0" x2="24.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="54.0" y1="84.0" x2="54.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="84.0" y1="84.0" x2="84.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="114.0" y1="84.0" x2="114.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="84.0" x2="114.0" y2="84.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="54.0" x2="114.0" y2="54.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="24.0" x2="114.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="54.0" x2="24.0" y2="24.0" style="stroke:var(--surface);stroke-width:3" /><line x1="24.0" y1="54.0" x2="24.0" y2="24.0" style="stroke:var(--text);stroke-width:2;stroke-dasharray:3 3" /><line x1="24.0" y1="24.0" x2="54.0" y2="24.0" style="stroke:var(--surface);stroke-width:3" /><line x1="24.0" y1="24.0" x2="54.0" y2="24.0" style="stroke:var(--text);stroke-width:2;stroke-dasharray:3 3" /><line x1="54.0" y1="54.0" x2="54.0" y2="24.0" style="stroke:var(--surface);stroke-width:3" /><line x1="54.0" y1="54.0" x2="54.0" y2="24.0" style="stroke:var(--text);stroke-width:2;stroke-dasharray:3 3" /><circle cx="24.0" cy="84.0" r="3" style="fill:var(--text)" /><circle cx="114.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="84.0" cy="54.0" r="3" style="fill:var(--text)" /><circle cx="114.0" cy="84.0" r="3" style="fill:var(--text)" /><foreignObject x="8.0" y="78.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="120.0" y="16.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><foreignObject x="88.0" y="34.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}\)</div></foreignObject><foreignObject x="120.0" y="76.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}\)</div></foreignObject></svg>
+</figure>
+            </div>
+            <p>A지점에서 B지점까지 최단 거리로 갈 때 경유 지점을 올바르게 정한 예는 다음과 같고, 경유 지점은 상황에 따라 가장 효율적인 방법으로 정하면 된다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 168 108" style="max-width:168px"><defs><marker id="na12" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" style="fill:var(--accent)" /></marker></defs><line x1="24.0" y1="84.0" x2="24.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="54.0" y1="84.0" x2="54.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="84.0" y1="84.0" x2="84.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="114.0" y1="84.0" x2="114.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="84.0" x2="114.0" y2="84.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="54.0" x2="114.0" y2="54.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="24.0" x2="114.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><circle cx="24.0" cy="84.0" r="3" style="fill:var(--text)" /><circle cx="114.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="24.0" cy="54.0" r="3" style="fill:var(--text)" /><circle cx="54.0" cy="84.0" r="3" style="fill:var(--text)" /><foreignObject x="8.0" y="78.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="120.0" y="16.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><foreignObject x="8.0" y="46.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}\)</div></foreignObject><foreignObject x="50.0" y="86.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}\)</div></foreignObject></svg>
+</figure>
+            </div>
+            <p>\(\Rightarrow\) P, Q지점을 지나서 최단 거리로 가는 경우의 수는 각각 \({}_1\mathrm{C}_1\times{}_4\mathrm{C}_1=4,\ {}_1\mathrm{C}_0\times{}_4\mathrm{C}_2=6\)이므로
+                A지점에서 B지점까지 최단 거리로 가는 경우의 수는
+                <span style="display:block;margin:6px 0 6px 2em">\(4+6=10={}_5\mathrm{C}_2\)</span></p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 168 108" style="max-width:168px"><defs><marker id="na13" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" style="fill:var(--accent)" /></marker></defs><line x1="24.0" y1="84.0" x2="24.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="54.0" y1="84.0" x2="54.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="84.0" y1="84.0" x2="84.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="114.0" y1="84.0" x2="114.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="84.0" x2="114.0" y2="84.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="54.0" x2="114.0" y2="54.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="24.0" x2="114.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><circle cx="24.0" cy="84.0" r="3" style="fill:var(--text)" /><circle cx="114.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="54.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="84.0" cy="54.0" r="3" style="fill:var(--text)" /><circle cx="114.0" cy="84.0" r="3" style="fill:var(--text)" /><foreignObject x="8.0" y="78.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="120.0" y="16.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><foreignObject x="50.0" y="4.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}\)</div></foreignObject><foreignObject x="88.0" y="34.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}\)</div></foreignObject><foreignObject x="120.0" y="76.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{R}\)</div></foreignObject></svg>
+</figure>
+            </div>
+            <p>\(\Rightarrow\) P, Q, R지점을 지나서 최단 거리로 가는 경우의 수는 각각 \({}_3\mathrm{C}_2\times{}_2\mathrm{C}_0=3,\ {}_3\mathrm{C}_1\times{}_2\mathrm{C}_1=6,\
+                {}_3\mathrm{C}_0\times{}_2\mathrm{C}_2=1\)이므로 A지점에서 B지점까지 최단 거리로 가는 경우의 수는
+                <span style="display:block;margin:6px 0 6px 2em">\(3+6+1=10={}_5\mathrm{C}_2\)</span></p>
+
+            <p><strong>[예4]</strong> 그림과 같이 마름모 모양으로 연결된 도로망이 있다. 이 도로망을 따라 A지점에서 출발하여 C지점을 지나지 않고, D지점도 지나지 않으면서
+                B지점까지 최단 거리로 가는 경우의 수를 구해보자.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 261 139" style="max-width:261px"><defs><marker id="na14" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" style="fill:var(--accent)" /></marker></defs><line x1="24.0" y1="42.4" x2="42.4" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="42.4" x2="42.4" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="42.4" y1="24.0" x2="60.8" y2="42.4" style="stroke:var(--text);stroke-width:1" /><line x1="42.4" y1="60.8" x2="60.8" y2="42.4" style="stroke:var(--text);stroke-width:1" /><line x1="42.4" y1="60.8" x2="60.8" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="60.8" y1="42.4" x2="79.2" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="60.8" y1="79.2" x2="79.2" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="60.8" y1="79.2" x2="79.2" y2="97.5" style="stroke:var(--text);stroke-width:1" /><line x1="79.2" y1="60.8" x2="97.5" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="79.2" y1="97.5" x2="97.5" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="79.2" y1="97.5" x2="97.5" y2="115.9" style="stroke:var(--text);stroke-width:1" /><line x1="97.5" y1="79.2" x2="115.9" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="97.5" y1="79.2" x2="115.9" y2="97.5" style="stroke:var(--text);stroke-width:1" /><line x1="115.9" y1="60.8" x2="134.3" y2="42.4" style="stroke:var(--text);stroke-width:1" /><line x1="115.9" y1="60.8" x2="134.3" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="134.3" y1="42.4" x2="152.7" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="134.3" y1="42.4" x2="152.7" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="152.7" y1="24.0" x2="171.1" y2="42.4" style="stroke:var(--text);stroke-width:1" /><line x1="97.5" y1="115.9" x2="115.9" y2="97.5" style="stroke:var(--text);stroke-width:1" /><line x1="115.9" y1="97.5" x2="134.3" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="134.3" y1="79.2" x2="152.7" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="152.7" y1="60.8" x2="171.1" y2="42.4" style="stroke:var(--text);stroke-width:1" /><line x1="152.7" y1="60.8" x2="171.1" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="171.1" y1="42.4" x2="189.5" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="171.1" y1="79.2" x2="189.5" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="171.1" y1="79.2" x2="189.5" y2="97.5" style="stroke:var(--text);stroke-width:1" /><line x1="189.5" y1="60.8" x2="207.8" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="189.5" y1="97.5" x2="207.8" y2="79.2" style="stroke:var(--text);stroke-width:1" /><circle cx="42.4" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="97.5" cy="115.9" r="3" style="fill:var(--text)" /><circle cx="171.1" cy="42.4" r="3" style="fill:var(--text)" /><circle cx="189.5" cy="97.5" r="3" style="fill:var(--text)" /><foreignObject x="26.4" y="16.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="93.5" y="119.9" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{C}\)</div></foreignObject><foreignObject x="177.1" y="28.4" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{D}\)</div></foreignObject><foreignObject x="195.5" y="89.5" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject></svg>
+</figure>
+            </div>
+            <p><strong>[방법 1]</strong> C지점과 D지점을 지나지 않으려면 그림에서 \(\times\)로 표시된 도로를 지나지 않으면 된다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 261 139" style="max-width:261px"><defs><marker id="na15" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" style="fill:var(--accent)" /></marker></defs><line x1="24.0" y1="42.4" x2="42.4" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="42.4" x2="42.4" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="42.4" y1="24.0" x2="60.8" y2="42.4" style="stroke:var(--text);stroke-width:1" /><line x1="42.4" y1="60.8" x2="60.8" y2="42.4" style="stroke:var(--text);stroke-width:1" /><line x1="42.4" y1="60.8" x2="60.8" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="60.8" y1="42.4" x2="79.2" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="60.8" y1="79.2" x2="79.2" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="60.8" y1="79.2" x2="79.2" y2="97.5" style="stroke:var(--text);stroke-width:1" /><line x1="79.2" y1="60.8" x2="97.5" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="79.2" y1="97.5" x2="97.5" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="79.2" y1="97.5" x2="97.5" y2="115.9" style="stroke:var(--text);stroke-width:1" /><line x1="97.5" y1="79.2" x2="115.9" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="97.5" y1="79.2" x2="115.9" y2="97.5" style="stroke:var(--text);stroke-width:1" /><line x1="115.9" y1="60.8" x2="134.3" y2="42.4" style="stroke:var(--text);stroke-width:1" /><line x1="115.9" y1="60.8" x2="134.3" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="134.3" y1="42.4" x2="152.7" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="134.3" y1="42.4" x2="152.7" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="152.7" y1="24.0" x2="171.1" y2="42.4" style="stroke:var(--text);stroke-width:1" /><line x1="97.5" y1="115.9" x2="115.9" y2="97.5" style="stroke:var(--text);stroke-width:1" /><line x1="115.9" y1="97.5" x2="134.3" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="134.3" y1="79.2" x2="152.7" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="152.7" y1="60.8" x2="171.1" y2="42.4" style="stroke:var(--text);stroke-width:1" /><line x1="152.7" y1="60.8" x2="171.1" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="171.1" y1="42.4" x2="189.5" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="171.1" y1="79.2" x2="189.5" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="171.1" y1="79.2" x2="189.5" y2="97.5" style="stroke:var(--text);stroke-width:1" /><line x1="189.5" y1="60.8" x2="207.8" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="189.5" y1="97.5" x2="207.8" y2="79.2" style="stroke:var(--text);stroke-width:1" /><path d="M85.3,103.7 l6,6 M91.3,103.7 l-6,6" style="stroke:var(--accent);stroke-width:1.6" /><path d="M103.7,103.7 l6,6 M109.7,103.7 l-6,6" style="stroke:var(--accent);stroke-width:1.6" /><path d="M158.9,30.2 l6,6 M164.9,30.2 l-6,6" style="stroke:var(--accent);stroke-width:1.6" /><path d="M158.9,48.6 l6,6 M164.9,48.6 l-6,6" style="stroke:var(--accent);stroke-width:1.6" /><path d="M177.3,48.6 l6,6 M183.3,48.6 l-6,6" style="stroke:var(--accent);stroke-width:1.6" /><path d="M177.3,67.0 l6,6 M183.3,67.0 l-6,6" style="stroke:var(--accent);stroke-width:1.6" /><circle cx="42.4" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="97.5" cy="115.9" r="3" style="fill:var(--text)" /><circle cx="171.1" cy="42.4" r="3" style="fill:var(--text)" /><circle cx="189.5" cy="97.5" r="3" style="fill:var(--text)" /><circle cx="97.5" cy="79.2" r="3" style="fill:var(--text)" /><circle cx="152.7" cy="60.8" r="3" style="fill:var(--text)" /><circle cx="171.1" cy="79.2" r="3" style="fill:var(--text)" /><foreignObject x="26.4" y="16.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="93.5" y="119.9" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{C}\)</div></foreignObject><foreignObject x="177.1" y="28.4" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{D}\)</div></foreignObject><foreignObject x="195.5" y="89.5" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><foreignObject x="93.5" y="59.2" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}\)</div></foreignObject><foreignObject x="136.7" y="60.8" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}\)</div></foreignObject><foreignObject x="155.1" y="79.2" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{R}\)</div></foreignObject></svg>
+</figure>
+            </div>
+            <p>A지점에서 P지점까지 최단 거리로 가는 경우의 수는 \({}_4\mathrm{C}_1\)<br>
+                P지점에서 Q지점까지 최단 거리로 가는 경우의 수는 \({}_3\mathrm{C}_1\)<br>
+                R지점에서 B지점까지 최단 거리로 가는 경우의 수는 \({}_2\mathrm{C}_1\)<br>
+                \(\therefore\ {}_4\mathrm{C}_1\times{}_3\mathrm{C}_1\times{}_2\mathrm{C}_1=24\)<br>
+                <strong>[방법 2]</strong> 합의 법칙을 이용하여 각 지점까지 최단 거리로 가는 경우의 수를 표시하면 다음과 같다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 261 139" style="max-width:261px"><defs><marker id="na16" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" style="fill:var(--accent)" /></marker></defs><line x1="24.0" y1="42.4" x2="42.4" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="42.4" x2="42.4" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="42.4" y1="24.0" x2="60.8" y2="42.4" style="stroke:var(--text);stroke-width:1" /><line x1="42.4" y1="60.8" x2="60.8" y2="42.4" style="stroke:var(--text);stroke-width:1" /><line x1="42.4" y1="60.8" x2="60.8" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="60.8" y1="42.4" x2="79.2" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="60.8" y1="79.2" x2="79.2" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="60.8" y1="79.2" x2="79.2" y2="97.5" style="stroke:var(--text);stroke-width:1" /><line x1="79.2" y1="60.8" x2="97.5" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="79.2" y1="97.5" x2="97.5" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="79.2" y1="97.5" x2="97.5" y2="115.9" style="stroke:var(--text);stroke-width:1" /><line x1="97.5" y1="79.2" x2="115.9" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="97.5" y1="79.2" x2="115.9" y2="97.5" style="stroke:var(--text);stroke-width:1" /><line x1="115.9" y1="60.8" x2="134.3" y2="42.4" style="stroke:var(--text);stroke-width:1" /><line x1="115.9" y1="60.8" x2="134.3" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="134.3" y1="42.4" x2="152.7" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="134.3" y1="42.4" x2="152.7" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="152.7" y1="24.0" x2="171.1" y2="42.4" style="stroke:var(--text);stroke-width:1" /><line x1="97.5" y1="115.9" x2="115.9" y2="97.5" style="stroke:var(--text);stroke-width:1" /><line x1="115.9" y1="97.5" x2="134.3" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="134.3" y1="79.2" x2="152.7" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="152.7" y1="60.8" x2="171.1" y2="42.4" style="stroke:var(--text);stroke-width:1" /><line x1="152.7" y1="60.8" x2="171.1" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="171.1" y1="42.4" x2="189.5" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="171.1" y1="79.2" x2="189.5" y2="60.8" style="stroke:var(--text);stroke-width:1" /><line x1="171.1" y1="79.2" x2="189.5" y2="97.5" style="stroke:var(--text);stroke-width:1" /><line x1="189.5" y1="60.8" x2="207.8" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="189.5" y1="97.5" x2="207.8" y2="79.2" style="stroke:var(--text);stroke-width:1" /><line x1="79.2" y1="97.5" x2="97.5" y2="115.9" style="stroke:var(--surface);stroke-width:3" /><line x1="79.2" y1="97.5" x2="97.5" y2="115.9" style="stroke:var(--text);stroke-width:2;stroke-dasharray:3 3" /><line x1="97.5" y1="115.9" x2="115.9" y2="97.5" style="stroke:var(--surface);stroke-width:3" /><line x1="97.5" y1="115.9" x2="115.9" y2="97.5" style="stroke:var(--text);stroke-width:2;stroke-dasharray:3 3" /><line x1="152.7" y1="24.0" x2="171.1" y2="42.4" style="stroke:var(--surface);stroke-width:3" /><line x1="152.7" y1="24.0" x2="171.1" y2="42.4" style="stroke:var(--text);stroke-width:2;stroke-dasharray:3 3" /><line x1="152.7" y1="60.8" x2="171.1" y2="42.4" style="stroke:var(--surface);stroke-width:3" /><line x1="152.7" y1="60.8" x2="171.1" y2="42.4" style="stroke:var(--text);stroke-width:2;stroke-dasharray:3 3" /><line x1="171.1" y1="42.4" x2="189.5" y2="60.8" style="stroke:var(--surface);stroke-width:3" /><line x1="171.1" y1="42.4" x2="189.5" y2="60.8" style="stroke:var(--text);stroke-width:2;stroke-dasharray:3 3" /><line x1="171.1" y1="79.2" x2="189.5" y2="60.8" style="stroke:var(--surface);stroke-width:3" /><line x1="171.1" y1="79.2" x2="189.5" y2="60.8" style="stroke:var(--text);stroke-width:2;stroke-dasharray:3 3" /><path d="M85.3,103.7 l6,6 M91.3,103.7 l-6,6" style="stroke:var(--accent);stroke-width:1.6" /><path d="M103.7,103.7 l6,6 M109.7,103.7 l-6,6" style="stroke:var(--accent);stroke-width:1.6" /><path d="M158.9,30.2 l6,6 M164.9,30.2 l-6,6" style="stroke:var(--accent);stroke-width:1.6" /><path d="M158.9,48.6 l6,6 M164.9,48.6 l-6,6" style="stroke:var(--accent);stroke-width:1.6" /><path d="M177.3,48.6 l6,6 M183.3,48.6 l-6,6" style="stroke:var(--accent);stroke-width:1.6" /><path d="M177.3,67.0 l6,6 M183.3,67.0 l-6,6" style="stroke:var(--accent);stroke-width:1.6" /><circle cx="42.4" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="97.5" cy="115.9" r="3" style="fill:var(--text)" /><circle cx="171.1" cy="42.4" r="3" style="fill:var(--text)" /><circle cx="189.5" cy="97.5" r="3" style="fill:var(--text)" /><foreignObject x="26.4" y="16.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="93.5" y="119.9" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{C}\)</div></foreignObject><foreignObject x="177.1" y="28.4" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{D}\)</div></foreignObject><foreignObject x="195.5" y="89.5" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><foreignObject x="54.8" y="-14.4" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject><foreignObject x="83.2" y="10.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(2\)</div></foreignObject><foreignObject x="101.5" y="28.4" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(3\)</div></foreignObject><foreignObject x="119.9" y="46.8" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(4\)</div></foreignObject><foreignObject x="28.4" y="24.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject><foreignObject x="46.8" y="42.4" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject><foreignObject x="65.2" y="60.8" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(1\)</div></foreignObject><foreignObject x="93.5" y="83.2" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(4\)</div></foreignObject><foreignObject x="119.9" y="89.5" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(4\)</div></foreignObject><foreignObject x="136.7" y="16.0" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(4\)</div></foreignObject><foreignObject x="138.3" y="75.2" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(8\)</div></foreignObject><foreignObject x="136.7" y="62.8" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(12\)</div></foreignObject><foreignObject x="155.1" y="81.2" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(12\)</div></foreignObject><foreignObject x="195.5" y="52.8" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(12\)</div></foreignObject><foreignObject x="213.8" y="75.2" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(24\)</div></foreignObject><foreignObject x="185.5" y="101.5" width="30" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel accent">\(12\)</div></foreignObject></svg>
+</figure>
+            </div>
+
+            <p><strong>[예5]</strong> ① 오른쪽 그림과 같은 도로망에서 A지점에서 B지점까지 최단 거리로 가는 경우의 수는<br>
+                P, Q, R지점을 지나서 갈 때<br>
+                \((1\times{}_5\mathrm{C}_1)+({}_2\mathrm{C}_1\times{}_4\mathrm{C}_1)+(1\times1)=14\)<br>
+                P', Q', R'지점을 지나서 갈 때<br>
+                \((1\times1)+({}_3\mathrm{C}_2\times{}_4\mathrm{C}_1)+(1\times1)=14\)</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 198 138" style="max-width:198px"><defs><marker id="na17" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" style="fill:var(--accent)" /></marker></defs><ellipse cx="99.0" cy="78.0" rx="27.0" ry="16.5" style="fill:var(--muted);opacity:0.4;stroke:var(--text)" /><foreignObject x="87.0" y="69.0" width="40" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\text{호수}\)</div></foreignObject><line x1="24.0" y1="114.0" x2="24.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="54.0" y1="114.0" x2="54.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="144.0" y1="114.0" x2="144.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="114.0" x2="144.0" y2="114.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="54.0" x2="144.0" y2="54.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="24.0" x2="144.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="84.0" y1="114.0" x2="84.0" y2="84.0" style="stroke:var(--text);stroke-width:1" /><line x1="84.0" y1="54.0" x2="84.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="84.0" x2="54.0" y2="84.0" style="stroke:var(--text);stroke-width:1" /><line x1="114.0" y1="84.0" x2="144.0" y2="84.0" style="stroke:var(--text);stroke-width:1" /><line x1="114.0" y1="54.0" x2="114.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><circle cx="24.0" cy="114.0" r="3" style="fill:var(--text)" /><circle cx="144.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="24.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="24.0" cy="54.0" r="3" style="fill:var(--text)" /><circle cx="54.0" cy="54.0" r="3" style="fill:var(--text)" /><circle cx="54.0" cy="84.0" r="3" style="fill:var(--text)" /><circle cx="84.0" cy="114.0" r="3" style="fill:var(--text)" /><circle cx="114.0" cy="114.0" r="3" style="fill:var(--text)" /><foreignObject x="8.0" y="108.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="150.0" y="16.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><foreignObject x="6.0" y="16.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P'}\)</div></foreignObject><foreignObject x="8.0" y="46.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}\)</div></foreignObject><foreignObject x="56.0" y="34.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q'}\)</div></foreignObject><foreignObject x="38.0" y="66.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}\)</div></foreignObject><foreignObject x="80.0" y="116.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{R}\)</div></foreignObject><foreignObject x="110.0" y="116.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{R'}\)</div></foreignObject></svg>
+</figure>
+            </div>
+            <p>② 오른쪽 그림과 같은 도로망에서 A지점에서 B지점까지 최단 거리로 가는 경우의 수는<br>
+                P, Q지점을 지나서 갈 때<br>
+                \(({}_3\mathrm{C}_2\times{}_5\mathrm{C}_2)+({}_3\mathrm{C}_1\times{}_5\mathrm{C}_3)=60\)<br>
+                으로 계산하는 것이 유리하다.<br>
+                \(\Rightarrow\) ①, ② 모두 합의 법칙을 이용하여 최단 거리로 가는 경우의 수를 구할 수도 있다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 182 178" style="max-width:182px"><defs><marker id="na18" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" style="fill:var(--accent)" /></marker></defs><line x1="24.0" y1="128.0" x2="24.0" y2="102.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="128.0" x2="50.0" y2="128.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="102.0" x2="24.0" y2="76.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="102.0" x2="50.0" y2="102.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="76.0" x2="50.0" y2="76.0" style="stroke:var(--text);stroke-width:1" /><line x1="50.0" y1="154.0" x2="50.0" y2="128.0" style="stroke:var(--text);stroke-width:1" /><line x1="50.0" y1="154.0" x2="76.0" y2="154.0" style="stroke:var(--text);stroke-width:1" /><line x1="50.0" y1="128.0" x2="50.0" y2="102.0" style="stroke:var(--text);stroke-width:1" /><line x1="50.0" y1="128.0" x2="76.0" y2="128.0" style="stroke:var(--text);stroke-width:1" /><line x1="50.0" y1="102.0" x2="50.0" y2="76.0" style="stroke:var(--text);stroke-width:1" /><line x1="50.0" y1="102.0" x2="76.0" y2="102.0" style="stroke:var(--text);stroke-width:1" /><line x1="50.0" y1="76.0" x2="50.0" y2="50.0" style="stroke:var(--text);stroke-width:1" /><line x1="50.0" y1="76.0" x2="76.0" y2="76.0" style="stroke:var(--text);stroke-width:1" /><line x1="50.0" y1="50.0" x2="50.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="50.0" y1="50.0" x2="76.0" y2="50.0" style="stroke:var(--text);stroke-width:1" /><line x1="50.0" y1="24.0" x2="76.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="76.0" y1="154.0" x2="76.0" y2="128.0" style="stroke:var(--text);stroke-width:1" /><line x1="76.0" y1="128.0" x2="76.0" y2="102.0" style="stroke:var(--text);stroke-width:1" /><line x1="76.0" y1="128.0" x2="102.0" y2="128.0" style="stroke:var(--text);stroke-width:1" /><line x1="76.0" y1="102.0" x2="76.0" y2="76.0" style="stroke:var(--text);stroke-width:1" /><line x1="76.0" y1="102.0" x2="102.0" y2="102.0" style="stroke:var(--text);stroke-width:1" /><line x1="76.0" y1="76.0" x2="76.0" y2="50.0" style="stroke:var(--text);stroke-width:1" /><line x1="76.0" y1="76.0" x2="102.0" y2="76.0" style="stroke:var(--text);stroke-width:1" /><line x1="76.0" y1="50.0" x2="76.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="76.0" y1="50.0" x2="102.0" y2="50.0" style="stroke:var(--text);stroke-width:1" /><line x1="76.0" y1="24.0" x2="102.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="102.0" y1="128.0" x2="102.0" y2="102.0" style="stroke:var(--text);stroke-width:1" /><line x1="102.0" y1="102.0" x2="102.0" y2="76.0" style="stroke:var(--text);stroke-width:1" /><line x1="102.0" y1="102.0" x2="128.0" y2="102.0" style="stroke:var(--text);stroke-width:1" /><line x1="102.0" y1="76.0" x2="102.0" y2="50.0" style="stroke:var(--text);stroke-width:1" /><line x1="102.0" y1="76.0" x2="128.0" y2="76.0" style="stroke:var(--text);stroke-width:1" /><line x1="102.0" y1="50.0" x2="102.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="102.0" y1="50.0" x2="128.0" y2="50.0" style="stroke:var(--text);stroke-width:1" /><line x1="102.0" y1="24.0" x2="128.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><line x1="128.0" y1="102.0" x2="128.0" y2="76.0" style="stroke:var(--text);stroke-width:1" /><line x1="128.0" y1="76.0" x2="128.0" y2="50.0" style="stroke:var(--text);stroke-width:1" /><line x1="128.0" y1="50.0" x2="128.0" y2="24.0" style="stroke:var(--text);stroke-width:1" /><circle cx="50.0" cy="154.0" r="3" style="fill:var(--text)" /><circle cx="128.0" cy="24.0" r="3" style="fill:var(--text)" /><circle cx="50.0" cy="76.0" r="3" style="fill:var(--text)" /><circle cx="76.0" cy="102.0" r="3" style="fill:var(--text)" /><foreignObject x="34.0" y="148.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{A}\)</div></foreignObject><foreignObject x="134.0" y="16.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{B}\)</div></foreignObject><foreignObject x="34.0" y="58.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}\)</div></foreignObject><foreignObject x="60.0" y="84.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}\)</div></foreignObject></svg>
+</figure>
+            </div>
+        </section>
     </main>
+
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
 
 

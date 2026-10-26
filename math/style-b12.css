@@ -92,3 +92,29 @@
 .graph svg {
     overflow: visible;
 }
+
+/* 그래프 라벨 상자보다 수식이 넓어도 잘리지 않게 한다 (가운데 정렬이라 위치는 그대로). */
+.graph foreignObject {
+    overflow: visible;
+}
+
+/* 문장 속 수식이 카드 폭보다 길면 그 수식만 가로로 넘긴다 (카드 밖으로 넘치지 않게). */
+.note mjx-container:not([display="true"]) {
+    display: inline-block;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    vertical-align: middle;
+}
+
+.note .callout {
+    overflow-wrap: anywhere;
+}
+
+/* 표가 카드보다 넓으면 표만 가로로 스크롤한다 (옆 카드를 가리지 않게). */
+.note table {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    overflow-x: auto;
+}
