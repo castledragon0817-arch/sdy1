@@ -108,6 +108,12 @@
     vertical-align: middle;
 }
 
+/* 그래프 라벨은 좁은 foreignObject 안에 있으므로 잘리거나 스크롤바가 생기지 않게 한다. */
+.note .graph mjx-container:not([display="true"]) {
+    max-width: none;
+    overflow: visible;
+}
+
 .note .callout {
     overflow-wrap: anywhere;
 }
@@ -118,4 +124,9 @@
     width: fit-content;
     max-width: 100%;
     overflow-x: auto;
+}
+
+/* 한 단 배치(좁은 화면)의 1fr은 내용의 최소 폭 아래로 줄지 않아 카드가 화면 밖으로 넘친다. 카드가 칸 폭에 맞춰 줄도록 한다. */
+.note-grid > .note {
+    min-width: 0;
 }

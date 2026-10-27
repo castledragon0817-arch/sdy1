@@ -16,6 +16,1224 @@
     </div>
 
     <main class="note-grid" id="v1">
+
+        <section class="note">
+            <h2>#1 시행과 사건</h2>
+
+            <h3>1. 시행과 사건</h3>
+            <h4>1) 시행</h4>
+            <p>주사위나 동전 던지기와 같이 같은 조건에서 반복할 수 있고, 그 결과가 우연에 의하여 정해지는 실험이나 관찰을 <strong>시행</strong>이라고 한다.</p>
+
+            <h4>2) 표본공간과 사건</h4>
+            <p>어떤 시행에서 일어날 수 있는 모든 결과의 집합을 표본공간이라 하고, 표본공간의 부분집합을 사건이라고 한다.</p>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                표본공간(Sample space)은 보통 \(S\)로, 사건은 \(A,\ B,\ C,\ \cdots\)로 나타내고, 표본공간은 공집합이 아닌 경우만 다룬다.
+            </div>
+
+            <h4>3) 근원사건</h4>
+            <p>표본공간 \(S\)의 부분집합 중에서 한 개의 원소로 이루어진 사건을 근원사건이라고 한다.</p>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                반드시 일어나는 사건, 즉 표본공간 \(S\) 자신인 사건을 전사건이라 하고, 절대로 일어나지 않는 사건, 즉 \(\varnothing\)인 사건을 공사건이라고 한다. 전사건과
+                공사건은 현행 교육과정에서 정의하지 않는 용어이지만 편의상 사용하기로 하자.
+            </div>
+
+            <p><strong>[예1]</strong> 한 개의 주사위를 한 번 던지는 시행에서 표본공간 \(S\)는<br>
+                \(S=\{1,\ 2,\ 3,\ 4,\ 5,\ 6\}\)이고, 이 시행에서 근원사건은<br>
+                \(\{1\},\ \{2\},\ \{3\},\ \{4\},\ \{5\},\ \{6\}\)이다.<br>
+                또 홀수의 눈이 나오는 사건을 \(A\)라 하면 \(A=\{1,\ 3,\ 5\}\)이다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 180 104" style="max-width:180px"><rect x="4" y="8" width="172" height="92" rx="8" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="10.0" y="-2.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(S\)</div></foreignObject><circle cx="62" cy="56" r="36" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="54.0" y="6.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\)</div></foreignObject><foreignObject x="42.0" y="34.0" width="14" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(1\)</div></foreignObject><foreignObject x="66.0" y="34.0" width="14" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(3\)</div></foreignObject><foreignObject x="54.0" y="60.0" width="14" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(5\)</div></foreignObject><foreignObject x="138.0" y="40.0" width="14" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(2\)</div></foreignObject><foreignObject x="126.0" y="68.0" width="14" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(4\)</div></foreignObject><foreignObject x="150.0" y="68.0" width="14" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(6\)</div></foreignObject></svg>
+</figure>
+            </div>
+
+            <p><strong>[예2]</strong> 두 개의 동전을 동시에 한 번 던지는 시행에서 동전의 앞면을 H, 뒷면을 T로 나타낼 때, 표본공간 \(S\)를
+                \(S=\{\mathrm{HH},\ \mathrm{HT},\ \mathrm{TH},\ \mathrm{TT}\}\)로 나타내면 서로 다른 면이 나오는 사건 \(A\)는 \(A=\{\mathrm{HT},\ \mathrm{TH}\}\)이다.</p>
+        </section>
+
+        <section class="note">
+            <h2>#2 합사건과 곱사건</h2>
+
+            <h3>2. 합사건과 곱사건</h3>
+            <h4>1) 합사건</h4>
+            <p>표본공간 \(S\)의 두 사건 \(A,\ B\)에 대하여 \(A\) 또는 \(B\)가 일어나는 사건을 기호로
+                <span style="display:block;margin:6px 0 6px 2em">\(A\cup B\)</span>
+                와 같이 나타내고 \(A\)와 \(B\)의 합사건이라고 한다.</p>
+
+            <h4>2) 곱사건</h4>
+            <p>표본공간 \(S\)의 두 사건 \(A,\ B\)에 대하여 \(A\)와 \(B\)가 동시에 일어나는 사건을 기호로
+                <span style="display:block;margin:6px 0 6px 2em">\(A\cap B\)</span>
+                와 같이 나타내고 \(A\)와 \(B\)의 곱사건이라고 한다.</p>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                합사건과 곱사건은 현행 교육과정에서 정의하지 않는 용어이지만 편의상 사용하기로 하자.
+            </div>
+
+            <p><strong>[예]</strong> 1부터 5까지의 자연수가 하나씩 적힌 5장의 카드 중 한 장의 카드를 뽑는 시행에서 3 이하의 수가 적힌 카드를 뽑는 사건을 \(A\), 짝수가
+                적힌 카드를 뽑는 사건을 \(B\)라 하면 \(A=\{1,\ 2,\ 3\},\ B=\{2,\ 4\}\)이므로<br>
+                \(A\cup B=\{1,\ 2,\ 3,\ 4\},\ A\cap B=\{2\}\)</p>
+        </section>
+
+        <section class="note">
+            <h2>#3 배반사건과 여사건</h2>
+
+            <h3>3. 배반사건과 여사건</h3>
+            <h4>1) 배반사건</h4>
+            <p>표본공간 \(S\)의 두 사건 \(A,\ B\)에 대하여 \(A\)와 \(B\)가 동시에 일어나지 않을 때, 즉
+                <span style="display:block;margin:6px 0 6px 2em">\(A\cap B=\varnothing\)</span>
+                일 때, 두 사건 \(A\)와 \(B\)는 서로 배반이라 하고, 이 두 사건을 서로 <strong>배반사건</strong>이라고 한다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 176 104" style="max-width:176px"><rect x="4" y="8" width="168" height="92" rx="8" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="10.0" y="-2.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(S\)</div></foreignObject><circle cx="52" cy="56" r="30" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="44.0" y="12.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\)</div></foreignObject><circle cx="122" cy="56" r="30" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="114.0" y="12.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(B\)</div></foreignObject></svg>
+</figure>
+            </div>
+
+            <h4>2) 여사건</h4>
+            <p>표본공간 \(S\)의 사건 \(A\)에 대하여 \(A\)가 일어나지 않는 사건을 \(A\)의 <strong>여사건</strong>이라 하고, 이것을 기호로
+                <span style="display:block;margin:6px 0 6px 2em">\(A^C\)</span>
+                과 같이 나타낸다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 176 104" style="max-width:176px"><rect x="4" y="8" width="168" height="92" rx="8" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="10.0" y="-2.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(S\)</div></foreignObject><mask id="v3"><rect x="4" y="8" width="168" height="92" fill="white" /><circle cx="66" cy="56" r="32" fill="black" /><circle cx="0" cy="0" r="0" fill="black" /></mask><rect x="4" y="8" width="168" height="92" rx="8" mask="url(#v3)" style="fill:var(--muted);opacity:0.4" /><circle cx="66" cy="56" r="32" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="58.0" y="10.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\)</div></foreignObject><circle cx="0" cy="0" r="0" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="0.0" y="0.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px"></div></foreignObject><foreignObject x="126.0" y="46.0" width="26" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A^C\)</div></foreignObject></svg>
+</figure>
+            </div>
+
+            <div class="callout">
+                <span class="tag">REMARK 1</span><br>
+                \(A\cap A^C=\varnothing\)이므로 사건 \(A\)와 그 여사건 \(A^C\)은 서로 배반사건이다.
+            </div>
+
+            <p><strong>[예]</strong> 한 개의 주사위를 한 번 던지는 시행에서 짝수의 눈이 나오는 사건을 \(A\), 홀수의 눈이 나오는 사건을 \(B\)라 하면<br>
+                \(A=\{2,\ 4,\ 6\},\ B=\{1,\ 3,\ 5\}\)<br>
+                이고<br>
+                \(A\cap B=\varnothing\)이므로 \(A\)와 \(B\)는 서로 배반사건,<br>
+                \(A\)의 여사건은 \(B\), \(B\)의 여사건은 \(A\)<br>
+                이다.</p>
+
+            <div class="callout">
+                <span class="tag">REMARK 2</span><br>
+                두 사건이 서로 여사건이면 두 사건은 서로 배반사건이지만, 두 사건이 서로 배반사건이라고 해도 두 사건은 서로 여사건이 아닐 수 있다.
+                <span style="display:block;margin:6px 0 6px 2em">\(B=A^C\Rightarrow A\)와 \(B\)는 서로 배반사건(\(A\)와 \(A^C\)은 서로 배반사건)<br>
+                \(A\)와 \(B\)는 서로 배반사건 \(\nRightarrow B=A^C\)</span>
+                예를 들어 한 개의 주사위를 한 번 던지는 시행에서 짝수의 눈이 나오는 사건을 \(A\), 3의 눈이 나오는 사건을 \(B\)라 하면 \(A=\{2,\ 4,\ 6\},\ B=\{3\}\)이고
+                \(A\cap B=\varnothing\)이므로 \(A\)와 \(B\)는 서로 배반사건이지만 서로 여사건이 아니다.
+            </div>
+        </section>
+
+        <section class="note">
+            <h2>#4 수학적 확률</h2>
+
+            <h3>4. 수학적 확률</h3>
+            <p>어떤 시행에서 사건 \(A\)가 일어날 가능성을 수로 나타낸 것을 사건 \(A\)의 확률이라 하고, 이것을 기호로
+                <span style="display:block;margin:6px 0 6px 2em">\(\mathbf{P(A)}\)</span>
+                와 같이 나타낸다.</p>
+            <p>일반적으로 어떤 시행에서 표본공간 \(S\)에 대하여 각각의 근원사건이 일어날 가능성이 모두 같은 정도로 기대될 때, 사건 \(A\)가 일어날 확률 \(\mathrm{P}(A)\)는
+                <span style="display:flex;align-items:center;gap:8px;margin:6px 0 6px 2em">\(\mathrm{P}(A)=\dfrac{n(A)}{n(S)}\)
+                <span style="font-size:0.8em;line-height:1.5;color:var(--muted)">→ 사건 \(A\)의 원소의 개수<br>→ 표본공간 \(S\)의 원소의 개수</span></span>
+                로 정의하고, 이것을 사건 \(A\)가 일어날 <strong>수학적 확률</strong>이라고 한다.</p>
+            <p>이상을 정리하면 다음과 같다.</p>
+
+            <div class="callout">
+                <span class="tag">수학적 확률</span><br>
+                표본공간 \(S\)에서 각각의 근원사건이 일어날 가능성이 모두 같은 정도로 기대될 때, 사건 \(A\)가 일어날 수학적 확률은
+                \[ \mathrm{P}(A)=\dfrac{n(A)}{n(S)} \]
+            </div>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                \(\mathrm{P}(A)\)의 P는 'Probability'(확률)의 첫 글자이다.
+            </div>
+
+            <p><strong>[예1]</strong> 한 개의 동전을 세 번 던지는 시행에서 동전의 앞면을 H, 뒷면을 T로 나타내면 표본공간 \(S\)는<br>
+                \(S=\{\mathrm{HHH},\ \mathrm{HHT},\ \mathrm{HTH},\ \mathrm{THH},\ \mathrm{HTT},\ \mathrm{THT},\ \mathrm{TTH},\ \mathrm{TTT}\}\)<br>
+                앞면이 한 번 나오는 사건을 \(A\)라 하면<br>
+                \(A=\{\mathrm{HTT},\ \mathrm{THT},\ \mathrm{TTH}\}\)<br>
+                따라서 사건 \(A\)가 일어날 수학적 확률은<br>
+                \(\mathrm{P}(A)=\dfrac{n(A)}{n(S)}=\dfrac{3}{8}\)</p>
+
+            <div class="callout">
+                <span class="tag">REMARK 1</span><br>
+                확률의 가장 중요한 기본은 근원사건을 제대로 파악하는 것이다. 확률에서 모든 경우의 수, 즉 모든 근원사건의 수가 \(n\)이라고 하려면 각 근원사건의 확률은
+                \(\dfrac{1}{n}\)로 동일해야 하고, 어떤 사건이 일어날 확률이 \(\dfrac{r}{n}\)이라고 하려면 이 사건은 \(r\)개의 근원사건으로 이루어져 있어야 한다는 것을 확실히
+                해두자. 수학적 확률의 계산의 기본 틀은
+                <span style="display:block;margin:6px 0 6px 2em">\(\dfrac{1}{n}\times\)(근원사건의 수)</span>
+                이다.
+            </div>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                확률을 다룰 때 '경우의 수'를 말하면 '근원사건의 수'인 것으로 이해하도록 하자.
+            </div>
+
+            <p><strong>[예2]</strong> 남학생 2명과 여학생 4명이 임의로 일렬로 앉을 때, 남학생 2명이 이웃하게 앉을 확률을 구해보자.<br>
+                모든 경우의 수는<br>
+                \(6!\)<br>
+                남학생 2명을 남학생 1명으로 보고 여학생 4명과 함께 일렬로 앉고, 남학생 2명을 배열하는 경우의 수는<br>
+                \(5!\times2!\)<br>
+                \(\therefore\ \dfrac{5!\times2!}{6!}=\dfrac{1}{3}\)</p>
+
+            <div class="callout">
+                <span class="tag">REMARK 2 · 통계적 확률</span><br>
+                수학적 확률은 각 근원사건이 일어날 가능성이 모두 같다고 가정된 시행에서 정의하였다. 그러나 비가 올 확률, 질병이 발생할 확률과 같이 우리 주변의 여러 현상
+                중에는 각 경우가 일어날 가능성이 같지 않은 경우가 많다. 이와 같은 경우에는 많은 자료를 수집하여 조사하거나 같은 시행을 여러 번 반복함으로써 얻어지는
+                상대도수를 통하여 그 사건이 일어나는 경향을 알아볼 수 있다.<br>
+                일반적으로 같은 시행을 \(n\)번 반복하였을 때, 사건 \(A\)가 일어난 횟수를 \(r_n\)이라 하자.<br>
+                이때 \(n\)을 한없이 크게 함에 따라 상대도수 \(\dfrac{r_n}{n}\)이 일정한 값 \(p\)에 가까워지면 이 값 \(p\)를 사건 \(A\)가 일어날 <strong>통계적 확률</strong>이라고
+                한다. 그러나 실제로 통계적 확률을 구할 때, \(n\)을 한없이 크게 할 수 없으므로 \(n\)이 충분히 클 때의 상대도수 \(\dfrac{r_n}{n}\)으로 통계적 확률을
+                대신한다.<br>
+                한편 어떤 사건 \(A\)가 일어날 수학적 확률이 \(p\)일 때, \(n\)을 충분히 크게 하면 상대도수 \(\dfrac{r_n}{n}\)은 \(p\)에 가까워진다는 것이 알려져 있다.
+                따라서 수학적 확률을 구하기 어려운 경우에는 통계적 확률을 사용한다.<br>
+                예를 들어 한 개의 동전을 던지는 시행을 충분히 반복하였을 때 동전의 앞면이 나오는 상대도수는 \(\dfrac{1}{2}\)에 가까워지고, 한 개의 주사위를 던지는 시행을
+                충분히 반복하였을 때 1의 눈이 나오는 상대도수는 \(\dfrac{1}{6}\)에 가까워진다.
+            </div>
+        </section>
+
+        <section class="note">
+            <h2>#5 확률의 기본 성질</h2>
+
+            <h3>5. 확률의 기본 성질</h3>
+            <p>어떤 시행에서 표본공간 \(S\)의 임의의 사건 \(A\)는 \(S\)의 부분집합이므로
+                <span style="display:block;margin:6px 0 6px 2em">\(0\le n(A)\le n(S)\)</span>
+                이다. 위의 부등식의 각 변을 \(n(S)\)로 나누면
+                <span style="display:block;margin:6px 0 6px 2em">\(0\le\dfrac{n(A)}{n(S)}\le1\), 즉 \(0\le\mathrm{P}(A)\le1\)</span>
+                이다.<br>
+                특히 표본공간인 전사건 \(S\)와 공사건 \(\varnothing\)에 대하여
+                <span style="display:block;margin:6px 0 6px 2em">\(\mathrm{P}(S)=\dfrac{n(S)}{n(S)}=1,\ \mathrm{P}(\varnothing)=\dfrac{n(\varnothing)}{n(S)}=0\)</span>
+                이다.</p>
+            <p>이상을 정리하면 다음과 같다.</p>
+
+            <div class="callout">
+                <span class="tag">확률의 기본 성질</span><br>
+                ❶ 임의의 사건 \(A\)에 대하여
+                <span style="display:block;margin:4px 0 4px 2em">\(0\le\mathrm{P}(A)\le1\)</span>
+                ❷ 표본공간인 전사건 \(S\)에 대하여
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(S)=1\)</span>
+                ❸ 공사건 \(\varnothing\)에 대하여
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(\varnothing)=0\)</span>
+            </div>
+        </section>
+
+        <section class="note">
+            <h2>#6 근원사건의 이해</h2>
+
+            <h3>6. 근원사건의 이해</h3>
+            <p>모든 근원사건의 수가 \(n\)이라는 것은 각 근원사건의 확률이 모두 \(\dfrac{1}{n}\)로 동일하다는 것이다.<br>
+                근원사건은 경우의 수를 다루는 것과는 다르다. 경우의 수는 서로 같은 근원사건을 하나로 보는 개념이다.</p>
+            <p>예를 들어 그림과 같이 흰색과 검은색의 세 가지 크기의 공이 있다고 하자.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 200 36" style="max-width:200px"><circle cx="18" cy="18" r="12" style="fill:none;stroke:var(--text);stroke-width:1" /><circle cx="54" cy="18" r="9" style="fill:none;stroke:var(--text);stroke-width:1" /><circle cx="92" cy="18" r="12" style="fill:var(--text);stroke:var(--text);stroke-width:1" /><circle cx="130" cy="18" r="9" style="fill:var(--text);stroke:var(--text);stroke-width:1" /><circle cx="160" cy="18" r="5" style="fill:var(--text);stroke:var(--text);stroke-width:1" /></svg>
+</figure>
+            </div>
+            <p>임의로 하나의 공을 꺼낼 때<br>
+                색깔의 경우의 수는 2이고, 이때 전사건은
+                <span style="display:block;margin:4px 0 4px 2em">{흰색, 검은색}</span>
+                으로 표시해 볼 수 있다.<br>
+                크기의 경우의 수는 3이고, 이때 전사건은
+                <span style="display:block;margin:4px 0 4px 2em">{대, 중, 소}</span>
+                로 표시해 볼 수 있다.<br>
+                그러나 색깔의 표본공간과 크기의 표본공간은 모두
+                <span style="display:block;margin:4px 0 4px 2em">{흰색 대, 흰색 중, 검은색 대, 검은색 중, 검은색 소}</span>
+                이고, 5개의 근원사건으로 이루어져 있다.<br>
+                이때 경우의 수의 입장에서 흰 공을 꺼낼 확률을 \(\dfrac{1}{2}\)로 답하거나 가장 작은 크기의 공을 꺼낼 확률을 \(\dfrac{1}{3}\)로 답하는 것은 상식적으로
+                말이 안 된다. 흰 공을 꺼낼 확률은 \(\dfrac{2}{5}\), 가장 작은 크기의 공을 꺼낼 확률은 \(\dfrac{1}{5}\)이고, 근원사건의 입장에 부합한다는 것을 알 수 있다.</p>
+            <p>이처럼 근원사건을 정확히 판단하지 않으면 확률 계산의 기반 자체가 무너지게 된다. 그렇다면 근원사건을 어떻게 판단해야 할까? 가장 간단한 해결책은 서로 같은
+                대상이 등장한다고 해도
+                <span style="display:block;margin:4px 0 4px 2em"><strong>같은 확률을 가지는 서로 다른 것</strong></span>
+                으로 본다는 것이다.<br>
+                예를 들어 동전을 여러 개 던지거나 주사위를 여러 개 던지는 문제에서 '서로 다른' 동전, '서로 다른' 주사위라고 하지 않을 때가 많지만 확률을 다루고 있다면
+                자동으로 서로 다른 것으로 봐야 한다.</p>
+
+            <p><strong>[예1]</strong> 2개의 동전을 동시에 던질 때 모든 근원사건의 수는<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;(앞, 앞), (앞, 뒤), (뒤, 앞), (뒤, 뒤)<br>
+                에서 4이다. 여기서 2개의 동전이 서로 다르다고 표현하지 않아도 확률을 다루고 있다면 (앞, 뒤), (뒤, 앞)이 서로 다른 경우인 것에 주의해야 한다.<br>
+                따라서 2개의 동전을 동시에 던질 때<br>
+                모두 앞면이 나올 확률은 \(\dfrac{1}{4}\), 서로 다른 면이 나올 확률은 \(\dfrac{2}{4}\)</p>
+
+            <p><strong>[예2]</strong> 2개의 주사위를 동시에 던질 때 2개의 주사위를 서로 다른 것으로 봐야 하므로<br>
+                모든 근원사건의 수는 \(6\times6=36\)<br>
+                눈의 수의 합이 6인 근원사건의 수는 \((1,\ 5),\ (2,\ 4),\ (3,\ 3),\ (4,\ 2),\ (5,\ 1)\)에서 5<br>
+                따라서 눈의 수의 합이 6일 확률은 \(\dfrac{5}{36}\)</p>
+
+            <p><strong>[예3]</strong> 흰 공 2개와 검은 공 3개가 들어 있는 주머니에서 임의로 2개의 공을 동시에 꺼낼 때 5개의 공을 모두 서로 다른 것으로 봐야 하므로<br>
+                모든 근원사건의 수는 \({}_5\mathrm{C}_2=10\)<br>
+                검은 공 2개를 꺼내는 근원사건의 수는 \({}_3\mathrm{C}_2=3\)<br>
+                흰 공 1개와 검은 공 1개를 꺼내는 근원사건의 수는 \({}_2\mathrm{C}_1\times{}_3\mathrm{C}_1=6\)<br>
+                따라서 검은 공 2개를 꺼낼 확률은 \(\dfrac{3}{10}\), 흰 공 1개와 검은 공 1개를 꺼낼 확률은 \(\dfrac{6}{10}\)</p>
+
+            <p><strong>[예4]</strong> 4개의 숫자 1, 1, 2, 3이 하나씩 적혀 있는 4장의 카드가 있다.<br>
+                ① 임의로 2장의 카드를 선택할 때 1, 1을 서로 다른 것으로 봐야 하므로 모든 근원사건은<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\{1,\ 1\},\ \{1,\ 2\},\ \{1,\ 3\},\ \{1,\ 2\},\ \{1,\ 3\},\ \{2,\ 3\}\)<br>
+                이고, 카드에 적힌 수의 합이 소수일 확률은 \(\dfrac{4}{6}\)이다. 이때 모든 근원사건을<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\{1,\ 1\},\ \{1,\ 2\},\ \{1,\ 3\},\ \{2,\ 3\}\)<br>
+                으로 생각하면 이 확률을 \(\dfrac{3}{4}\)으로 잘못 계산하게 된다.<br>
+                ② 임의로 2장의 카드를 선택하여 나열할 때 1, 1을 서로 다른 것으로 봐야 하므로 모든 근원사건은<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\{(1,\ 1)\},\ \{(1,\ 2)\},\ \{(1,\ 3)\},\ \{(1,\ 2)\},\ \{(1,\ 3)\},\ \{(2,\ 3)\},\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\{(1,\ 1)\},\ \{(2,\ 1)\},\ \{(3,\ 1)\},\ \{(2,\ 1)\},\ \{(3,\ 1)\},\ \{(3,\ 2)\}\)<br>
+                이고, 첫 번째 수 \(a_1\), 두 번째 수 \(a_2\)에 대하여 \(a_1\le a_2\)일 확률은 \(\dfrac{7}{12}\)이다. 이때 모든 근원사건을<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\{(1,\ 1)\},\ \{(1,\ 2)\},\ \{(1,\ 3)\},\ \{(2,\ 3)\},\ \{(2,\ 1)\},\ \{(3,\ 1)\},\ \{(3,\ 2)\}\)<br>
+                로 생각하면 이 확률을 \(\dfrac{4}{7}\)로 잘못 계산하게 된다.</p>
+
+            <div class="callout">
+                <span class="tag">REMARK 1</span><br>
+                같은 것이 있을 때, 이를 나열하는 확률의 상황에서 전체를 나열한다면 같은 것이 있는 순열로 계산해도 상관없기는 하다.<br>
+                [예4]에서 1, 1, 2, 3을 모두 나열할 때, 첫 번째 수 \(a_1\), 두 번째 수 \(a_2\), 세 번째 수 \(a_3\), 네 번째 수 \(a_4\)에 대하여 \(a_1\le a_2\le a_3\le a_4\)일
+                확률을 구하면<br>
+                두 개의 1을 서로 다른 것으로 보고 순열로 계산하면
+                <span style="display:block;margin:4px 0 4px 2em">\(\dfrac{2!}{4!}=\dfrac{1}{12}\)</span>
+                두 개의 1을 서로 같은 것으로 보고 같은 것이 있는 순열로 계산하면
+                <span style="display:block;margin:4px 0 4px 2em">\(\dfrac{1}{\dfrac{4!}{2!}}=\dfrac{1}{12}\)</span>
+                이다. 이런 일이 발생하는 이유는 전체의 나열이므로 분모와 분자에서 고려하는 같은 것의 개수가 일치하기 때문이다.<br>
+                그러나 [예4]에서 보듯이 같은 것이 있을 때 이 중 일부를 선택하여 나열하는 상황에서는 분모와 분자에서 고려하는 같은 것의 개수가 일치하지 않을 수 있기
+                때문에 순열로 보는 것이 일반적으로 안전한 계산이다.
+            </div>
+
+            <div class="callout">
+                <span class="tag">REMARK 2</span><br>
+                확률에서 표본공간을 설정할 때는 서로 같은 경우라도 서로 다른 근원사건으로 구별하는 것이 일반적이다. 이때 실수하지 않기 위해 같은 것이 있는 순열이나
+                중복조합의 사용은 피하는 것이 좋다.<br>
+                그런데 경우의 수의 관점에서 서로 같은 경우를 하나로 본 결과를 표본공간으로 설정하고 이로부터 확률의 상황을 시작할 때도 있다.<br>
+                [예4]의 ①에서 2장의 카드를 택한 모든 경우 중에서 임의로 한 경우를 택할 때 카드에 적힌 수의 합이 소수일 확률은 모든 근원사건을
+                \(\{1,\ 1\},\ \{1,\ 2\},\ \{1,\ 3\},\ \{2,\ 3\}\)으로 생각하고 \(\dfrac{3}{4}\)으로 답하는 것이 옳다.<br>
+                상황을 분석해 보면 다음과 같다.<br>
+                2장의 카드를 택한 모든 경우 중에서<br>
+                \(\Rightarrow\) 아직 확률의 상황이 아니다. 경우의 수의 관점에서 1, 1을 서로 같은 것으로 본다.<br>
+                임의로 한 경우를 택할 때<br>
+                \(\Rightarrow\) 경우의 수의 관점에서 나타난 결과를 표본공간으로 한 확률의 상황이다.<br>
+                [예4]의 ②에서 2장의 카드를 선택하여 나열한 모든 경우 중에서 임의로 한 경우를 택할 때 첫 번째 수 \(a_1\), 두 번째 수 \(a_2\)에 대하여 \(a_1\le a_2\)일
+                확률은 모든 근원사건을 \(\{(1,\ 1)\},\ \{(1,\ 2)\},\ \{(1,\ 3)\},\ \{(2,\ 3)\},\ \{(2,\ 1)\},\ \{(3,\ 1)\},\ \{(3,\ 2)\}\)로 생각하고 \(\dfrac{4}{7}\)로 답하는
+                것이 옳다.<br>
+                같은 것이 있는 순열이나 중복조합의 관점에서 표본공간을 설정한 다음의 기출문제를 확인해 두자.
+            </div>
+
+            <p><strong>[예5]</strong> 2018학년도 수능<br>
+                방정식 \(x+y+z=10\)을 만족시키는 음이 아닌 정수 \(x,\ y,\ z\)의 <u>모든 순서쌍 \((x,\ y,\ z)\) 중에서 임의로 한 개를 선택한다.</u> …<br>
+                모든 순서쌍 \((x,\ y,\ z)\)의 개수는<br>
+                \({}_3\mathrm{H}_{10}={}_{12}\mathrm{C}_{10}=66\)<br>
+                이고 아직 확률의 상황이 아니다.<br>
+                이 순서쌍 중에서 임의로 한 개를 선택하는 것부터 확률의 상황이고, 각 순서쌍을 선택할 확률은 \(\dfrac{1}{66}\)로 동일하므로 중복조합으로 계산한 순서쌍의
+                개수가 근원사건의 개수, 이 순서쌍의 집합이 표본공간이 된다.</p>
+            <p><strong>[예6]</strong> 2017학년도 수능<br>
+                좌표평면 위의 한 점 \((x,\ y)\)에서 세 점 \((x+1,\ y),\ (x,\ y+1),\ (x+1,\ y+1)\) 중 한 점으로 이동하는 것을 점프라 하자.<br>
+                점프를 반복하여 점 \((0,\ 0)\)에서 점 \((4,\ 3)\)까지 <u>이동하는 모든 경우 중에서, 임의로 한 경우를 선택할 때</u> …<br>
+                점 \((x,\ y)\)에서 점 \((x+1,\ y)\), 점 \((x,\ y+1)\), 점 \((x+1,\ y+1)\)로 이동하는 것을 각각 →, ↑, ↗로 나타내면<br>
+                →, →, →, →, ↑, ↑, ↑을 일렬로 나열하는 경우의 수는 \(\dfrac{7!}{4!3!}=35\)<br>
+                →, →, →, ↑, ↑, ↗을 일렬로 나열하는 경우의 수는 \(\dfrac{6!}{3!2!}=60\)<br>
+                →, →, ↑, ↗, ↗을 일렬로 나열하는 경우의 수는 \(\dfrac{5!}{2!2!}=30\)<br>
+                →, ↗, ↗, ↗을 일렬로 나열하는 경우의 수는 \(\dfrac{4!}{3!}=4\)<br>
+                에서 모든 경우의 수는<br>
+                \(35+60+30+4=129\)<br>
+                이고 아직 확률의 상황이 아니다.<br>
+                이 경우 중에서 임의로 한 경우를 선택하는 것부터 확률의 상황이고, 각 경우를 선택할 확률은 \(\dfrac{1}{129}\)로 동일하므로 같은 것이 있는 순열로 계산한
+                경우의 수가 근원사건의 개수, 이 경우의 집합이 표본공간이 된다.</p>
+        </section>
+
+        <section class="note">
+            <h2>#7 확률의 덧셈정리</h2>
+
+            <h3>1. 확률의 덧셈정리</h3>
+            <p>표본공간 \(S\)의 두 사건 \(A,\ B\)에 대하여
+                <span style="display:block;margin:4px 0 4px 2em">\(n(A\cup B)=n(A)+n(B)-n(A\cap B)\)</span>
+                이므로 양변을 \(n(S)\)로 나누면
+                <span style="display:block;margin:4px 0 4px 2em">\(\dfrac{n(A\cup B)}{n(S)}=\dfrac{n(A)}{n(S)}+\dfrac{n(B)}{n(S)}-\dfrac{n(A\cap B)}{n(S)}\)</span>
+                이다. 따라서 사건 \(A\) 또는 사건 \(B\)가 일어날 확률 \(\mathrm{P}(A\cup B)\)는 다음과 같다.
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(A\cup B)=\mathrm{P}(A)+\mathrm{P}(B)-\mathrm{P}(A\cap B)\)</span>
+                특히 두 사건 \(A\)와 \(B\)가 서로 배반사건이면 \(\mathrm{P}(A\cap B)=0\)이므로
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(A\cup B)=\mathrm{P}(A)+\mathrm{P}(B)\)</span>
+                이다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 176 104" style="max-width:176px"><rect x="4" y="8" width="168" height="92" rx="8" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="10.0" y="-2.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(S\)</div></foreignObject><g style="opacity:0.4"><circle cx="66" cy="56" r="32" style="fill:var(--muted)" /><circle cx="106" cy="56" r="32" style="fill:var(--muted)" /></g><circle cx="66" cy="56" r="32" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="52.0" y="12.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\)</div></foreignObject><circle cx="106" cy="56" r="32" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="104.0" y="12.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(B\)</div></foreignObject></svg>
+</figure>
+                <figure class="graph">
+<svg viewBox="0 0 176 104" style="max-width:176px"><rect x="4" y="8" width="168" height="92" rx="8" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="10.0" y="-2.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(S\)</div></foreignObject><circle cx="52" cy="56" r="30" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="44.0" y="12.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\)</div></foreignObject><circle cx="122" cy="56" r="30" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="114.0" y="12.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(B\)</div></foreignObject><circle cx="52" cy="56" r="30" style="fill:var(--muted);opacity:0.2" /><circle cx="122" cy="56" r="30" style="fill:var(--muted);opacity:0.55" /></svg>
+</figure>
+            </div>
+            <p>이상을 정리하면 다음과 같다.</p>
+
+            <div class="callout">
+                <span class="tag">확률의 덧셈정리</span><br>
+                표본공간 \(S\)의 두 사건 \(A,\ B\)에 대하여
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(A\cup B)=\mathrm{P}(A)+\mathrm{P}(B)-\mathrm{P}(A\cap B)\)</span>
+                특히 두 사건 \(A\)와 \(B\)가 서로 배반사건이면
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(A\cup B)=\mathrm{P}(A)+\mathrm{P}(B)\)</span>
+            </div>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                합사건 \(A\cup B\)의 확률을 확률의 덧셈정리로 구할 때는 \(\mathrm{P}(A\cup B)=\dfrac{n(A)+n(B)-n(A\cap B)}{n(S)}\)로 계산하는 것이 편리한 경우가 많다.<br>
+                세 사건 \(A,\ B,\ C\)에 대하여 \(\mathrm{P}(A\cup B\cup C)\)는 포함 배제 원리를 이용하여
+                <span style="display:block;margin:4px 0 4px 1em">\(\dfrac{n(A)+n(B)+n(C)-n(A\cap B)-n(B\cap C)-n(C\cap A)+n(A\cap B\cap C)}{n(S)}\)</span>
+                로 계산하거나 어느 두 사건의 합사건을 한 사건으로 보고 남은 한 사건과의 합사건으로 \((A\cup B)\cup C,\ A\cup(B\cup C),\ (A\cup C)\cup B\)와 같이 다룰 수도
+                있다.
+            </div>
+
+            <p><strong>[예1]</strong> 1부터 20까지의 자연수가 하나씩 적혀 있는 20장의 카드가 있다. 이 20장의 카드 중에서 임의로 한 장을 선택할 때, 선택한 카드에 적힌 수가
+                2의 배수 또는 3의 배수일 확률을 구해보자.<br>
+                선택한 카드에 적힌 수가 2의 배수인 경우의 수는 10, 3의 배수인 경우의 수는 6이고, 2와 3의 공배수인 경우, 즉 6의 배수인 경우의 수는 3이므로<br>
+                \(\dfrac{10+6-3}{20}=\dfrac{13}{20}\)</p>
+
+            <p><strong>[예2]</strong> 남자 3명, 여자 5명이 있다. 이 8명 중에서 임의로 2명을 동시에 선택할 때, 선택한 2명이 모두 남자이거나 모두 여자일 확률을 구해보자.<br>
+                모든 경우의 수는<br>
+                \({}_8\mathrm{C}_2=28\)<br>
+                선택한 2명이 모두 남자인 경우의 수는 \({}_3\mathrm{C}_2=3\), 선택한 2명이 모두 여자인 경우의 수는 \({}_5\mathrm{C}_2=10\)이고, 선택한 2명이 모두 남자인 사건과
+                모두 여자인 사건은 서로 배반사건이므로<br>
+                \(\dfrac{3+10}{28}=\dfrac{13}{28}\)</p>
+
+            <p><strong>[예3]</strong> 3명이 가위바위보를 한 번 할 때, 다음 확률을 구해보자.<br>
+                ① 1명만 이길 확률<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;모든 경우의 수는<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(3^3=27\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;3명 중 이기는 1명을 택하고, 이기는 1명이 가위, 바위, 보 중에서 1개를 택하는 경우의 수는<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\({}_3\mathrm{C}_1\times{}_3\mathrm{C}_1=9\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\therefore\ \dfrac{9}{27}=\dfrac{1}{3}\)<br>
+                ② 3명이 비길 확률<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;모든 경우의 수는<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(3^3=27\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;3명이 가위, 바위, 보 중에서 1개를 모두 서로 같게 택하는 경우의 수는<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\({}_3\mathrm{C}_1=3\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;3명이 가위, 바위, 보 중에서 1개씩 모두 서로 다르게 택하는 경우의 수는<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(3!=6\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\therefore\ \dfrac{3+6}{27}=\dfrac{1}{3}\)</p>
+
+            <div class="callout">
+                <span class="tag">REMARK 1 · 확률 사이의 관계</span><br>
+                여러 사건의 확률 사이의 관계는 아래 벤 다이어그램에서
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(A)=\)①\(+\)②, \(\mathrm{P}(B)=\)②\(+\)③,<br>
+                \(\mathrm{P}(A\cap B)=\)②, \(\mathrm{P}(A\cup B)=\)①\(+\)②\(+\)③</span>
+                임을 이용하여 다룰 수 있다.
+            </div>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 180 112" style="max-width:180px"><circle cx="68" cy="60" r="46" style="fill:none;stroke:var(--text);stroke-width:1" /><circle cx="112" cy="60" r="46" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="52.0" y="-4.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\)</div></foreignObject><foreignObject x="118.0" y="-4.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(B\)</div></foreignObject><foreignObject x="34.0" y="50.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">①</div></foreignObject><foreignObject x="82.0" y="50.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">②</div></foreignObject><foreignObject x="130.0" y="50.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px">③</div></foreignObject></svg>
+</figure>
+            </div>
+
+            <p><strong>[예4]</strong> 두 사건 \(A,\ B\)에 대하여<br>
+                ① \(\mathrm{P}(A\cap B)=\dfrac{1}{8},\ \mathrm{P}(A\cap B^C)=\dfrac{3}{16}\)일 때<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\mathrm{P}(A)=\mathrm{P}(A\cap B)+\mathrm{P}(A\cap B^C)=\dfrac{5}{16}\)<br>
+                ② \(\mathrm{P}(A\cup B)=\dfrac{3}{4},\ \mathrm{P}(A^C\cap B)=\dfrac{2}{3}\)일 때<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\mathrm{P}(A)=\mathrm{P}(A\cup B)-\mathrm{P}(A^C\cap B)=\dfrac{1}{12}\)<br>
+                ③ \(\mathrm{P}(A\cap B^C)=\mathrm{P}(A^C\cap B)=\dfrac{1}{6},\ \mathrm{P}(A\cup B)=\dfrac{2}{3}\)일 때<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\mathrm{P}(A\cap B)=\mathrm{P}(A\cup B)-\mathrm{P}(A\cap B^C)-\mathrm{P}(A^C\cap B)=\dfrac{1}{3}\)</p>
+
+            <p><strong>[예5]</strong> 두 사건 \(A\)와 \(B\)가 서로 배반사건이고, \(\mathrm{P}(A)=\dfrac{1}{6},\ \mathrm{P}(A\cup B)=\dfrac{1}{2}\)일 때<br>
+                \(\mathrm{P}(B)=\mathrm{P}(A\cup B)-\mathrm{P}(A)=\dfrac{1}{3}\)</p>
+
+            <div class="callout">
+                <span class="tag">REMARK 2</span><br>
+                표본공간 \(S\)의 두 사건 \(A,\ B\)에 대하여
+                <span style="display:block;margin:4px 0 4px 2em">\(A\)와 \(B^C\)이 서로 배반사건, 즉 \(A\cap B^C=\varnothing\Longleftrightarrow A\subset B\)<br>
+                \(A^C\)과 \(B\)가 서로 배반사건, 즉 \(A^C\cap B=\varnothing\Longleftrightarrow B\subset A\)</span>
+            </div>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 176 104" style="max-width:176px"><rect x="4" y="8" width="168" height="92" rx="8" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="10.0" y="-2.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(S\)</div></foreignObject><mask id="v6"><rect x="4" y="8" width="168" height="92" fill="white" /><circle cx="70" cy="58" r="18" fill="black" /><circle cx="70" cy="58" r="30" fill="black" /></mask><rect x="4" y="8" width="168" height="92" rx="8" mask="url(#v6)" style="fill:var(--muted);opacity:0.4" /><circle cx="70" cy="58" r="18" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="0.0" y="0.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px"></div></foreignObject><circle cx="70" cy="58" r="30" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="62.0" y="14.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(B\)</div></foreignObject><foreignObject x="62.0" y="32.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\)</div></foreignObject><foreignObject x="122.0" y="36.0" width="26" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(B^C\)</div></foreignObject></svg>
+</figure>
+                <figure class="graph">
+<svg viewBox="0 0 176 104" style="max-width:176px"><rect x="4" y="8" width="168" height="92" rx="8" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="10.0" y="-2.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(S\)</div></foreignObject><mask id="v7"><rect x="4" y="8" width="168" height="92" fill="white" /><circle cx="70" cy="58" r="18" fill="black" /><circle cx="70" cy="58" r="30" fill="black" /></mask><rect x="4" y="8" width="168" height="92" rx="8" mask="url(#v7)" style="fill:var(--muted);opacity:0.4" /><circle cx="70" cy="58" r="18" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="0.0" y="0.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px"></div></foreignObject><circle cx="70" cy="58" r="30" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="62.0" y="14.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\)</div></foreignObject><foreignObject x="62.0" y="32.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(B\)</div></foreignObject><foreignObject x="122.0" y="36.0" width="26" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A^C\)</div></foreignObject></svg>
+</figure>
+            </div>
+            <p>또는 다음과 같이 \(A\)와 \(B^C\)이 서로 배반사건, \(A^C\)과 \(B\)가 서로 배반사건인 벤 다이어그램을 이용할 수도 있다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 176 104" style="max-width:176px"><rect x="4" y="8" width="168" height="92" rx="8" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="10.0" y="-2.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(S\)</div></foreignObject><mask id="v8"><rect x="4" y="8" width="168" height="92" fill="white" /><circle cx="46" cy="60" r="28" fill="black" /><circle cx="126" cy="60" r="28" fill="black" /></mask><rect x="4" y="8" width="168" height="92" rx="8" mask="url(#v8)" style="fill:var(--muted);opacity:0.4" /><circle cx="46" cy="60" r="28" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="38.0" y="18.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\)</div></foreignObject><circle cx="126" cy="60" r="28" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="122.0" y="18.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(B^C\)</div></foreignObject><foreignObject x="80.0" y="18.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(B\)</div></foreignObject></svg>
+</figure>
+                <figure class="graph">
+<svg viewBox="0 0 176 104" style="max-width:176px"><rect x="4" y="8" width="168" height="92" rx="8" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="10.0" y="-2.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(S\)</div></foreignObject><mask id="v9"><rect x="4" y="8" width="168" height="92" fill="white" /><circle cx="46" cy="60" r="28" fill="black" /><circle cx="126" cy="60" r="28" fill="black" /></mask><rect x="4" y="8" width="168" height="92" rx="8" mask="url(#v9)" style="fill:var(--muted);opacity:0.4" /><circle cx="46" cy="60" r="28" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="40.0" y="18.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A^C\)</div></foreignObject><circle cx="126" cy="60" r="28" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="118.0" y="18.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(B\)</div></foreignObject><foreignObject x="80.0" y="18.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\)</div></foreignObject></svg>
+</figure>
+            </div>
+
+            <p><strong>[예6]</strong> 두 사건 \(A,\ B\)에 대하여 \(A\)와 \(B^C\)은 서로 배반사건이고 \(\mathrm{P}(A)=\dfrac{1}{3},\ \mathrm{P}(A^C\cap B)=\dfrac{1}{6}\)일 때,
+                \(\mathrm{P}(B)\)의 값을 구해보자.<br>
+                \(A\)와 \(B^C\)이 서로 배반사건이므로 \(A\subset B\)이고<br>
+                \(\mathrm{P}(B)=\mathrm{P}(A)+\mathrm{P}(A^C\cap B)=\dfrac{1}{3}+\dfrac{1}{6}=\dfrac{1}{2}\)</p>
+        </section>
+
+        <section class="note">
+            <h2>#8 여사건의 확률</h2>
+
+            <h3>2. 여사건의 확률</h3>
+            <p>표본공간 \(S\)의 사건 \(A\)와 그 여사건 \(A^C\)은 서로 배반사건이므로 확률의 덧셈정리에 의하여
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(A\cup A^C)=\mathrm{P}(A)+\mathrm{P}(A^C)\)</span>
+                이다. 이때 \(\mathrm{P}(A\cup A^C)=\mathrm{P}(S)=1\)이므로
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(A)+\mathrm{P}(A^C)=1\), 즉 \(\mathrm{P}(A^C)=1-\mathrm{P}(A)\)</span>
+                가 성립한다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 176 104" style="max-width:176px"><rect x="4" y="8" width="168" height="92" rx="8" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="10.0" y="-2.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(S\)</div></foreignObject><mask id="v10"><rect x="4" y="8" width="168" height="92" fill="white" /><circle cx="66" cy="56" r="32" fill="black" /><circle cx="0" cy="0" r="0" fill="black" /></mask><rect x="4" y="8" width="168" height="92" rx="8" mask="url(#v10)" style="fill:var(--muted);opacity:0.4" /><circle cx="66" cy="56" r="32" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="58.0" y="10.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\)</div></foreignObject><circle cx="0" cy="0" r="0" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="0.0" y="0.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel" style="font-size:14px"></div></foreignObject><foreignObject x="126.0" y="46.0" width="26" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A^C\)</div></foreignObject></svg>
+</figure>
+            </div>
+            <p>이상을 정리하면 다음과 같다.</p>
+
+            <div class="callout">
+                <span class="tag">여사건의 확률</span><br>
+                사건 \(A\)의 여사건 \(A^C\)의 확률은
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(A^C)=1-\mathrm{P}(A)\)</span>
+            </div>
+
+            <p><strong>[예1]</strong> 두 개의 주사위를 동시에 던질 때, 같은 눈이 나오는 사건을 \(A\)라 하면<br>
+                \(\mathrm{P}(A)=\dfrac{6}{36}=\dfrac{1}{6}\)<br>
+                따라서 서로 다른 눈이 나올 확률은<br>
+                \(\mathrm{P}(A^C)=1-\mathrm{P}(A)=1-\dfrac{1}{6}=\dfrac{5}{6}\)</p>
+
+            <p><strong>[예2]</strong> 두 사건 \(A,\ B\)에 대하여 \(\mathrm{P}(A\cup B)=1,\ \mathrm{P}(B)=\dfrac{1}{3},\ \mathrm{P}(A\cap B)=\dfrac{1}{6}\)일 때, \(\mathrm{P}(A^C)\)의 값을
+                구해보자.<br>
+                \(\mathrm{P}(A\cup B)=\mathrm{P}(A)+\mathrm{P}(B)-\mathrm{P}(A\cap B)\)에서<br>
+                \(\mathrm{P}(A)=\mathrm{P}(A\cup B)-\mathrm{P}(B)+\mathrm{P}(A\cap B)=1-\dfrac{1}{3}+\dfrac{1}{6}=\dfrac{5}{6}\)<br>
+                \(\therefore\ \mathrm{P}(A^C)=1-\mathrm{P}(A)=1-\dfrac{5}{6}=\dfrac{1}{6}\)</p>
+
+            <p><strong>[예3]</strong> 두 사건 \(A,\ B\)에 대하여 \(\mathrm{P}(A^C)=\dfrac{2}{3},\ \mathrm{P}(A^C\cap B)=\dfrac{1}{4}\)일 때, \(\mathrm{P}(A\cup B)\)의 값을 구해보자.<br>
+                \(\mathrm{P}(A)=1-\mathrm{P}(A^C)=1-\dfrac{2}{3}=\dfrac{1}{3}\)이므로<br>
+                \(\mathrm{P}(A\cup B)=\mathrm{P}(A)+\mathrm{P}(A^C\cap B)=\dfrac{1}{3}+\dfrac{1}{4}=\dfrac{7}{12}\)</p>
+
+            <div class="callout">
+                <span class="tag">REMARK 1</span><br>
+                경우의 수에서와 마찬가지로 확률에서도 여사건을 이용하는 일반적인 원칙은 없다. 주어진 사건과 여사건 중 다루기 편리한 것을 택하면 된다. 경우의 수에서와
+                마찬가지로 여사건의 확률로 그대로 답하는 실수를 범할 때가 많으므로 1에서 여사건의 확률을 빼서 답한다는 것에도 항상 주의하자!
+            </div>
+
+            <p><strong>[예4]</strong> 주사위 2개를 동시에 던질 때, 나오는 주사위의 눈의 수의 곱이 짝수일 확률을 구해보자.<br>
+                모든 경우의 수는<br>
+                \(6^2=36\)<br>
+                눈의 수의 곱이 홀수, 즉 눈의 수가 모두 홀수인 경우의 수는<br>
+                \(3^2=9\)<br>
+                눈의 수의 곱이 홀수일 확률은<br>
+                \(\dfrac{9}{36}=\dfrac{1}{4}\)<br>
+                이므로 눈의 수의 곱이 짝수일 확률은<br>
+                \(1-\dfrac{1}{4}=\dfrac{3}{4}\)</p>
+
+            <p><strong>[예5]</strong> A, B를 포함한 8명의 학생을 모두 임의로 일렬로 세울 때, A, B가 서로 이웃하지 않을 확률을 구해보자.<br>
+                모든 경우의 수는<br>
+                \(8!\)<br>
+                A, B를 1명으로 보고 남은 6명과 함께 일렬로 세우고, A, B를 배열하는 경우의 수는<br>
+                \(7!\times2!\)<br>
+                A, B가 서로 이웃할 확률은<br>
+                \(\dfrac{7!\times2!}{8!}=\dfrac{1}{4}\)<br>
+                이므로 A, B가 서로 이웃하지 않을 확률은<br>
+                \(1-\dfrac{1}{4}=\dfrac{3}{4}\)</p>
+
+            <p><strong>[예6]</strong> 주머니 속에 흰 공 4개와 검은 공 5개가 들어 있다. 이 주머니에서 임의로 3개의 공을 동시에 꺼낼 때, 꺼낸 공 중 적어도 1개가 흰 공일
+                확률을 구해보자.<br>
+                흰 공을 꺼내지 않을 확률, 즉 검은 공만 3개 꺼낼 확률은<br>
+                \(\dfrac{{}_5\mathrm{C}_3}{{}_9\mathrm{C}_3}=\dfrac{5}{42}\)<br>
+                이므로 적어도 1개가 흰 공일 확률은<br>
+                \(1-\dfrac{5}{42}=\dfrac{37}{42}\)</p>
+
+            <div class="callout">
+                <span class="tag">REMARK 2 · 합사건과 곱사건의 여사건</span><br>
+                ① 합사건의 여사건<br>
+                \(A\cup B\)의 확률은 여사건인 \((A\cup B)^C\), 즉 \(A^C\cap B^C\)의 확률을 이용하여
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(A\cup B)=1-\mathrm{P}(A^C\cap B^C)\)</span>
+                으로 구할 수 있다.<br>
+                \(A\cup B\cup C\)의 확률도 여사건인 \((A\cup B\cup C)^C\), 즉 \(A^C\cap B^C\cap C^C\)의 확률을 이용하여
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(A\cup B\cup C)=1-\mathrm{P}(A^C\cap B^C\cap C^C)\)</span>
+                으로 구할 수 있다.<br>
+                ② 곱사건의 여사건<br>
+                \(A\cap B\)의 확률은 여사건인 \((A\cap B)^C\), 즉 \(A^C\cup B^C\)의 확률을 이용하여
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(A\cap B)=1-\mathrm{P}(A^C\cup B^C)\)</span>
+                으로 구하거나
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(A\cap B)=\mathrm{P}(A)-\mathrm{P}(A\cap B^C)\) 또는 \(\mathrm{P}(A\cap B)=\mathrm{P}(B)-\mathrm{P}(B\cap A^C)\)</span>
+                으로 구할 수 있다.
+            </div>
+
+            <p><strong>[예7]</strong> 두 사건 \(A,\ B\)에 대하여 \(\mathrm{P}(A)=\dfrac{2}{3},\ \mathrm{P}(A\cap B)=\dfrac{1}{4}\)일 때, \(\mathrm{P}(A^C\cup B)\)의 값을 구해보자.<br>
+                \((A^C\cup B)^C=A\cap B^C\)이므로<br>
+                \(\mathrm{P}(A^C\cup B)=1-\mathrm{P}(A\cap B^C)=1-\{\mathrm{P}(A)-\mathrm{P}(A\cap B)\}=1-\left(\dfrac{2}{3}-\dfrac{1}{4}\right)=\dfrac{7}{12}\)</p>
+
+            <p><strong>[예8]</strong> 1부터 20까지의 자연수 중에서 임의로 서로 다른 2개의 수를 선택할 때, 선택된 2개의 수의 합이 홀수이고 곱이 6의 배수일 확률을
+                구해보자.<br>
+                모든 경우의 수는<br>
+                \({}_{20}\mathrm{C}_2=190\)<br>
+                2개의 수의 합이 홀수인 경우는 홀수와 짝수를 각각 1개씩 택하는 경우이므로 그 경우의 수는<br>
+                \({}_{10}\mathrm{C}_1\times{}_{10}\mathrm{C}_1=100\)<br>
+                2개의 수의 합이 홀수이고 곱이 6의 배수가 아닌 경우는 3의 배수가 아닌 홀수와 6의 배수가 아닌 짝수를 1개씩 택하는 경우이므로 그 경우의 수는<br>
+                \({}_7\mathrm{C}_1\times{}_7\mathrm{C}_1=49\)<br>
+                따라서 2개의 수의 합이 홀수이고 곱이 6의 배수일 확률은<br>
+                \(\dfrac{100-49}{190}=\dfrac{51}{190}\)</p>
+        </section>
+
+        <section class="note">
+            <h2>#9 조건부확률 (표본공간의 축소)</h2>
+
+            <h3>1. 조건부확률: 표본공간의 축소</h3>
+            <h4>1) 조건부확률</h4>
+            <p>표본공간 \(S\)의 두 사건 \(A,\ B\)에 대하여 확률이 0이 아닌 사건 \(A\)가 일어났을 때, 사건 \(B\)가 일어날 확률을 사건 \(A\)가 일어났을 때의 사건 \(B\)의
+                <strong>조건부확률</strong>이라 하고, 기호로
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathbf{P(B|A)}\)</span>
+                와 같이 나타낸다.<br>
+                이때 조건부확률 \(\mathrm{P}(B|A)\)는
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(B|A)=\dfrac{n(A\cap B)}{n(A)}\)</span>
+                이다. 이 식의 우변의 분자와 분모를 각각 \(n(S)\)로 나누면
+                \[ \mathrm{P}(B|A)=\dfrac{n(A\cap B)}{n(A)}=\dfrac{\dfrac{n(A\cap B)}{n(S)}}{\dfrac{n(A)}{n(S)}}=\dfrac{\mathrm{P}(A\cap B)}{\mathrm{P}(A)} \]
+                이다.</p>
+            <div class="graph-row">
+                <figure class="graph">
+<svg viewBox="0 0 176 128" style="max-width:176px"><rect x="4" y="8" width="168" height="92" rx="8" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="10.0" y="-2.0" width="16" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(S\)</div></foreignObject><clipPath id="v11"><circle cx="66" cy="56" r="32" /></clipPath><circle cx="106" cy="56" r="32" clip-path="url(#v11)" style="fill:var(--muted);opacity:0.4" /><circle cx="66" cy="56" r="32" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="52.0" y="12.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\)</div></foreignObject><circle cx="106" cy="56" r="32" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="104.0" y="12.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(B\)</div></foreignObject><circle cx="66" cy="56" r="32" style="fill:var(--muted);opacity:0.15" /><line x1="86" y1="70" x2="86" y2="108" style="stroke:var(--text);stroke-width:1" /><path d="M83,76 L86,68 L89,76 Z" style="fill:var(--text)" /><foreignObject x="70.0" y="106.0" width="40" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(A\cap B\)</div></foreignObject></svg>
+</figure>
+            </div>
+            <p>이상을 정리하면 다음과 같다.</p>
+
+            <div class="callout">
+                <span class="tag">조건부확률</span><br>
+                사건 \(A\)가 일어났을 때의 사건 \(B\)의 조건부확률은
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(B|A)=\dfrac{n(A\cap B)}{n(A)}=\dfrac{\mathrm{P}(A\cap B)}{\mathrm{P}(A)}\) (단, \(\mathrm{P}(A)&gt;0\))</span>
+            </div>
+
+            <div class="callout">
+                <span class="tag">REMARK 1</span><br>
+                조건부확률을 다룰 때 \(\dfrac{(\text{경우의 수})}{(\text{경우의 수})}\)로 계산할지 \(\dfrac{(\text{확률})}{(\text{확률})}\)로 계산할지 판단하는 것도 중요하다.
+            </div>
+
+            <p><strong>[예1]</strong> 두 사건 \(A,\ B\)에 대하여 \(\mathrm{P}(A)=\dfrac{1}{5},\ \mathrm{P}(A\cap B)=\dfrac{1}{10}\)일 때<br>
+                \(\mathrm{P}(B|A)=\dfrac{\dfrac{1}{10}}{\dfrac{1}{5}}=\dfrac{1}{2}\)</p>
+
+            <p><strong>[예2]</strong> 두 사건 \(A,\ B\)에 대하여 \(\mathrm{P}(A)=\dfrac{13}{16},\ \mathrm{P}(A\cap B^C)=\dfrac{1}{4}\)일 때, \(\mathrm{P}(B|A)\)의 값을 구해보자.<br>
+                \(\mathrm{P}(A\cap B)=\mathrm{P}(A)-\mathrm{P}(A\cap B^C)=\dfrac{13}{16}-\dfrac{1}{4}=\dfrac{9}{16}\)이므로<br>
+                \(\mathrm{P}(B|A)=\dfrac{\dfrac{9}{16}}{\dfrac{13}{16}}=\dfrac{9}{13}\)</p>
+
+            <p><strong>[예3]</strong> 한 개의 주사위를 던져서 홀수의 눈이 나왔을 때, 그 눈의 수가 소수일 확률을 구해보자.<br>
+                홀수의 눈이 나오는 사건을 \(A\), 소수의 눈이 나오는 사건을 \(B\)라 하면<br>
+                \(A=\{1,\ 3,\ 5\},\ B=\{2,\ 3,\ 5\},\ A\cap B=\{3,\ 5\}\)<br>
+                이므로<br>
+                \(\mathrm{P}(B|A)=\dfrac{n(A\cap B)}{n(A)}=\dfrac{2}{3}\)<br>
+                \(\Rightarrow\dfrac{(\text{확률})}{(\text{확률})}\)로 \(\dfrac{\dfrac{2}{6}}{\dfrac{3}{6}}\)를 계산하는 것보다 편리하다.</p>
+
+            <div class="callout">
+                <span class="tag">REMARK 2 · 조건부확률은 표본공간의 축소</span><br>
+                조건부확률은 축소된 표본공간에서의 확률이다. \(\mathrm{P}(B|A)\)는 사건 \(A\)를 새로운 표본공간으로 생각하고 표본공간인 사건 \(A\)에서 사건 \(A\cap B\)가
+                일어날 확률을 의미한다. [예3]의 조건부확률은 표본공간이 \(\{1,\ 2,\ 3,\ 4,\ 5,\ 6\}\)이 아닌 \(A=\{1,\ 3,\ 5\}\)로 축소되었고, 홀수 중 소수가 차지하는
+                비율의 의미이다.<br>
+                또한 축소된 표본공간의 경우의 수 또는 확률을 구할 때는 직접 구하거나 여사건을 이용하거나 케이스를 구분하는 등 지금까지 경우의 수와 확률에서 다룬 모든
+                상황이 등장한다.
+            </div>
+
+            <p><strong>[예4]</strong> 숫자 1, 2, 3이 하나씩 적혀 있는 3개의 공이 들어 있는 주머니 A와 숫자 4, 5, 6, 7이 하나씩 적혀 있는 4개의 공이 들어 있는 주머니
+                B에서 각각 임의로 1개의 공을 꺼낸다. 꺼낸 공에 적힌 두 수의 합이 홀수일 때, 꺼낸 공에 적힌 두 수의 합이 3의 배수일 확률을 구해보자.<br>
+                두 주머니 A, B에서 꺼낸 공에 적힌 수를 각각 \(a,\ b\)라 하자.<br>
+                \(a\)가 홀수, \(b\)가 짝수인 경우<br>
+                순서쌍 \((a,\ b)\)는 \((1,\ 4),\ (1,\ 6),\ (3,\ 4),\ (3,\ 6)\)이고, \(a+b\)가 3의 배수인 순서쌍 \((a,\ b)\)는 \((3,\ 6)\)이다.<br>
+                \(a\)가 짝수, \(b\)가 홀수인 경우<br>
+                순서쌍 \((a,\ b)\)는 \((2,\ 5),\ (2,\ 7)\)이고, \(a+b\)가 3의 배수인 순서쌍 \((a,\ b)\)는 \((2,\ 7)\)이다.<br>
+                \(\therefore\ \dfrac{1+1}{4+2}=\dfrac{1}{3}\)<br>
+                \(\Rightarrow\dfrac{1}{4}+\dfrac{1}{2}=\dfrac{3}{4}\)으로 계산하면 안 된다!</p>
+        </section>
+
+        <section class="note">
+            <h2>#10 조건부확률의 여사건</h2>
+
+            <h4>2) 조건부확률의 여사건</h4>
+            <p>\(\mathrm{P}(B^C|A)\)는 사건 \(A\)를 표본공간으로 생각했을 때 사건 \(B\)의 여사건의 확률이므로
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(B^C|A)=1-\mathrm{P}(B|A)\)</span>
+                이다. 따라서 \(\mathrm{P}(B|A)\)는 여사건의 확률을 이용하여 \(1-\mathrm{P}(B^C|A)\)로 구할 수도 있다.<br>
+                이때 \(\mathrm{P}(B^C|A)=\dfrac{\mathrm{P}(A\cap B^C)}{\mathrm{P}(A)}\)이므로 \(\mathrm{P}(B^C)\)이 아닌 \(\mathrm{P}(A\cap B^C)\)을 구해야 한다는 것, 즉 축소된
+                표본공간을 벗어나지 말아야 한다는 것에 주의하자.</p>
+
+            <p><strong>[예5]</strong> 두 사건 \(A,\ B\)에 대하여 \(\mathrm{P}(A)=\dfrac{1}{5},\ \mathrm{P}(B)=\dfrac{3}{10},\ \mathrm{P}(A|B)=\dfrac{1}{2}\)일 때, \(\mathrm{P}(B^C|A)\)의
+                값을 구해보자.
+                \[ \mathrm{P}(A|B)=\dfrac{\mathrm{P}(A\cap B)}{\mathrm{P}(B)}=\dfrac{\mathrm{P}(A\cap B)}{\dfrac{3}{10}}=\dfrac{1}{2}\qquad\therefore\ \mathrm{P}(A\cap B)=\dfrac{3}{20} \]
+                \[ \therefore\ \mathrm{P}(B^C|A)=1-\mathrm{P}(B|A)=1-\dfrac{\mathrm{P}(A\cap B)}{\mathrm{P}(A)}=1-\dfrac{\dfrac{3}{20}}{\dfrac{1}{5}}=\dfrac{1}{4} \]</p>
+
+            <p><strong>[예6]</strong> 한 개의 주사위를 2번 던질 때, 첫 번째 나온 눈의 수를 \(a\), 두 번째 나온 눈의 수를 \(b\)라 하자. \(a\times b\)가 짝수일 때, \(a,\ b\) 중
+                적어도 하나가 홀수일 확률을 구해보자.<br>
+                모든 경우의 수는 \(6^2=36\)이고 \(a\times b\)가 홀수, 즉 \(a,\ b\)가 모두 홀수인 경우의 수는 \(3^2=9\)이므로<br>
+                \(a\times b\)가 짝수인 경우의 수는<br>
+                \(36-9=27\)<br>
+                \(a,\ b\)가 모두 짝수인 경우의 수는 \(3^2=9\)이므로 \(a\times b\)가 짝수일 때, \(a,\ b\)가 모두 짝수일 확률은<br>
+                \(\dfrac{9}{27}=\dfrac{1}{3}\)<br>
+                따라서 \(a\times b\)가 짝수일 때, \(a,\ b\) 중 적어도 하나가 홀수일 확률은<br>
+                \(1-\dfrac{1}{3}=\dfrac{2}{3}\)</p>
+        </section>
+
+        <section class="note">
+            <h2>#11 확률의 곱셈정리</h2>
+
+            <h3>2. 확률의 곱셈정리</h3>
+            <p>확률이 0이 아닌 두 사건 \(A,\ B\)에 대하여 사건 \(A\)가 일어났을 때의 사건 \(B\)의 조건부확률은
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(B|A)=\dfrac{\mathrm{P}(A\cap B)}{\mathrm{P}(A)}\)</span>
+                이고, 이 식의 양변에 \(\mathrm{P}(A)\)를 곱하면
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(A\cap B)=\mathrm{P}(A)\mathrm{P}(B|A)\)</span>
+                이다.<br>
+                마찬가지로 사건 \(B\)가 일어났을 때의 사건 \(A\)의 조건부확률을 이용하면
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(A\cap B)=\mathrm{P}(B)\mathrm{P}(A|B)\)</span>
+                이다.</p>
+            <p>이상을 정리하면 다음과 같다.</p>
+
+            <div class="callout">
+                <span class="tag">확률의 곱셈정리</span><br>
+                두 사건 \(A,\ B\)에 대하여 \(\mathrm{P}(A)&gt;0,\ \mathrm{P}(B)&gt;0\)일 때
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(A\cap B)=\mathrm{P}(A)\mathrm{P}(B|A)=\mathrm{P}(B)\mathrm{P}(A|B)\)</span>
+            </div>
+
+            <div class="callout">
+                <span class="tag">REMARK 1</span><br>
+                확률의 곱셈정리에 대하여 다음과 같은 교환법칙이 성립한다.
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(A\cap B)=\mathrm{P}(A)\mathrm{P}(B|A)=\mathrm{P}(B|A)\mathrm{P}(A)\)<br>
+                \(\mathrm{P}(A\cap B)=\mathrm{P}(B)\mathrm{P}(A|B)=\mathrm{P}(A|B)\mathrm{P}(B)\)</span>
+            </div>
+
+            <p><strong>[예1]</strong> 빨간 공 4개와 검은 공 3개가 들어 있는 주머니가 있다. 이 주머니에서 임의로 1개씩 2개의 공을 꺼낼 때, 다음 확률을 구해보자.<br>
+                ① 꺼낸 공을 다시 넣지 않을 때<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;– 빨간 공을 2개 꺼낼 확률<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;첫 번째에 꺼낸 공이 빨간 공인 사건을 \(A\), 두 번째에 꺼낸 공이 빨간 공인 사건을 \(B\)라 하면<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\mathrm{P}(A)=\dfrac{4}{7},\ \mathrm{P}(B|A)=\dfrac{3}{6}\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이므로<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\mathrm{P}(A\cap B)=\mathrm{P}(A)\mathrm{P}(B|A)=\dfrac{4}{7}\times\dfrac{3}{6}=\dfrac{2}{7}\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\Rightarrow\) 꺼낸 공을 다시 넣지 않으므로 \(\mathrm{P}(B|A)\)를 계산할 때 사건 \(A\)가 발생한 상황, 즉 주머니에 빨간 공 3개와 검은 공 3개가 들어 있는
+                상황으로 표본공간이 축소되었다. 비복원추출인 시행에서는 시행 후 표본공간이 변한다. 이처럼 한 사건의 발생 여부가 다른 한 사건의 발생 확률에 영향을 줄 때
+                두 사건은 서로 종속이라 하고 뒤에서 자세히 다룬다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;– 첫 번째에 빨간 공, 두 번째에 검은 공을 꺼낼 확률<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;첫 번째에 빨간 공, 두 번째에 검은 공을 꺼내는 순서로 생각하면 \(\dfrac{4}{7}\times\dfrac{3}{6}=\dfrac{2}{7}\), 두 번째에 검은 공, 첫 번째에 빨간 공을
+                꺼내는 순서로 생각하면 \(\dfrac{3}{7}\times\dfrac{4}{6}=\dfrac{2}{7}\)이고 두 결과는 서로 같다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\Rightarrow\) 비복원추출인 시행에서의 확률의 곱셈정리에서 교환법칙이 성립하므로 사건의 발생 순서를 바꾸어 생각해도 상관없다.<br>
+                ② 꺼낸 공을 다시 넣을 때<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;– 빨간 공을 2개 꺼낼 확률<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;첫 번째에 빨간 공을 꺼낼 확률은 \(\dfrac{4}{7}\)이고, 두 번째에 빨간 공을 꺼낼 확률도 \(\dfrac{4}{7}\)이므로<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\dfrac{4}{7}\times\dfrac{4}{7}=\dfrac{16}{49}\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\Rightarrow\) 꺼낸 공을 다시 넣으므로 표본공간의 변화가 없다. 복원추출인 시행에서는 시행 후 표본공간이 변하지 않는다. 이처럼 한 사건의 발생 여부가
+                다른 한 사건의 발생 확률에 영향을 주지 않을 때 두 사건은 서로 독립이라 하고 뒤에서 자세히 다룬다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;– 첫 번째에 빨간 공, 두 번째에 검은 공을 꺼낼 확률<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;첫 번째에 빨간 공, 두 번째에 검은 공을 꺼내는 순서로 생각하면 \(\dfrac{4}{7}\times\dfrac{3}{7}=\dfrac{12}{49}\), 두 번째에 검은 공, 첫 번째에 빨간 공을
+                꺼내는 순서로 생각하면 \(\dfrac{3}{7}\times\dfrac{4}{7}=\dfrac{12}{49}\)이고 두 결과는 서로 같다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(\Rightarrow\) 복원추출인 시행에서의 확률의 곱셈정리에서 교환법칙이 성립하므로 사건의 발생 순서를 바꾸어 생각해도 상관없다.</p>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                추출된 대상을 되돌려 놓은 후 다음 대상을 추출하는 것을 복원추출이라 하고 추출된 대상을 되돌리지 않고 다음 대상을 추출하는 것을 비복원추출이라고 한다.
+                뒤에서 배우는 통계적 추정에 나오는 용어이지만 편의상 미리 사용하기로 하자.
+            </div>
+
+            <p><strong>[예2]</strong> 10개의 제비 가운데 4개가 당첨 제비라고 한다. 우진이와 재용이가 이 순서대로 한 번씩 제비를 뽑을 때, 우진이가 당첨될 확률과 재용이가
+                당첨될 확률을 구해보자. (단, 뽑은 제비는 다시 넣지 않는다.)<br>
+                우진이가 당첨되는 사건을 \(A\)라 하면<br>
+                \(\mathrm{P}(A)=\dfrac{4}{10}=\dfrac{2}{5}\)<br>
+                재용이가 당첨되는 사건을 \(B\)라 하고, 우진이가 당첨되고 재용이가 당첨되는 경우, 우진이가 당첨되지 않고 재용이가 당첨되는 경우로 나누어 생각하면<br>
+                \(\mathrm{P}(A\cap B)=\mathrm{P}(A)\mathrm{P}(B|A)=\dfrac{4}{10}\times\dfrac{3}{9}=\dfrac{2}{15}\),<br>
+                \(\mathrm{P}(A^C\cap B)=\mathrm{P}(A^C)\mathrm{P}(B|A^C)=\dfrac{6}{10}\times\dfrac{4}{9}=\dfrac{4}{15}\)<br>
+                에서<br>
+                \(\mathrm{P}(B)=\mathrm{P}(A\cap B)+\mathrm{P}(A^C\cap B)=\dfrac{2}{15}+\dfrac{4}{15}=\dfrac{2}{5}\)<br>
+                이다. 따라서 우진이가 당첨될 확률과 재용이가 당첨될 확률은 \(\dfrac{2}{5}\)로 같다.<br>
+                \(\Rightarrow\) 확률의 곱셈정리에서 교환법칙이 성립하므로 주어진 것과 반대의 순서로 재용이가 당첨되고 우진이가 당첨되는 경우, 재용이가 당첨되고 우진이가
+                당첨되지 않는 경우로 나누어 생각한 확률도<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\dfrac{4}{10}\times\dfrac{3}{9}+\dfrac{4}{10}\times\dfrac{6}{9}=\dfrac{4}{10}\times\left(\dfrac{3}{9}+\dfrac{6}{9}\right)=\dfrac{4}{10}\times1=\dfrac{2}{5}\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;이다. 재용이가 먼저 제비를 뽑는다고 생각하면 나중에 우진이가 어떤 제비를 뽑아도 상관없으므로, 즉 나중에 우진이가 당첨되거나 당첨되지 않을 확률은
+                1이므로 재용이가 당첨될 확률은<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\dfrac{4}{10}=\dfrac{2}{5}\)인 것으로 이해할 수 있다.</p>
+
+            <div class="callout">
+                <span class="tag">REMARK 2 · 확률의 덧셈정리와 곱셈정리를 이용한 확률의 계산</span><br>
+                확률의 덧셈정리와 곱셈정리를 이용한 확률의 계산의 큰 틀은
+                <span style="display:block;margin:4px 0 4px 2em">'또는'에서 확률끼리 더하고, '그리고'에서 확률끼리 곱한다</span>
+                는 것이다. 확률의 덧셈정리를 이용할 때는 배반사건 여부에 주의해야 하고 확률의 곱셈정리를 이용할 때는 표본공간의 변화에 주의해야 한다. 우선은 이 정도의
+                이해로 확률의 덧셈정리와 곱셈정리를 이용하여 확률을 계산해보자. 확률의 곱셈정리를 사용하면서 지켜야 할 원칙과 주의점은 곧이어 정리하게 된다.<br>
+                기본적으로 확률의 계산은
+                <span style="display:block;margin:4px 0 4px 2em">경우의 수 / 확률의 덧셈정리와 곱셈정리</span>
+                중 유리한 것의 선택에서 출발한다.
+            </div>
+            <p><strong>[예3]</strong> 어느 시험에서 세 학생 A, B, C가 합격할 확률이 각각 \(\dfrac{2}{3},\ \dfrac{1}{2},\ \dfrac{2}{5}\)일 때, A, B, C 중 2명만 합격할 확률을
+                구해보자.<br>
+                A, B만 합격하는 경우 C가 불합격할 확률은 \(1-\dfrac{2}{5}=\dfrac{3}{5}\)이므로<br>
+                \(\dfrac{2}{3}\times\dfrac{1}{2}\times\dfrac{3}{5}=\dfrac{1}{5}\)<br>
+                A, C만 합격하는 경우 B가 불합격할 확률은 \(1-\dfrac{1}{2}=\dfrac{1}{2}\)이므로<br>
+                \(\dfrac{2}{3}\times\dfrac{2}{5}\times\dfrac{1}{2}=\dfrac{2}{15}\)<br>
+                B, C만 합격하는 경우 A가 불합격할 확률은 \(1-\dfrac{2}{3}=\dfrac{1}{3}\)이므로<br>
+                \(\dfrac{1}{2}\times\dfrac{2}{5}\times\dfrac{1}{3}=\dfrac{1}{15}\)<br>
+                \(\therefore\ \dfrac{1}{5}+\dfrac{2}{15}+\dfrac{1}{15}=\dfrac{2}{5}\)</p>
+        </section>
+
+        <section class="note">
+            <h2>#12 확률의 곱셈정리의 원칙과 주의점</h2>
+
+            <h3>1. 확률의 곱셈정리의 원칙과 주의점</h3>
+            <p>확률의 덧셈정리의 적용은 단순하다. 배반사건 여부에 주의하여 '또는'에서 확률끼리 더한다는 것이다. 여기서는 확률의 곱셈정리를 사용하면서 지켜야 할 원칙과
+                주의점을 정리해보자.</p>
+            <p>① 모든 대상은 같은 확률을 가지는 서로 다른 것으로 본다.<br>
+                ② 사건을 생각하는 순서는 문제 해결에 유리하게 조절할 수 있다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\Rightarrow \mathrm{P}(A\cap B)=\mathrm{P}(A)\mathrm{P}(B|A)=\mathrm{P}(B)\mathrm{P}(A|B)=\mathrm{P}(B\cap A)\)이므로 사건 \(A\)가 일어난 후 사건 \(B\)가
+                일어날 확률은 사건 \(B\)가 일어난 후 사건 \(A\)가 일어날 확률과 같다.<br>
+                ③ 생각한 순서대로의 확률만 계산되므로 생각의 순서가 바뀌는 것이 서로 다른 경우일 때는 생각의 순서가 바뀌는 경우의 수를 곱한다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\Rightarrow\) (생각한 순서대로의 확률) \(\times\) (생각의 순서가 바뀌는 경우의 수)<br>
+                ④ 주어진 조건 이외의 확률은 계산하지 않는다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\Rightarrow\) (주어진 조건 이외의 확률) \(=\dfrac{(\text{남은 모든 경우의 수})}{(\text{남은 모든 경우의 수})}=1\)</p>
+            <p>다음의 예를 통해 이러한 원칙과 주의점을 이해해보자. 다음의 예에서 경우의 수를 이용한 계산이 더 편리한 경우도 있을 수 있다.</p>
+
+            <p><strong>[예]</strong> 흰 공 5개, 검은 공 3개, 파란 공 2개가 들어 있는 주머니에서 임의로 3개의 공을 동시에 꺼낼 때, 다음 확률을 구해보자.<br>
+                ① 흰 공 3개를 꺼낼 확률<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<strong>[방법 1]</strong> 경우의 수<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\dfrac{{}_5\mathrm{C}_3}{{}_{10}\mathrm{C}_3}=\dfrac{\dfrac{5\times4\times3}{3!}}{\dfrac{10\times9\times8}{3!}}=\dfrac{5\times4\times3}{10\times9\times8}\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<strong>[방법 2]</strong> 확률의 곱셈정리<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;꺼낸 공을 다시 넣지 않고 1개씩 3번 공을 꺼낼 때 모두 흰 공을 꺼내는 것이므로<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\dfrac{5}{10}\times\dfrac{4}{9}\times\dfrac{3}{8}\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;이고, 꺼내는 순서가 바뀌어도 모두 같은 경우이다.<br>
+                ② 흰 공 2개, 파란 공 1개를 꺼낼 확률<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<strong>[방법 1]</strong> 경우의 수<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\dfrac{{}_5\mathrm{C}_2\times{}_2\mathrm{C}_1}{{}_{10}\mathrm{C}_3}=\dfrac{\dfrac{5\times4}{2!}\times2}{\dfrac{10\times9\times8}{3!}}=\dfrac{5\times4\times2}{10\times9\times8}\times\dfrac{3!}{2!}\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<strong>[방법 2]</strong> 확률의 곱셈정리<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;꺼낸 공을 다시 넣지 않고 1개씩 3번 공을 꺼낼 때 흰 공, 흰 공, 파란 공의 순서로 꺼낼 확률은<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\dfrac{5}{10}\times\dfrac{4}{9}\times\dfrac{2}{8}\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;이고, 흰 공, 흰 공, 파란 공 / 흰 공, 파란 공, 흰 공 / 파란 공, 흰 공, 흰 공의 순서로 꺼내는 것은 모두 서로 다른 경우이고 확률은 모두 서로 같다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;꺼내는 순서가 바뀌는 경우의 수는 흰 공, 흰 공, 파란 공을 일렬로 배열하는 경우의 수 \(\dfrac{3!}{2!}\)이므로<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\left(\dfrac{5}{10}\times\dfrac{4}{9}\times\dfrac{2}{8}\right)\times\dfrac{3!}{2!}\)<br>
+                ③ 흰 공 1개, 검은 공 1개, 파란 공 1개를 꺼낼 확률<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<strong>[방법 1]</strong> 경우의 수<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\dfrac{{}_5\mathrm{C}_1\times{}_3\mathrm{C}_1\times{}_2\mathrm{C}_1}{{}_{10}\mathrm{C}_3}=\dfrac{5\times3\times2}{\dfrac{10\times9\times8}{3!}}=\dfrac{5\times3\times2}{10\times9\times8}\times3!\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<strong>[방법 2]</strong> 확률의 곱셈정리<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;꺼낸 공을 다시 넣지 않고 1개씩 3번 공을 꺼낼 때 흰 공, 검은 공, 파란 공의 순서로 꺼낼 확률은<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\dfrac{5}{10}\times\dfrac{3}{9}\times\dfrac{2}{8}\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;이고, 흰 공, 검은 공, 파란 공 / 흰 공, 파란 공, 검은 공 / 검은 공, 흰 공, 파란 공 / 검은 공, 파란 공, 흰 공 / 파란 공, 흰 공, 검은 공 / 파란 공, 검은 공,
+                흰 공의 순서로 꺼내는 것은 모두 서로 다른 경우이고 확률은 모두 서로 같다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;꺼내는 순서가 바뀌는 경우의 수는 흰 공, 검은 공, 파란 공을 일렬로 배열하는 경우의 수 \(3!\)이므로<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\left(\dfrac{5}{10}\times\dfrac{3}{9}\times\dfrac{2}{8}\right)\times3!\)</p>
+        </section>
+
+        <section class="note">
+            <h2>#13 확률의 곱셈정리의 활용 (특정 자리의 조건)</h2>
+
+            <h3>2. 확률의 곱셈정리의 활용</h3>
+            <p>확률의 곱셈정리를 사용할 때 주어진 조건 이외의 확률은 계산하지 않는다.
+                <span style="display:block;margin:4px 0 4px 2em">(주어진 조건 이외의 확률) \(=\dfrac{(\text{남은 모든 경우의 수})}{(\text{남은 모든 경우의 수})}=1\)</span>
+                이기 때문이다. 이러한 관점에서 확률의 곱셈정리의 활용의 대표적인 두 가지 상황을 정리해보자.</p>
+
+            <h4>1) 특정 자리의 조건</h4>
+            <p>특정 자리의 조건이 있을 때는 그 자리의 조건에 관한 확률만 계산한다.</p>
+
+            <p><strong>[예1]</strong> ① 숫자 1, 2, 3, 4, 5를 모두 일렬로 나열하여 만든 다섯 자리의 자연수가<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;짝수일 확률은 일의 자리의 수를 먼저 1개 택할 때, 그 수가 짝수일 확률만 계산하면 되므로 \(\dfrac{2}{5}\)이다. 이를 경우의 수로 계산하면 모든 경우의 수는
+                \(5!\), 일의 자리에 짝수가 오는 경우의 수는 2, 남은 4개의 수를 배열하는 경우의 수는 \(4!\)이므로 \(\dfrac{2\times4!}{5!}=\dfrac{2\times4!}{5\times4!}=\dfrac{2}{5}\)이다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;홀수일 확률은 일의 자리의 수를 먼저 1개 택할 때, 그 수가 홀수일 확률만 계산하면 되므로 \(\dfrac{3}{5}\)이다.<br>
+                ② 숫자 1, 2, 3, 4, 5 중에서 서로 다른 3개를 택해 일렬로 나열하여 만든 세 자리의 자연수가<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;짝수일 확률은 일의 자리의 수를 먼저 1개 택할 때, 그 수가 짝수일 확률만 계산하면 되므로 \(\dfrac{2}{5}\)이다. 이를 경우의 수로 계산하면 모든 경우의 수는
+                \({}_5\mathrm{P}_3\), 일의 자리에 짝수가 오는 경우의 수는 2, 남은 4개의 수 중에서 2개를 택하여 배열하는 경우의 수는 \({}_4\mathrm{P}_2\)이므로
+                \(\dfrac{2\times{}_4\mathrm{P}_2}{{}_5\mathrm{P}_3}=\dfrac{2\times4\times3}{5\times4\times3}=\dfrac{2}{5}\)이다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;홀수일 확률은 일의 자리의 수를 먼저 1개 택할 때, 그 수가 홀수일 확률만 계산하면 되므로 \(\dfrac{3}{5}\)이다.</p>
+
+            <p><strong>[예2]</strong> 숫자 1, 2, 3, 4, 5, 6이 하나씩 적혀 있는 6장의 카드가 있다. 이 6장의 카드를 모두 한 번씩 사용하여 일렬로 임의로 나열할 때, 양 끝에
+                놓인 카드에 적힌 두 수의 합이 10 이하가 되도록 카드가 놓일 확률을 구해보자.<br>
+                <strong>[방법 1]</strong> 경우의 수<br>
+                모든 경우의 수는<br>
+                \(6!\)<br>
+                양 끝의 두 수의 합이 10보다 큰 경우는 양 끝의 두 수가 5, 6인 경우이므로 그 경우의 수는<br>
+                \(2!\times4!\)<br>
+                양 끝의 두 수의 합이 10보다 클 확률은<br>
+                \(\dfrac{2!\times4!}{6!}=\dfrac{1}{15}\)<br>
+                이므로 양 끝의 두 수의 합이 10 이하일 확률은<br>
+                \(1-\dfrac{1}{15}=\dfrac{14}{15}\)<br>
+                <strong>[방법 2]</strong> 확률의 곱셈정리<br>
+                양 끝의 두 수의 합이 10보다 클 확률, 즉 양 끝의 두 수가 5, 6일 확률은<br>
+                \(\dfrac{2}{6}\times\dfrac{1}{5}=\dfrac{1}{15}\)<br>
+                이므로<br>
+                \(1-\dfrac{1}{15}=\dfrac{14}{15}\)</p>
+
+            <p><strong>[예3]</strong> 어느 여객선의 좌석이 A구역에 2개, B구역에 1개, C구역에 1개 남아 있다. 남아 있는 좌석을 남자 승객 2명과 여자 승객 2명에게 임의로
+                배정할 때, 남자 승객 2명이 모두 A구역에 배정될 확률을 구해보자.<br>
+                남자 승객 중 1명이 A구역의 2개 좌석 중 1개에 배정될 확률은 \(\dfrac{2}{4}\), 남은 남자 승객 1명이 A구역의 남은 좌석 1개에 배정될 확률은 \(\dfrac{1}{3}\)이므로<br>
+                \(\dfrac{2}{4}\times\dfrac{1}{3}=\dfrac{1}{6}\)<br>
+                \(\Rightarrow\) 여자 승객 중 1명이 B구역의 1개 좌석과 C구역의 1개 좌석 중 1개에 배정될 확률 \(\dfrac{2}{4}\), 남은 여자 승객 1명이 B구역과 C구역 중 남은
+                좌석 1개에 배정될 확률 \(\dfrac{1}{3}\)에서 \(\dfrac{2}{4}\times\dfrac{1}{3}=\dfrac{1}{6}\)로 계산해도 마찬가지이다.</p>
+
+            <p><strong>[예4]</strong> 흰 공 2개와 검은 공 4개가 들어 있는 주머니에서 꺼낸 공은 다시 넣지 않고 1개씩 공을 차례로 꺼낼 때,<br>
+                흰 공이 모두 나올 때까지의 시행 횟수가 6일 확률은 여섯 번째의 공을 먼저 1개 선택할 때 그 공이 흰 공일 확률만 계산하면 되므로 \(\dfrac{2}{6}\)이다.<br>
+                흰 공이 모두 나올 때까지의 시행 횟수가 5일 확률은 다섯 번째의 공을 먼저 1개 선택할 때 그 공이 흰 공이고, 이어서 여섯 번째의 공을 1개 선택할 때 그 공이
+                검은 공일 확률만 계산하면 되므로 \(\dfrac{2}{6}\times\dfrac{4}{5}\)이다.</p>
+        </section>
+
+        <section class="note">
+            <h2>#14 확률의 곱셈정리의 활용 (조 나누기)</h2>
+
+            <h4>2) 조 나누기</h4>
+            <p>A, B를 포함한 6명의 사람을 몇 개의 조로 나눌 때 A와 B가 같은 조에 속할 확률을 생각해보자.</p>
+            <p>① 2명, 2명, 2명의 3개 조로 나눌 때
+                <span style="display:block;margin:4px 0 4px 2em">(❶ ❷), (❸ ❹), (❺ ❻)</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;A가 ❶에 올 확률은 \(\dfrac{1}{6}\), B가 ❷에 와서 A와 같은 조가 될 확률은 \(\dfrac{1}{5}\)이므로 \(\dfrac{1}{6}\times\dfrac{1}{5}\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;A가 ❷, ❸, ❹, ❺, ❻에 올 때도 확률은 같으므로 A와 B가 같은 조에 속할 확률은<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(6\times\dfrac{1}{6}\times\dfrac{1}{5}=\left(6\times\dfrac{1}{6}\right)\times\dfrac{1}{5}=1\times\dfrac{1}{5}=\dfrac{1}{5}\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;여기서 괄호 안의 계산 결과가 1이 되는 것에 따로 주목해 보면, A가 6개의 자리 중 어디에 와도 상관없이 B가 A와 같은 조가 될 확률은 \(\dfrac{1}{5}\)로
+                같으므로 A의 자리에 대한 확률은 계산하지 않는다는 의미로 해석할 수 있다.</p>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                이 상황을 경우의 수로 계산하면 다음과 같다.<br>
+                6명을 2명씩 3개 조로 분할하는 경우의 수는 \(\dfrac{{}_6\mathrm{C}_2\times{}_4\mathrm{C}_2\times{}_2\mathrm{C}_2}{3!}=15\)<br>
+                A, B가 같은 조가 되고, 남은 4명을 2명씩 2개 조로 분할하는 경우의 수는 \(\dfrac{1\times{}_4\mathrm{C}_2\times{}_2\mathrm{C}_2}{2!}=3\)<br>
+                \(\therefore\ \dfrac{3}{15}=\dfrac{1}{5}\)
+            </div>
+
+            <p>② 3명, 3명의 2개 조로 나눌 때
+                <span style="display:block;margin:4px 0 4px 2em">(❶ ❷ ❸), (❹ ❺ ❻)</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;A가 ❶에 올 확률은 \(\dfrac{1}{6}\), B가 ❷ 또는 ❸에 와서 A와 같은 조가 될 확률은 \(\dfrac{2}{5}\)이므로 \(\dfrac{1}{6}\times\dfrac{2}{5}\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;A가 ❷, ❸, ❹, ❺, ❻에 올 때도 확률은 같으므로 A와 B가 같은 조에 속할 확률은 \(6\times\dfrac{1}{6}\times\dfrac{2}{5}=\dfrac{2}{5}\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;여기서도 역시 A가 6개의 자리 중 어디에 와도 상관없이 B가 A와 같은 조가 될 확률은 \(\dfrac{2}{5}\)로 같으므로 A의 자리에 대한 확률은 계산하지 않고
+                곧바로 계산할 수도 있다.</p>
+            <p>③ 2명, 4명의 2개 조로 나눌 때
+                <span style="display:block;margin:4px 0 4px 2em">(❶ ❷), (❸ ❹ ❺ ❻)</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;A가 ❶, ❷ 중 하나에 올 확률은 \(\dfrac{2}{6}\), 이때 B가 A와 같은 조의 남은 자리에 올 확률은 \(\dfrac{1}{5}\)이므로 \(\dfrac{2}{6}\times\dfrac{1}{5}\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;A가 ❸, ❹, ❺, ❻ 중 하나에 올 확률은 \(\dfrac{4}{6}\), 이때 B가 A와 같은 조의 남은 자리에 올 확률은 \(\dfrac{3}{5}\)이므로<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\dfrac{4}{6}\times\dfrac{3}{5}\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;\(\therefore\ \dfrac{2}{6}\times\dfrac{1}{5}+\dfrac{4}{6}\times\dfrac{3}{5}=\dfrac{7}{15}\)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;여기서 A가 2명인 조에 속할 때와 4명인 조에 속할 때 B가 A와 같은 조가 될 확률이 달라지므로 케이스 구분을 통해 확률의 덧셈정리로 계산한 것을 볼 수
+                있다.</p>
+
+            <p><strong>[예5]</strong> 두 학생 A, B를 포함한 8명의 학생을 임의로 3명, 3명, 2명의 3개 조로 나눌 때, A와 B가 서로 다른 조에 속할 확률을 구해보자.<br>
+                A가 3명인 조 중 하나에 속할 확률은 \(\dfrac{6}{8}\)이고, 이때 A가 속하지 않은 조에 B가 속할 확률은 \(\dfrac{5}{7}\)이므로<br>
+                \(\dfrac{6}{8}\times\dfrac{5}{7}\)<br>
+                A가 2명인 조에 속할 확률은 \(\dfrac{2}{8}\)이고, 이때 A가 속하지 않은 조에 B가 속할 확률은 \(\dfrac{6}{7}\)이므로<br>
+                \(\dfrac{2}{8}\times\dfrac{6}{7}\)<br>
+                \(\therefore\ \dfrac{6}{8}\times\dfrac{5}{7}+\dfrac{2}{8}\times\dfrac{6}{7}=\dfrac{3}{4}\)</p>
+        </section>
+
+        <section class="note">
+            <h2>#15 이중분할표</h2>
+
+            <h3>1. 이중분할표</h3>
+            <p>전체를 '분할하는 두 가지 기준'에 의하여 작성한 다음과 같은 이중분할표가 주어지면 이를 이용하여 조건부확률을 계산할 수 있다.</p>
+<div style="margin:8px auto;width:fit-content;max-width:100%"><table><thead><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap"></th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">\(A\)</th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">\(A^C\)</th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">합계</th></tr></thead><tbody><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">\(B\)</th><td style="padding:3px 6px;text-align:center">\(n(A\cap B)\)</td><td style="padding:3px 6px;text-align:center">\(n(A^C\cap B)\)</td><td style="padding:3px 6px;text-align:center">\(n(B)\)</td></tr><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">\(B^C\)</th><td style="padding:3px 6px;text-align:center">\(n(A\cap B^C)\)</td><td style="padding:3px 6px;text-align:center">\(n(A^C\cap B^C)\)</td><td style="padding:3px 6px;text-align:center">\(n(B^C)\)</td></tr><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">합계</th><td style="padding:3px 6px;text-align:center">\(n(A)\)</td><td style="padding:3px 6px;text-align:center">\(n(A^C)\)</td><td style="padding:3px 6px;text-align:center">\(n(S)\)</td></tr></tbody></table></div>
+            <p>이러한 표가 주어지지 않더라도 제시된 경우의 수에 따라 전체를 분할하는 두 가지 기준을 잡고 스스로 표를 작성하여 조건부확률을 계산할 수 있다. 이중분할표의
+                합계를 제외한 네 부분은 두 집합의 일반적인 관계를 나타낸 벤 다이어그램의 네 부분을 나타내고, 벤 다이어그램보다 사건 사이의 관계를 파악하기 수월하다.</p>
+
+            <div class="callout">
+                <span class="tag">REMARK 1</span><br>
+                스스로 이중분할표를 작성할 때는 가로와 세로의 합계가 \(n(S)\)로 일치하는지 반드시 점검하도록 하자.<br>
+                이중분할표에는 확률이나 퍼센트(%) 단위의 값을 써넣을 수도 있다. 확률을 써넣을 때는 \(n(S)\) 부분의 값이 1, 퍼센트(%) 단위의 값을 써넣을 때는 \(n(S)\)
+                부분의 값이 100이 되는지 점검하면 된다.<br>
+                이때 \(n(S)\) 부분의 값은 \(n(A)+n(A^C)\) 또는 \(n(B)+n(B^C)\), 즉 모든 경우의 수이므로 확률로 1, 퍼센트(%) 단위로 100인 것은 당연하다.<br>
+                또한 가로 또는 세로에 \(A,\ B\)를 함께 나열하거나 \(A^C,\ B^C\)을 함께 나열하지 않도록 주의하자.<br>
+                이러한 이중분할표는 조건부확률에서뿐만 아니라 뒤에서 다루게 될 독립과 종속을 비롯하여 일반적인 확률의 상호 관계를 파악하는 효율적인 수단으로 폭넓게 이용할 수
+                있다.
+            </div>
+
+            <div class="callout">
+                <span class="tag">REMARK 2</span><br>
+                \(\mathrm{P}(B|A)=p\)는 \(A\) 중 \(A\cap B\)가 차지하는 비율이 \(p\), \(\mathrm{P}(A^C|B^C)=q\)는 \(B^C\) 중 \(A^C\cap B^C\)이 차지하는 비율이 \(q\)라는 의미이므로
+                이중분할표에 다음과 같이 적용한다.
+            </div>
+<div style="margin:8px auto;width:fit-content;max-width:100%"><table><thead><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap"></th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">\(A\)</th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">\(A^C\)</th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">합계</th></tr></thead><tbody><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">\(B\)</th><td style="padding:3px 6px;text-align:center">\(n(A)\times p\)</td><td style="padding:3px 6px;text-align:center"></td><td style="padding:3px 6px;text-align:center"></td></tr><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">\(B^C\)</th><td style="padding:3px 6px;text-align:center"></td><td style="padding:3px 6px;text-align:center">\(n(B^C)\times q\)</td><td style="padding:3px 6px;text-align:center">\(n(B^C)\)</td></tr><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">합계</th><td style="padding:3px 6px;text-align:center">\(n(A)\)</td><td style="padding:3px 6px;text-align:center"></td><td style="padding:3px 6px;text-align:center"></td></tr></tbody></table></div>
+            <p>예를 들어 \(n(A)=50,\ n(B^C)=100\)이고 \(\mathrm{P}(B|A)=\dfrac{3}{5},\ \mathrm{P}(A|B)=\dfrac{1}{3}\)일 때 이중분할표를 작성하고 색칠한 남은 부분을
+                완성하면 다음과 같다.</p>
+<div style="margin:8px auto;width:fit-content;max-width:100%"><table><thead><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap"></th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">\(A\)</th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">\(A^C\)</th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">합계</th></tr></thead><tbody><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">\(B\)</th><td style="padding:3px 6px;text-align:center">\(30\left(=50\times\dfrac{3}{5}\right)\)</td><td style="padding:3px 6px;text-align:center;background:rgba(255,214,0,.28)">\(60(=90-30)\)</td><td style="padding:3px 6px;text-align:center">\(90(=30\times3)\)</td></tr><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">\(B^C\)</th><td style="padding:3px 6px;text-align:center;background:rgba(255,214,0,.28)">\(20(=50-30)\)</td><td style="padding:3px 6px;text-align:center;background:rgba(255,214,0,.28)">\(80(=100-20)\)</td><td style="padding:3px 6px;text-align:center">\(100\)</td></tr><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">합계</th><td style="padding:3px 6px;text-align:center">\(50\)</td><td style="padding:3px 6px;text-align:center;background:rgba(255,214,0,.28)">\(140(=60+80)\)</td><td style="padding:3px 6px;text-align:center;background:rgba(255,214,0,.28)">\(190(=50+140=90+100)\)</td></tr></tbody></table></div>
+            <p>\(\mathrm{P}(A)=\dfrac{2}{3},\ \mathrm{P}(B)=\dfrac{2}{3},\ \mathrm{P}(B|A)=\dfrac{1}{2}\)일 때 이중분할표를 작성하고 색칠한 남은 부분을 완성하면 다음과 같다.
+                이때 확률의 총합 1(퍼센트(%) 단위에서는 100)은 주어진 것과 마찬가지이다.</p>
+<div style="margin:8px auto;width:fit-content;max-width:100%"><table><thead><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap"></th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">\(B\)</th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">\(B^C\)</th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">합계</th></tr></thead><tbody><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">\(A\)</th><td style="padding:3px 6px;text-align:center">\(\dfrac{1}{3}\left(=\dfrac{2}{3}\times\dfrac{1}{2}\right)\)</td><td style="padding:3px 6px;text-align:center;background:rgba(255,214,0,.28)">\(\dfrac{1}{3}\left(=\dfrac{2}{3}-\dfrac{1}{3}\right)\)</td><td style="padding:3px 6px;text-align:center">\(\dfrac{2}{3}\)</td></tr><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">\(A^C\)</th><td style="padding:3px 6px;text-align:center;background:rgba(255,214,0,.28)">\(\dfrac{1}{3}\left(=\dfrac{2}{3}-\dfrac{1}{3}\right)\)</td><td style="padding:3px 6px;text-align:center;background:rgba(255,214,0,.28)">\(0\left(=\dfrac{1}{3}-\dfrac{1}{3}\right)\)</td><td style="padding:3px 6px;text-align:center;background:rgba(255,214,0,.28)">\(\dfrac{1}{3}\left(=1-\dfrac{2}{3}\right)\)</td></tr><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">합계</th><td style="padding:3px 6px;text-align:center">\(\dfrac{2}{3}\)</td><td style="padding:3px 6px;text-align:center;background:rgba(255,214,0,.28)">\(\dfrac{1}{3}\left(=1-\dfrac{2}{3}\right)\)</td><td style="padding:3px 6px;text-align:center">\(1\)</td></tr></tbody></table></div>
+
+            <p><strong>[예1]</strong> 전체 학생이 360명인 어느 학교에서 각 학생이 체험 학습 A, 체험 학습 B 중 하나를 선택하였다. 이 학교의 학생 중 체험 학습 A를 선택한
+                학생은 남학생 90명과 여학생 70명이고, 이 학교의 학생 중 임의로 뽑은 1명의 학생이 체험 학습 B를 선택한 학생일 때, 이 학생이 여학생일 확률은
+                \(\dfrac{2}{5}\)이다. 이를 이용하여 이중분할표를 작성해보자.<br>
+                A를 선택한 학생의 수는 남학생이 90명, 여학생이 70명이므로 \(90+70=160\)<br>
+                B를 선택한 학생의 수는 \(360-160=200\)<br>
+                B를 선택한 학생 중 여학생의 비율이 \(\dfrac{2}{5}\)이므로 B를 선택한 여학생의 수는 \(200\times\dfrac{2}{5}=80\)<br>
+                B를 선택한 남학생의 수는 \(200-80=120\)<br>
+                따라서 이중분할표는 다음과 같다.</p>
+<div style="margin:8px auto;width:fit-content;max-width:100%"><div style="text-align:right;font-size:0.85em;color:var(--muted)">(단위: 명)</div><table><thead><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap"></th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">A</th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">B</th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">합계</th></tr></thead><tbody><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">남학생</th><td style="padding:3px 6px;text-align:center">90</td><td style="padding:3px 6px;text-align:center">120</td><td style="padding:3px 6px;text-align:center">210</td></tr><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">여학생</th><td style="padding:3px 6px;text-align:center">70</td><td style="padding:3px 6px;text-align:center">80</td><td style="padding:3px 6px;text-align:center">150</td></tr><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">합계</th><td style="padding:3px 6px;text-align:center">160</td><td style="padding:3px 6px;text-align:center">200</td><td style="padding:3px 6px;text-align:center">360</td></tr></tbody></table></div>
+
+            <p><strong>[예2]</strong> 철수가 받은 전자우편의 10 %는 '여행'이라는 단어를 포함한다. '여행'을 포함한 전자우편의 50 %가 광고이고, '여행'을 포함하지 않은
+                전자우편의 20 %가 광고이다. 철수가 받은 한 전자우편이 광고가 아닐 때, 이 전자우편이 '여행'을 포함할 확률을 구해보자.<br>
+                주어진 조건에 따라 이중분할표를 작성하고 색칠한 남은 부분을 완성하면 다음과 같다.</p>
+<div style="margin:8px auto;width:fit-content;max-width:100%"><div style="text-align:right;font-size:0.85em;color:var(--muted)">(단위: %)</div><table><thead><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap"></th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">'여행'을 포함한다</th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">'여행'을 포함하지 않는다</th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">합계</th></tr></thead><tbody><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">광고이다</th><td style="padding:3px 6px;text-align:center">\(5(=10\times0.5)\)</td><td style="padding:3px 6px;text-align:center">\(18(=90\times0.2)\)</td><td style="padding:3px 6px;text-align:center;background:rgba(255,214,0,.28)">\(23(=5+18)\)</td></tr><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">광고가 아니다</th><td style="padding:3px 6px;text-align:center;background:rgba(255,214,0,.28)">\(5(=10-5)\)</td><td style="padding:3px 6px;text-align:center;background:rgba(255,214,0,.28)">\(72(=90-18)\)</td><td style="padding:3px 6px;text-align:center;background:rgba(255,214,0,.28)">\(77(=5+72)\)</td></tr><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">합계</th><td style="padding:3px 6px;text-align:center">10</td><td style="padding:3px 6px;text-align:center">90</td><td style="padding:3px 6px;text-align:center">100</td></tr></tbody></table></div>
+            <p>\(\therefore\ \dfrac{5}{77}\)</p>
+        </section>
+
+        <section class="note">
+            <h2>#16 사건의 발생 순서</h2>
+
+            <h3>2. 사건의 발생 순서</h3>
+            <h4>1) 먼저 일어난 사건을 조건으로 할 때</h4>
+            <p>먼저 일어난 사건 \(A\)에 대하여 나중에 일어난 사건 \(B\)의 조건부확률 \(\mathrm{P}(B|A)\)는 사건 \(A\)의 발생 결과를 전제로 사건 \(B\)의 확률을 직접
+                계산한다.<br>
+                이는 확률에서 과거는 상황만 반영되고 확률의 계산에는 반영되지 않는다는 논의와 같다. 확률은 현재를 기준으로 일어나지 않은 미래에 대한 계산임을 다시 한번
+                확인해 두자.</p>
+
+            <p><strong>[예1]</strong> 당첨제비 3개를 포함한 8개의 제비에서 갑, 을의 순서로 하나씩, 비복원으로 제비를 뽑을 때,<br>
+                갑이 당첨되었다는 조건에서 을이 당첨될 확률은<br>
+                이미 갑이 당첨제비 1개를 뽑았으므로 당첨제비 2개를 포함한 7개의 제비가 남게 되어<br>
+                \(\dfrac{2}{7}\)이다.</p>
+
+            <p><strong>[예2]</strong> 세 학생 A, B, C가 각각 자신의 수학 교과서를 한 권씩 꺼내어 3권을 섞어 놓고, 한 권씩 임의로 선택하기로 하였다. C가 먼저 A의 교과서를
+                선택하였을 때, A, B가 모두 자신의 교과서를 선택하지 못할 확률을 구해보자.<br>
+                C가 A의 교과서를 선택했다는 조건에서 B, C의 교과서가 남는다. A, B가 모두 자신의 교과서를 선택하지 못하는 경우는 B가 C의 교과서를 선택하는 경우이므로 그
+                확률은 \(\dfrac{1}{2}\)이다.</p>
+
+            <h4>2) 나중에 일어난 사건을 조건으로 할 때</h4>
+            <p>나중에 일어난 사건 \(B\)에 대하여 먼저 일어난 사건 \(A\)의 조건부확률은
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(A|B)=\dfrac{\mathrm{P}(A\cap B)}{\mathrm{P}(A\cap B)+\mathrm{P}(A^C\cap B)}\)</span>
+                와 같이 분모의 \(\mathrm{P}(B)\)를 \(\mathrm{P}(A\cap B)+\mathrm{P}(A^C\cap B)\)로, 즉 먼저 사건 \(A\)가 일어나고 나중에 사건 \(B\)가 일어나는 경우와 먼저 사건
+                \(A\)가 일어나지 않고 나중에 사건 \(B\)가 일어나는 경우로 나누어 계산할 때가 많다.<br>
+                \(\mathrm{P}(B)=\mathrm{P}(A\cap B)+\mathrm{P}(A^C\cap B)\)임은 벤 다이어그램으로 쉽게 확인해 볼 수 있다.</p>
+
+            <p><strong>[예3]</strong> 당첨제비 3개를 포함한 8개의 제비에서 갑, 을의 순서로 하나씩, 비복원으로 제비를 뽑을 때,<br>
+                을이 당첨되었다는 조건에서 갑이 당첨되었을 확률은<br>
+                갑이 당첨되고 을이 당첨되는 경우 (확률 \(\dfrac{3}{8}\times\dfrac{2}{7}\))<br>
+                갑이 당첨되지 않고 을이 당첨되는 경우 (확률 \(\dfrac{5}{8}\times\dfrac{3}{7}\))<br>
+                중에서 갑이 당첨되고 을이 당첨되는 경우를 말하는 것이므로
+                \(\dfrac{\dfrac{3}{8}\times\dfrac{2}{7}}{\dfrac{3}{8}\times\dfrac{2}{7}+\dfrac{5}{8}\times\dfrac{3}{7}}=\dfrac{2}{7}\)이다.</p>
+
+            <p><strong>[예4]</strong> 주머니 A에는 1, 2, 3, 4, 5의 숫자가 하나씩 적혀 있는 5장의 카드가 들어 있고, 주머니 B에는 6, 7, 8, 9, 10의 숫자가 하나씩 적혀 있는
+                5장의 카드가 들어 있다. 두 주머니 A, B에서 각각 카드를 임의로 한 장씩 꺼냈다. 꺼낸 2장의 카드에 적혀 있는 두 수의 합이 홀수일 때, 주머니 A에서 꺼낸
+                카드에 적혀 있는 수가 짝수일 확률을 구해보자.<br>
+                주머니 A에서 꺼낸 카드에 적혀 있는 수가 홀수이고, 주머니 B에서 꺼낸 카드에 적혀 있는 수가 짝수인 경우의 수는<br>
+                \(3\times3=9\)<br>
+                주머니 A에서 꺼낸 카드에 적혀 있는 수가 짝수이고, 주머니 B에서 꺼낸 카드에 적혀 있는 수가 홀수인 경우의 수는<br>
+                \(2\times2=4\)<br>
+                \(\therefore\ \dfrac{4}{9+4}=\dfrac{4}{13}\)</p>
+        </section>
+
+        <section class="note">
+            <h2>#17 사건의 독립과 종속</h2>
+
+            <h3>1. 사건의 독립과 종속</h3>
+            <p>확률이 0이 아닌 두 사건 \(A,\ B\)에 대하여 사건 \(A\)가 일어나거나 일어나지 않는 것이 사건 \(B\)가 일어날 확률에 영향을 주지 않을 때, 즉
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(B|A)=\mathrm{P}(B|A^C)=\mathrm{P}(B)\)</span>
+                일 때, 두 사건 \(A\)와 \(B\)는 서로 <strong>독립</strong>이라고 한다.</p>
+            <p>한편 두 사건 \(A\)와 \(B\)가 서로 독립이 아닐 때, 즉
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(A|B)\ne\mathrm{P}(A)\) 또는 \(\mathrm{P}(B|A)\ne\mathrm{P}(B)\)</span>
+                일 때, 두 사건 \(A\)와 \(B\)는 서로 <strong>종속</strong>이라고 한다.</p>
+
+            <div class="callout">
+                <span class="tag">REMARK</span><br>
+                사건 \(A\)의 발생 여부에 관계없이 사건 \(B\)가 일어날 확률이 일정할 때, 즉
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(B|A)=\mathrm{P}(B|A^C)\)</span>
+                일 때 두 사건 \(A\)와 \(B\)는 서로 독립이라 하고 다음의 등식이 성립한다.
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(B|A)=\mathrm{P}(B|A^C)=\mathrm{P}(B)\)<br>
+                \(\mathrm{P}(A|B)=\mathrm{P}(A|B^C)=\mathrm{P}(A)\)</span>
+                사건 \(A\)의 발생 여부가 사건 \(B\)가 일어날 확률에 영향을 줄 때, 즉
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(B|A)\ne\mathrm{P}(B|A^C)\)</span>
+                일 때 두 사건 \(A\)와 \(B\)는 서로 종속이라고 한다.
+            </div>
+
+            <p><strong>[예]</strong> 한 개의 동전을 두 번 던질 때, 첫 번째에 앞면이 나오는 사건을 \(A\), 두 번째에 앞면이 나오는 사건을 \(B\)라 하자. 이때 사건 \(A\)의 발생
+                여부가 사건 \(B\)가 일어날 확률에 영향을 주지 않으므로<br>
+                \(\mathrm{P}(B|A)=\mathrm{P}(B|A^C)=\mathrm{P}(B)=\dfrac{1}{2}\)<br>
+                이고, 두 사건 \(A\)와 \(B\)는 서로 독립이다.</p>
+        </section>
+
+        <section class="note">
+            <h2>#18 사건의 독립의 이해 (이중분할표에서 비의 일치)</h2>
+
+            <h3>2. 사건의 독립의 이해</h3>
+            <h4>1) 이중분할표에서 비의 일치</h4>
+            <p>두 사건 \(A,\ B\)에 관한 이중분할표에서 다음과 같이 가로 방향의 비 또는 세로 방향의 비가 모두 일치할 때, 두 사건 \(A,\ B\)는 서로 독립이다.</p>
+<div style="margin:8px auto;width:fit-content;max-width:100%"><table><thead><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap"></th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">\(A\)</th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">\(A^C\)</th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">합계</th></tr></thead><tbody><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">\(B\)</th><td style="padding:3px 6px;text-align:center">\(ak\)</td><td style="padding:3px 6px;text-align:center">\(al\)</td><td style="padding:3px 6px;text-align:center">\(am\)</td></tr><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">\(B^C\)</th><td style="padding:3px 6px;text-align:center">\(bk\)</td><td style="padding:3px 6px;text-align:center">\(bl\)</td><td style="padding:3px 6px;text-align:center">\(bm\)</td></tr><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">합계</th><td style="padding:3px 6px;text-align:center">\(ck\)</td><td style="padding:3px 6px;text-align:center">\(cl\)</td><td style="padding:3px 6px;text-align:center">\(cm\)</td></tr></tbody></table></div>
+            <p>이때 가로 방향의 비와 세로 방향의 비 중 어느 한 방향의 비만 일치하면 남은 방향의 비도 함께 일치하게 된다.</p>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                \(\dfrac{a}{x}=\dfrac{b}{y}=k\)이면 \(a=kx,\ b=ky\)에서 \(\dfrac{a}{b}=\dfrac{kx}{ky}=\dfrac{x}{y}\)이다.
+            </div>
+
+            <p><strong>[예1]</strong> 어느 회사에서 직원들 중 안경을 쓰는 사람과 쓰지 않는 사람을 조사한 결과가 다음과 같다고 하자.</p>
+<div style="margin:8px auto;width:fit-content;max-width:100%"><div style="text-align:right;font-size:0.85em;color:var(--muted)">(단위: 명)</div><table><thead><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap"></th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">남자</th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">여자</th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">합계</th></tr></thead><tbody><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">안경을 쓰는 사람</th><td style="padding:3px 6px;text-align:center">6</td><td style="padding:3px 6px;text-align:center">12</td><td style="padding:3px 6px;text-align:center">18</td></tr><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">안경을 쓰지 않는 사람</th><td style="padding:3px 6px;text-align:center">2</td><td style="padding:3px 6px;text-align:center">4</td><td style="padding:3px 6px;text-align:center">6</td></tr><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">합계</th><td style="padding:3px 6px;text-align:center">8</td><td style="padding:3px 6px;text-align:center">16</td><td style="padding:3px 6px;text-align:center">24</td></tr></tbody></table></div>
+            <p>이때 안경을 쓰는 사람과 쓰지 않는 사람의 비율이 남자, 여자, 합계에서 모두 \(3:1\), 남자와 여자의 비율이 안경을 쓰는 사람, 안경을 쓰지 않는 사람, 합계에서
+                모두 \(1:2\)이다. 안경을 쓰는 것과 쓰지 않는 것이 성별에 관계없는, 즉 한 사건의 발생 여부가 다른 사건의 발생 확률에 영향을 주지 않는 독립의 상황이다.<br>
+                또 조사한 결과가 다음과 같다고 하자.</p>
+<div style="margin:8px auto;width:fit-content;max-width:100%"><div style="text-align:right;font-size:0.85em;color:var(--muted)">(단위: 명)</div><table><thead><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap"></th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">남자</th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">여자</th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">합계</th></tr></thead><tbody><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">안경을 쓰는 사람</th><td style="padding:3px 6px;text-align:center">6</td><td style="padding:3px 6px;text-align:center">11</td><td style="padding:3px 6px;text-align:center">17</td></tr><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">안경을 쓰지 않는 사람</th><td style="padding:3px 6px;text-align:center">2</td><td style="padding:3px 6px;text-align:center">4</td><td style="padding:3px 6px;text-align:center">6</td></tr><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">합계</th><td style="padding:3px 6px;text-align:center">8</td><td style="padding:3px 6px;text-align:center">15</td><td style="padding:3px 6px;text-align:center">23</td></tr></tbody></table></div>
+            <p>이때 안경을 쓰는 사람과 쓰지 않는 사람의 비율이 남자, 여자, 합계에서 모두 서로 다르고, 남자와 여자의 비율도 안경을 쓰는 사람, 안경을 쓰지 않는 사람,
+                합계에서 모두 서로 다르다. 즉 한 사건의 발생 여부가 다른 사건의 발생 확률에 영향을 주는 종속의 상황이다.</p>
+            <p><strong>[예2]</strong> 다음은 어느 회사에서 전체 직원 360명을 대상으로 재직 연수와 새로운 조직 개편안에 대한 찬반 여부를 조사한 표이다.</p>
+<div style="margin:8px auto;width:fit-content;max-width:100%"><div style="text-align:right;font-size:0.85em;color:var(--muted)">(단위: 명)</div><table><thead><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap"><div style="margin:-3px -8px;padding:2px 6px;min-width:110px;font-size:0.85em;background:linear-gradient(to top right,transparent calc(50% - 0.5px),var(--muted),transparent calc(50% + 0.5px))"><div style="text-align:right">찬반 여부</div><div style="text-align:left">재직 연수</div></div></th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">찬성</th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">반대</th><th style="background:rgba(128,128,128,.18);padding:3px 8px;white-space:nowrap">합계</th></tr></thead><tbody><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">10년 미만</th><td style="padding:3px 6px;text-align:center">\(a\)</td><td style="padding:3px 6px;text-align:center">\(b\)</td><td style="padding:3px 6px;text-align:center">120</td></tr><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">10년 이상</th><td style="padding:3px 6px;text-align:center">\(c\)</td><td style="padding:3px 6px;text-align:center">\(d\)</td><td style="padding:3px 6px;text-align:center">240</td></tr><tr><th style="background:rgba(128,128,128,.18);padding:3px 8px;font-weight:400;white-space:nowrap">합계</th><td style="padding:3px 6px;text-align:center">150</td><td style="padding:3px 6px;text-align:center">210</td><td style="padding:3px 6px;text-align:center">360</td></tr></tbody></table></div>
+            <p>재직 연수가 10년 미만일 사건과 조직 개편안에 찬성할 사건이 서로 독립일 때, \(a,\ b,\ c,\ d\)의 값을 구해보자.<br>
+                \(a:c=b:d=120:240=1:2\)이므로 \(a=k,\ c=2k,\ b=l,\ d=2l\)이라 하면<br>
+                \(a+c=3k=150,\ b+d=3l=210\qquad\therefore\ k=50,\ l=70\)<br>
+                \(\therefore\ a=50,\ b=70,\ c=100,\ d=140\)</p>
+
+            <h4>2) \(A,\ A^C\)과 \(B,\ B^C\)의 독립</h4>
+            <p>1)의 [예1]에서 '안경을 쓰는 사람과 쓰지 않는 사람'은 '성별(남과 여)'에 관계없다고 독립을 설명했다. 즉 '안경을 쓰는 사람', '안경을 쓰지 않는 사람'과
+                '남', '여'를 따로 언급하지 않고 둘씩 묶어서 한꺼번에 언급한 것이다. 이처럼<br>
+                두 사건 \(A,\ B\)의 독립은 \(A,\ A^C\)과 \(B,\ B^C\)의 독립으로 곧바로 해석할 수 있다. 따라서 다음이 성립한다.
+                <span style="display:block;margin:4px 0 4px 2em">\(A,\ B\)가 독립 \(\Longleftrightarrow A^C,\ B\)가 독립 \(\Longleftrightarrow A,\ B^C\)이 독립 \(\Longleftrightarrow A^C,\ B^C\)이 독립</span></p>
+
+            <h4>3) \(\mathrm{P}(A|B)=\mathrm{P}(A)\): 조건은 의미가 없다.</h4>
+            <p>1)의 이중분할표에서 다음을 확인할 수 있다.
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(A|B)=\mathrm{P}(A|B^C)=\mathrm{P}(A),\ \ \mathrm{P}(A^C|B)=\mathrm{P}(A^C|B^C)=\mathrm{P}(A^C)\)<br>
+                \(\mathrm{P}(B|A)=\mathrm{P}(B|A^C)=\mathrm{P}(B),\ \ \mathrm{P}(B^C|A)=\mathrm{P}(B^C|A^C)=\mathrm{P}(B^C)\)</span>
+                즉 두 사건이 서로 독립일 때 이들 상호 간의 조건부확률에서 조건은 의미가 없다는 뜻이 된다.<br>
+                따라서 다음이 성립한다.<br>
+                ① \(\mathrm{P}(A\cap B)=\mathrm{P}(A)\mathrm{P}(B)\)<br>
+                ② \(\mathrm{P}(A\cup B)=\mathrm{P}(A)+\mathrm{P}(B)-\mathrm{P}(A)\mathrm{P}(B)\)</p>
+
+            <div class="callout">
+                <span class="tag">두 사건이 서로 독립일 조건</span><br>
+                두 사건 \(A,\ B\)가 서로 독립이기 위한 필요충분조건은
+                <span style="display:block;margin:4px 0 4px 2em">\(\mathrm{P}(A\cap B)=\mathrm{P}(A)\mathrm{P}(B)\) (단, \(\mathrm{P}(A)&gt;0,\ \mathrm{P}(B)&gt;0\))</span>
+            </div>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                사건의 독립이 조건부확률로부터 정의되므로 확률이 0인 사건과의 독립은 생각하지 않는다.
+            </div>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                두 사건 \(A,\ B\)가 서로 독립일 조건을 이용하여 다음을 확인할 수 있다.
+                \[ \begin{aligned}\mathrm{P}(A^C\cap B^C)&=1-\mathrm{P}(A\cup B)=1-\mathrm{P}(A)-\mathrm{P}(B)+\mathrm{P}(A\cap B)=1-\mathrm{P}(A)-\mathrm{P}(B)+\mathrm{P}(A)\mathrm{P}(B)\\
+                &=\{1-\mathrm{P}(A)\}\{1-\mathrm{P}(B)\}=\mathrm{P}(A^C)\mathrm{P}(B^C)\end{aligned} \]
+                \(\mathrm{P}(A^C\cap B)=\mathrm{P}(A^C)\mathrm{P}(B),\ \mathrm{P}(A\cap B^C)=\mathrm{P}(A)\mathrm{P}(B^C)\)도 이와 같이 확인할 수 있다.
+            </div>
+
+            <div class="callout">
+                <span class="tag">REMARK 1 · 독립인 사건의 확률의 연산</span><br>
+                2), 3)을 종합하면 두 사건 \(A,\ B\)가 서로 독립이고 \(\mathrm{P}(A)=a,\ \mathrm{P}(B)=b\)일 때<br>
+                \(\mathrm{P}(A|B)=\mathrm{P}(A|B^C)=a,\ \mathrm{P}(A^C|B)=\mathrm{P}(A^C|B^C)=1-a,\)<br>
+                \(\mathrm{P}(B|A)=\mathrm{P}(B|A^C)=b,\ \mathrm{P}(B^C|A)=\mathrm{P}(B^C|A^C)=1-b,\)<br>
+                \(\mathrm{P}(A\cap B)=ab,\ \mathrm{P}(A\cap B^C)=a(1-b),\ \mathrm{P}(A^C\cap B)=(1-a)b,\ \mathrm{P}(A^C\cap B^C)=(1-a)(1-b),\)<br>
+                \(\mathrm{P}(A\cup B)=a+b-ab,\ \mathrm{P}(A\cup B^C)=a+(1-b)-a(1-b),\ \mathrm{P}(A^C\cup B)=(1-a)+b-(1-a)b\)<br>
+                이다.
+            </div>
+
+            <p><strong>[예3]</strong> 두 사건 \(A,\ B\)는 서로 독립이고 \(\mathrm{P}(A\cap B)=\dfrac{1}{4},\ \mathrm{P}(A^C\cap B)=\dfrac{1}{6}\)일 때, \(\mathrm{P}(A)\)의 값을
+                구해보자.<br>
+                \(\mathrm{P}(A)=a,\ \mathrm{P}(B)=b\)라 하면<br>
+                \(\mathrm{P}(A\cap B)=ab=\dfrac{1}{4}\ \cdots\cdots\ \)㉠<br>
+                이고<br>
+                \(\mathrm{P}(A^C\cap B)=(1-a)b=b-\dfrac{1}{4}=\dfrac{1}{6}\qquad\therefore\ b=\dfrac{5}{12}\)<br>
+                ㉠에서<br>
+                \(a=\dfrac{3}{5}=\mathrm{P}(A)\)</p>
+
+            <p><strong>[예4]</strong> 두 사건 \(A,\ B\)는 서로 독립이고 \(\mathrm{P}(B^C)=\dfrac{1}{3},\ \mathrm{P}(A|B)=\dfrac{1}{2}\)일 때, \(\mathrm{P}(A^C\cup B)\)의 값을
+                구해보자.<br>
+                <strong>[방법 1]</strong> \(\mathrm{P}(A)=\mathrm{P}(A|B)=\dfrac{1}{2}\)에서 \(\mathrm{P}(A^C)=1-\mathrm{P}(A)=\dfrac{1}{2}\)이고,
+                \(\mathrm{P}(B)=1-\mathrm{P}(B^C)=\dfrac{2}{3}\)이므로<br>
+                \(\mathrm{P}(A^C\cup B)=\dfrac{1}{2}+\dfrac{2}{3}-\dfrac{1}{2}\times\dfrac{2}{3}=\dfrac{5}{6}\)<br>
+                <strong>[방법 2]</strong> \(\mathrm{P}(A)=\mathrm{P}(A|B)=\dfrac{1}{2}\)이므로<br>
+                \(\mathrm{P}(A^C\cup B)=1-\mathrm{P}(A\cap B^C)=1-\mathrm{P}(A)\mathrm{P}(B^C)=1-\dfrac{1}{2}\times\dfrac{1}{3}=\dfrac{5}{6}\)</p>
+
+            <div class="callout">
+                <span class="tag">REMARK 2 · 배반사건, 독립, 종속의 비교</span>
+            </div>
+<div style="margin:8px auto;width:fit-content;max-width:100%"><table><thead><tr><th style="background:rgba(128,128,128,.18);padding:3px 10px">배반사건</th><th style="background:rgba(128,128,128,.18);padding:3px 10px">독립</th><th style="background:rgba(128,128,128,.18);padding:3px 10px">종속</th></tr></thead><tbody><tr><td style="padding:4px 10px;text-align:center;vertical-align:middle">\(A\cap B=\varnothing\)</td><td style="padding:4px 10px;text-align:center;vertical-align:middle">\(\mathrm{P}(B|A)=\mathrm{P}(B|A^C)=\mathrm{P}(B)\)</td><td style="padding:4px 10px;text-align:center;vertical-align:middle">\(\mathrm{P}(B|A)\ne\mathrm{P}(B|A^C)\ne\mathrm{P}(B)\)</td></tr><tr><td style="padding:4px 10px;text-align:center;vertical-align:middle">\(A\)와 \(B\)는 동시에 일어나지 않는다.</td><td style="padding:4px 10px;text-align:center;vertical-align:middle">\(A\)와 \(B\)가 각각 일어나든지<br>안 일어나든지 상관없이<br>서로 영향을 주지 않는다.<br>즉 서로가 무관심하다.</td><td style="padding:4px 10px;text-align:center;vertical-align:middle">\(A\)와 \(B\)가 서로 영향을 준다.<br>즉 서로가 관심 있다.</td></tr><tr><td style="padding:4px 10px;text-align:center;vertical-align:middle">\(\mathrm{P}(A\cup B)=\mathrm{P}(A)+\mathrm{P}(B)\)</td><td style="padding:4px 10px;text-align:center;vertical-align:middle">\(\mathrm{P}(A\cap B)=\mathrm{P}(A)\mathrm{P}(B)\)</td><td style="padding:4px 10px;text-align:center;vertical-align:middle">\(\begin{aligned}\mathrm{P}(A\cap B)&=\mathrm{P}(A)\mathrm{P}(B|A)\\&=\mathrm{P}(B)\mathrm{P}(A|B)\end{aligned}\)</td></tr></tbody></table></div>
+
+            <div class="callout">
+                <span class="tag">참고</span><br>
+                확률이 0이 아닌 두 사건 \(A,\ B\)가 서로 배반사건이면 두 사건 \(A,\ B\)는 서로 종속이다.<br>
+                \(\mathrm{P}(A\cap B)=0\)이므로 \(\mathrm{P}(B|A)=\dfrac{\mathrm{P}(A\cap B)}{\mathrm{P}(A)}=0\ne\mathrm{P}(B)\)이기 때문이다.
+                <span style="display:block;margin:4px 0 4px 2em">\(A,\ B\)가 서로 배반사건 \(\Rightarrow A,\ B\)는 서로 종속 \(\cdots\cdots\) ㉠</span>
+                두 사건 \(A,\ B\)가 서로 배반사건이면 사건 \(A\)가 일어날 때 사건 \(B\)가 일어날 확률은 0이고, 사건 \(A\)가 일어나지 않을 때 사건 \(B\)가 일어나므로 두 사건
+                \(A,\ B\)가 서로 종속이라고 이해할 수 있다.<br>
+                두 사건 \(A,\ B\)가 서로 종속이라고 해서 두 사건 \(A,\ B\)가 서로 배반사건이라고 단정할 수는 없다.<br>
+                즉 ㉠의 역은 성립하지 않는다.
+            </div>
+        </section>
+
+        <section class="note">
+            <h2>#19 사건의 독립의 확인</h2>
+
+            <h3>3. 사건의 독립의 확인</h3>
+            <p>두 사건 \(A,\ B\)의 독립은<br>
+                ① 이중분할표에서 비의 일치<br>
+                ② \(\mathrm{P}(A\cap B)=\mathrm{P}(A)\mathrm{P}(B)\)<br>
+                로 확인하는 것이 보통이지만 다음의 방법으로 확인할 수도 있다.<br>
+                ③ \(\mathrm{P}(A|B)=\mathrm{P}(A),\ \mathrm{P}(B|A)=\mathrm{P}(B)\)<br>
+                이들 중 어느 한 방법이 일반적으로 유리하다고 할 수 없으므로 상황에 따라 적절한 방법을 적용해보면 된다.</p>
+
+            <p><strong>[예]</strong> 한 개의 주사위를 던져서 짝수의 눈이 나오는 사건을 \(A\), 1 또는 2의 눈이 나오는 사건을 \(B\), 4의 약수의 눈이 나오는 사건을 \(C\)라 할 때<br>
+                \(A=\{2,\ 4,\ 6\},\ B=\{1,\ 2\},\ C=\{1,\ 2,\ 4\}\)<br>
+                이므로<br>
+                \(\mathrm{P}(A)=\dfrac{1}{2},\ \mathrm{P}(B)=\dfrac{1}{3},\ \mathrm{P}(C)=\dfrac{1}{2}\)<br>
+                이다.<br>
+                ① 두 사건 \(A\)와 \(B\)는 서로 독립임을 확인해보자.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<strong>[방법 1]</strong> \(A\cap B=\{2\}\)이므로 \(\mathrm{P}(A\cap B)=\dfrac{1}{6}\)이고, \(\mathrm{P}(A)\mathrm{P}(B)=\dfrac{1}{2}\times\dfrac{1}{3}=\dfrac{1}{6}\)이므로
+                \(\mathrm{P}(A\cap B)=\mathrm{P}(A)\mathrm{P}(B)\)이다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;따라서 두 사건 \(A\)와 \(B\)는 서로 독립이다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<strong>[방법 2]</strong> \(\mathrm{P}(A|B)=\dfrac{n(A\cap B)}{n(B)}=\dfrac{1}{2}=\mathrm{P}(A)\)이므로 두 사건 \(A\)와 \(B\)는 서로 독립이다.<br>
+                ② 두 사건 \(A\)와 \(C\)는 서로 종속임을 확인해보자.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<strong>[방법 1]</strong> \(A\cap C=\{2,\ 4\}\)이므로 \(\mathrm{P}(A\cap C)=\dfrac{1}{3}\)이고, \(\mathrm{P}(A)\mathrm{P}(C)=\dfrac{1}{2}\times\dfrac{1}{2}=\dfrac{1}{4}\)이므로
+                \(\mathrm{P}(A\cap C)\ne\mathrm{P}(A)\mathrm{P}(C)\)이다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;따라서 두 사건 \(A\)와 \(C\)는 서로 종속이다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<strong>[방법 2]</strong> \(\mathrm{P}(A|C)=\dfrac{n(A\cap C)}{n(C)}=\dfrac{2}{3}\ne\mathrm{P}(A)\)이므로 두 사건 \(A\)와 \(C\)는 서로 종속이다.<br>
+                ③ 두 사건 \(B\)와 \(C\)는 서로 종속임을 확인해보자.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<strong>[방법 1]</strong> \(B\cap C=\{1,\ 2\}\)이므로 \(\mathrm{P}(B\cap C)=\dfrac{1}{3}\)이고, \(\mathrm{P}(B)\mathrm{P}(C)=\dfrac{1}{3}\times\dfrac{1}{2}=\dfrac{1}{6}\)이므로
+                \(\mathrm{P}(B\cap C)\ne\mathrm{P}(B)\mathrm{P}(C)\)이다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;따라서 두 사건 \(B\)와 \(C\)는 서로 종속이다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<strong>[방법 2]</strong> \(\mathrm{P}(B|C)=\dfrac{n(B\cap C)}{n(C)}=\dfrac{2}{3}\ne\mathrm{P}(B)\)이므로 두 사건 \(B\)와 \(C\)는 서로 종속이다.</p>
+
+            <div class="callout">
+                <span class="tag">REMARK</span><br>
+                사건의 독립의 상황을 '1. 사건의 독립과 종속'의 [예]의 동전 던지기, '2. 사건의 독립의 이해'의 이중분할표처럼 항상 상식 수준에서 이해할 수 있는 것은 아니다.
+                사건의 독립의 개념은 이러한 예에서 출발했지만 이 결과로 나타난 관계식을 만족하는 모든 경우를 일반적으로 사건의 독립이라고 하기로 한 것이므로 실전에서는 그
+                상황이 이해되지 않는 경우를 많이 접하게 된다.<br>
+                [예]의 경우, 한 개의 주사위를 세 번 던져서 첫 번째에 짝수의 눈이 나오는 사건, 두 번째에 1 또는 2의 눈이 나오는 사건, 세 번째에 4의 약수의 눈이 나오는
+                사건을 생각한다면 세 사건이 서로 독립이라는 것이 상식 수준에서 이해되지만, 한 개의 주사위를 한 번 던져서 나오는 결과로는 서로 독립 또는 종속이라는
+                상황이 잘 이해되지 않는다.
+            </div>
+        </section>
+
+        <section class="note">
+            <h2>#20 독립시행의 확률</h2>
+
+            <h3>1. 독립시행의 확률</h3>
+            <p>주사위나 동전을 여러 번 던지는 경우와 같이 동일한 조건에서 어떤 시행을 반복할 때, 각 시행의 결과가 다른 시행의 결과에 영향을 주지 않는 경우, 즉 각
+                시행에서 일어나는 사건이 서로 독립이면 이러한 시행을 <strong>독립시행</strong>이라고 한다.<br>
+                독립시행에서는 각 시행에서 일어나는 사건이 서로 독립이므로 독립시행의 확률은 각 사건의 확률을 곱하여 구할 수 있다.</p>
+            <p>예를 들어 한 개의 주사위를 6번 던질 때 1의 눈이 4번 나오는 경우의 수는 \({}_6\mathrm{C}_4\)이고, 각 경우의 확률은 모두
+                \(\left(\dfrac{1}{6}\right)^4\times\left(\dfrac{5}{6}\right)^2\)이다.<br>
+                또 각 경우는 서로 배반사건이므로 1의 눈이 4번 나올 확률은
+                <span style="display:block;margin:4px 0 4px 2em">\({}_6\mathrm{C}_4\times\left(\dfrac{1}{6}\right)^4\times\left(\dfrac{5}{6}\right)^2\)</span>
+                이고, \({}_6\mathrm{C}_4\)는 생각의 순서가 바뀌는 경우의 수이다.</p>
+            <p>일반적으로 독립시행에 대하여 다음이 성립한다.</p>
+
+            <div class="callout">
+                <span class="tag">독립시행의 확률</span><br>
+                어떤 시행에서 사건 \(A\)가 일어날 확률이 \(p\ (0&lt;p&lt;1)\)일 때, 이 시행을 \(n\)번 반복하는 독립시행에서 사건 \(A\)가 \(r\)번 일어날 확률은
+                <span style="display:block;margin:4px 0 4px 2em">\({}_n\mathrm{C}_rp^r(1-p)^{n-r}\) (단, \(r=0,\ 1,\ 2,\ \cdots,\ n\))<br>
+                \(\Rightarrow {}_n\mathrm{C}_r\)은 생각의 순서가 바뀌는 경우의 수</span>
+            </div>
+
+            <div class="callout">
+                <span class="tag">REMARK 1</span><br>
+                이항정리에 의하여
+                <span style="display:block;margin:4px 0 4px 2em">\(\displaystyle\sum_{r=0}^n{}_n\mathrm{C}_rp^r(1-p)^{n-r}=\{p+(1-p)\}^n=1\)</span>
+                이므로 주어진 사건과 여사건 중 어느 것이 계산해야 할 확률의 개수가 적은지 항상 비교해 보고 여사건을 적극 이용하도록 하자.
+            </div>
+
+            <p><strong>[예1]</strong> 한 개의 주사위를 4번 던질 때, 6의 약수의 눈이 적어도 2번 나올 확률을 구해보자.<br>
+                주사위를 1번 던질 때 6의 약수의 눈이 나올 확률은 \(\dfrac{2}{3}\)이므로
+                \[ 1-\left\{{}_4\mathrm{C}_0\left(\dfrac{2}{3}\right)^0\left(1-\dfrac{2}{3}\right)^4+{}_4\mathrm{C}_1\left(\dfrac{2}{3}\right)^1\left(1-\dfrac{2}{3}\right)^3\right\}=1-\dfrac{1}{9}=\dfrac{8}{9} \]</p>
+
+            <div class="callout">
+                <span class="tag">REMARK 2</span><br>
+                독립시행의 확률 \({}_n\mathrm{C}_rp^r(1-p)^{n-r}\)은 \(p=\dfrac{1}{2}\)이면 \(1-p=\dfrac{1}{2}\)이므로 \(r\)의 값에 관계없이
+                <span style="display:block;margin:4px 0 4px 2em">\({}_n\mathrm{C}_r\left(\dfrac{1}{2}\right)^n\)</span>
+                이다. 어떤 시행에서 사건 \(A\)가 일어날 확률이 \(\dfrac{1}{2}\)일 때, 이 시행을 \(n\)번 반복하는 독립시행에서는 사건 \(A\)가 \(r\)번 일어나는 경우의 수
+                \({}_n\mathrm{C}_r\)에 주목하는 경우가 많다.
+            </div>
+
+            <p><strong>[예2]</strong> 동전 5개를 동시에 던질 때, 앞면이 나오는 동전의 개수와 뒷면이 나오는 동전의 개수의 곱이 6일 확률을 구해보자.<br>
+                앞면이 나오는 동전의 개수를 \(a\), 뒷면이 나오는 동전의 개수를 \(b\)라 하면 \(ab=6\)인 순서쌍 \((a,\ b)\)는<br>
+                \((2,\ 3),\ (3,\ 2)\)<br>
+                이므로<br>
+                \(({}_5\mathrm{C}_2+{}_5\mathrm{C}_3)\times\left(\dfrac{1}{2}\right)^5=20\times\dfrac{1}{32}=\dfrac{5}{8}\)</p>
+
+            <p><strong>[예3]</strong> 흰 공 2개, 검은 공 3개가 들어 있는 상자에서 임의로 1개의 공을 꺼내어 꺼낸 공이 흰 공이면 동전을 3회 던지고 검은 공이면 동전을 4회 던질
+                때, 앞면이 3회 나올 확률을 구해보자.<br>
+                흰 공을 꺼낼 확률은 \(\dfrac{2}{5}\)이고, 이때 동전을 3회 던져서 앞면이 3회 나올 확률은<br>
+                \(\dfrac{2}{5}\times{}_3\mathrm{C}_3\left(\dfrac{1}{2}\right)^3=\dfrac{1}{20}\)<br>
+                검은 공을 꺼낼 확률은 \(\dfrac{3}{5}\)이고, 이때 동전을 4회 던져서 앞면이 3회 나올 확률은<br>
+                \(\dfrac{3}{5}\times{}_4\mathrm{C}_3\left(\dfrac{1}{2}\right)^4=\dfrac{3}{20}\)<br>
+                \(\therefore\ \dfrac{1}{20}+\dfrac{3}{20}=\dfrac{1}{5}\)</p>
+        </section>
+
+        <section class="note">
+            <h2>#21 독립시행의 상황 인식</h2>
+
+            <h3>2. 독립시행의 상황 인식</h3>
+            <p>독립시행의 활용 문제에서는 다음 두 가지 키워드로 독립시행의 상황임을 인식하는 것이 매우 중요하다.
+                <span style="display:block;margin:4px 0 4px 2em">시행 횟수 \(n\) / 주목하는 사건의 확률 \(p\)(고정)</span>
+                ① 같은 시행의 \(n\)회 반복, \(n\)명에 대한 조사, \(n\)개에 대한 조사 등에서<br>
+                ② 주목하는 한 사건의 확률 \(p\)(고정)<br>
+                가 드러난다면 확실히 독립시행이다. 독립시행은 앞으로 다루게 될 이항분포의 기초인데, 실전에서 독립시행과 이항분포임을 인지하지 못해 풀이의 방향을 잡지
+                못하는 일이 자주 벌어진다.<br>
+                단원 제목이 독립시행이니까 뭐… 하면서 단순히 공식이나 대입하지 말고, 왜 독립시행인지 자꾸 느껴보려고 해야 한다.</p>
+
+            <p><strong>[예]</strong> 수직선의 원점에 점 P가 있다. 한 개의 주사위를 한 번 던져 나온 눈의 수가 2 이하이면 점 P를 양의 방향으로 1만큼, 3 이상이면 점 P를 음의
+                방향으로 1만큼 이동시키는 시행을 한다. 이 시행을 5번 반복할 때, 5번째 시행 후 점 P의 좌표가 1일 확률을 구해보자.<br>
+                각 시행에서 점 P를 양의 방향으로 1만큼 이동시킬 확률은 나온 주사위의 눈의 수가 2 이하일 확률인 \(\dfrac{1}{3}\)이다.<br>
+                점 P를 양의 방향으로 1만큼 이동시키는 횟수를 \(r\ (r=0,\ 1,\ \cdots,\ 5)\)이라 하면 점 P를 음의 방향으로 1만큼 이동시키는 횟수는 \(5-r\)이므로 5번째 시행
+                후 점 P의 좌표가 1이 되려면<br>
+                \(1\times r-1\times(5-r)=1\qquad\therefore\ r=3\)<br>
+                \(\therefore\ {}_5\mathrm{C}_3\left(\dfrac{1}{3}\right)^3\left(\dfrac{2}{3}\right)^2=\dfrac{40}{243}\)</p>
+        </section>
     </main>
 
     <script>
