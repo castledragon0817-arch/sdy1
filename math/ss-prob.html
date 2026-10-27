@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ss-prob</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="./style-m-common.css">
+    <link rel="stylesheet" href="./style-ss.css">
+</head>
+
+<body class="note-page ss-prob">
+    <div class="top-bar">
+        <a class="back-link" href="../index.html">&larr; 뒤로가기</a>
+        <div class="step-tabs">
+            <button type="button" class="step-btn active" data-step="A" onclick="showStep('A')">A</button>
+            <button type="button" class="step-btn" data-step="B" onclick="showStep('B')">B</button>
+            <button type="button" class="step-btn" data-step="C" onclick="showStep('C')">C</button>
+        </div>
+    </div>
+
+    <main class="step-grid" id="A">
+        <p class="empty-note">아직 추출한 문제가 없습니다.</p>
+    </main>
+
+    <main class="step-grid" id="B" hidden>
+        <p class="empty-note">아직 추출한 문제가 없습니다.</p>
+    </main>
+
+    <main class="step-grid" id="C" hidden>
+        <p class="empty-note">아직 추출한 문제가 없습니다.</p>
+    </main>
+
+    <script>
+        function showStep(s) {
+            ['A', 'B', 'C'].forEach(function (k) {
+                document.getElementById(k).hidden = (k !== s);
+                document.querySelector('[data-step="' + k + '"]').classList.toggle('active', k === s);
+            });
+            window.scrollTo(0, 0);
+        }
+
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

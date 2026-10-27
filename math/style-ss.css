@@ -1,0 +1,235 @@
+/* 문제추출(ss-log · ss-cal · ss-prob) 전용 스타일. 공통 틀은 style-m-common.css를 쓴다. */
+
+/* 페이지별 테마색: ss-log 빨강, ss-cal 하늘, ss-prob 노랑 (홈 버튼 색과 같다) */
+.ss-log { --theme: #ef455a; --theme-ink: #fff; }
+.ss-cal { --theme: #4fcaf2; --theme-ink: #000; }
+.ss-prob { --theme: #fdcf38; --theme-ink: #000; }
+
+/* ===== A · B · C 탭 ===== */
+.step-tabs {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin: 0 24px;
+}
+
+.step-btn {
+    padding: 8px;
+    border: none;
+    border-radius: var(--radius);
+    background: var(--theme);
+    color: var(--theme-ink);
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    opacity: 0.45;
+    transition: opacity 0.15s;
+}
+
+.step-btn.active {
+    opacity: 1;
+}
+
+.step-grid[hidden] {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .top-bar {
+        flex-wrap: wrap;
+    }
+
+    .step-tabs {
+        order: 3;
+        flex-basis: 100%;
+        margin: 10px 0 0;
+    }
+
+    .note-page .back-link {
+        margin-bottom: 0;
+    }
+}
+
+/* ===== 문제 카드: 1문제 1카드, 2열 ===== */
+.step-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+@media (min-width: 700px) {
+    .step-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.prob {
+    min-width: 0;
+    padding: 14px 18px 18px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: var(--surface);
+    font-size: 15px;
+    overflow-wrap: anywhere;
+}
+
+.prob-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.prob-no {
+    color: var(--theme);
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+}
+
+.ss-prob .prob-no { color: #c99a00; }
+.ss-cal .prob-no { color: #1597c4; }
+
+.prob-tag {
+    padding: 1px 7px;
+    border-radius: 4px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.prob-tag.lv {
+    background: var(--theme);
+    color: var(--theme-ink);
+}
+
+.prob-sec {
+    margin-left: auto;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.prob-inst {
+    margin: 0 0 6px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.prob p {
+    margin: 0 0 6px;
+}
+
+/* 보기 박스 (ㄱ, ㄴ, ㄷ 또는 식 상자) */
+.prob .box {
+    margin: 8px 0;
+    padding: 8px 12px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+}
+
+/* 선택지 ①~⑤: 넓으면 3열, 좁으면 한 줄에 하나 */
+.choices {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: start;
+    gap: 4px 28px;
+    margin-top: 8px;
+}
+
+.choices.wide {
+    grid-template-columns: 1fr;
+}
+
+@media (max-width: 480px) {
+    .choices {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+/* 문장 속 수식은 그대로 보이게 (스크롤바를 만들지 않는다) */
+.prob mjx-container:not([display="true"]) {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.prob mjx-container[display="true"] {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+/* ===== 그림 (개념추출과 같은 규칙) ===== */
+.graph-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.graph {
+    margin: 0;
+    text-align: center;
+}
+
+.graph svg {
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    margin: 0 auto;
+    overflow: visible;
+}
+
+.graph foreignObject {
+    overflow: visible;
+}
+
+.graph figcaption {
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.glabel {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.prob .graph mjx-container:not([display="true"]) {
+    max-width: none;
+}
+
+.prob table {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 8px 0;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: center;
+}
+
+.prob th,
+.prob td {
+    padding: 4px 10px;
+    border: 1px solid var(--line);
+}
+
+.empty-note {
+    grid-column: 1 / -1;
+    color: var(--muted);
+    text-align: center;
+}
