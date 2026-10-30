@@ -103,10 +103,12 @@ body {
     #math-group > :nth-child(7) { grid-column: 3; grid-row: 2; }
     #math-group > :nth-child(8) { grid-column: 3; grid-row: 3; }
 
-    /* 문제추출(ss) 버튼은 맨 아랫줄에 과목 열 순서대로 둔다 */
+    /* 문제추출(ss) 버튼은 4번째 줄부터 과목 열에 둔다: 1열 대수 3개(4~6줄), 2열 ss-cal, 3열 ss-prob */
     #math-group > :nth-child(9) { grid-column: 1; grid-row: 4; }
-    #math-group > :nth-child(10) { grid-column: 2; grid-row: 4; }
-    #math-group > :nth-child(11) { grid-column: 3; grid-row: 4; }
+    #math-group > :nth-child(10) { grid-column: 1; grid-row: 5; }
+    #math-group > :nth-child(11) { grid-column: 1; grid-row: 6; }
+    #math-group > :nth-child(12) { grid-column: 2; grid-row: 4; }
+    #math-group > :nth-child(13) { grid-column: 3; grid-row: 4; }
 }
 
 .subject-card {
@@ -141,7 +143,9 @@ button.subject-card {
 #math-group a[href*="/a"] { background: #ef455a; color: #000; }
 #math-group a[href*="/b"] { background: #4fcaf2; color: #000; }
 #math-group a[href*="/c"] { background: #fdcf38; color: #000; }
-#math-group a[href*="ss-log"] { background: #ef455a; color: #000; }
+#math-group a[href*="ss-exponentLogarithm"] { background: #ef455a; color: #000; }
+#math-group a[href*="ss-trigonometric"] { background: #ef455a; color: #000; }
+#math-group a[href*="ss-sequence"] { background: #ef455a; color: #000; }
 #math-group a[href*="ss-cal"] { background: #4fcaf2; color: #000; }
 #math-group a[href*="ss-prob"] { background: #fdcf38; color: #000; }
 

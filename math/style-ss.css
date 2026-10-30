@@ -1,7 +1,7 @@
-/* 문제추출(ss-log · ss-cal · ss-prob) 전용 스타일. 공통 틀은 style-m-common.css를 쓴다. */
+/* 문제추출(ss-exponentLogarithm · ss-trigonometric · ss-sequence · ss-cal · ss-prob) 전용 스타일. 공통 틀은 style-m-common.css를 쓴다. */
 
-/* 페이지별 테마색: ss-log 빨강, ss-cal 하늘, ss-prob 노랑 (홈 버튼 색과 같다) */
-.ss-log { --theme: #ef455a; --theme-ink: #fff; }
+/* 페이지별 테마색: 대수 3개 빨강, ss-cal 하늘, ss-prob 노랑 (홈 버튼 색과 같다) */
+.ss-exponentLogarithm, .ss-trigonometric, .ss-sequence { --theme: #ef455a; --theme-ink: #fff; }
 .ss-cal { --theme: #4fcaf2; --theme-ink: #000; }
 .ss-prob { --theme: #fdcf38; --theme-ink: #000; }
 

@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ss-sequence</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="./style-m-common.css">
+    <link rel="stylesheet" href="./style-ss.css">
+</head>
+
+<body class="note-page ss-sequence">
+    <div class="top-bar">
+        <a class="back-link" href="../index.html">&larr; 뒤로가기</a>
+        <div class="step-tabs">
+            <button type="button" class="step-btn active" data-step="A" onclick="showStep('A')">A</button>
+            <button type="button" class="step-btn" data-step="B" onclick="showStep('B')">B</button>
+            <button type="button" class="step-btn" data-step="C" onclick="showStep('C')">C</button>
+        </div>
+    </div>
+
+    <main class="step-grid" id="A">
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0885</span><span class="prob-sec">08-1 수열</span></div>
+            <p class="prob-inst">수열 \(\{a_n\}\)의 일반항이 다음과 같을 때, 첫째항부터 제5항까지 차례대로 나열하시오.</p>
+            <p>\(a_n=8n-7\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0886</span><span class="prob-sec">08-1 수열</span></div>
+            <p class="prob-inst">수열 \(\{a_n\}\)의 일반항이 다음과 같을 때, 첫째항부터 제5항까지 차례대로 나열하시오.</p>
+            <p>\(a_n=\dfrac{n+5}{2n}\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0887</span><span class="prob-sec">08-1 수열</span></div>
+            <p class="prob-inst">다음 수열의 일반항 \(a_n\)을 추측하시오.</p>
+            <p>\(-1,\ 2,\ -3,\ 4,\ \cdots\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0888</span><span class="prob-sec">08-1 수열</span></div>
+            <p class="prob-inst">다음 수열의 일반항 \(a_n\)을 추측하시오.</p>
+            <p>\(\dfrac{1}{3},\ \dfrac{2}{4},\ \dfrac{3}{5},\ \dfrac{4}{6},\ \cdots\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0889</span><span class="prob-sec">08-1 수열</span></div>
+            <p class="prob-inst">다음 수열의 일반항 \(a_n\)을 추측하시오.</p>
+            <p>\(1\cdot2,\ 2\cdot3,\ 3\cdot4,\ 4\cdot5,\ \cdots\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0890</span><span class="prob-sec">08-2 등차수열</span></div>
+            <p class="prob-inst">다음 수열이 등차수열을 이루도록 □ 안에 알맞은 수를 써넣으시오.</p>
+            <p>\(1,\ 4,\ \)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">&nbsp;</span>\(,\ \)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">&nbsp;</span>\(,\ 13,\ \cdots\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0891</span><span class="prob-sec">08-2 등차수열</span></div>
+            <p class="prob-inst">다음 수열이 등차수열을 이루도록 □ 안에 알맞은 수를 써넣으시오.</p>
+            <p>\(20,\ \)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">&nbsp;</span>\(,\ 16,\ 14,\ \)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">&nbsp;</span>\(,\ \cdots\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0892</span><span class="prob-sec">08-2 등차수열</span></div>
+            <p class="prob-inst">다음 등차수열의 일반항 \(a_n\)을 구하시오.</p>
+            <p>첫째항이 15, 공차가 \(-3\)인 수열</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0893</span><span class="prob-sec">08-2 등차수열</span></div>
+            <p class="prob-inst">다음 등차수열의 일반항 \(a_n\)을 구하시오.</p>
+            <p>\(2,\ -2,\ -6,\ -10,\ -14,\ \cdots\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0894</span><span class="prob-sec">08-2 등차수열</span></div>
+            <p>첫째항이 72, 공차가 \(-6\)인 등차수열 \(\{a_n\}\)에 대하여 다음에 답하시오.<br>(1) 제7항을 구하시오.<br>(2) \(-18\)은 제몇 항인지 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0895</span><span class="prob-sec">08-2 등차수열</span></div>
+            <p class="prob-inst">다음 등차수열 \(\{a_n\}\)의 공차를 구하시오.</p>
+            <p>\(a_1=7,\ a_8=35\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0896</span><span class="prob-sec">08-2 등차수열</span></div>
+            <p class="prob-inst">다음 등차수열 \(\{a_n\}\)의 공차를 구하시오.</p>
+            <p>\(a_1=13,\ a_{10}=-5\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0897</span><span class="prob-sec">08-2 등차수열</span></div>
+            <p>세 수 \(3,\ x,\ -5\)가 이 순서대로 등차수열을 이룰 때, \(x\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0898</span><span class="prob-sec">08-3 등차수열의 합</span></div>
+            <p class="prob-inst">다음을 구하시오.</p>
+            <p>첫째항이 \(-2\), 제12항이 40인 등차수열의 첫째항부터 제12항까지의 합</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0899</span><span class="prob-sec">08-3 등차수열의 합</span></div>
+            <p class="prob-inst">다음을 구하시오.</p>
+            <p>첫째항이 11, 공차가 \(-2\)인 등차수열의 첫째항부터 제20항까지의 합</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0900</span><span class="prob-sec">08-3 등차수열의 합</span></div>
+            <p class="prob-inst">다음 합을 구하시오.</p>
+            <p>\(3+12+21+\cdots+93\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0901</span><span class="prob-sec">08-3 등차수열의 합</span></div>
+            <p class="prob-inst">다음 합을 구하시오.</p>
+            <p>\(64+59+54+\cdots+(-16)\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0902</span><span class="prob-sec">08-4 수열의 합과 일반항 사이의 관계</span></div>
+            <p>수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)이 \(S_n=3n^2+n\)일 때, \(a_{10}\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0903</span><span class="prob-sec">08-4 수열의 합과 일반항 사이의 관계</span></div>
+            <p class="prob-inst">수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)이 다음과 같을 때, 일반항 \(a_n\)을 구하시오.</p>
+            <p>\(S_n=2n^2+3n\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0904</span><span class="prob-sec">08-4 수열의 합과 일반항 사이의 관계</span></div>
+            <p class="prob-inst">수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)이 다음과 같을 때, 일반항 \(a_n\)을 구하시오.</p>
+            <p>\(S_n=n^2-3n+1\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0905</span><span class="prob-sec">08-5 등비수열</span></div>
+            <p class="prob-inst">다음 수열이 등비수열을 이루도록 □ 안에 알맞은 수를 써넣으시오.</p>
+            <p>\(2,\ 4,\ \)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">&nbsp;</span>\(,\ \)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">&nbsp;</span>\(,\ 32,\ \cdots\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0906</span><span class="prob-sec">08-5 등비수열</span></div>
+            <p class="prob-inst">다음 수열이 등비수열을 이루도록 □ 안에 알맞은 수를 써넣으시오.</p>
+            <p>\(1,\ \)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">&nbsp;</span>\(,\ \dfrac{1}{9},\ -\dfrac{1}{27},\ \)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">&nbsp;</span>\(,\ \cdots\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0907</span><span class="prob-sec">08-5 등비수열</span></div>
+            <p class="prob-inst">다음 등비수열의 일반항 \(a_n\)을 구하시오.</p>
+            <p>\(첫째항이 1, 공비가 5인 수열\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0908</span><span class="prob-sec">08-5 등비수열</span></div>
+            <p class="prob-inst">다음 등비수열의 일반항 \(a_n\)을 구하시오.</p>
+            <p>\(4,\ 2,\ 1,\ \dfrac{1}{2},\ \dfrac{1}{4},\ \cdots\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0909</span><span class="prob-sec">08-5 등비수열</span></div>
+            <p class="prob-inst">다음 등비수열의 일반항 \(a_n\)을 구하시오.</p>
+            <p>\(3,\ -3,\ 3,\ -3,\ 3,\ \cdots\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0910</span><span class="prob-sec">08-5 등비수열</span></div>
+            <p>첫째항이 \(\dfrac{1}{3}\), 공비가 \(\sqrt{3}\)인 등비수열 \(\{a_n\}\)에 대하여 다음에 답하시오.<br>(1) 제5항을 구하시오.<br>(2) 81은 제몇 항인지 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0911</span><span class="prob-sec">08-5 등비수열</span></div>
+            <p class="prob-inst">다음 등비수열 \(\{a_n\}\)의 공비를 구하시오.</p>
+            <p>\(a_1=8,\ a_4=1\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0912</span><span class="prob-sec">08-5 등비수열</span></div>
+            <p class="prob-inst">다음 등비수열 \(\{a_n\}\)의 공비를 구하시오.</p>
+            <p>\(a_1=5,\ a_5=80\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0913</span><span class="prob-sec">08-5 등비수열</span></div>
+            <p>세 수 \(3,\ x,\ 12\)가 이 순서대로 등비수열을 이룰 때, \(x\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0914</span><span class="prob-sec">08-6 등비수열의 합</span></div>
+            <p>첫째항이 1, 공비가 \(\dfrac{1}{2}\)인 등비수열의 첫째항부터 제8항까지의 합을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0915</span><span class="prob-sec">08-6 등비수열의 합</span></div>
+            <p class="prob-inst">다음 합을 구하시오.</p>
+            <p>\(1-2+4-8+\cdots+(-2)^{n-1}\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0916</span><span class="prob-sec">08-6 등비수열의 합</span></div>
+            <p class="prob-inst">다음 합을 구하시오.</p>
+            <p>\(0.1+0.01+0.001+\cdots+0.00000001\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0917</span><span class="prob-sec">08-6 등비수열의 합</span></div>
+            <p class="prob-inst">수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)이 다음과 같을 때, 일반항 \(a_n\)을 구하시오.</p>
+            <p>\(S_n=3^n-1\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0918</span><span class="prob-sec">08-6 등비수열의 합</span></div>
+            <p class="prob-inst">수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)이 다음과 같을 때, 일반항 \(a_n\)을 구하시오.</p>
+            <p>\(S_n=2^{n+1}-5\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1044</span><span class="prob-sec">09-1 기호 \(\Sigma\)</span></div>
+            <p class="prob-inst">다음을 기호 \(\Sigma\)를 사용하지 않은 합의 꼴로 나타내시오.</p>
+            <p>\(\displaystyle\sum_{k=1}^{5}3k\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1045</span><span class="prob-sec">09-1 기호 \(\Sigma\)</span></div>
+            <p class="prob-inst">다음을 기호 \(\Sigma\)를 사용하지 않은 합의 꼴로 나타내시오.</p>
+            <p>\(\displaystyle\sum_{n=1}^{7}2^n\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1046</span><span class="prob-sec">09-1 기호 \(\Sigma\)</span></div>
+            <p class="prob-inst">다음을 기호 \(\Sigma\)를 사용하지 않은 합의 꼴로 나타내시오.</p>
+            <p>\(\displaystyle\sum_{i=1}^{n}(4i+3)\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1047</span><span class="prob-sec">09-1 기호 \(\Sigma\)</span></div>
+            <p class="prob-inst">다음을 기호 \(\Sigma\)를 사용하지 않은 합의 꼴로 나타내시오.</p>
+            <p>\(\displaystyle\sum_{j=1}^{n}j(j+2)\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1048</span><span class="prob-sec">09-1 기호 \(\Sigma\)</span></div>
+            <p class="prob-inst">다음을 기호 \(\Sigma\)를 사용하여 나타내시오.</p>
+            <p>\(3+5+7+\cdots+(2n+1)\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1049</span><span class="prob-sec">09-1 기호 \(\Sigma\)</span></div>
+            <p class="prob-inst">다음을 기호 \(\Sigma\)를 사용하여 나타내시오.</p>
+            <p>\(3+3^2+3^3+\cdots+3^n\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1050</span><span class="prob-sec">09-1 기호 \(\Sigma\)</span></div>
+            <p class="prob-inst">다음을 기호 \(\Sigma\)를 사용하여 나타내시오.</p>
+            <p>\(-\dfrac{1}{3}+\dfrac{1}{9}-\dfrac{1}{27}+\cdots+\dfrac{1}{729}\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1051</span><span class="prob-sec">09-2 \(\Sigma\)의 성질</span></div>
+            <p class="prob-inst">\(\displaystyle\sum_{k=1}^{10}a_k=4,\ \sum_{k=1}^{10}b_k=7\)일 때, 다음 식의 값을 구하시오.</p>
+            <p>\(\displaystyle\sum_{k=1}^{10}(-a_k+3b_k)\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1052</span><span class="prob-sec">09-2 \(\Sigma\)의 성질</span></div>
+            <p class="prob-inst">\(\displaystyle\sum_{k=1}^{10}a_k=4,\ \sum_{k=1}^{10}b_k=7\)일 때, 다음 식의 값을 구하시오.</p>
+            <p>\(\displaystyle\sum_{k=1}^{10}4(2a_k-5b_k)\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1053</span><span class="prob-sec">09-2 \(\Sigma\)의 성질</span></div>
+            <p class="prob-inst">다음 식의 값을 구하시오.</p>
+            <p>\(\displaystyle\sum_{k=1}^{10}(k^2+3)-\displaystyle\sum_{k=1}^{10}(k^2-2)\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1054</span><span class="prob-sec">09-2 \(\Sigma\)의 성질</span></div>
+            <p class="prob-inst">다음 식의 값을 구하시오.</p>
+            <p>\(\displaystyle\sum_{k=1}^{8}(k-2)^2-\displaystyle\sum_{k=1}^{8}(k^2-4k)\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1055</span><span class="prob-sec">09-3 자연수의 거듭제곱의 합</span></div>
+            <p class="prob-inst">다음 식의 값을 구하시오.</p>
+            <p>\(\displaystyle\sum_{k=1}^{10}(k^2-k+1)\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1056</span><span class="prob-sec">09-3 자연수의 거듭제곱의 합</span></div>
+            <p class="prob-inst">다음 식의 값을 구하시오.</p>
+            <p>\(\displaystyle\sum_{k=1}^{10}k(k-1)(2k+1)\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1057</span><span class="prob-sec">09-3 자연수의 거듭제곱의 합</span></div>
+            <p class="prob-inst">다음 식의 값을 구하시오.</p>
+            <p>\(4^2+5^2+6^2+\cdots+20^2\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1058</span><span class="prob-sec">09-3 자연수의 거듭제곱의 합</span></div>
+            <p class="prob-inst">다음 식의 값을 구하시오.</p>
+            <p>\(3\cdot6+5\cdot10+7\cdot14+\cdots+21\cdot42\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1059</span><span class="prob-sec">09-4 분수 꼴인 수열의 합</span></div>
+            <p class="prob-inst">다음을 계산하시오.</p>
+            <p>\(\dfrac{1}{1\cdot2}+\dfrac{1}{2\cdot3}+\dfrac{1}{3\cdot4}+\cdots+\dfrac{1}{n(n+1)}\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1060</span><span class="prob-sec">09-4 분수 꼴인 수열의 합</span></div>
+            <p class="prob-inst">다음을 계산하시오.</p>
+            <p>\(\dfrac{1}{1\cdot3}+\dfrac{1}{3\cdot5}+\dfrac{1}{5\cdot7}+\cdots+\dfrac{1}{(2n-1)(2n+1)}\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1061</span><span class="prob-sec">09-4 분수 꼴인 수열의 합</span></div>
+            <p class="prob-inst">다음을 계산하시오.</p>
+            <p>\(\dfrac{2}{1+\sqrt{2}}+\dfrac{2}{\sqrt{2}+\sqrt{3}}+\dfrac{2}{\sqrt{3}+\sqrt{4}}+\cdots+\dfrac{2}{\sqrt{n}+\sqrt{n+1}}\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1062</span><span class="prob-sec">09-4 분수 꼴인 수열의 합</span></div>
+            <p class="prob-inst">다음 식의 값을 구하시오.</p>
+            <p>\(\displaystyle\sum_{k=1}^{8}\dfrac{1}{k(k+2)}\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1063</span><span class="prob-sec">09-4 분수 꼴인 수열의 합</span></div>
+            <p class="prob-inst">다음 식의 값을 구하시오.</p>
+            <p>\(\displaystyle\sum_{k=1}^{10}\dfrac{1}{\sqrt{k+1}+\sqrt{k+3}}\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1145</span><span class="prob-sec">10-1 수열의 귀납적 정의</span></div>
+            <p class="prob-inst">다음과 같이 귀납적으로 정의된 수열 \(\{a_n\}\)에서 제5항을 구하시오. (단, \(n=1,\ 2,\ 3,\ \cdots\))</p>
+            <p>\(a_1=10,\ a_{n+1}=a_n+(-1)^n\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1146</span><span class="prob-sec">10-1 수열의 귀납적 정의</span></div>
+            <p class="prob-inst">다음과 같이 귀납적으로 정의된 수열 \(\{a_n\}\)에서 제5항을 구하시오. (단, \(n=1,\ 2,\ 3,\ \cdots\))</p>
+            <p>\(a_1=1,\ a_2=2,\ a_{n+2}=a_{n+1}+a_n\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1147</span><span class="prob-sec">10-1 수열의 귀납적 정의</span></div>
+            <p class="prob-inst">다음과 같이 귀납적으로 정의된 수열 \(\{a_n\}\)에서 제5항을 구하시오. (단, \(n=1,\ 2,\ 3,\ \cdots\))</p>
+            <p>\(a_1=-1,\ a_2=3,\ a_{n+2}=a_{n+1}a_n\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1148</span><span class="prob-sec">10-2 등차수열과 등비수열의 귀납적 정의</span></div>
+            <p class="prob-inst">다음과 같이 귀납적으로 정의된 수열 \(\{a_n\}\)의 일반항 \(a_n\)을 구하시오. (단, \(n=1,\ 2,\ 3,\ \cdots\))</p>
+            <p>\(a_1=2,\ a_{n+1}-a_n=-1\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1149</span><span class="prob-sec">10-2 등차수열과 등비수열의 귀납적 정의</span></div>
+            <p class="prob-inst">다음과 같이 귀납적으로 정의된 수열 \(\{a_n\}\)의 일반항 \(a_n\)을 구하시오. (단, \(n=1,\ 2,\ 3,\ \cdots\))</p>
+            <p>\(a_1=1,\ a_2=3,\ 2a_{n+1}=a_n+a_{n+2}\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1150</span><span class="prob-sec">10-2 등차수열과 등비수열의 귀납적 정의</span></div>
+            <p class="prob-inst">다음과 같이 귀납적으로 정의된 수열 \(\{a_n\}\)의 일반항 \(a_n\)을 구하시오. (단, \(n=1,\ 2,\ 3,\ \cdots\))</p>
+            <p>\(a_1=2,\ a_{n+1}=-5a_n\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1151</span><span class="prob-sec">10-2 등차수열과 등비수열의 귀납적 정의</span></div>
+            <p class="prob-inst">다음과 같이 귀납적으로 정의된 수열 \(\{a_n\}\)의 일반항 \(a_n\)을 구하시오. (단, \(n=1,\ 2,\ 3,\ \cdots\))</p>
+            <p>\(a_1=1,\ a_2=4,\ {a_{n+1}}^2=a_na_{n+2}\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1152</span><span class="prob-sec">10-2 등차수열과 등비수열의 귀납적 정의</span></div>
+            <p class="prob-inst">다음과 같이 귀납적으로 정의된 수열 \(\{a_n\}\)에서 제10항을 구하시오. (단, \(n=1,\ 2,\ 3,\ \cdots\))</p>
+            <p>\(a_1=1,\ a_{n+1}=a_n+n\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1153</span><span class="prob-sec">10-2 등차수열과 등비수열의 귀납적 정의</span></div>
+            <p class="prob-inst">다음과 같이 귀납적으로 정의된 수열 \(\{a_n\}\)에서 제10항을 구하시오. (단, \(n=1,\ 2,\ 3,\ \cdots\))</p>
+            <p>\(a_1=3,\ a_{n+1}-a_n=3^n\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1154</span><span class="prob-sec">10-2 등차수열과 등비수열의 귀납적 정의</span></div>
+            <p class="prob-inst">다음과 같이 귀납적으로 정의된 수열 \(\{a_n\}\)에서 제10항을 구하시오. (단, \(n=1,\ 2,\ 3,\ \cdots\))</p>
+            <p>\(a_1=4,\ a_{n+1}=\dfrac{n}{n+1}a_n\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1155</span><span class="prob-sec">10-2 등차수열과 등비수열의 귀납적 정의</span></div>
+            <p class="prob-inst">다음과 같이 귀납적으로 정의된 수열 \(\{a_n\}\)에서 제10항을 구하시오. (단, \(n=1,\ 2,\ 3,\ \cdots\))</p>
+            <p>\(a_1=1,\ a_{n+1}=2^na_n\)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1156</span><span class="prob-sec">10-3 수학적 귀납법</span></div>
+            <p>\(2,\ 4,\ 8,\ 16,\ 32,\ \cdots\)인 자연수 \(n\)에 대하여 명제 \(p(n)\)이 성립함을 수학적 귀납법으로 증명하기 위해서는 다음과 같은 단계를 거쳐야 한다. 위의 (가), (나)에 알맞은 것을 구하시오.</p><div class="box">(i) \(n=\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(가)</span>일 때, \(p(n)\)이 성립함을 보인다.<br>(ii) \(n=k\) \((k\ge\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(가)</span>\()\)일 때 \(p(n)\)이 성립한다고 가정하면 \(n=\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(나)</span>일 때도 \(p(n)\)이 성립함을 보인다.</div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1157</span><span class="prob-sec">10-3 수학적 귀납법</span></div>
+            <p>다음은 모든 자연수 \(n\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\(1^2+2^2+3^2+\cdots+n^2=\dfrac{n(n+1)(2n+1)}{6}\)<br>이 성립함을 수학적 귀납법으로 증명한 것이다. 위의 과정에서 (가), (나)에 알맞은 것을 구하시오.</p><div class="box"><strong>증명</strong><br>(i) \(n=1\)일 때,<br>&nbsp;&nbsp;&nbsp;&nbsp;(좌변)\(=1^2=1\), (우변)\(=\dfrac{1\cdot2\cdot3}{6}=1\)<br>&nbsp;&nbsp;&nbsp;&nbsp;따라서 주어진 등식이 성립한다.<br>(ii) \(n=k\)일 때 주어진 등식이 성립한다고 가정하면<br>&nbsp;&nbsp;&nbsp;&nbsp;\(1^2+2^2+3^2+\cdots+k^2=\dfrac{k(k+1)(2k+1)}{6}\)<br>&nbsp;&nbsp;&nbsp;&nbsp;위의 식의 양변에 \((k+1)^2\)을 더하면<br>&nbsp;&nbsp;&nbsp;&nbsp;\(1^2+2^2+3^2+\cdots+k^2+(k+1)^2\)<br>&nbsp;&nbsp;&nbsp;&nbsp;\(=\dfrac{k(k+1)(2k+1)}{6}+(k+1)^2=\dfrac{(k+1)(\square)}{6}\) <span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(가)</span><br>&nbsp;&nbsp;&nbsp;&nbsp;\(=\dfrac{\square}{6}\) <span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(나)</span><br>&nbsp;&nbsp;&nbsp;&nbsp;따라서 \(n=k+1\)일 때도 주어진 등식이 성립한다.<br>(i), (ii)에서 모든 자연수 \(n\)에 대하여 주어진 등식이 성립한다.</div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1158</span><span class="prob-sec">10-3 수학적 귀납법</span></div>
+            <p>모든 자연수 \(n\)에 대하여 등식<br>&nbsp;&nbsp;&nbsp;&nbsp;\(1+3+5+\cdots+(2n-1)=n^2\)<br>이 성립함을 수학적 귀납법으로 증명하시오.</p>
+        </section>
+    </main>
+
+    <main class="step-grid" id="B" hidden>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0919</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 01 등차수열의 일반항</span></div>
+            <p>공차가 3인 등차수열 \(\{a_n\}\)에서 \(a_6=11\)일 때, \(a_k=32\)를 만족시키는 \(k\)의 값은?</p>
+            <div class="choices"><span>① 11</span><span>② 12</span><span>③ 13</span><span>④ 14</span><span>⑤ 15</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0920</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 01 등차수열의 일반항</span></div>
+            <p>등차수열 \(\{a_n\}\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1-a_2+a_3-a_4+\cdots+a_{99}-a_{100}=250\)<br>일 때, 수열 \(\{a_n\}\)의 공차를 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0921</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 01 등차수열의 일반항</span></div>
+            <p>등차수열 \(\{a_n\}\)에서 \(a_2=\log_29,\ a_5=\log_2243\)일 때, \(a_9\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0922</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 01 등차수열의 일반항</span></div>
+            <p>등차수열 \(\{a_n\}\)에 대하여 등차수열 \(\{a_{2n}\}\)의 공차가 8일 때, 등차수열 \(\{a_{3n+1}\}\)의 공차를 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0923</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 01 등차수열의 일반항</span></div>
+            <p>전체 좌석이 92개인 비행기의 좌석 번호가 다음과 같을 때, 왼쪽 창가 좌석의 뒤에서부터 7번째 줄의 좌석 번호를 구하시오.</p>
+            <div class="graph-row"><div style="padding:10px 18px 10px 40px;border-radius:60px 14px 14px 60px;background:#e1eefb;font-size:12px;text-align:center"><div>오른쪽 창가</div><table style="margin:2px auto;border-collapse:collapse"><tr><td style="border:1px solid var(--text);padding:0 6px;font-size:12px">4</td><td style="border:1px solid var(--text);padding:0 6px;font-size:12px">8</td><td style="border:none;padding:0 18px">⋯</td><td style="border:1px solid var(--text);padding:0 6px;font-size:12px">92</td></tr><tr><td style="border:1px solid var(--text);padding:0 6px;font-size:12px">3</td><td style="border:1px solid var(--text);padding:0 6px;font-size:12px">7</td><td style="border:none;padding:0 18px">⋯</td><td style="border:1px solid var(--text);padding:0 6px;font-size:12px">91</td></tr></table><div style="height:6px"></div><table style="margin:2px auto;border-collapse:collapse"><tr><td style="border:1px solid var(--text);padding:0 6px;font-size:12px">2</td><td style="border:1px solid var(--text);padding:0 6px;font-size:12px">6</td><td style="border:none;padding:0 18px">⋯</td><td style="border:1px solid var(--text);padding:0 6px;font-size:12px">90</td></tr><tr><td style="border:1px solid var(--text);padding:0 6px;font-size:12px">1</td><td style="border:1px solid var(--text);padding:0 6px;font-size:12px">5</td><td style="border:none;padding:0 18px">⋯</td><td style="border:1px solid var(--text);padding:0 6px;font-size:12px">89</td></tr></table><div>왼쪽 창가</div></div></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0924</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 01 등차수열의 일반항</span></div>
+            <p>수열 \(1,\ 2,\ 3,\ 4,\ \cdots\)가 있다. 첫 번째 시행에서는 이 수열의 홀수 번째 항을 택하여 나열하고, 두 번째 시행에서는 첫 번째 시행에서 만들어진 수열의 홀수 번째 항을 택하여 나열한다. 이와 같은 시행을 반복할 때, 7번째 시행에서 만들어지는 수열의 제3항은?</p>
+            <div class="choices"><span>① 129</span><span>② 161</span><span>③ 193</span><span>④ 225</span><span>⑤ 257</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0925</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 02 항 사이의 관계가 주어진 등차수열</span></div>
+            <p>등차수열 \(\{a_n\}\)에서 \(a_3+a_{10}=63,\ a_6+a_{15}=103\)일 때,<br>\(a_{27}\)의 값은?</p>
+            <div class="choices"><span>① 126</span><span>② 128</span><span>③ 130</span><span>④ 132</span><span>⑤ 134</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0926</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 02 항 사이의 관계가 주어진 등차수열</span></div>
+            <p>등차수열 \(\{a_n\}\)에서 제2항과 제7항은 절댓값이 같고 부호가 반대이며 제4항은 \(-2\)일 때, 82는 제몇 항인지 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0927</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 02 항 사이의 관계가 주어진 등차수열</span></div>
+            <p>등차수열 \(\{a_n\}\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\((a_2+a_4):(a_3+a_7)=1:5\)<br>일 때, 다음 중 \(a_{16}\)과 같은 것은? (단, \(a_1\ne0\))</p>
+            <div class="choices"><span>① \(-7a_1\)</span><span>② \(-8a_1\)</span><span>③ \(-9a_1\)</span><span>④ \(-10a_1\)</span><span>⑤ \(-11a_1\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0928</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 02 항 사이의 관계가 주어진 등차수열</span></div>
+            <p>공차가 양수인 등차수열 \(\{a_n\}\)이 다음 조건을 만족시킬 때, \(a_3\)의 값은?</p><div class="box">(가) \(a_6+a_8=0\)<br>(나) \(|a_6|=|a_7|+2\)</div>
+            <div class="choices"><span>① \(-10\)</span><span>② \(-8\)</span><span>③ \(-6\)</span><span>④ \(-4\)</span><span>⑤ \(-2\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0929</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 03 대소 관계를 만족시키는 등차수열의 항</span></div>
+            <p>제7항이 29, 제10항이 20인 등차수열 \(\{a_n\}\)에서 처음으로 음수가 되는 항은?</p>
+            <div class="choices"><span>① 제15항</span><span>② 제16항</span><span>③ 제17항</span><span>④ 제18항</span><span>⑤ 제19항</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0930</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 03 대소 관계를 만족시키는 등차수열의 항</span></div>
+            <p>첫째항이 1005, 공차가 \(-4\)인 등차수열 \(\{a_n\}\)에서 처음으로 10보다 작아지는 항은 제몇 항인지 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0931</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 03 대소 관계를 만족시키는 등차수열의 항</span></div>
+            <p>공차가 4인 등차수열 \(\{a_n\}\)에 대하여 \(a_{23}=23\)일 때, \(|a_n|\)의 값이 최소가 되는 자연수 \(n\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0932</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 03 대소 관계를 만족시키는 등차수열의 항</span></div>
+            <p>두 집합 \(A,\ B\)를 각각<br>&nbsp;&nbsp;&nbsp;&nbsp;\(A=\{a_n\,|\,a_n=2n,\ n\)은 자연수\(\}\),<br>&nbsp;&nbsp;&nbsp;&nbsp;\(B=\{b_n\,|\,b_n=3n+1,\ n\)은 자연수\(\}\)<br>로 정의하자. 집합 \(A\cap B\)의 원소를 작은 수부터 차례대로 나열한 수열을 \(\{c_n\}\)이라 할 때, \(c_n\)의 값이 처음으로 세 자리 자연수가 되는 \(n\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0933</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 04 두 수 사이에 수를 넣어서 만든 등차수열</span></div>
+            <p>1과 101 사이에 19개의 수 \(a_1,\ a_2,\ a_3,\ \cdots,\ a_{19}\)를 넣어<br>&nbsp;&nbsp;&nbsp;&nbsp;\(1,\ a_1,\ a_2,\ a_3,\ \cdots,\ a_{19},\ 101\)<br>이 이 순서대로 등차수열을 이루도록 할 때, \(a_8\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0934</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 04 두 수 사이에 수를 넣어서 만든 등차수열</span></div>
+            <p>\(-3\)과 15 사이에 \(n\)개의 수를 넣어<br>&nbsp;&nbsp;&nbsp;&nbsp;\(-3,\ a_1,\ a_2,\ a_3,\ \cdots,\ a_n,\ 15\)<br>가 이 순서대로 공차가 \(\dfrac{3}{2}\)인 등차수열을 이루도록 할 때, \(n\)의 값은?</p>
+            <div class="choices"><span>① 9</span><span>② 10</span><span>③ 11</span><span>④ 12</span><span>⑤ 13</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0935</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 04 두 수 사이에 수를 넣어서 만든 등차수열</span></div>
+            <p>4와 16 사이에 \(m\)개, 16과 40 사이에 \(n\)개의 수를 넣어<br>&nbsp;&nbsp;&nbsp;&nbsp;\(4,\ a_1,\ a_2,\ \cdots,\ a_m,\ 16,\ b_1,\ b_2,\ \cdots,\ b_n,\ 40\)<br>이 이 순서대로 등차수열을 이루도록 하였다. 이때 \(m,\ n\) 사이의 관계식은?</p>
+            <div class="choices"><span>① \(n=2m-1\)</span><span>② \(n=2m+1\)</span><span>③ \(n=2m+3\)</span><span>④ \(n=3m\)</span><span>⑤ \(n=3m+1\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0936</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 05 등차중항</span></div>
+            <p>세 수 \(2a,\ a^2+2a,\ 4\)가 이 순서대로 등차수열을 이루도록 하는 모든 실수 \(a\)의 값의 합은?</p>
+            <div class="choices"><span>① \(-2\)</span><span>② \(-1\)</span><span>③ \(0\)</span><span>④ \(1\)</span><span>⑤ \(2\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0937</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 05 등차중항</span></div>
+            <p>\(ax^2-x+3\)을 \(x+1,\ x-2,\ x-3\)으로 나누었을 때의 나머지가 이 순서대로 등차수열을 이룰 때, 상수 \(a\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0938</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 05 등차중항</span></div>
+            <p>네 개의 수 \(\log_34,\ a,\ \log_336,\ b\)가 이 순서대로 등차수열을 이루고, 다섯 개의 수 \(10,\ c,\ 2,\ d,\ -6\)도 이 순서대로 등차수열을 이룬다. 이때 \(a-b-c+d\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0939</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 05 등차중항</span></div>
+            <p>자연수 \(n\)에 대하여 \(x\)에 대한 이차방정식<br>&nbsp;&nbsp;&nbsp;&nbsp;\(x^2-nx+8(n-8)=0\)<br>이 서로 다른 두 실근 \(\alpha,\ \beta\) \((\alpha&lt;\beta)\)를 갖고, 세 수 \(3,\ \alpha,\ \beta\)가 이 순서대로 등차수열을 이룰 때, \(n\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0940</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 05 등차중항</span></div>
+            <p>다음 그림에서 가로줄과 세로줄에 있는 세 수가 각각 순서대로 등차수열을 이룬다. 예를 들어 \(a,\ 6,\ e\)는 이 순서대로 등차수열을 이루고, \(e,\ 0,\ f\)도 이 순서대로 등차수열을 이룬다. 이때 \(a+b-d-f\)의 값은?</p>
+            <div class="graph-row"><table style="border-collapse:collapse"><tr><td style="border:1px solid var(--text);width:34px;height:28px;text-align:center">\(a\)</td><td style="border:1px solid var(--text);width:34px;height:28px;text-align:center">\(b\)</td><td style="border:1px solid var(--text);width:34px;height:28px;text-align:center">\(14\)</td></tr><tr><td style="border:1px solid var(--text);width:34px;height:28px;text-align:center">\(6\)</td><td style="border:1px solid var(--text);width:34px;height:28px;text-align:center">\(c\)</td><td style="border:1px solid var(--text);width:34px;height:28px;text-align:center">\(d\)</td></tr><tr><td style="border:1px solid var(--text);width:34px;height:28px;text-align:center">\(e\)</td><td style="border:1px solid var(--text);width:34px;height:28px;text-align:center">\(0\)</td><td style="border:1px solid var(--text);width:34px;height:28px;text-align:center">\(f\)</td></tr></table></div>
+            <div class="choices"><span>① 15</span><span>② 16</span><span>③ 17</span><span>④ 18</span><span>⑤ 19</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0941</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 06 등차수열을 이루는 수</span></div>
+            <p>등차수열을 이루는 세 수의 합이 21이고, 제곱의 합이 165일 때, 세 수의 곱을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0942</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 06 등차수열을 이루는 수</span></div>
+            <p>삼차방정식 \(x^3-15x^2+kx-105=0\)의 세 실근이 등차수열을 이룰 때, 상수 \(k\)의 값은?</p>
+            <div class="choices"><span>① 63</span><span>② 69</span><span>③ 71</span><span>④ 73</span><span>⑤ 79</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0943</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 06 등차수열을 이루는 수</span></div>
+            <p>등차수열을 이루는 네 수의 합이 12이고 가장 작은 수와 가장 큰 수의 곱이 \(-135\)일 때, 네 수 중 가장 큰 수를 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0944</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 06 등차수열을 이루는 수</span></div>
+            <p>어떤 직육면체의 밑면의 가로의 길이, 세로의 길이, 높이가 이 순서대로 등차수열을 이룬다고 한다. 이 직육면체의 모든 모서리의 길이의 합이 84이고 겉넓이가 244일 때, 직육면체의 부피를 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0945</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 07 등차수열의 합</span></div>
+            <p>등차수열 \(\{a_n\}\)에서 \(a_2=4,\ a_5=22\)일 때, 이 수열의 첫째항부터 제20항까지의 합은?</p>
+            <div class="choices"><span>① 1000</span><span>② 1030</span><span>③ 1060</span><span>④ 1100</span><span>⑤ 1140</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0946</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 07 등차수열의 합</span></div>
+            <p>등차수열 \(\{a_n\}\)의 일반항이 \(a_n=3n-6\)일 때, 등차수열 \(\{a_n\}\)의 첫째항부터 제9항까지의 합을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0947</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 07 등차수열의 합</span></div>
+            <p>첫째항이 \(-40\), 공차가 6인 등차수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)에 대하여 \(S_n>0\)이 되도록 하는 자연수 \(n\)의 최솟값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0948</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 07 등차수열의 합</span></div>
+            <p>두 등차수열 \(\{a_n\},\ \{b_n\}\)의 첫째항의 합이 4, 공차의 합이 2일 때, \((a_1+a_2+a_3+\cdots+a_{15})+(b_1+b_2+b_3+\cdots+b_{15})\)의 값은?</p>
+            <div class="choices"><span>① 120</span><span>② 160</span><span>③ 210</span><span>④ 270</span><span>⑤ 330</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0949</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 07 등차수열의 합</span></div>
+            <p>첫째항이 50, 제\(n\)항이 \(-10\)인 등차수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합이 220일 때, 이 수열의 공차를 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0950</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 07 등차수열의 합</span></div>
+            <p>등차수열 \(\{a_n\}\)에 대하여 \(a_1=50,\ a_{10}=23\)일 때,<br>\(|a_1|+|a_2|+|a_3|+\cdots+|a_{30}|\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0951</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 08 두 수 사이에 수를 넣어서 만든 등차수열의 합</span></div>
+            <p>4와 56 사이에 \(n\)개의 수 \(a_1,\ a_2,\ a_3,\ \cdots,\ a_n\)을 넣어<br>&nbsp;&nbsp;&nbsp;&nbsp;\(4,\ a_1,\ a_2,\ a_3,\ \cdots,\ a_n,\ 56\)<br>이 이 순서대로 등차수열을 이루도록 하였다. 이 수열의 모든 항의 합이 660일 때, \(n\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0952</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 08 두 수 사이에 수를 넣어서 만든 등차수열의 합</span></div>
+            <p>\(-3\)과 33 사이에 28개의 수 \(x_1,\ x_2,\ x_3,\ \cdots,\ x_{28}\)을 넣어<br>&nbsp;&nbsp;&nbsp;&nbsp;\(-3,\ x_1,\ x_2,\ x_3,\ \cdots,\ x_{28},\ 33\)<br>이 이 순서대로 등차수열을 이루도록 하였다. 이때 \(x_1+x_2+x_3+\cdots+x_{28}\)의 값은?</p>
+            <div class="choices"><span>① 400</span><span>② 410</span><span>③ 420</span><span>④ 430</span><span>⑤ 440</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0953</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 08 두 수 사이에 수를 넣어서 만든 등차수열의 합</span></div>
+            <p>수열 \(10,\ a_1,\ a_2,\ a_3,\ \cdots,\ a_n,\ -24\)가 이 순서대로 등차수열을 이루고 \(a_1+a_2+a_3+\cdots+a_n=-91\)일 때, \(n\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0954</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 09 부분의 합이 주어진 등차수열</span></div>
+            <p>등차수열 \(\{a_n\}\)의 첫째항부터 제10항까지의 합이 140, 첫째항부터 제20항까지의 합이 480일 때, 첫째항부터 제30항까지의 합은?</p>
+            <div class="choices"><span>① 990</span><span>② 1000</span><span>③ 1010</span><span>④ 1020</span><span>⑤ 1030</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0955</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 09 부분의 합이 주어진 등차수열</span></div>
+            <p>등차수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)에 대하여 \(S_5=160,\ S_{15}=630\)일 때, \(a_6+a_7+a_8+\cdots+a_{40}\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0956</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 09 부분의 합이 주어진 등차수열</span></div>
+            <p>등차수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)에 대하여 \(S_9-S_6=0,\ S_8=56\)일 때, \(a_3\)의 값은?</p>
+            <div class="choices"><span>① 8</span><span>② 10</span><span>③ 12</span><span>④ 14</span><span>⑤ 16</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0957</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 09 부분의 합이 주어진 등차수열</span></div>
+            <p>공차가 양수인 등차수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)에 대하여 \(S_7=|S_3|=42\)일 때, \(a_5\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0958</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 09 부분의 합이 주어진 등차수열</span></div>
+            <p>첫째항이 1, 공차가 \(\dfrac{1}{4}\)인 등차수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)에 대하여 \(S_5,\ S_{n+3},\ S_{2n}\)은 이 순서대로 등차수열을 이룬다. 이때 자연수 \(n\)의 값은?</p>
+            <div class="choices"><span>① 5</span><span>② 6</span><span>③ 7</span><span>④ 8</span><span>⑤ 9</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0959</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 10 등차수열의 합의 최대·최소</span></div>
+            <p>제5항이 8, 제13항이 \(-16\)인 등차수열 \(\{a_n\}\)에서 첫째항부터 제\(n\)항까지의 합 \(S_n\)의 최댓값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0960</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 10 등차수열의 합의 최대·최소</span></div>
+            <p>수열 \(\{a_n\}\)의 일반항이 \(a_n=n\log_25-100\)일 때, 첫째항부터 제\(n\)항까지의 합이 최소가 되도록 하는 자연수 \(n\)의 값을 구하시오. (단, \(\log2=0.3\)으로 계산한다.)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0961</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 10 등차수열의 합의 최대·최소</span></div>
+            <p>등차수열 \(\{a_n\}\)의 첫째항부터 제4항까지의 합이 24, 첫째항부터 제10항까지의 합이 0이다. 수열 \(\{a_n\}\)의 첫째항부터 제\(p\)항까지의 합이 최대이고, 그때의 최댓값이 \(q\)일 때, \(p+q\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0962</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 10 등차수열의 합의 최대·최소</span></div>
+            <p>첫째항이 \(-4\)인 등차수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)에 대하여 \(S_3=S_8\)일 때, \(S_n\)의 최솟값은?</p>
+            <div class="choices"><span>① \(-11\)</span><span>② \(-\dfrac{111}{10}\)</span><span>③ \(-\dfrac{56}{5}\)</span><span>④ \(-12\)</span><span>⑤ \(-\dfrac{121}{10}\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0963</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 10 등차수열의 합의 최대·최소</span></div>
+            <p>첫째항이 112, 공차가 정수인 등차수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)에 대하여 \(S_8\)의 값이 임의의 다른 \(S_n\)의 값보다 클 때, 공차를 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0964</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 11 나머지가 같은 자연수의 합</span></div>
+            <p>100 이하의 자연수 중에서 3으로 나누었을 때의 나머지가 1인 수의 총합은?</p>
+            <div class="choices"><span>① 958</span><span>② 1275</span><span>③ 1667</span><span>④ 1717</span><span>⑤ 2585</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0965</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 11 나머지가 같은 자연수의 합</span></div>
+            <p>100과 200 사이에 있는 자연수 중에서 7의 배수의 총합은?</p>
+            <div class="choices"><span>① 1981</span><span>② 2107</span><span>③ 2247</span><span>④ 2359</span><span>⑤ 2464</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0966</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 11 나머지가 같은 자연수의 합</span></div>
+            <p>50보다 크고 100보다 작은 자연수 중에서 3 또는 5로 나누어떨어지는 수의 총합을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0967</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 11 나머지가 같은 자연수의 합</span></div>
+            <p>4로 나누었을 때의 나머지는 3이고, 5로 나누었을 때의 나머지는 2인 자연수를 작은 것부터 차례대로 \(a_1,\ a_2,\ a_3,\ \cdots\)이라 하자. 이때 \(a_1+a_2+a_3+\cdots+a_{10}\)의 값은?</p>
+            <div class="choices"><span>① 970</span><span>② 990</span><span>③ 1010</span><span>④ 1030</span><span>⑤ 1050</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0968</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 12 등차수열의 합의 활용</span></div>
+            <p>연속하는 20개의 자연수의 합이 530일 때, 20개의 자연수 중에서 가장 큰 수는?</p>
+            <div class="choices"><span>① 30</span><span>② 32</span><span>③ 34</span><span>④ 36</span><span>⑤ 38</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0969</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 12 등차수열의 합의 활용</span></div>
+            <p>행렬 \(A=\begin{pmatrix}1&0\\-3&1\end{pmatrix}\)에 대하여 행렬<br>\(A+A^2+A^3+\cdots+A^n\)의 \((2,\ 1)\) 성분이 \(-273\)일 때, 자연수 \(n\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0970</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 12 등차수열의 합의 활용</span></div>
+            <p>다음 그림과 같은 숫자판에서 ⊞ 모양의 4개의 칸에 적힌 수의 합을 \(a_1\)이라 하고, 이 ⊞ 모양을 오른쪽으로 \(n\)칸, 아래쪽으로 \(n\)칸 이동하였을 때 이동된 ⊞ 모양의 4개의 칸에 적힌 수의 합을 \(a_{n+1}\)이라 하자. 이때 \(a_1+a_2+\cdots+a_8\)의 값을 구하시오.</p>
+            <div class="graph-row"><table style="border-collapse:collapse"><tr><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;background:#e9b4ad">1</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;background:#e9b4ad">2</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">3</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">4</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">5</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">⋯</td></tr><tr><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;background:#e9b4ad">2</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;background:#e9b4ad">3</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">4</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">5</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">6</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">⋯</td></tr><tr><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">3</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">4</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">5</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">6</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">7</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">⋯</td></tr><tr><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">4</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">5</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">6</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">7</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">8</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">⋯</td></tr><tr><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">5</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">6</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">7</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">8</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">9</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">⋯</td></tr><tr><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">⋯</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">⋯</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">⋯</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">⋯</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">⋯</td><td style="border:1px solid var(--text);width:24px;height:22px;text-align:center;font-size:12px;">⋱</td></tr></table></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0971</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 12 등차수열의 합의 활용</span></div>
+            <p>어떤 \(n\)각형의 내각의 크기는 공차가 \(20^\circ\)인 등차수열을 이룬다고 한다. 가장 작은 내각의 크기가 \(40^\circ\)일 때, \(n\)의 값을 구하시오. (단, 한 내각의 크기는 \(180^\circ\)보다 작다.)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0972</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 12 등차수열의 합의 활용</span></div>
+            <p>다음 그림과 같이 직선 \(l\) 위에 같은 간격으로 10개의 점 \(\mathrm{P}_1,\ \mathrm{P}_2,\ \mathrm{P}_3,\ \cdots,\ \mathrm{P}_{10}\)을 잡고, 각 점에서 직선 \(m\)에 내린 수선의 발을 차례대로 \(\mathrm{Q}_1,\ \mathrm{Q}_2,\ \mathrm{Q}_3,\ \cdots,\ \mathrm{Q}_{10}\)이라 하자. \(\overline{\mathrm{P_1Q_1}}=6,\ \overline{\mathrm{P_{10}Q_{10}}}=10\)일 때, \(\overline{\mathrm{P_2Q_2}}+\overline{\mathrm{P_3Q_3}}+\overline{\mathrm{P_4Q_4}}+\cdots+\overline{\mathrm{P_9Q_9}}\)의 값은?</p>
+            <div class="graph-row"><figure class="graph">
+<svg viewBox="0 0 200 110" style="max-width:200px"><line x1="24.0" y1="57.3" x2="173.3" y2="18.0" style="stroke:var(--text);stroke-width:1" /><line x1="24.0" y1="92.0" x2="176.0" y2="92.0" style="stroke:var(--text);stroke-width:1" /><line x1="37.5" y1="51.3" x2="37.5" y2="92.0" style="stroke:var(--text);stroke-width:1" /><line x1="51.1" y1="48.2" x2="51.1" y2="92.0" style="stroke:var(--text);stroke-width:1" /><line x1="64.7" y1="45.2" x2="64.7" y2="92.0" style="stroke:var(--text);stroke-width:1" /><line x1="159.7" y1="24.1" x2="159.7" y2="92.0" style="stroke:var(--text);stroke-width:1;stroke-dasharray:3 3" /><foreignObject x="25.5" y="31.3" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}_{1}\)</div></foreignObject><foreignObject x="29.5" y="94.0" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}_{1}\)</div></foreignObject><foreignObject x="43.1" y="28.2" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}_{2}\)</div></foreignObject><foreignObject x="43.1" y="94.0" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}_{2}\)</div></foreignObject><foreignObject x="60.7" y="25.2" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}_{3}\)</div></foreignObject><foreignObject x="58.7" y="94.0" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}_{3}\)</div></foreignObject><foreignObject x="149.7" y="4.1" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}_{10}\)</div></foreignObject><foreignObject x="149.7" y="94.0" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}_{10}\)</div></foreignObject><foreignObject x="23.5" y="63.6" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(6\)</div></foreignObject><foreignObject x="163.7" y="50.1" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(10\)</div></foreignObject><foreignObject x="97.4" y="65.6" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\cdots\)</div></foreignObject><foreignObject x="104.2" y="96.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\cdots\)</div></foreignObject><foreignObject x="175.3" y="4.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(l\)</div></foreignObject><foreignObject x="178.0" y="82.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(m\)</div></foreignObject></svg>
+</figure></div>
+            <div class="choices"><span>① 60</span><span>② 61</span><span>③ 62</span><span>④ 63</span><span>⑤ 64</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0973</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 13 등차수열의 합과 일반항 사이의 관계</span></div>
+            <p>첫째항부터 제\(n\)항까지의 합 \(S_n\)이 \(S_n=n^2+2n\)인 수열 \(\{a_n\}\)에 대하여 \(a_1+a_3+a_5+\cdots+a_{99}\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0974</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 13 등차수열의 합과 일반항 사이의 관계</span></div>
+            <p>수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)이<br>\(S_n=2n^2+2n-4\)일 때, \(a_k=48\)을 만족시키는 자연수 \(k\)의 값은?</p>
+            <div class="choices"><span>① 10</span><span>② 11</span><span>③ 12</span><span>④ 13</span><span>⑤ 14</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0975</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 13 등차수열의 합과 일반항 사이의 관계</span></div>
+            <p>수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)이 다항식 \(2x^2-12x\)를 \(x+n\)으로 나누었을 때의 나머지와 같을 때, \(a_4+a_8\)의 값은?</p>
+            <div class="choices"><span>① 68</span><span>② 72</span><span>③ 76</span><span>④ 80</span><span>⑤ 84</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0976</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 13 등차수열의 합과 일반항 사이의 관계</span></div>
+            <p>첫째항부터 제\(n\)항까지의 합이 각각 \(n^2+kn+2\), \(2n^2-3n\)인 두 수열 \(\{a_n\},\ \{b_n\}\)에 대하여 \(a_{10}=b_{10}\)일 때, 상수 \(k\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0977</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 13 등차수열의 합과 일반항 사이의 관계</span></div>
+            <p>수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)이<br>\(S_n=n^2-6n\)일 때, \(1\le a_n\le40\)을 만족시키는 자연수 \(n\)의 개수를 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0978</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 14 등비수열의 일반항</span></div>
+            <p>제2항이 2, 제5항이 54인 등비수열 \(\{a_n\}\)에 대하여 \(a_4\)의 값은?</p>
+            <div class="choices"><span>① 12</span><span>② 18</span><span>③ 27</span><span>④ 36</span><span>⑤ 48</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0979</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 14 등비수열의 일반항</span></div>
+            <p>등비수열 \(\{a_n\}\)의 일반항이 \(a_n=\dfrac{3}{4^{2n-1}}\)일 때, 첫째항과 공비를 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0980</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 14 등비수열의 일반항</span></div>
+            <p>공비가 \(-2\)인 등비수열 \(\{a_n\}\)에 대하여 \(a_3=-4\)일 때,<br>\(a_k=32\)를 만족시키는 \(k\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0981</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 14 등비수열의 일반항</span></div>
+            <p>공비가 양수인 등비수열 \(\{a_n\}\)에 대하여 \(a_2=10,\ a_4=100\)일 때, \(a_1a_3a_5\cdots a_{19}\)의 값은?</p>
+            <div class="choices"><span>① \(10^{50}\)</span><span>② \(10^{60}\)</span><span>③ \(10^{70}\)</span><span>④ \(10^{80}\)</span><span>⑤ \(10^{100}\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0982</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 15 항 사이의 관계가 주어진 등비수열</span></div>
+            <p>모든 항이 양수인 등비수열 \(\{a_n\}\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_2=18,\ a_9=\dfrac{1}{9}a_7\)<br>일 때, \(a_6\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0983</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 15 항 사이의 관계가 주어진 등비수열</span></div>
+            <p>등비수열 \(\{a_n\}\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1+a_2+a_3=6,\ a_4+a_5+a_6=48\)<br>일 때, \(a_2+a_4+a_6\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0984</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 15 항 사이의 관계가 주어진 등비수열</span></div>
+            <p>모든 항이 양수인 등비수열 \(\{a_n\}\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\({a_4}^2=a_8,\ a_2-2a_1=3\)<br>일 때, \(a_3\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0985</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 15 항 사이의 관계가 주어진 등비수열</span></div>
+            <p>첫째항이 64인 등비수열 \(\{a_n\}\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\(\dfrac{a_3}{a_2}-\dfrac{a_5}{a_3}=\dfrac{1}{4}\)<br>일 때, 1은 제몇 항인지 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0986</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 16 대소 관계를 만족시키는 등비수열의 항</span></div>
+            <p>공비가 양수인 등비수열 \(\{a_n\}\)에 대하여 \(a_3=3,\ a_5=9\)일 때, \({a_n}^2>1000\)을 만족시키는 자연수 \(n\)의 최솟값은?</p>
+            <div class="choices"><span>① 6</span><span>② 7</span><span>③ 8</span><span>④ 9</span><span>⑤ 10</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0987</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 16 대소 관계를 만족시키는 등비수열의 항</span></div>
+            <p>첫째항이 5, 제3항이 \(\dfrac{5}{4}\)이고 공비가 양수인 등비수열 \(\{a_n\}\)에서 처음으로 \(\dfrac{1}{200}\)보다 작아지는 항은 제몇 항인지 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0988</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 16 대소 관계를 만족시키는 등비수열의 항</span></div>
+            <p>등비수열 \(\{a_n\}\)에 대하여 \(\log a_2=\dfrac{1}{2},\ \log a_5=2\)일 때,<br>\(100&lt;a_n&lt;10000\)을 만족시키는 자연수 \(n\)의 개수를 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0989</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 17 두 수 사이에 수를 넣어서 만든 등비수열</span></div>
+            <p>2와 162 사이에 세 양수 \(a,\ b,\ c\)를 넣어<br>&nbsp;&nbsp;&nbsp;&nbsp;\(2,\ a,\ b,\ c,\ 162\)<br>가 이 순서대로 등비수열을 이루도록 할 때, \(a+b+c\)의 값은?</p>
+            <div class="choices"><span>① 70</span><span>② 72</span><span>③ 74</span><span>④ 76</span><span>⑤ 78</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0990</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 17 두 수 사이에 수를 넣어서 만든 등비수열</span></div>
+            <p>등비수열 \(81,\ a_1,\ a_2,\ \cdots,\ a_n,\ \dfrac{128}{27}\)의 공비가 \(\dfrac{2}{3}\)일 때, 자연수 \(n\)의 값은?</p>
+            <div class="choices"><span>① 3</span><span>② 4</span><span>③ 5</span><span>④ 6</span><span>⑤ 7</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0991</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 17 두 수 사이에 수를 넣어서 만든 등비수열</span></div>
+            <p>2와 64 사이에 9개의 양수 \(x_1,\ x_2,\ x_3,\ \cdots,\ x_9\)를 넣어<br>&nbsp;&nbsp;&nbsp;&nbsp;\(2,\ x_1,\ x_2,\ x_3,\ \cdots,\ x_9,\ 64\)<br>가 이 순서대로 등비수열을 이루도록 할 때,<br>&nbsp;&nbsp;&nbsp;&nbsp;\(\log_2x_1+\log_2x_2+\log_2x_3+\cdots+\log_2x_9\)<br>의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0992</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 18 등비중항</span></div>
+            <p>세 양수 \(x,\ x+12,\ 9x\)가 이 순서대로 등비수열을 이룰 때, \(x\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0993</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 18 등비중항</span></div>
+            <p>세 수 \(\sin\theta,\ \dfrac{\sqrt{6}}{6},\ \cos60^\circ\)가 이 순서대로 등비수열을 이룰 때, \(\sin\theta+\dfrac{1}{\sin\theta}\)의 값은?</p>
+            <div class="choices"><span>① \(2\)</span><span>② \(\dfrac{5}{2}\)</span><span>③ \(\dfrac{10}{3}\)</span><span>④ \(\dfrac{17}{4}\)</span><span>⑤ \(\dfrac{26}{5}\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0994</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 18 등비중항</span></div>
+            <p>네 양수 \(2,\ a,\ b,\ 12\)에 대하여 \(2,\ a,\ b\)는 이 순서대로 등비수열을 이루고, \(a,\ b,\ 12\)는 이 순서대로 등차수열을 이룰 때, \(a+b\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0995</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 18 등비중항</span></div>
+            <p>1이 아닌 세 양수 \(a,\ b,\ c\)가 이 순서대로 등비수열을 이룰 때, 다음 중 \(\dfrac{1}{\log_ax}+\dfrac{1}{\log_cx}\)과 같은 것은? (단, \(x>0,\ x\ne1\))</p>
+            <div class="choices"><span>① \(\dfrac{1}{2\log_bx}\)</span><span>② \(\dfrac{1}{\log_bx}\)</span><span>③ \(\dfrac{2}{\log_bx}\)</span><span>④ \(\log_bx\)</span><span>⑤ \(2\log_bx\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0996</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 18 등비중항</span></div>
+            <p>한 자리 자연수 \(a,\ b,\ c\)에 대하여 세 수 \(0.\dot{a},\ 0.0\dot{b},\ 0.00\dot{c}\)가 이 순서대로 등비수열을 이룬다고 한다. 이때 \(a,\ b,\ c\)의 순서쌍 \((a,\ b,\ c)\)의 개수를 구하시오. (단, \(a&lt;b&lt;c\))</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0997</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 19 등비수열을 이루는 수</span></div>
+            <p>등비수열을 이루는 세 실수의 합이 7이고 곱이 8일 때, 세 수 중 가장 큰 수를 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0998</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 19 등비수열을 이루는 수</span></div>
+            <p>삼차방정식 \(x^3-px^2+156x-216=0\)의 세 실근이 등비수열을 이룰 때, 상수 \(p\)의 값은?</p>
+            <div class="choices"><span>① 25</span><span>② 26</span><span>③ 27</span><span>④ 28</span><span>⑤ 29</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">0999</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 19 등비수열을 이루는 수</span></div>
+            <p>100 이하의 자연수 중에서 서로 다른 네 수를 택하여 나열할 때, 공비가 자연수인 등비수열을 이루도록 나열하는 경우의 수를 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1000</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 20 등비수열의 활용</span></div>
+            <p>한 변의 길이가 4인 정삼각형 모양의 종이가 있다. 다음 그림과 같이 1회의 시행에서 각 변의 중점을 이어서 만든 정삼각형을 오려 낸다. 2회 시행에서는 1회 시행 후 남은 3개의 작은 정삼각형에서 같은 방법으로 만든 정삼각형을 오려 낸다. 이와 같은 시행을 계속할 때, 10회 시행 후 남아 있는 종이의 넓이는?</p>
+            <div class="graph-row"><figure class="graph">
+<svg viewBox="0 0 120 110" style="max-width:120px"><polygon points="60.0,18.6 39.0,55.0 81.0,55.0" style="fill:#c6bde3;stroke:none" /><polygon points="39.0,55.0 18.0,91.4 60.0,91.4" style="fill:#c6bde3;stroke:none" /><polygon points="81.0,55.0 60.0,91.4 102.0,91.4" style="fill:#c6bde3;stroke:none" /><line x1="60.0" y1="18.6" x2="18.0" y2="91.4" style="stroke:var(--text);stroke-width:1" /><line x1="18.0" y1="91.4" x2="102.0" y2="91.4" style="stroke:var(--text);stroke-width:1" /><line x1="102.0" y1="91.4" x2="60.0" y2="18.6" style="stroke:var(--text);stroke-width:1" /><line x1="39.0" y1="55.0" x2="60.0" y2="91.4" style="stroke:var(--text);stroke-width:1" /><line x1="60.0" y1="91.4" x2="81.0" y2="55.0" style="stroke:var(--text);stroke-width:1" /><line x1="81.0" y1="55.0" x2="39.0" y2="55.0" style="stroke:var(--text);stroke-width:1" /><foreignObject x="25.0" y="47.0" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(4\)</div></foreignObject></svg>
+</figure></div>
+            <div class="choices"><span>① \(\left(\dfrac{3}{4}\right)^{10}\)</span><span>② \(\sqrt{3}\cdot\left(\dfrac{3}{4}\right)^{10}\)</span><span>③ \(4\sqrt{3}\cdot\left(\dfrac{3}{4}\right)^{10}\)</span><span>④ \(\sqrt{3}\cdot\left(\dfrac{3}{4}\right)^9\)</span><span>⑤ \(3\cdot\left(\dfrac{3}{4}\right)^9\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1001</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 20 등비수열의 활용</span></div>
+            <p>넓이가 8인 정사각형에서 다음 그림과 같이 각 변의 중점을 이어 정사각형을 그리는 시행을 계속할 때, \(n\)번째 그린 정사각형을 \(T_n\)이라 하자. \(T_n\)의 한 변의 길이가 \(2^{f(n)}\)일 때, \(f(99)\)의 값을 구하시오.</p>
+            <div class="graph-row"><figure class="graph">
+<svg viewBox="0 0 120 120" style="max-width:120px"><rect x="10.0" y="10.0" width="100.0" height="100.0" style="fill:none;stroke:var(--text);stroke-width:1" /><polygon points="60.0,10.0 110.0,60.0 60.0,110.0 10.0,60.0" style="fill:none;stroke:var(--text);stroke-width:1" /><rect x="35.0" y="35.0" width="50.0" height="50.0" style="fill:none;stroke:var(--text);stroke-width:1" /><polygon points="60.0,35.0 85.0,60.0 60.0,85.0 35.0,60.0" style="fill:none;stroke:var(--text);stroke-width:1" /><foreignObject x="96.0" y="6.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(T_1\)</div></foreignObject><foreignObject x="30.0" y="20.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(T_2\)</div></foreignObject><foreignObject x="52.0" y="36.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(T_3\)</div></foreignObject></svg>
+</figure></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1002</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 20 등비수열의 활용</span></div>
+            <p>어느 학생의 휴대 전화 데이터 사용량이 1월부터 매월 일정한 비율만큼 증가하여 5개월 후인 6월의 데이터 사용량은 1월의 3배가 되었다. 이와 같은 비율만큼 데이터 사용량이 계속 증가하여 같은 해 11월의 데이터 사용량이 6월의 데이터 사용량보다 2400 MB만큼 늘어났을 때, 1월의 데이터 사용량을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1003</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 20 등비수열의 활용</span></div>
+            <p>점 \(\mathrm{P}_1\)의 좌표가 \((1,\ 0)\)일 때, 다음 그림과 같이 점 \(\mathrm{P}_1\)에서 직선 \(y=x\)에 내린 수선의 발을 \(\mathrm{P}_2\), 점 \(\mathrm{P}_2\)에서 \(y\)축에 내린 수선의 발을 \(\mathrm{P}_3\), 점 \(\mathrm{P}_3\)에서 직선 \(y=-x\)에 내린 수선의 발을 \(\mathrm{P}_4\), 점 \(\mathrm{P}_4\)에서 \(x\)축에 내린 수선의 발을 \(\mathrm{P}_5\)라 하자. 이와 같은 과정을 계속할 때, 다음 중 길이가 \(\left(\dfrac{1}{2}\right)^{10}\)인 선분은?</p>
+            <div class="graph-row"><figure class="graph">
+<svg viewBox="0 0 220 190" style="max-width:220px"><line x1="22.6" y1="170.9" x2="174.4" y2="19.1" style="stroke:var(--text);stroke-width:1" /><line x1="18.0" y1="19.1" x2="169.8" y2="170.9" style="stroke:var(--text);stroke-width:1" /><line x1="22.6" y1="97.3" x2="202.0" y2="97.3" style="stroke:var(--text);stroke-width:1" /><line x1="96.2" y1="170.9" x2="96.2" y2="19.1" style="stroke:var(--text);stroke-width:1" /><line x1="188.2" y1="97.3" x2="142.2" y2="51.3" style="stroke:var(--text);stroke-width:1" /><line x1="142.2" y1="51.3" x2="96.2" y2="51.3" style="stroke:var(--text);stroke-width:1" /><line x1="96.2" y1="51.3" x2="73.2" y2="74.3" style="stroke:var(--text);stroke-width:1" /><line x1="73.2" y1="74.3" x2="73.2" y2="97.3" style="stroke:var(--text);stroke-width:1" /><line x1="73.2" y1="97.3" x2="84.7" y2="108.8" style="stroke:var(--text);stroke-width:1" /><line x1="84.7" y1="108.8" x2="96.2" y2="108.8" style="stroke:var(--text);stroke-width:1" /><foreignObject x="184.2" y="99.3" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}_{1}\)</div></foreignObject><foreignObject x="144.2" y="37.3" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}_{2}\)</div></foreignObject><foreignObject x="82.2" y="35.3" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}_{3}\)</div></foreignObject><foreignObject x="57.2" y="64.3" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}_{4}\)</div></foreignObject><foreignObject x="55.2" y="93.3" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}_{5}\)</div></foreignObject><foreignObject x="76.7" y="110.8" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}_{6}\)</div></foreignObject><foreignObject x="98.2" y="104.8" width="22" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}_{7}\)</div></foreignObject><foreignObject x="172.4" y="1.1" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(y=x\)</div></foreignObject><foreignObject x="165.8" y="170.9" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(y=-x\)</div></foreignObject><foreignObject x="98.2" y="95.3" width="60" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{O}\)</div></foreignObject></svg>
+</figure></div>
+            <div class="choices"><span>① \(\overline{\mathrm{P_9P_{10}}}\)</span><span>② \(\overline{\mathrm{P_{10}P_{11}}}\)</span><span>③ \(\overline{\mathrm{P_{11}P_{12}}}\)</span><span>④ \(\overline{\mathrm{P_{20}P_{21}}}\)</span><span>⑤ \(\overline{\mathrm{P_{21}P_{22}}}\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1004</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 21 등비수열의 합</span></div>
+            <p>수열 \(\{a_n\}\)에 대하여 \(a_n=2^{2n-1}\)일 때,<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1+a_2+a_3+\cdots+a_{10}=\dfrac{2^p-2}{3}\)<br>를 만족시키는 실수 \(p\)의 값은?</p>
+            <div class="choices"><span>① 10</span><span>② 11</span><span>③ 19</span><span>④ 20</span><span>⑤ 21</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1005</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 21 등비수열의 합</span></div>
+            <p>등비수열 \(-2,\ 6,\ -18,\ 54,\ \cdots\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)에 대하여 \(S_k=364\)를 만족시키는 \(k\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1006</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 21 등비수열의 합</span></div>
+            <p>공비가 양수인 등비수열 \(\{a_n\}\)에서 제2항과 제4항의 합이 10, 제4항과 제6항의 합이 40이다. 이때 등비수열 \(\{a_n\}\)의 첫째항부터 제10항까지의 합을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1007</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 21 등비수열의 합</span></div>
+            <p>등비수열 \(\{a_n\}\)에서 \(a_3=6,\ a_7=24\)일 때,<br>\({a_1}^2+{a_2}^2+{a_3}^2+\cdots+{a_{10}}^2\)의 값은?</p>
+            <div class="choices"><span>① \(3(2^9-1)\)</span><span>② \(3(2^{10}-1)\)</span><span>③ \(9(2^9-1)\)</span><span>④ \(9(2^{10}-1)\)</span><span>⑤ \(9\cdot2^{10}\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1008</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 21 등비수열의 합</span></div>
+            <p>첫째항이 2, 공비가 5인 등비수열의 첫째항부터 제\(n\)항까지의 합이 처음으로 \(10^8\) 이상이 될 때, 자연수 \(n\)의 값을 구하시오. (단, \(\log2=0.3\)으로 계산한다.)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1009</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 21 등비수열의 합</span></div>
+            <p>수열 \(3,\ 33,\ 333,\ 3333,\ \cdots\)의 첫째항부터 제10항까지의 합은?</p>
+            <div class="choices wide"><span>① \(\dfrac{10}{3}(10^8-1)\)</span><span>② \(\dfrac{100}{9}(10^8-1)\)</span><span>③ \(\dfrac{10}{9}(10^9-1)\)</span><span>④ \(\dfrac{100}{27}(10^9-1)\)</span><span>⑤ \(\dfrac{100}{9}(10^9-1)\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1010</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 22 부분의 합이 주어진 등비수열</span></div>
+            <p>등비수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)에 대하여 \(S_n=30,\ S_{2n}=50\)일 때, \(S_{3n}\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1011</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 22 부분의 합이 주어진 등비수열</span></div>
+            <p>첫째항부터 제3항까지의 합이 21, 첫째항부터 제6항까지의 합이 \(-147\)인 등비수열 \(\{a_n\}\)의 제5항은?</p>
+            <div class="choices"><span>① \(-112\)</span><span>② \(-56\)</span><span>③ \(-28\)</span><span>④ \(56\)</span><span>⑤ \(112\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1012</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 22 부분의 합이 주어진 등비수열</span></div>
+            <p>등비수열 \(\{a_n\}\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1+a_2+a_3+\cdots+a_{10}=12\),<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1+a_3+a_5+a_7+a_9=8\)<br>일 때, 이 수열의 공비를 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1013</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 22 부분의 합이 주어진 등비수열</span></div>
+            <p>첫째항이 1인 등비수열 \(\{a_n\}\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_2+a_4+a_6+\cdots+a_{2k}=170\),<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1+a_3+a_5+\cdots+a_{2k-1}=85\)<br>를 만족시키는 자연수 \(k\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1014</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 22 부분의 합이 주어진 등비수열</span></div>
+            <p>등비수열 \(\{a_n\}\)에 대하여 \(S_n=\dfrac{1}{a_1}+\dfrac{1}{a_2}+\cdots+\dfrac{1}{a_n}\)이라 할 때, \(S_3=\dfrac{1}{27},\ S_6=3\)이다. 이때 \(S_{12}\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1015</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 23 등비수열의 합의 활용</span></div>
+            <p>어느 지역의 2001년부터 2020년까지 20년 동안의 전입자 수는 50만 명이고, 이 중 10만 명은 2011년부터 2020년까지의 10년 동안의 전입자 수라고 한다. 이 지역의 전입자 수가 매년 일정한 비율로 감소한다고 할 때, 2021년의 전입자 수는 2001년의 전입자 수의 몇 배인가?</p>
+            <div class="choices"><span>① \(\dfrac{1}{2}\)배</span><span>② \(\dfrac{1}{4}\)배</span><span>③ \(\dfrac{1}{6}\)배</span><span>④ \(\dfrac{1}{8}\)배</span><span>⑤ \(\dfrac{1}{16}\)배</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1016</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 23 등비수열의 합의 활용</span></div>
+            <p>어느 공연장에서는 입장권을 좌석이 무대에서 가까운 정도에 따라 5등급(V석, R석, S석, A석, B석)으로 나누어 판매한다. 무대에서 가장 가까운 V석은 1개의 구역이고 그 다음으로 가까운 R석은 4개의 구역으로 이루어져 있다. 이와 같이 각 입장권 등급의 구역의 개수가 4배씩 늘어나고 한 구역의 좌석이 30개로 같을 때, 이 공연장의 전체 좌석의 개수를 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1017</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 23 등비수열의 합의 활용</span></div>
+            <p>한 변의 길이가 3인 정사각형 모양의 종이가 있다. 다음 그림과 같이 1회 시행에서 각 변의 중점을 이어서 만든 4개의 정사각형 중 오른쪽 위의 정사각형을 색칠하고, 2회 시행에서 1회 시행 후 남은 왼쪽 아래의 정사각형에서 같은 방법으로 정사각형을 색칠한다. 이와 같은 시행을 10회 반복했을 때, 색칠한 부분의 넓이의 합을 구하시오.</p>
+            <div class="graph-row"><figure class="graph">
+<svg viewBox="0 0 126 120" style="max-width:126px"><rect x="64.0" y="6.0" width="54.0" height="54.0" style="fill:#f5cf8a;stroke:none" /><rect x="10.0" y="6.0" width="108.0" height="108.0" style="fill:none;stroke:var(--text);stroke-width:1" /><line x1="64.0" y1="6.0" x2="64.0" y2="114.0" style="stroke:var(--text);stroke-width:1" /><line x1="10.0" y1="60.0" x2="118.0" y2="60.0" style="stroke:var(--text);stroke-width:1" /><rect x="37.0" y="60.0" width="27.0" height="27.0" style="fill:#f5cf8a;stroke:none" /><rect x="10.0" y="60.0" width="54.0" height="54.0" style="fill:none;stroke:var(--text);stroke-width:1" /><line x1="37.0" y1="60.0" x2="37.0" y2="114.0" style="stroke:var(--text);stroke-width:1" /><line x1="10.0" y1="87.0" x2="64.0" y2="87.0" style="stroke:var(--text);stroke-width:1" /><rect x="23.5" y="87.0" width="13.5" height="13.5" style="fill:#f5cf8a;stroke:none" /><rect x="10.0" y="87.0" width="27.0" height="27.0" style="fill:none;stroke:var(--text);stroke-width:1" /><line x1="23.5" y1="87.0" x2="23.5" y2="114.0" style="stroke:var(--text);stroke-width:1" /><line x1="10.0" y1="100.5" x2="37.0" y2="100.5" style="stroke:var(--text);stroke-width:1" /><foreignObject x="14.0" y="102.5" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\cdot^{\cdot^{\cdot}}\)</div></foreignObject><foreignObject x="-6.0" y="50.0" width="12" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(3\)</div></foreignObject></svg>
+</figure></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1018</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 23 등비수열의 합의 활용</span></div>
+            <p>거리가 10 km인 마라톤 코스를 어떤 참가자가 처음 4 km 구간까지는 시속 8 km로 일정하게 달렸다. 이후 1 km를 달리는 데 걸린 시간이 바로 전 1 km를 달리는 데 걸린 시간보다 10 %씩 증가하였을 때, 이 참가자가 완주하는 데 걸린 시간은? (단, \(1.1^6=1.8\)로 계산한다.)</p>
+            <div class="choices"><span>① 1시간 24분</span><span>② 1시간 28분</span><span>③ 1시간 32분</span><span>④ 1시간 36분</span><span>⑤ 1시간 40분</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1019</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 24 등비수열의 합과 일반항 사이의 관계</span></div>
+            <p>수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)에 대하여 \(S_n+100=10^{n+2}\)이 성립한다. 수열 \(\{a_n\}\)의 일반항이 \(a_n=p\cdot q^{n+1}\)일 때, 실수 \(p,\ q\)에 대하여 \(p-q\)의 값은?</p>
+            <div class="choices"><span>① \(-2\)</span><span>② \(-1\)</span><span>③ \(0\)</span><span>④ \(1\)</span><span>⑤ \(2\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1020</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 24 등비수열의 합과 일반항 사이의 관계</span></div>
+            <p>수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)이<br>\(S_n=5^n-2\)일 때, 옳은 것만을 <strong>보기</strong>에서 있는 대로 고른 것은?</p><div class="box">ㄱ. \(a_1+a_3=103\)<br>ㄴ. \(a_n=4\cdot5^{n-1}\)<br>ㄷ. 수열 \(\{a_{2n}\}\)의 공비는 25이다.</div>
+            <div class="choices"><span>① ㄱ</span><span>② ㄱ, ㄴ</span><span>③ ㄱ, ㄷ</span><span>④ ㄴ, ㄷ</span><span>⑤ ㄱ, ㄴ, ㄷ</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1021</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 24 등비수열의 합과 일반항 사이의 관계</span></div>
+            <p>수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)에 대하여<br>\(S_n=2\cdot3^{n+1}+k\)가 성립할 때, 수열 \(\{a_n\}\)이 첫째항부터 등비수열을 이루도록 하는 상수 \(k\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1022</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 24 등비수열의 합과 일반항 사이의 관계</span></div>
+            <p>수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)에 대하여<br>\(S_n=2^{n+1}-2\)일 때, \(a_1+a_3+a_5+a_7+a_9\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1023</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 25 원리합계</span></div>
+            <p>연이율이 4 %이고 1년마다 복리로 매년 초에 100만 원씩 5년 동안 적립할 때, 5년째 말의 적립금의 원리합계를 구하시오. (단, \(1.04^5=1.2\)로 계산한다.)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1024</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 25 원리합계</span></div>
+            <p>서현이의 부모님은 매년 초에 일정한 금액을 적립하여 3년째 말까지 서현이의 대학 등록금 420만 원을 마련하려고 한다. 연이율이 5 %이고 1년마다의 복리로 계산할 때, 매년 초에 얼마씩 적립해야 하는가? (단, \(1.05^3=1.16\)으로 계산한다.)</p>
+            <div class="choices"><span>① 110만 원</span><span>② 115만 원</span><span>③ 120만 원</span><span>④ 125만 원</span><span>⑤ 130만 원</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1025</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 25 원리합계</span></div>
+            <p>지우는 매월 초에 10만 원씩 월이율 0.3 %의 복리로 24개월 동안 적립하고, 민석이는 매월 초에 20만 원씩 월이율 0.3 %의 복리로 12개월 동안 적립한다. 지우가 24개월째 말에 받는 금액은 민석이가 12개월째 말에 받는 금액의 몇 배인가? (단, \(1.003^{12}=1.04\)로 계산한다.)</p>
+            <div class="choices"><span>① 1.02배</span><span>② 1.04배</span><span>③ 1.06배</span><span>④ 1.08배</span><span>⑤ 1.1배</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1026</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 25 원리합계</span></div>
+            <p>어느 직장인이 노후 생활을 위하여 연봉의 일부를 매년 초에 적립하는데 임금 인상률을 감안하여 매년 전년도보다 10 %씩 증액하려고 한다. 2021년부터 500만 원을 적립하기 시작할 때, 2030년 말의 적립금의 원리합계를 구하시오. (단, \(1.1^{10}=2.6\), 연이율 10 %, 1년마다 복리로 계산한다.)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1064</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 01 기호 \(\Sigma\)</span></div>
+            <p>\(\displaystyle\sum_{k=1}^n(a_{2k-1}+a_{2k})=4n^2\)일 때, \(\displaystyle\sum_{k=1}^{20}a_k\)의 값은?</p>
+            <div class="choices"><span>① 100</span><span>② 200</span><span>③ 400</span><span>④ 800</span><span>⑤ 1600</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1065</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 01 기호 \(\Sigma\)</span></div>
+            <p>함수 \(f(x)\)에 대하여 \(f(2)=4,\ f(20)=30\)일 때,<br>\(\displaystyle\sum_{k=1}^{18}f(k+2)-\sum_{k=3}^{20}f(k-1)\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1066</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 01 기호 \(\Sigma\)</span></div>
+            <p>옳은 것만을 <strong>보기</strong>에서 있는 대로 고른 것은?</p><div class="box">ㄱ. \(\displaystyle\sum_{k=1}^{10}a_k=\sum_{k=1}^5a_{2k-1}+\sum_{k=1}^5a_{2k}\)<br>ㄴ. \(1-1+1-1+1-1=\displaystyle\sum_{k=1}^6(-1)^{k-1}\)<br>ㄷ. \(\displaystyle\sum_{k=1}^{10}k^3=\sum_{k=2}^{11}(k-1)^3\)</div>
+            <div class="choices"><span>① ㄱ</span><span>② ㄱ, ㄴ</span><span>③ ㄱ, ㄷ</span><span>④ ㄴ, ㄷ</span><span>⑤ ㄱ, ㄴ, ㄷ</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1067</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 01 기호 \(\Sigma\)</span></div>
+            <p>다음 중 \(\displaystyle\sum_{k=0}^9(2k+1)^2+\sum_{k=1}^{10}(2k)^2\)과 그 값이 같은 것은?</p>
+            <div class="choices"><span>① \(2\displaystyle\sum_{k=1}^{10}k^2\)</span><span>② \(\displaystyle\sum_{k=0}^{19}(k+1)^2\)</span><span>③ \(\displaystyle\sum_{k=1}^{19}k^2\)</span><span>④ \(\displaystyle\sum_{k=0}^{20}(k+1)^2\)</span><span>⑤ \(\left(\displaystyle\sum_{k=1}^{20}k\right)^2\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1068</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 01 기호 \(\Sigma\)</span></div>
+            <p>수열 \(\{a_n\}\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\(\displaystyle\sum_{k=1}^{10}ka_k=100,\ \sum_{k=1}^{10}ka_{k+1}=40,\ a_{11}=2\)<br>일 때, \(\displaystyle\sum_{k=1}^{10}a_k\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1069</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 01 기호 \(\Sigma\)</span></div>
+            <p>수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(S_n=\displaystyle\sum_{k=1}^{n+1}(2k+1)^2-\sum_{k=1}^n(2k-1)^2\)<br>일 때, 수열 \(\{a_n\}\)의 제8항을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1070</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 02 특정한 값이 반복되는 수열의 합</span></div>
+            <p>자연수 \(n\)에 대하여 \(n^2\)을 4로 나누었을 때의 나머지를 \(a_n\)이라 할 때, \(\displaystyle\sum_{n=1}^{2000}a_n\)의 값은?</p>
+            <div class="choices"><span>① 998</span><span>② 999</span><span>③ 1000</span><span>④ 1001</span><span>⑤ 1002</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1071</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 02 특정한 값이 반복되는 수열의 합</span></div>
+            <p>수열 \(\{a_n\}\)의 일반항이 \(a_n=\cos\dfrac{n\pi}{4}\)일 때, \(\displaystyle\sum_{n=1}^{24}{a_n}^2\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1072</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 02 특정한 값이 반복되는 수열의 합</span></div>
+            <p>\(x_1,\ x_2,\ x_3,\ \cdots,\ x_n\)은 \(0,\ 1,\ 2\)의 값 중 어느 하나를 갖는다. \(\displaystyle\sum_{i=1}^nx_i=13,\ \sum_{i=1}^n{x_i}^2=23\)일 때, \(\displaystyle\sum_{i=1}^n{x_i}^5\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1073</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 02 특정한 값이 반복되는 수열의 합</span></div>
+            <p>\(x=\dfrac{1+\sqrt{3}i}{2}\)이고 자연수 \(n\)에 대하여 \(1\le k\le n\)일 때, \(x^k\)이 실수가 되는 자연수 \(k\)의 개수를 \(f(n)\)이라 하자. 이때 \(\displaystyle\sum_{n=1}^{30}f(n)\)의 값을 구하시오. (단, \(i=\sqrt{-1}\))</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1074</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 03 \(\Sigma\)의 성질</span></div>
+            <p>\(\displaystyle\sum_{k=1}^{10}a_k=4,\ \sum_{k=1}^{10}{a_k}^2=8\)일 때, \(\displaystyle\sum_{k=1}^{10}(3a_k-1)^2\)의 값은?</p>
+            <div class="choices"><span>① 49</span><span>② 58</span><span>③ 73</span><span>④ 99</span><span>⑤ 121</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1075</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 03 \(\Sigma\)의 성질</span></div>
+            <p>\(\displaystyle\sum_{k=1}^na_k=7n,\ \sum_{k=1}^nb_k=-3n^2\)일 때, \(\displaystyle\sum_{k=1}^{10}(2a_k-b_k+6)\)의 값은?</p>
+            <div class="choices"><span>① 400</span><span>② 450</span><span>③ 500</span><span>④ 550</span><span>⑤ 600</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1076</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 03 \(\Sigma\)의 성질</span></div>
+            <p>\(\displaystyle\sum_{k=1}^{10}a_k=12,\ \sum_{k=1}^{20}a_k=42,\ \sum_{k=1}^{10}b_k=20,\ \sum_{k=1}^{20}b_k=60\)일 때,<br>\(\displaystyle\sum_{k=11}^{20}(3b_k-2a_k)\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1077</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 03 \(\Sigma\)의 성질</span></div>
+            <p>수열 \(\{a_n\}\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\(\displaystyle\sum_{k=1}^{30}(a_k+1)^2=56,\ \sum_{k=1}^{30}a_k(a_k+1)=24\)<br>일 때, \(\displaystyle\sum_{k=1}^{30}{a_k}^2\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1078</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 04 \(\Sigma\)와 등차수열, 등비수열</span></div>
+            <p>등차수열 \(\{a_n\}\)에 대하여 \(a_3=1,\ a_7=-7\)일 때,<br>\(\displaystyle\sum_{k=1}^{100}a_{2k}-\sum_{k=1}^{100}a_{2k+1}\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1079</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 04 \(\Sigma\)와 등차수열, 등비수열</span></div>
+            <p>다항식 \(P(x)=x^{2n-1}(x-2)\)를 \(x-5\)로 나누었을 때의 나머지를 \(a_n\)이라 할 때, \(\displaystyle\sum_{k=1}^na_k\)를 \(n\)에 대한 식으로 나타내면?</p>
+            <div class="choices"><span>① \(\dfrac{5(5^n-1)}{8}\)</span><span>② \(\dfrac{5(25^n-1)}{8}\)</span><span>③ \(\dfrac{5(5^n-1)}{4}\)</span><span>④ \(\dfrac{5(25^n-1)}{4}\)</span><span>⑤ \(\dfrac{5(5^n-1)}{2}\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1080</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 04 \(\Sigma\)와 등차수열, 등비수열</span></div>
+            <p>등차수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_4+a_9=5a_5,\ \displaystyle\sum_{k=1}^{10}a_k=-15\)<br>를 만족시킬 때, \(a_6\)의 값은?</p>
+            <div class="choices"><span>① \(-1\)</span><span>② \(-2\)</span><span>③ \(-3\)</span><span>④ \(-4\)</span><span>⑤ \(-5\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1081</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 04 \(\Sigma\)와 등차수열, 등비수열</span></div>
+            <p>등비수열 \(\{a_n\}\)에 대하여 \(a_3a_5=a_9,\ a_2=8\)일 때,<br>\(\displaystyle\sum_{k=1}^na_k=252\)를 만족시키는 자연수 \(n\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1082</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 04 \(\Sigma\)와 등차수열, 등비수열</span></div>
+            <p>\(\displaystyle\sum_{k=1}^{20}\dfrac{2^k-3^k}{4^{k-1}}=a\left(\dfrac{3}{4}\right)^{20}-\left(\dfrac{1}{2}\right)^{18}-b\)를 만족시키는 자연수 \(a,\ b\)에 대하여 \(a+b\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1083</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 04 \(\Sigma\)와 등차수열, 등비수열</span></div>
+            <p>첫째항이 46, 제8항이 11인 등차수열 \(\{a_n\}\)에 대하여<br>\(\displaystyle\sum_{k=1}^{20}|a_k|\)의 값은?</p>
+            <div class="choices"><span>① 425</span><span>② 450</span><span>③ 475</span><span>④ 500</span><span>⑤ 525</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1084</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 05 자연수의 거듭제곱의 합</span></div>
+            <p>\(\displaystyle\sum_{k=1}^{30}\dfrac{1+2+3+\cdots+k}{k}\)의 값은?</p>
+            <div class="choices"><span>① \(\dfrac{485}{2}\)</span><span>② \(245\)</span><span>③ \(\dfrac{495}{2}\)</span><span>④ \(250\)</span><span>⑤ \(\dfrac{505}{2}\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1085</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 05 자연수의 거듭제곱의 합</span></div>
+            <p>\(\displaystyle\sum_{k=1}^{n-1}(4k+3)=52\)를 만족시키는 자연수 \(n\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1086</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 05 자연수의 거듭제곱의 합</span></div>
+            <p>자연수 \(k\)에 대하여 이차방정식 \(x^2-kx-k=0\)의 두 근을 \(\alpha_k,\ \beta_k\)라 할 때, \(\displaystyle\sum_{k=1}^6({\alpha_k}^3+{\beta_k}^3)\)의 값은?</p>
+            <div class="choices"><span>① 694</span><span>② 714</span><span>③ 734</span><span>④ 754</span><span>⑤ 774</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1087</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 05 자연수의 거듭제곱의 합</span></div>
+            <p>\(\displaystyle\sum_{k=1}^{10}(k-c)^2\)의 값이 최소가 되도록 하는 상수 \(c\)의 값은?</p>
+            <div class="choices"><span>① \(4\)</span><span>② \(\dfrac{9}{2}\)</span><span>③ \(5\)</span><span>④ \(\dfrac{11}{2}\)</span><span>⑤ \(6\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1088</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 05 자연수의 거듭제곱의 합</span></div>
+            <p>다음 그림과 같이 자연수 \(n\)에 대하여 곡선 \(y=\dfrac{5}{x}\) \((x>0)\) 위의 점 \(\left(n,\ \dfrac{5}{n}\right)\)와 두 점 \((n-1,\ 0),\ (n+1,\ 0)\)을 세 꼭짓점으로 하는 삼각형의 넓이를 \(a_n\)이라 할 때, \(\displaystyle\sum_{n=1}^{10}\dfrac{5}{a_na_{n+1}}\)의 값을 구하시오.</p>
+            <div class="graph-row">                    <figure class="graph">
+                    <svg viewBox="0 0 170 140" style="max-width:170px">
+                    <defs><marker id="gm52" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" style="fill:var(--muted)" /></marker></defs>
+                    <polygon points="59.4,118.1 59.7,117.8 59.9,117.4 60.1,117.0 60.4,116.6 60.6,116.3 60.9,115.9 61.1,115.5 61.3,115.2 61.6,114.8 61.8,114.4 62.0,114.0 62.3,113.7 62.5,113.3 62.8,112.9 63.0,112.6 63.2,112.2 63.5,111.8 63.7,111.4 63.9,111.1 64.2,110.7 64.4,110.3 64.6,109.9 64.9,109.6 65.1,109.2 65.4,108.8 65.6,108.5 65.8,108.1 66.1,107.7 66.3,107.3 66.5,107.0 66.8,106.6 67.0,106.2 67.2,105.9 67.5,105.5 67.7,105.1 68.0,104.7 68.2,104.4 68.4,104.0 68.7,103.6 68.9,103.2 69.1,102.9 69.4,102.5 69.6,102.1 69.9,101.8 70.1,101.4 70.3,101.0 70.6,100.6 70.8,100.3 71.0,99.9 71.3,99.5 71.5,99.2 71.7,98.8 72.0,98.4 72.2,98.0 72.5,97.7 72.7,97.3 72.9,96.9 73.2,96.5 73.4,96.2 73.6,95.8 73.9,95.4 74.1,95.1 74.3,94.7 74.6,94.3 74.8,93.9 75.1,93.6 75.3,93.2 75.5,92.8 75.8,92.5 76.0,92.1 76.2,91.7 76.5,91.3 76.7,91.0 77.0,90.6 77.2,90.2 77.4,89.8 77.7,89.5 77.9,89.1 78.1,88.7 78.4,88.4 78.6,88.0 78.8,87.6 79.1,87.2 79.3,86.9 79.6,86.5 79.8,86.1 80.0,85.8 80.3,85.4 80.5,85.0 80.7,84.6 81.0,84.3 81.2,83.9 81.5,83.5 81.7,83.1 81.9,82.8 82.2,82.4 82.4,82.0 82.6,81.7 82.9,81.3 83.1,80.9 83.3,80.5 83.6,80.2 83.8,79.8 84.1,79.4 84.3,79.1 84.5,78.7 84.8,78.3 85.0,77.9 85.2,77.6 85.5,77.2 85.7,76.8 85.9,76.4 86.2,76.1 86.4,75.7 86.7,75.3 86.9,75.0 87.1,74.6 87.4,74.2 87.6,73.8 87.8,73.5 87.8,118.1 87.6,118.1 87.4,118.1 87.1,118.1 86.9,118.1 86.7,118.1 86.4,118.1 86.2,118.1 85.9,118.1 85.7,118.1 85.5,118.1 85.2,118.1 85.0,118.1 84.8,118.1 84.5,118.1 84.3,118.1 84.1,118.1 83.8,118.1 83.6,118.1 83.3,118.1 83.1,118.1 82.9,118.1 82.6,118.1 82.4,118.1 82.2,118.1 81.9,118.1 81.7,118.1 81.5,118.1 81.2,118.1 81.0,118.1 80.7,118.1 80.5,118.1 80.3,118.1 80.0,118.1 79.8,118.1 79.6,118.1 79.3,118.1 79.1,118.1 78.8,118.1 78.6,118.1 78.4,118.1 78.1,118.1 77.9,118.1 77.7,118.1 77.4,118.1 77.2,118.1 77.0,118.1 76.7,118.1 76.5,118.1 76.2,118.1 76.0,118.1 75.8,118.1 75.5,118.1 75.3,118.1 75.1,118.1 74.8,118.1 74.6,118.1 74.3,118.1 74.1,118.1 73.9,118.1 73.6,118.1 73.4,118.1 73.2,118.1 72.9,118.1 72.7,118.1 72.5,118.1 72.2,118.1 72.0,118.1 71.7,118.1 71.5,118.1 71.3,118.1 71.0,118.1 70.8,118.1 70.6,118.1 70.3,118.1 70.1,118.1 69.9,118.1 69.6,118.1 69.4,118.1 69.1,118.1 68.9,118.1 68.7,118.1 68.4,118.1 68.2,118.1 68.0,118.1 67.7,118.1 67.5,118.1 67.2,118.1 67.0,118.1 66.8,118.1 66.5,118.1 66.3,118.1 66.1,118.1 65.8,118.1 65.6,118.1 65.4,118.1 65.1,118.1 64.9,118.1 64.6,118.1 64.4,118.1 64.2,118.1 63.9,118.1 63.7,118.1 63.5,118.1 63.2,118.1 63.0,118.1 62.8,118.1 62.5,118.1 62.3,118.1 62.0,118.1 61.8,118.1 61.6,118.1 61.3,118.1 61.1,118.1 60.9,118.1 60.6,118.1 60.4,118.1 60.1,118.1 59.9,118.1 59.7,118.1 59.4,118.1" style="fill:var(--muted);opacity:0.28;stroke:none" />
+                    <polygon points="87.8,73.5 88.1,73.8 88.3,74.2 88.5,74.6 88.8,75.0 89.0,75.3 89.3,75.7 89.5,76.1 89.7,76.4 90.0,76.8 90.2,77.2 90.4,77.6 90.7,77.9 90.9,78.3 91.2,78.7 91.4,79.1 91.6,79.4 91.9,79.8 92.1,80.2 92.3,80.5 92.6,80.9 92.8,81.3 93.0,81.7 93.3,82.0 93.5,82.4 93.8,82.8 94.0,83.1 94.2,83.5 94.5,83.9 94.7,84.3 94.9,84.6 95.2,85.0 95.4,85.4 95.7,85.8 95.9,86.1 96.1,86.5 96.4,86.9 96.6,87.2 96.8,87.6 97.1,88.0 97.3,88.4 97.5,88.7 97.8,89.1 98.0,89.5 98.3,89.8 98.5,90.2 98.7,90.6 99.0,91.0 99.2,91.3 99.4,91.7 99.7,92.1 99.9,92.5 100.1,92.8 100.4,93.2 100.6,93.6 100.9,93.9 101.1,94.3 101.3,94.7 101.6,95.1 101.8,95.4 102.0,95.8 102.3,96.2 102.5,96.5 102.8,96.9 103.0,97.3 103.2,97.7 103.5,98.0 103.7,98.4 103.9,98.8 104.2,99.2 104.4,99.5 104.6,99.9 104.9,100.3 105.1,100.6 105.4,101.0 105.6,101.4 105.8,101.8 106.1,102.1 106.3,102.5 106.5,102.9 106.8,103.2 107.0,103.6 107.2,104.0 107.5,104.4 107.7,104.7 108.0,105.1 108.2,105.5 108.4,105.9 108.7,106.2 108.9,106.6 109.1,107.0 109.4,107.3 109.6,107.7 109.8,108.1 110.1,108.5 110.3,108.8 110.6,109.2 110.8,109.6 111.0,109.9 111.3,110.3 111.5,110.7 111.7,111.1 112.0,111.4 112.2,111.8 112.5,112.2 112.7,112.6 112.9,112.9 113.2,113.3 113.4,113.7 113.6,114.0 113.9,114.4 114.1,114.8 114.3,115.2 114.6,115.5 114.8,115.9 115.1,116.3 115.3,116.6 115.5,117.0 115.8,117.4 116.0,117.8 116.2,118.1 116.2,118.1 116.0,118.1 115.8,118.1 115.5,118.1 115.3,118.1 115.1,118.1 114.8,118.1 114.6,118.1 114.3,118.1 114.1,118.1 113.9,118.1 113.6,118.1 113.4,118.1 113.2,118.1 112.9,118.1 112.7,118.1 112.5,118.1 112.2,118.1 112.0,118.1 111.7,118.1 111.5,118.1 111.3,118.1 111.0,118.1 110.8,118.1 110.6,118.1 110.3,118.1 110.1,118.1 109.8,118.1 109.6,118.1 109.4,118.1 109.1,118.1 108.9,118.1 108.7,118.1 108.4,118.1 108.2,118.1 108.0,118.1 107.7,118.1 107.5,118.1 107.2,118.1 107.0,118.1 106.8,118.1 106.5,118.1 106.3,118.1 106.1,118.1 105.8,118.1 105.6,118.1 105.4,118.1 105.1,118.1 104.9,118.1 104.6,118.1 104.4,118.1 104.2,118.1 103.9,118.1 103.7,118.1 103.5,118.1 103.2,118.1 103.0,118.1 102.8,118.1 102.5,118.1 102.3,118.1 102.0,118.1 101.8,118.1 101.6,118.1 101.3,118.1 101.1,118.1 100.9,118.1 100.6,118.1 100.4,118.1 100.1,118.1 99.9,118.1 99.7,118.1 99.4,118.1 99.2,118.1 99.0,118.1 98.7,118.1 98.5,118.1 98.3,118.1 98.0,118.1 97.8,118.1 97.5,118.1 97.3,118.1 97.1,118.1 96.8,118.1 96.6,118.1 96.4,118.1 96.1,118.1 95.9,118.1 95.7,118.1 95.4,118.1 95.2,118.1 94.9,118.1 94.7,118.1 94.5,118.1 94.2,118.1 94.0,118.1 93.8,118.1 93.5,118.1 93.3,118.1 93.0,118.1 92.8,118.1 92.6,118.1 92.3,118.1 92.1,118.1 91.9,118.1 91.6,118.1 91.4,118.1 91.2,118.1 90.9,118.1 90.7,118.1 90.4,118.1 90.2,118.1 90.0,118.1 89.7,118.1 89.5,118.1 89.3,118.1 89.0,118.1 88.8,118.1 88.5,118.1 88.3,118.1 88.1,118.1 87.8,118.1" style="fill:var(--muted);opacity:0.28;stroke:none" />
+                    <line x1="4.0" y1="118.1" x2="166.0" y2="118.1" style="stroke:var(--muted);stroke-width:1.2" marker-end="url(#gm52)" />
+                    <line x1="25.4" y1="136.0" x2="25.4" y2="4.0" style="stroke:var(--muted);stroke-width:1.2" marker-end="url(#gm52)" />
+                    <polyline points="52.3,14.7 52.8,16.3 53.2,17.8 53.6,19.3 54.0,20.8 54.4,22.2 54.9,23.5 55.3,24.9 55.7,26.1 56.1,27.4 56.5,28.6 57.0,29.8 57.4,31.0 57.8,32.1 58.2,33.2 58.6,34.3 59.1,35.3 59.5,36.3 59.9,37.3 60.3,38.3 60.7,39.3 61.2,40.2 61.6,41.1 62.0,42.0 62.4,42.8 62.8,43.7 63.3,44.5 63.7,45.3 64.1,46.1 64.5,46.9 64.9,47.6 65.4,48.4 65.8,49.1 66.2,49.8 66.6,50.5 67.0,51.2 67.5,51.8 67.9,52.5 68.3,53.1 68.7,53.8 69.1,54.4 69.6,55.0 70.0,55.6 70.4,56.2 70.8,56.7 71.2,57.3 71.7,57.9 72.1,58.4 72.5,58.9 72.9,59.5 73.3,60.0 73.8,60.5 74.2,61.0 74.6,61.5 75.0,61.9 75.4,62.4 75.9,62.9 76.3,63.3 76.7,63.8 77.1,64.2 77.5,64.7 78.0,65.1 78.4,65.5 78.8,65.9 79.2,66.3 79.6,66.7 80.1,67.1 80.5,67.5 80.9,67.9 81.3,68.3 81.7,68.6 82.2,69.0 82.6,69.4 83.0,69.7 83.4,70.1 83.8,70.4 84.3,70.8 84.7,71.1 85.1,71.4 85.5,71.7 85.9,72.1 86.4,72.4 86.8,72.7 87.2,73.0 87.6,73.3 88.0,73.6 88.5,73.9 88.9,74.2 89.3,74.5 89.7,74.8 90.1,75.1 90.6,75.3 91.0,75.6 91.4,75.9 91.8,76.1 92.2,76.4 92.7,76.7 93.1,76.9 93.5,77.2 93.9,77.4 94.3,77.7 94.8,77.9 95.2,78.2 95.6,78.4 96.0,78.6 96.4,78.9 96.9,79.1 97.3,79.3 97.7,79.6 98.1,79.8 98.5,80.0 99.0,80.2 99.4,80.4 99.8,80.6 100.2,80.9 100.6,81.1 101.1,81.3 101.5,81.5 101.9,81.7 102.3,81.9 102.7,82.1 103.2,82.3 103.6,82.5 104.0,82.7 104.4,82.8 104.9,83.0 105.3,83.2 105.7,83.4 106.1,83.6 106.5,83.8 107.0,83.9 107.4,84.1 107.8,84.3 108.2,84.5 108.6,84.6 109.1,84.8 109.5,85.0 109.9,85.1 110.3,85.3 110.7,85.4 111.2,85.6 111.6,85.8 112.0,85.9 112.4,86.1 112.8,86.2 113.3,86.4 113.7,86.5 114.1,86.7 114.5,86.8 114.9,87.0 115.4,87.1 115.8,87.3 116.2,87.4 116.6,87.6 117.0,87.7 117.5,87.8 117.9,88.0 118.3,88.1 118.7,88.2 119.1,88.4 119.6,88.5 120.0,88.6 120.4,88.8 120.8,88.9 121.2,89.0 121.7,89.2 122.1,89.3 122.5,89.4 122.9,89.5 123.3,89.7 123.8,89.8 124.2,89.9 124.6,90.0 125.0,90.1 125.4,90.2 125.9,90.4 126.3,90.5 126.7,90.6 127.1,90.7 127.5,90.8 128.0,90.9 128.4,91.0 128.8,91.2 129.2,91.3 129.6,91.4 130.1,91.5 130.5,91.6 130.9,91.7 131.3,91.8 131.7,91.9 132.2,92.0 132.6,92.1 133.0,92.2 133.4,92.3 133.8,92.4 134.3,92.5 134.7,92.6 135.1,92.7 135.5,92.8 135.9,92.9 136.4,93.0 136.8,93.1 137.2,93.2 137.6,93.3 138.0,93.4 138.5,93.5 138.9,93.6 139.3,93.6 139.7,93.7 140.1,93.8 140.6,93.9 141.0,94.0 141.4,94.1 141.8,94.2 142.2,94.3 142.7,94.3 143.1,94.4 143.5,94.5 143.9,94.6 144.3,94.7 144.8,94.8 145.2,94.8 145.6,94.9 146.0,95.0 146.4,95.1 146.9,95.2 147.3,95.2 147.7,95.3 148.1,95.4 148.5,95.5 149.0,95.6 149.4,95.6 149.8,95.7 150.2,95.8 150.6,95.9 151.1,95.9 151.5,96.0 151.9,96.1 152.3,96.2 152.7,96.2 153.2,96.3" style="fill:none;stroke:var(--accent);stroke-width:1.8" />
+                    <polyline points="59.4,118.1 87.8,73.5 116.2,118.1" style="fill:none;stroke:var(--text);stroke-width:1.3" />
+                    <line x1="25.4" y1="73.5" x2="87.8" y2="73.5" style="stroke:var(--muted);stroke-width:1;stroke-dasharray:3 3" />
+                    <line x1="87.8" y1="118.1" x2="87.8" y2="73.5" style="stroke:var(--muted);stroke-width:1;stroke-dasharray:3 3" />
+                    <foreignObject x="154.0" y="98.1" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(x\)</div></foreignObject>
+                    <foreignObject x="29.4" y="0.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(y\)</div></foreignObject>
+                    <foreignObject x="11.4" y="119.1" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(O\)</div></foreignObject>
+                    <foreignObject x="7.4" y="61.5" width="63" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\tfrac{5}{n}\)</div></foreignObject>
+                    <foreignObject x="47.4" y="120.1" width="27" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(n-1\)</div></foreignObject>
+                    <foreignObject x="83.8" y="120.1" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(n\)</div></foreignObject>
+                    <foreignObject x="108.2" y="120.1" width="27" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(n+1\)</div></foreignObject>
+                    <foreignObject x="105.2" y="72.6" width="81" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(y=\tfrac{5}{x}\)</div></foreignObject>
+                    </svg>
+                </figure></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1089</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 05 자연수의 거듭제곱의 합</span></div>
+            <p>\(\displaystyle\sum_{k=1}^7k^2+\sum_{k=2}^7k^2+\sum_{k=3}^7k^2+\cdots+\sum_{k=7}^7k^2\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1090</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 06 \(\Sigma\)를 여러 개 포함한 식</span></div>
+            <p>\(\displaystyle\sum_{m=1}^n\left\{\sum_{l=1}^m\left(\sum_{k=1}^l6\right)\right\}\)을 간단히 하면?</p>
+            <div class="choices wide"><span>① \(n(n+1)(n+2)\)</span><span>② \(n(n+1)(n+3)\)</span><span>③ \(n(n+1)(2n+1)\)</span><span>④ \(n(n+2)(2n+1)\)</span><span>⑤ \(n(n+1)(2n+3)\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1091</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 06 \(\Sigma\)를 여러 개 포함한 식</span></div>
+            <p>\(\displaystyle\sum_{n=1}^5\left(\sum_{m=1}^nmn\right)\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1092</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 06 \(\Sigma\)를 여러 개 포함한 식</span></div>
+            <p>\(\displaystyle\sum_{k=1}^n\left\{\sum_{i=1}^k(i+k)\right\}=50\)을 만족시키는 자연수 \(n\)의 값은?</p>
+            <div class="choices"><span>① 3</span><span>② 4</span><span>③ 5</span><span>④ 6</span><span>⑤ 7</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1093</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 06 \(\Sigma\)를 여러 개 포함한 식</span></div>
+            <p>\(\displaystyle\sum_{n=1}^4\left(\sum_{k=1}^n2^{k+n}\right)\)의 값은?</p>
+            <div class="choices"><span>① 620</span><span>② 660</span><span>③ 700</span><span>④ 740</span><span>⑤ 780</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1094</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 07 \(\Sigma\)를 이용한 여러 가지 수열의 합</span></div>
+            <p>수열의 합 \(1\cdot3+2\cdot5+3\cdot7+\cdots+12\cdot25\)의 값은?</p>
+            <div class="choices"><span>① 1300</span><span>② 1378</span><span>③ 1456</span><span>④ 1950</span><span>⑤ 2028</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1095</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 07 \(\Sigma\)를 이용한 여러 가지 수열의 합</span></div>
+            <p>수열 \(\{a_n\}\)의 일반항이 \(a_n=3n-2\)일 때, \(\displaystyle\sum_{k=1}^{2n}a_{2k}\)를 \(n\)에 대한 식으로 나타내면?</p>
+            <div class="choices"><span>① \(6n^2+n\)</span><span>② \(6n^2+2n\)</span><span>③ \(12n^2+n\)</span><span>④ \(12n^2+2n\)</span><span>⑤ \(12n^2+4n\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1096</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 07 \(\Sigma\)를 이용한 여러 가지 수열의 합</span></div>
+            <p>수열 \(2\cdot2^2,\ 4\cdot3^2,\ 6\cdot4^2,\ \cdots\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)이 \(S_n=\dfrac{n(n+1)}{6}f(n)\)일 때, \(f(5)\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1097</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 07 \(\Sigma\)를 이용한 여러 가지 수열의 합</span></div>
+            <p>첫째항이 \(-2\), 공차가 \(-3\)인 등차수열 \(\{a_n\}\)과 첫째항이 4, 공차가 2인 등차수열 \(\{b_n\}\)에 대하여 \(\displaystyle\sum_{k=1}^{10}a_kb_k\)의 값은?</p>
+            <div class="choices"><span>① \(-2010\)</span><span>② \(-2210\)</span><span>③ \(-2510\)</span><span>④ \(-2810\)</span><span>⑤ \(-3010\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1098</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 07 \(\Sigma\)를 이용한 여러 가지 수열의 합</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(1,\ 2+4,\ 3+6+9,\ 4+8+12+16,\ \cdots\)<br>일 때, \(\displaystyle\sum_{k=1}^{10}a_k\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1099</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 07 \(\Sigma\)를 이용한 여러 가지 수열의 합</span></div>
+            <p>다음 그림과 같은 모양으로 3층 탑을 쌓는 데 필요한 크기가 같은 정육면체의 개수는 10이다. 같은 방법으로 7층 탑을 쌓는 데 필요한 정육면체의 개수를 구하시오.</p>
+            <div class="graph-row"><figure class="graph">
+<svg viewBox="0 0 120 110" style="max-width:120px"><polygon points="8,70 24,61 40,70 24,79" style="fill:#e7a9a9;stroke:#8a4b4b;stroke-width:1" /><polygon points="8,70 24,79 24,97 8,88" style="fill:#d48b8b;stroke:#8a4b4b;stroke-width:1" /><polygon points="24,79 40,70 40,88 24,97" style="fill:#c27474;stroke:#8a4b4b;stroke-width:1" /><polygon points="40,70 56,61 72,70 56,79" style="fill:#e7a9a9;stroke:#8a4b4b;stroke-width:1" /><polygon points="40,70 56,79 56,97 40,88" style="fill:#d48b8b;stroke:#8a4b4b;stroke-width:1" /><polygon points="56,79 72,70 72,88 56,97" style="fill:#c27474;stroke:#8a4b4b;stroke-width:1" /><polygon points="72,70 88,61 104,70 88,79" style="fill:#e7a9a9;stroke:#8a4b4b;stroke-width:1" /><polygon points="72,70 88,79 88,97 72,88" style="fill:#d48b8b;stroke:#8a4b4b;stroke-width:1" /><polygon points="88,79 104,70 104,88 88,97" style="fill:#c27474;stroke:#8a4b4b;stroke-width:1" /><polygon points="24,43 40,34 56,43 40,52" style="fill:#e7a9a9;stroke:#8a4b4b;stroke-width:1" /><polygon points="24,43 40,52 40,70 24,61" style="fill:#d48b8b;stroke:#8a4b4b;stroke-width:1" /><polygon points="40,52 56,43 56,61 40,70" style="fill:#c27474;stroke:#8a4b4b;stroke-width:1" /><polygon points="56,43 72,34 88,43 72,52" style="fill:#e7a9a9;stroke:#8a4b4b;stroke-width:1" /><polygon points="56,43 72,52 72,70 56,61" style="fill:#d48b8b;stroke:#8a4b4b;stroke-width:1" /><polygon points="72,52 88,43 88,61 72,70" style="fill:#c27474;stroke:#8a4b4b;stroke-width:1" /><polygon points="40,16 56,7 72,16 56,25" style="fill:#e7a9a9;stroke:#8a4b4b;stroke-width:1" /><polygon points="40,16 56,25 56,43 40,34" style="fill:#d48b8b;stroke:#8a4b4b;stroke-width:1" /><polygon points="56,25 72,16 72,34 56,43" style="fill:#c27474;stroke:#8a4b4b;stroke-width:1" /></svg>
+</figure></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1100</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 08 \(\Sigma\)로 표현된 수열의 합과 일반항</span></div>
+            <p>수열 \(\{a_n\}\)에 대하여 \(\displaystyle\sum_{k=1}^na_k=n^2+n\)일 때, \(\displaystyle\sum_{k=1}^{10}a_{2k-1}\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1101</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 08 \(\Sigma\)로 표현된 수열의 합과 일반항</span></div>
+            <p>수열 \(\{a_n\}\)에 대하여 \(\displaystyle\sum_{k=1}^na_k=3\cdot4^n-3\)일 때, \(\displaystyle\sum_{k=1}^{15}\dfrac{1}{a_k}\)의 값은?</p>
+            <div class="choices wide"><span>① \(\dfrac{4}{27}\left\{1-\left(\dfrac{1}{4}\right)^{14}\right\}\)</span><span>② \(\dfrac{4}{9}\left\{1-\left(\dfrac{1}{4}\right)^{14}\right\}\)</span><span>③ \(\dfrac{4}{27}\left\{1-\left(\dfrac{1}{4}\right)^{15}\right\}\)</span><span>④ \(\dfrac{4}{9}\left\{1-\left(\dfrac{1}{4}\right)^{15}\right\}\)</span><span>⑤ \(\dfrac{4}{3}\left\{1-\left(\dfrac{1}{4}\right)^{16}\right\}\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1102</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 08 \(\Sigma\)로 표현된 수열의 합과 일반항</span></div>
+            <p>수열 \(\{a_n\}\)에 대하여 \(\displaystyle\sum_{k=1}^na_k=n^2-2n\)일 때, \(\displaystyle\sum_{n=1}^52^{a_n}\)의 값을 \(S\)라 하자. 이때 \(2S\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1103</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 08 \(\Sigma\)로 표현된 수열의 합과 일반항</span></div>
+            <p>수열 \(\{a_n\}\)에 대하여 \(\displaystyle\sum_{k=1}^nka_k=n(n+1)(n+2)\)일 때,<br>\(\displaystyle\sum_{k=1}^{20}a_k\)의 값은?</p>
+            <div class="choices"><span>① 230</span><span>② 345</span><span>③ 460</span><span>④ 575</span><span>⑤ 690</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1104</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 09 일반항이 \(k,\ n\)에 대한 식인 수열의 합</span></div>
+            <p>다음을 계산하시오.</p><div class="box">\(1\cdot n+2\cdot(n-1)+3\cdot(n-2)+\cdots+(n-1)\cdot2+n\cdot1\)</div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1105</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 09 일반항이 \(k,\ n\)에 대한 식인 수열의 합</span></div>
+            <p>다음을 계산하시오.</p><div class="box">\(\left(\dfrac{n+1}{n}\right)^2+\left(\dfrac{n+2}{n}\right)^2+\left(\dfrac{n+3}{n}\right)^2+\cdots+\left(\dfrac{2n}{n}\right)^2\)</div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1106</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 09 일반항이 \(k,\ n\)에 대한 식인 수열의 합</span></div>
+            <p>자연수 \(n\)에 대하여 등식<br>&nbsp;&nbsp;&nbsp;&nbsp;\(1\cdot(2n-1)+2\cdot(2n-3)+3\cdot(2n-5)+\cdots+n\cdot1\)<br>&nbsp;&nbsp;&nbsp;&nbsp;\(=\dfrac{n(n+1)(an+b)}{6}\)<br>가 성립할 때, \(a+2b\)의 값을 구하시오. (단, \(a,\ b\)는 자연수이다.)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1107</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 10 로그가 포함된 수열의 합</span></div>
+            <p>첫째항이 3이고 공비가 9인 등비수열 \(\{a_n\}\)에 대하여<br>\(\displaystyle\sum_{k=1}^{10}\log_3a_k\)의 값은?</p>
+            <div class="choices"><span>① 90</span><span>② 95</span><span>③ 100</span><span>④ 105</span><span>⑤ 110</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1108</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 10 로그가 포함된 수열의 합</span></div>
+            <p>수열 \(\{a_n\}\)에 대하여 \(a_{2n-1}=2^n\)이고 \(a_{2n}=5^n\)일 때,<br>\(\displaystyle\sum_{n=1}^{10}\log a_n\)의 값은?</p>
+            <div class="choices"><span>① 10</span><span>② 15</span><span>③ 20</span><span>④ 25</span><span>⑤ 30</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1109</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 10 로그가 포함된 수열의 합</span></div>
+            <p>\(\displaystyle\sum_{k=2}^n\log\left(1-\dfrac{1}{k^2}\right)=\log51-2\)일 때, 자연수 \(n\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1110</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 10 로그가 포함된 수열의 합</span></div>
+            <p>수열 \(\{a_n\}\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\(\displaystyle\sum_{k=1}^na_k=\log\dfrac{(n+1)(n+2)}{2}\)<br>이다. \(\displaystyle\sum_{k=1}^{20}a_{2k}=p\)라 할 때, \(10^p\)의 값은?</p>
+            <div class="choices"><span>① 20</span><span>② 21</span><span>③ 22</span><span>④ 23</span><span>⑤ 24</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1111</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 11 분수 꼴인 수열의 합</span></div>
+            <p>수열의 합<br>&nbsp;&nbsp;&nbsp;&nbsp;\(\dfrac{1}{3^2-1}+\dfrac{1}{5^2-1}+\dfrac{1}{7^2-1}+\cdots+\dfrac{1}{25^2-1}\)<br>의 값이 \(\dfrac{q}{p}\)일 때, \(p+q\)의 값을 구하시오. (단, \(p\)와 \(q\)는 서로소인 자연수이다.)</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1112</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 11 분수 꼴인 수열의 합</span></div>
+            <p>수열 \(\{a_n\}\)에 대하여 \(a_n={}_{n+1}\mathrm{C}_{n-1}\)일 때, \(\displaystyle\sum_{n=1}^{14}\dfrac{5}{a_n}\)의 값은?</p>
+            <div class="choices"><span>① \(8\)</span><span>② \(\dfrac{25}{3}\)</span><span>③ \(\dfrac{26}{3}\)</span><span>④ \(9\)</span><span>⑤ \(\dfrac{28}{3}\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1113</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 11 분수 꼴인 수열의 합</span></div>
+            <p>수열 \(\{a_n\}\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_n=\dfrac{1}{2}\displaystyle\sum_{k=1}^n\dfrac{2k+1}{1^2+2^2+3^2+\cdots+k^2}\)<br>이다. \(a_m=\dfrac{120}{41}\)일 때, 자연수 \(m\)의 값은?</p>
+            <div class="choices"><span>① 38</span><span>② 39</span><span>③ 40</span><span>④ 41</span><span>⑤ 42</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1114</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 11 분수 꼴인 수열의 합</span></div>
+            <p>수열 \(\{a_n\}\)에 대하여 \(a_n=\dfrac{n^3+n^2+3}{n^2+n}\)일 때, \(\displaystyle\sum_{k=1}^{10}a_k\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1115</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 11 분수 꼴인 수열의 합</span></div>
+            <p>자연수 전체의 집합을 정의역으로 하는 두 함수 \(f,\ g\)를 각각<br>&nbsp;&nbsp;&nbsp;&nbsp;\(f(n)=n+1,\ g(n)=(2n-1)(2n+1)\)<br>로 정의할 때, \(\displaystyle\sum_{n=1}^{15}\dfrac{12}{(g\circ f)(n)}\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1116</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 11 분수 꼴인 수열의 합</span></div>
+            <p>자연수 \(n\)에 대하여 \(f(n)=\dfrac{1}{n+\sqrt{4n}}\)일 때,<br>&nbsp;&nbsp;&nbsp;&nbsp;\(f(1)+f(4)+f(9)+\cdots+f(64)\)<br>의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1117</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 12 근호가 포함된 수열의 합</span></div>
+            <p>수열의 합<br>&nbsp;&nbsp;&nbsp;&nbsp;\(\dfrac{1}{\sqrt{2}+\sqrt{3}}+\dfrac{1}{\sqrt{3}+\sqrt{4}}+\dfrac{1}{\sqrt{4}+\sqrt{5}}+\cdots+\dfrac{1}{\sqrt{48}+\sqrt{49}}\)<br>의 값은?</p>
+            <div class="choices"><span>① \(6-\sqrt{2}\)</span><span>② \(7-\sqrt{2}\)</span><span>③ \(6\)</span><span>④ \(7\)</span><span>⑤ \(7+\sqrt{2}\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1118</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 12 근호가 포함된 수열의 합</span></div>
+            <p>첫째항이 9이고 공차가 2인 등차수열 \(\{a_n\}\)에 대하여<br>\(\displaystyle\sum_{k=1}^{20}\dfrac{1}{\sqrt{a_{k+1}}+\sqrt{a_k}}\)의 값은?</p>
+            <div class="choices"><span>① 1</span><span>② 2</span><span>③ 3</span><span>④ 4</span><span>⑤ 5</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1119</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 12 근호가 포함된 수열의 합</span></div>
+            <p>수열 \(\{a_n\}\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=\sqrt{3}+1,\ a_2=\sqrt{4}+\sqrt{2},\ a_3=\sqrt{5}+\sqrt{3},\ \cdots\)<br>일 때, \(\displaystyle\sum_{k=1}^n\dfrac{2}{a_k}=2+\sqrt{2}\)를 만족시키는 자연수 \(n\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1120</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 12 근호가 포함된 수열의 합</span></div>
+            <p>다음 그림과 같이 두 곡선 \(y=\sqrt{x+1},\ y=-\sqrt{x}\)가 직선 \(x=k\)와 만나는 점을 각각 \(\mathrm{P}_k,\ \mathrm{Q}_k\)라 할 때, \(\displaystyle\sum_{k=1}^{48}\dfrac{1}{\overline{\mathrm{P}_k\mathrm{Q}_k}}\)의 값을 구하시오.</p>
+            <div class="graph-row">                    <figure class="graph">
+                    <svg viewBox="0 0 190 140" style="max-width:190px">
+                    <defs><marker id="gm53" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" style="fill:var(--muted)" /></marker></defs>
+                    <line x1="4.0" y1="69.0" x2="186.0" y2="69.0" style="stroke:var(--muted);stroke-width:1.2" marker-end="url(#gm53)" />
+                    <line x1="55.8" y1="136.0" x2="55.8" y2="4.0" style="stroke:var(--muted);stroke-width:1.2" marker-end="url(#gm53)" />
+                    <polyline points="29.7,69.0 30.3,65.7 30.9,64.3 31.4,63.3 32.0,62.4 32.6,61.6 33.2,60.9 33.8,60.3 34.4,59.7 35.0,59.1 35.6,58.6 36.1,58.1 36.7,57.6 37.3,57.1 37.9,56.7 38.5,56.3 39.1,55.8 39.7,55.4 40.3,55.0 40.8,54.7 41.4,54.3 42.0,53.9 42.6,53.6 43.2,53.2 43.8,52.9 44.4,52.6 45.0,52.2 45.6,51.9 46.1,51.6 46.7,51.3 47.3,51.0 47.9,50.7 48.5,50.4 49.1,50.1 49.7,49.8 50.3,49.5 50.8,49.3 51.4,49.0 52.0,48.7 52.6,48.5 53.2,48.2 53.8,47.9 54.4,47.7 55.0,47.4 55.5,47.2 56.1,46.9 56.7,46.7 57.3,46.5 57.9,46.2 58.5,46.0 59.1,45.7 59.7,45.5 60.2,45.3 60.8,45.1 61.4,44.8 62.0,44.6 62.6,44.4 63.2,44.2 63.8,44.0 64.4,43.7 65.0,43.5 65.5,43.3 66.1,43.1 66.7,42.9 67.3,42.7 67.9,42.5 68.5,42.3 69.1,42.1 69.7,41.9 70.2,41.7 70.8,41.5 71.4,41.3 72.0,41.1 72.6,40.9 73.2,40.7 73.8,40.5 74.4,40.3 74.9,40.1 75.5,40.0 76.1,39.8 76.7,39.6 77.3,39.4 77.9,39.2 78.5,39.0 79.1,38.9 79.6,38.7 80.2,38.5 80.8,38.3 81.4,38.2 82.0,38.0 82.6,37.8 83.2,37.6 83.8,37.5 84.4,37.3 84.9,37.1 85.5,36.9 86.1,36.8 86.7,36.6 87.3,36.4 87.9,36.3 88.5,36.1 89.1,36.0 89.6,35.8 90.2,35.6 90.8,35.5 91.4,35.3 92.0,35.1 92.6,35.0 93.2,34.8 93.8,34.7 94.3,34.5 94.9,34.4 95.5,34.2 96.1,34.0 96.7,33.9 97.3,33.7 97.9,33.6 98.5,33.4 99.1,33.3 99.6,33.1 100.2,33.0 100.8,32.8 101.4,32.7 102.0,32.5 102.6,32.4 103.2,32.2 103.8,32.1 104.3,31.9 104.9,31.8 105.5,31.7 106.1,31.5 106.7,31.4 107.3,31.2 107.9,31.1 108.5,30.9 109.0,30.8 109.6,30.7 110.2,30.5 110.8,30.4 111.4,30.2 112.0,30.1 112.6,30.0 113.2,29.8 113.7,29.7 114.3,29.5 114.9,29.4 115.5,29.3 116.1,29.1 116.7,29.0 117.3,28.9 117.9,28.7 118.5,28.6 119.0,28.5 119.6,28.3 120.2,28.2 120.8,28.1 121.4,27.9 122.0,27.8 122.6,27.7 123.2,27.5 123.7,27.4 124.3,27.3 124.9,27.1 125.5,27.0 126.1,26.9 126.7,26.8 127.3,26.6 127.9,26.5 128.4,26.4 129.0,26.3 129.6,26.1 130.2,26.0 130.8,25.9 131.4,25.7 132.0,25.6 132.6,25.5 133.1,25.4 133.7,25.2 134.3,25.1 134.9,25.0 135.5,24.9 136.1,24.8 136.7,24.6 137.3,24.5 137.9,24.4 138.4,24.3 139.0,24.2 139.6,24.0 140.2,23.9 140.8,23.8 141.4,23.7 142.0,23.6 142.6,23.4 143.1,23.3 143.7,23.2 144.3,23.1 144.9,23.0 145.5,22.8 146.1,22.7 146.7,22.6 147.3,22.5 147.8,22.4 148.4,22.3 149.0,22.1 149.6,22.0 150.2,21.9 150.8,21.8 151.4,21.7 152.0,21.6 152.5,21.5 153.1,21.3 153.7,21.2 154.3,21.1 154.9,21.0 155.5,20.9 156.1,20.8 156.7,20.7 157.3,20.6 157.8,20.4 158.4,20.3 159.0,20.2 159.6,20.1 160.2,20.0 160.8,19.9 161.4,19.8 162.0,19.7 162.5,19.6 163.1,19.5 163.7,19.3 164.3,19.2 164.9,19.1 165.5,19.0 166.1,18.9 166.7,18.8 167.2,18.7 167.8,18.6 168.4,18.5 169.0,18.4 169.6,18.3 170.2,18.2 170.8,18.1" style="fill:none;stroke:var(--accent);stroke-width:1.8" />
+                    <polyline points="55.8,69.0 56.3,72.0 56.8,73.2 57.2,74.1 57.7,74.9 58.2,75.6 58.7,76.3 59.2,76.9 59.6,77.4 60.1,77.9 60.6,78.4 61.1,78.8 61.6,79.3 62.0,79.7 62.5,80.1 63.0,80.5 63.5,80.9 64.0,81.2 64.4,81.6 64.9,81.9 65.4,82.3 65.9,82.6 66.3,82.9 66.8,83.2 67.3,83.5 67.8,83.8 68.3,84.1 68.7,84.4 69.2,84.7 69.7,85.0 70.2,85.3 70.7,85.5 71.1,85.8 71.6,86.1 72.1,86.3 72.6,86.6 73.1,86.8 73.5,87.1 74.0,87.3 74.5,87.5 75.0,87.8 75.4,88.0 75.9,88.2 76.4,88.5 76.9,88.7 77.4,88.9 77.8,89.1 78.3,89.4 78.8,89.6 79.3,89.8 79.8,90.0 80.2,90.2 80.7,90.4 81.2,90.6 81.7,90.8 82.2,91.0 82.6,91.2 83.1,91.4 83.6,91.6 84.1,91.8 84.5,92.0 85.0,92.2 85.5,92.4 86.0,92.6 86.5,92.7 86.9,92.9 87.4,93.1 87.9,93.3 88.4,93.5 88.9,93.7 89.3,93.8 89.8,94.0 90.3,94.2 90.8,94.4 91.3,94.5 91.7,94.7 92.2,94.9 92.7,95.0 93.2,95.2 93.7,95.4 94.1,95.6 94.6,95.7 95.1,95.9 95.6,96.0 96.0,96.2 96.5,96.4 97.0,96.5 97.5,96.7 98.0,96.8 98.4,97.0 98.9,97.2 99.4,97.3 99.9,97.5 100.4,97.6 100.8,97.8 101.3,97.9 101.8,98.1 102.3,98.2 102.8,98.4 103.2,98.5 103.7,98.7 104.2,98.8 104.7,99.0 105.1,99.1 105.6,99.3 106.1,99.4 106.6,99.6 107.1,99.7 107.5,99.8 108.0,100.0 108.5,100.1 109.0,100.3 109.5,100.4 109.9,100.6 110.4,100.7 110.9,100.8 111.4,101.0 111.9,101.1 112.3,101.2 112.8,101.4 113.3,101.5 113.8,101.7 114.2,101.8 114.7,101.9 115.2,102.1 115.7,102.2 116.2,102.3 116.6,102.5 117.1,102.6 117.6,102.7 118.1,102.8 118.6,103.0 119.0,103.1 119.5,103.2 120.0,103.4 120.5,103.5 121.0,103.6 121.4,103.7 121.9,103.9 122.4,104.0 122.9,104.1 123.4,104.2 123.8,104.4 124.3,104.5 124.8,104.6 125.3,104.7 125.7,104.9 126.2,105.0 126.7,105.1 127.2,105.2 127.7,105.4 128.1,105.5 128.6,105.6 129.1,105.7 129.6,105.8 130.1,106.0 130.5,106.1 131.0,106.2 131.5,106.3 132.0,106.4 132.5,106.5 132.9,106.7 133.4,106.8 133.9,106.9 134.4,107.0 134.8,107.1 135.3,107.2 135.8,107.4 136.3,107.5 136.8,107.6 137.2,107.7 137.7,107.8 138.2,107.9 138.7,108.0 139.2,108.2 139.6,108.3 140.1,108.4 140.6,108.5 141.1,108.6 141.6,108.7 142.0,108.8 142.5,108.9 143.0,109.0 143.5,109.2 143.9,109.3 144.4,109.4 144.9,109.5 145.4,109.6 145.9,109.7 146.3,109.8 146.8,109.9 147.3,110.0 147.8,110.1 148.3,110.2 148.7,110.3 149.2,110.5 149.7,110.6 150.2,110.7 150.7,110.8 151.1,110.9 151.6,111.0 152.1,111.1 152.6,111.2 153.1,111.3 153.5,111.4 154.0,111.5 154.5,111.6 155.0,111.7 155.4,111.8 155.9,111.9 156.4,112.0 156.9,112.1 157.4,112.2 157.8,112.3 158.3,112.4 158.8,112.5 159.3,112.6 159.8,112.7 160.2,112.8 160.7,112.9 161.2,113.0 161.7,113.1 162.2,113.2 162.6,113.3 163.1,113.4 163.6,113.5 164.1,113.6 164.5,113.7 165.0,113.8 165.5,113.9 166.0,114.0 166.5,114.1 166.9,114.2 167.4,114.3 167.9,114.4 168.4,114.5 168.9,114.6 169.3,114.7 169.8,114.8 170.3,114.9 170.8,115.0" style="fill:none;stroke:var(--text);stroke-width:1.3" />
+                    <polyline points="113.3,121.6 113.3,16.4" style="fill:none;stroke:var(--accent);stroke-width:1.4;stroke-dasharray:5 4" />
+                    <circle cx="113.3" cy="29.8" r="3" style="fill:var(--text)" />
+                    <circle cx="113.3" cy="101.5" r="3" style="fill:var(--text)" />
+                    <foreignObject x="174.0" y="49.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(x\)</div></foreignObject>
+                    <foreignObject x="59.8" y="0.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(y\)</div></foreignObject>
+                    <foreignObject x="41.8" y="70.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(O\)</div></foreignObject>
+                    <foreignObject x="15.7" y="51.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(-1\)</div></foreignObject>
+                    <foreignObject x="93.3" y="13.8" width="81" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{P}_k\)</div></foreignObject>
+                    <foreignObject x="93.3" y="95.5" width="81" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\mathrm{Q}_k\)</div></foreignObject>
+                    <foreignObject x="117.3" y="51.0" width="18" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(k\)</div></foreignObject>
+                    <foreignObject x="101.3" y="123.6" width="27" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(x=k\)</div></foreignObject>
+                    <foreignObject x="125.2" y="8.8" width="81" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(y=\sqrt{x+1}\)</div></foreignObject>
+                    <foreignObject x="132.4" y="114.7" width="72" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(y=-\sqrt{x}\)</div></foreignObject>
+                    </svg>
+                </figure></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1121</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 13 수열의 항을 묶어 규칙 찾기 (1)</span></div>
+            <p>수열<br>&nbsp;&nbsp;&nbsp;&nbsp;\(1,\ -2,\ -1,\ 3,\ 2,\ 1,\ -4,\ -3,\ -2,\ -1,\)<br>&nbsp;&nbsp;&nbsp;&nbsp;\(5,\ 4,\ 3,\ 2,\ 1,\ \cdots\)<br>에서 처음으로 나타나는 20은 제몇 항인가?</p>
+            <div class="choices"><span>① 제210항</span><span>② 제212항</span><span>③ 제215항</span><span>④ 제218항</span><span>⑤ 제220항</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1122</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 13 수열의 항을 묶어 규칙 찾기 (1)</span></div>
+            <p>1이 두 번만 나타나고 나머지 자리의 숫자는 모두 0인 수를 작은 것부터 차례대로 나열하면 다음과 같다.<br>&nbsp;&nbsp;&nbsp;&nbsp;\(11,\ 101,\ 110,\ 1001,\ 1010,\ 1100,\ \cdots\)<br>이 수열에서 10010000은 제몇 항인지 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1123</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 13 수열의 항을 묶어 규칙 찾기 (1)</span></div>
+            <p>다음 수열에서 제64항을 구하시오.</p><div class="box">\(\dfrac{1}{2},\ \dfrac{1}{3},\ \dfrac{2}{3},\ \dfrac{1}{4},\ \dfrac{2}{4},\ \dfrac{3}{4},\ \dfrac{1}{5},\ \dfrac{2}{5},\ \dfrac{3}{5},\ \dfrac{4}{5},\ \cdots\)</div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1124</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 13 수열의 항을 묶어 규칙 찾기 (1)</span></div>
+            <p>다음과 같이 순서쌍으로 이루어진 수열에서 \((10,\ 11)\)은 제몇 항인가?</p><div class="box">\((1,\ 1),\ (1,\ 2),\ (2,\ 1),\ (1,\ 3),\ (2,\ 2),\ (3,\ 1),\)<br>\((1,\ 4),\ (2,\ 3),\ (3,\ 2),\ (4,\ 1),\ \cdots\)</div>
+            <div class="choices"><span>① 제180항</span><span>② 제190항</span><span>③ 제200항</span><span>④ 제210항</span><span>⑤ 제220항</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1125</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 14 수열의 항을 묶어 규칙 찾기 (2)</span></div>
+            <p>다음과 같이 자연수가 나열되어 있을 때, 위에서 첫 번째 줄부터 10번째 줄까지 나열된 모든 수의 합을 구하시오.</p>
+            <div class="box" style="text-align:center;line-height:1.9;font-family:serif">1<br>2&nbsp;&nbsp;&nbsp;&nbsp;4<br>3&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;9<br>4&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;12&nbsp;&nbsp;&nbsp;&nbsp;16<br>5&nbsp;&nbsp;&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;15&nbsp;&nbsp;&nbsp;&nbsp;20&nbsp;&nbsp;&nbsp;&nbsp;25<br>⋮</div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1126</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 14 수열의 항을 묶어 규칙 찾기 (2)</span></div>
+            <p>가로줄의 개수와 세로줄의 개수가 같은 정사각형 모양의 표에 다음과 같이 자연수를 규칙적으로 배열하였다. 이때 자연수 \(a,\ b,\ c\)에 대하여 \(b-a+c\)의 값은?</p>
+            <div class="graph-row"><table style="border-collapse:collapse"><tr><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">1</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">2</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">3</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">4</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">5</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">⋯</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td></tr><tr><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">2</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">4</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">6</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">8</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">10</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td></tr><tr><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">3</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">6</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">9</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">12</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">15</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td></tr><tr><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">4</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">8</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">12</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">16</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">20</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td></tr><tr><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">5</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">10</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">15</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">20</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">25</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td></tr><tr><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">⋮</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">⋱</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td></tr><tr><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">\(a\)</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">\(b\)</td></tr><tr><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap"></td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">\(c\)</td><td style="border:1px solid var(--text);min-width:26px;height:22px;padding:0 2px;text-align:center;font-size:12px;white-space:nowrap">400</td></tr></table></div>
+            <div class="choices"><span>① 395</span><span>② 396</span><span>③ 397</span><span>④ 398</span><span>⑤ 399</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1127</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 14 수열의 항을 묶어 규칙 찾기 (2)</span></div>
+            <p>다음과 같이 2, 4, 6, 8, 10을 나열할 때, 위에서 15번째 줄에 나열된 모든 수의 합을 구하시오.</p>
+            <div class="box" style="text-align:center;line-height:1.9;font-family:serif">2<br>4&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;8<br>10&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;8<br>10&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;2<br>4&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;10<br>⋮</div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1159</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 01 등차수열의 귀납적 정의</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=100,\ a_{n+1}+3=a_n\ (n=1,\ 2,\ 3,\ \cdots)\)<br>과 같이 정의될 때, \(a_k=13\)을 만족시키는 자연수 \(k\)의 값은?</p>
+            <div class="choices"><span>① 28</span><span>② 29</span><span>③ 30</span><span>④ 31</span><span>⑤ 32</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1160</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 01 등차수열의 귀납적 정의</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_{n+2}-a_{n+1}=a_{n+1}-a_n\ (n=1,\ 2,\ 3,\ \cdots)\)<br>과 같이 정의되고 \(a_3=2,\ a_8=17\)일 때, \(a_n>100\)을 만족시키는 자연수 \(n\)의 최솟값은?</p>
+            <div class="choices"><span>① 30</span><span>② 31</span><span>③ 33</span><span>④ 35</span><span>⑤ 36</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1161</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 01 등차수열의 귀납적 정의</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\((a_{n+1}+a_n)^2=4a_na_{n+1}+25\ (n=1,\ 2,\ 3,\ \cdots)\)<br>를 만족시킨다. \(a_1=10\)일 때, \(a_{20}\)의 값을 구하시오. (단, \(a_n&lt;a_{n+1}\))</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1162</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 01 등차수열의 귀납적 정의</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=-62,\ a_2=-58\),<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_{n+2}-2a_{n+1}+a_n=0\ (n=1,\ 2,\ 3,\ \cdots)\)<br>과 같이 정의된다. 수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)의 값이 최소가 되도록 하는 자연수 \(n\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1163</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 02 등비수열의 귀납적 정의</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=2,\ a_n=2a_{n+1}\ (n=1,\ 2,\ 3,\ \cdots)\)<br>과 같이 정의될 때, \(a_{100}=\dfrac{1}{2^k}\)이다. 이때 상수 \(k\)의 값은?</p>
+            <div class="choices"><span>① 98</span><span>② 99</span><span>③ 100</span><span>④ 101</span><span>⑤ 102</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1164</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 02 등비수열의 귀납적 정의</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=1,\ a_4=125,\ a_{n+1}=\sqrt{a_na_{n+2}}\ (n=1,\ 2,\ 3,\ \cdots)\)<br>와 같이 정의될 때, \(\dfrac{a_{10}}{a_6}+\dfrac{a_{11}}{a_7}+\dfrac{a_{12}}{a_8}+\dfrac{a_{13}}{a_9}\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1165</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 02 등비수열의 귀납적 정의</span></div>
+            <p>모든 항이 양수인 수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(\dfrac{a_{n+2}}{a_{n+1}}=\dfrac{a_{n+1}}{a_n}\ (n=1,\ 2,\ 3,\ \cdots)\)<br>과 같이 정의되고 \(a_3=16,\ a_5=64\)일 때, \(\displaystyle\sum_{k=1}^5a_k\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1166</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 02 등비수열의 귀납적 정의</span></div>
+            <p>\(a_1=2,\ a_2=6\)인 수열 \(\{a_n\}\)에 대하여 이차방정식<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_nx^2+2a_{n+1}x+a_{n+2}=0\ (n=1,\ 2,\ 3,\ \cdots)\)<br>이 중근 \(b_n\)을 가질 때, \(\displaystyle\sum_{k=1}^{10}b_k\)의 값은?</p>
+            <div class="choices"><span>① \(-30\)</span><span>② \(-10\)</span><span>③ \(10\)</span><span>④ \(30\)</span><span>⑤ \(60\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1167</span><span class="prob-tag lv">상</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 02 등비수열의 귀납적 정의</span></div>
+            <p>수열 \(\{a_n\}\)이 \(a_1=8^8\)이고<br>&nbsp;&nbsp;&nbsp;&nbsp;\(\log_2a_{n+1}=\log_2a_n-2\ (n=1,\ 2,\ 3,\ \cdots)\)<br>를 만족시킬 때, \(a_k=\dfrac{1}{8^8}\)을 만족시키는 자연수 \(k\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1168</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 03 \(a_{n+1}=a_n+f(n)\) 꼴로 정의된 수열</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=1,\ a_{n+1}=a_n+3n\ (n=1,\ 2,\ 3,\ \cdots)\)<br>과 같이 정의될 때, \(a_{11}\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1169</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 03 \(a_{n+1}=a_n+f(n)\) 꼴로 정의된 수열</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=1,\ a_n-a_{n-1}=2^{n-1}\ (n=2,\ 3,\ 4,\ \cdots)\)<br>과 같이 정의될 때, \(a_k=1023\)을 만족시키는 자연수 \(k\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1170</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 03 \(a_{n+1}=a_n+f(n)\) 꼴로 정의된 수열</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=2,\ a_{n+1}=a_n+f(n)\ (n=1,\ 2,\ 3,\ \cdots)\)<br>과 같이 정의된다. \(\displaystyle\sum_{k=1}^nf(k)=n^2-2\)일 때, \(a_{50}\)의 값은?</p>
+            <div class="choices"><span>① \(49^2\)</span><span>② \(50^2-1\)</span><span>③ \(50^2\)</span><span>④ \(51^2-1\)</span><span>⑤ \(51^2\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1171</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 03 \(a_{n+1}=a_n+f(n)\) 꼴로 정의된 수열</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=2,\ a_{n+1}-a_n=\dfrac{1}{n(n+1)}\ (n=1,\ 2,\ 3,\ \cdots)\)<br>과 같이 정의될 때, \(a_{30}-a_5\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1172</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 04 \(a_{n+1}=a_nf(n)\) 꼴로 정의된 수열</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=3,\ a_{n+1}=3^na_n\ (n=1,\ 2,\ 3,\ \cdots)\)<br>과 같이 정의될 때, \(\log_3a_{10}\)의 값은?</p>
+            <div class="choices"><span>① 40</span><span>② 42</span><span>③ 44</span><span>④ 46</span><span>⑤ 48</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1173</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 04 \(a_{n+1}=a_nf(n)\) 꼴로 정의된 수열</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=1,\ \sqrt{n+1}a_{n+1}=\sqrt{n}a_n\ (n=1,\ 2,\ 3,\ \cdots)\)<br>과 같이 정의될 때, \(a_{49}\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1174</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 04 \(a_{n+1}=a_nf(n)\) 꼴로 정의된 수열</span></div>
+            <p>다음과 같이 정의되는 수열 \(\{a_n\}\)이 있다.</p><div class="box">\(a_1=4,\ a_n=\left(1-\dfrac{1}{n^2}\right)a_{n-1}\ (n=2,\ 3,\ 4,\ \cdots)\)</div><p>이때 \(a_k=\dfrac{21}{10}\)을 만족시키는 자연수 \(k\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1175</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 04 \(a_{n+1}=a_nf(n)\) 꼴로 정의된 수열</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=1,\ a_{n+1}=(n+1)a_n\ (n=1,\ 2,\ 3,\ \cdots)\)<br>과 같이 정의될 때, \(a_1+a_2+a_3+\cdots+a_{1000}\)을 120으로 나누었을 때의 나머지를 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1176</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 05 귀납적으로 정의된 여러 가지 수열</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=1,\ a_{n+1}=-3a_n+2\ (n=1,\ 2,\ 3,\ \cdots)\)<br>와 같이 정의될 때, \(a_6\)의 값은?</p>
+            <div class="choices"><span>① \(-91\)</span><span>② \(-101\)</span><span>③ \(-111\)</span><span>④ \(-121\)</span><span>⑤ \(-131\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1177</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 05 귀납적으로 정의된 여러 가지 수열</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=2,\ a_{n+1}=\begin{cases}a_n+1&(n\text{이 홀수})\\2a_n&(n\text{이 짝수})\end{cases}\ (n=1,\ 2,\ 3,\ \cdots)\)<br>과 같이 정의될 때, \(a_7\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1178</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 05 귀납적으로 정의된 여러 가지 수열</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=1,\ a_{n+1}=\dfrac{a_n}{2a_n+1}\ (n=1,\ 2,\ 3,\ \cdots)\)<br>과 같이 정의될 때, \(a_k=\dfrac{1}{93}\)을 만족시키는 자연수 \(k\)의 값은?</p>
+            <div class="choices"><span>① 46</span><span>② 47</span><span>③ 92</span><span>④ 93</span><span>⑤ 94</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1179</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 05 귀납적으로 정의된 여러 가지 수열</span></div>
+            <p>수열 \(\{a_n\}\)이 다음 조건을 만족시킨다.</p><div class="box">(가) \(1\le n\le5\)인 모든 자연수 \(n\)에 대하여 \(a_n+a_{n+5}=25\)이다.<br>(나) \(n\ge6\)인 모든 자연수 \(n\)에 대하여 \(a_{n+1}-a_n=n\)이다.</div><p>\(\displaystyle\sum_{n=1}^5a_n=35\)일 때, \(a_6\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1180</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 05 귀납적으로 정의된 여러 가지 수열</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=1,\ a_2=1,\ a_{n+2}=a_n+a_{n+1}\ (n=1,\ 2,\ 3,\ \cdots)\)<br>과 같이 정의될 때, \(\displaystyle\sum_{k=1}^8\dfrac{a_k}{a_{k+1}a_{k+2}}\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1181</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 06 같은 수가 반복되는 수열</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=5,\ a_{n+1}=a_n+(-1)^n\ (n=1,\ 2,\ 3,\ \cdots)\)<br>과 같이 정의될 때, \(a_{100}\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1182</span><span class="prob-tag lv">중</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 06 같은 수가 반복되는 수열</span></div>
+            <p>다음 조건을 만족시키는 수열 \(\{a_n\}\)에 대하여 \(a_1=3\)일 때, \(\displaystyle\sum_{k=1}^{30}a_k\)의 값을 구하시오.</p><div class="box">(가) \(a_{n+1}=2a_n-1\ (n=1,\ 2,\ 3)\)<br>(나) 모든 자연수 \(n\)에 대하여 \(a_{n+4}=a_n\)이다.</div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1183</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 06 같은 수가 반복되는 수열</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=3,\ a_2=9,\ a_{n+2}=a_{n+1}-a_n\ (n=1,\ 2,\ 3,\ \cdots)\)<br>과 같이 정의될 때, \(|a_k|=9\)를 만족시키는 80 이하의 자연수 \(k\)의 개수는?</p>
+            <div class="choices"><span>① 13</span><span>② 14</span><span>③ 20</span><span>④ 26</span><span>⑤ 27</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1184</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 06 같은 수가 반복되는 수열</span></div>
+            <p>수열 \(\{a_n\}\)이<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_n+a_{n+1}+a_{n+2}=10\ (n=1,\ 2,\ 3,\ \cdots)\)<br>을 만족시킨다. \(a_7=3,\ a_{12}=5\)일 때, \(a_{101}a_{106}\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1185</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 07 \(a_n\)과 \(S_n\) 사이의 관계식이 주어진 수열</span></div>
+            <p>수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=3,\ S_n=4a_n-9\ (n=1,\ 2,\ 3,\ \cdots)\)<br>가 성립한다. 이때 \(a_{100}\)의 값은?</p>
+            <div class="choices"><span>① \(\dfrac{4^{100}}{3^{100}}\)</span><span>② \(\dfrac{4^{100}}{3^{99}}\)</span><span>③ \(\dfrac{4^{99}}{3^{99}}\)</span><span>④ \(\dfrac{4^{99}}{3^{98}}\)</span><span>⑤ \(\dfrac{4^{98}}{3^{98}}\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1186</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 07 \(a_n\)과 \(S_n\) 사이의 관계식이 주어진 수열</span></div>
+            <p>수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\(S_1=1,\ S_{n+1}=2S_n+3\ (n=1,\ 2,\ 3,\ \cdots)\)<br>이 성립한다. 이때 \(a_6\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1187</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 07 \(a_n\)과 \(S_n\) 사이의 관계식이 주어진 수열</span></div>
+            <p>수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=-1,\ S_n=2a_n+n\ (n=1,\ 2,\ 3,\ \cdots)\)<br>이 성립한다. 이때 \(a_5\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1188</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 07 \(a_n\)과 \(S_n\) 사이의 관계식이 주어진 수열</span></div>
+            <p>수열 \(\{a_n\}\)의 첫째항부터 제\(n\)항까지의 합 \(S_n\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_1=\dfrac{3}{2},\ S_n=\dfrac{a_na_{n+1}}{3}\ (n=1,\ 2,\ 3,\ \cdots)\)<br>이 성립한다. 옳은 것만을 <strong>보기</strong>에서 있는 대로 고른 것은?</p><div class="box">ㄱ. \(a_2=3\)<br>ㄴ. \(a_{n+2}-a_n=4\ (n=1,\ 2,\ 3,\ \cdots)\)<br>ㄷ. 수열 \(\{a_n\}\)은 등차수열이다.</div>
+            <div class="choices"><span>① ㄱ</span><span>② ㄴ</span><span>③ ㄱ, ㄴ</span><span>④ ㄱ, ㄷ</span><span>⑤ ㄱ, ㄴ, ㄷ</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1189</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 08 수열의 귀납적 정의의 도형에의 활용</span></div>
+            <p>평면 위에 어느 두 직선도 평행하지 않고 어느 세 직선도 한 점에서 만나지 않도록 \(n\)개의 직선을 그을 때, 이 직선들에 의하여 분할된 평면의 개수를 \(a_n\)이라 하자. 예를 들어 다음 그림에서 \(a_3=7\)이다. 이때 \(a_6\)의 값은?</p>
+            <div class="graph-row"><figure class="graph">
+<svg viewBox="0 0 110 110" style="max-width:110px"><line x1="30.0" y1="6.0" x2="80.0" y2="104.0" style="stroke:var(--text);stroke-width:1" /><line x1="84.0" y1="6.0" x2="50.0" y2="104.0" style="stroke:var(--text);stroke-width:1" /><line x1="4.0" y1="70.0" x2="106.0" y2="36.0" style="stroke:var(--text);stroke-width:1" /></svg>
+</figure></div>
+            <div class="choices"><span>① 20</span><span>② 21</span><span>③ 22</span><span>④ 23</span><span>⑤ 24</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1190</span><span class="prob-tag lv">하</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 08 수열의 귀납적 정의의 도형에의 활용</span></div>
+            <p>다음 그림과 같이 길이가 81인 끈을 삼등분하여 가운데 부분은 버리고, 다시 남아 있는 2개의 끈도 같은 방법으로 삼등분하여 가운데 부분을 버린다. 이와 같이 끈을 삼등분하여 가운데 부분을 버리는 시행을 \(n\)회 반복한 후 남은 끈의 길이의 합을 \(a_n\)이라 할 때, \(a_8\)의 값을 구하시오.</p>
+            <div class="graph-row"><figure class="graph">
+<svg viewBox="0 0 116 92" style="max-width:116px"><rect x="4.0" y="14" width="108.0" height="8" style="fill:#7ec1e8;stroke:var(--text);stroke-width:0.8" /><foreignObject x="50.0" y="-6.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(81\)</div></foreignObject><rect x="4.0" y="36" width="36.0" height="8" style="fill:#7ec1e8;stroke:var(--text);stroke-width:0.8" /><rect x="76.0" y="36" width="36.0" height="8" style="fill:#7ec1e8;stroke:var(--text);stroke-width:0.8" /><rect x="4.0" y="58" width="12.0" height="8" style="fill:#7ec1e8;stroke:var(--text);stroke-width:0.8" /><rect x="28.0" y="58" width="12.0" height="8" style="fill:#7ec1e8;stroke:var(--text);stroke-width:0.8" /><rect x="76.0" y="58" width="12.0" height="8" style="fill:#7ec1e8;stroke:var(--text);stroke-width:0.8" /><rect x="100.0" y="58" width="12.0" height="8" style="fill:#7ec1e8;stroke:var(--text);stroke-width:0.8" /><foreignObject x="54.0" y="70.0" width="12" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\vdots\)</div></foreignObject></svg>
+</figure></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1191</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 08 수열의 귀납적 정의의 도형에의 활용</span></div>
+            <p>성냥개비를 이용하여 다음 그림과 같이 도형을 만들 때, [\(n\)단계]의 도형을 만드는 데 필요한 성냥개비의 개수를 \(a_n\)이라 하자. 이때 \(a_n\)과 \(a_{n+1}\) 사이의 관계식을 구하시오.</p>
+            <div class="graph-row"><figure class="graph">
+<svg viewBox="0 0 236 114" style="max-width:236px"><line x1="6" y1="92" x2="24" y2="92" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="24" y1="74" x2="24" y2="92" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="6" y1="74" x2="6" y2="92" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="6" y1="74" x2="24" y2="74" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="80" y1="38" x2="80" y2="56" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="62" y1="38" x2="62" y2="56" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="62" y1="56" x2="80" y2="56" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="62" y1="38" x2="80" y2="38" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="98" y1="38" x2="98" y2="56" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="62" y1="56" x2="62" y2="74" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="80" y1="38" x2="98" y2="38" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="80" y1="56" x2="80" y2="74" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="80" y1="56" x2="98" y2="56" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="62" y1="74" x2="80" y2="74" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="158" y1="2" x2="176" y2="2" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="176" y1="2" x2="194" y2="2" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="140" y1="2" x2="158" y2="2" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="158" y1="20" x2="176" y2="20" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="176" y1="20" x2="194" y2="20" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="140" y1="38" x2="158" y2="38" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="158" y1="38" x2="176" y2="38" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="140" y1="56" x2="158" y2="56" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="140" y1="2" x2="140" y2="20" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="140" y1="20" x2="158" y2="20" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="176" y1="20" x2="176" y2="38" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="158" y1="2" x2="158" y2="20" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="176" y1="2" x2="176" y2="20" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="140" y1="20" x2="140" y2="38" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="158" y1="20" x2="158" y2="38" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="140" y1="38" x2="140" y2="56" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="158" y1="38" x2="158" y2="56" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><line x1="194" y1="2" x2="194" y2="20" style="stroke:#c7652b;stroke-width:2.6;stroke-linecap:round" /><foreignObject x="0.0" y="98.0" width="50" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel"><span style="font-size:11px">[1단계]</span></div></foreignObject><foreignObject x="60.0" y="98.0" width="50" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel"><span style="font-size:11px">[2단계]</span></div></foreignObject><foreignObject x="146.0" y="98.0" width="50" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel"><span style="font-size:11px">[3단계]</span></div></foreignObject><foreignObject x="214.0" y="30.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\cdots\)</div></foreignObject></svg>
+</figure></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1192</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 08 수열의 귀납적 정의의 도형에의 활용</span></div>
+            <p>\(n\ge4\)인 자연수 \(n\)에 대하여 \(n\)각형의 대각선의 개수를 \(a_n\)이라 하면 \(a_{n+1}=a_n+f(n)\)이다. 이때 \(f(11)\)의 값을 구하시오.</p>
+            <div class="graph-row"><figure class="graph">
+<svg viewBox="0 0 236 92" style="max-width:236px"><line x1="12.8" y1="14.8" x2="12.8" y2="57.2" style="stroke:var(--text);stroke-width:1" /><line x1="12.8" y1="14.8" x2="55.2" y2="57.2" style="stroke:var(--text);stroke-width:1" /><line x1="12.8" y1="14.8" x2="55.2" y2="14.8" style="stroke:var(--text);stroke-width:1" /><line x1="12.8" y1="57.2" x2="55.2" y2="57.2" style="stroke:var(--text);stroke-width:1" /><line x1="12.8" y1="57.2" x2="55.2" y2="14.8" style="stroke:var(--text);stroke-width:1" /><line x1="55.2" y1="57.2" x2="55.2" y2="14.8" style="stroke:var(--text);stroke-width:1" /><line x1="110.0" y1="6.0" x2="81.5" y2="26.7" style="stroke:var(--text);stroke-width:1" /><line x1="110.0" y1="6.0" x2="92.4" y2="60.3" style="stroke:var(--text);stroke-width:1" /><line x1="110.0" y1="6.0" x2="127.6" y2="60.3" style="stroke:var(--text);stroke-width:1" /><line x1="110.0" y1="6.0" x2="138.5" y2="26.7" style="stroke:var(--text);stroke-width:1" /><line x1="81.5" y1="26.7" x2="92.4" y2="60.3" style="stroke:var(--text);stroke-width:1" /><line x1="81.5" y1="26.7" x2="127.6" y2="60.3" style="stroke:var(--text);stroke-width:1" /><line x1="81.5" y1="26.7" x2="138.5" y2="26.7" style="stroke:var(--text);stroke-width:1" /><line x1="92.4" y1="60.3" x2="127.6" y2="60.3" style="stroke:var(--text);stroke-width:1" /><line x1="92.4" y1="60.3" x2="138.5" y2="26.7" style="stroke:var(--text);stroke-width:1" /><line x1="127.6" y1="60.3" x2="138.5" y2="26.7" style="stroke:var(--text);stroke-width:1" /><line x1="186.0" y1="6.0" x2="160.0" y2="21.0" style="stroke:var(--text);stroke-width:1" /><line x1="186.0" y1="6.0" x2="160.0" y2="51.0" style="stroke:var(--text);stroke-width:1" /><line x1="186.0" y1="6.0" x2="186.0" y2="66.0" style="stroke:var(--text);stroke-width:1" /><line x1="186.0" y1="6.0" x2="212.0" y2="51.0" style="stroke:var(--text);stroke-width:1" /><line x1="186.0" y1="6.0" x2="212.0" y2="21.0" style="stroke:var(--text);stroke-width:1" /><line x1="160.0" y1="21.0" x2="160.0" y2="51.0" style="stroke:var(--text);stroke-width:1" /><line x1="160.0" y1="21.0" x2="186.0" y2="66.0" style="stroke:var(--text);stroke-width:1" /><line x1="160.0" y1="21.0" x2="212.0" y2="51.0" style="stroke:var(--text);stroke-width:1" /><line x1="160.0" y1="21.0" x2="212.0" y2="21.0" style="stroke:var(--text);stroke-width:1" /><line x1="160.0" y1="51.0" x2="186.0" y2="66.0" style="stroke:var(--text);stroke-width:1" /><line x1="160.0" y1="51.0" x2="212.0" y2="51.0" style="stroke:var(--text);stroke-width:1" /><line x1="160.0" y1="51.0" x2="212.0" y2="21.0" style="stroke:var(--text);stroke-width:1" /><line x1="186.0" y1="66.0" x2="212.0" y2="51.0" style="stroke:var(--text);stroke-width:1" /><line x1="186.0" y1="66.0" x2="212.0" y2="21.0" style="stroke:var(--text);stroke-width:1" /><line x1="212.0" y1="51.0" x2="212.0" y2="21.0" style="stroke:var(--text);stroke-width:1" /><foreignObject x="16.0" y="72.0" width="40" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(a_4=2\)</div></foreignObject><foreignObject x="92.0" y="72.0" width="40" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(a_5=5\)</div></foreignObject><foreignObject x="168.0" y="72.0" width="40" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(a_6=9\)</div></foreignObject><foreignObject x="220.0" y="30.0" width="20" height="22"><div xmlns="http://www.w3.org/1999/xhtml" class="glabel">\(\cdots\)</div></foreignObject></svg>
+</figure></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1193</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 09 수열의 귀납적 정의의 실생활에의 활용</span></div>
+            <p>어느 수족관에서는 매주 수질 관리를 위해 어항의 물의 \(\dfrac{1}{5}\)을 빼내고, 남아 있는 물의 양의 \(\dfrac{1}{5}\)만큼 물을 새로 채워 넣는다. 이번 주 어항의 물이 25 L일 때, 10주 후 어항의 물의 양은 \(\dfrac{a^b}{5^{18}}\) L이다. 이때 자연수 \(a,\ b\)에 대하여 \(a+b\)의 최솟값은?</p>
+            <div class="choices"><span>① 30</span><span>② 31</span><span>③ 32</span><span>④ 33</span><span>⑤ 34</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1194</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 09 수열의 귀납적 정의의 실생활에의 활용</span></div>
+            <p>어떤 세균은 1시간마다 4마리씩 죽고, 나머지는 각각 3마리로 분열한다. 이 세균이 현재 20마리 있을 때, \(n\)시간 후 살아 있는 세균의 수를 \(a_n\)이라 하자. 다음을 구하시오.<br>(1) \(a_n\)과 \(a_{n+1}\) 사이의 관계식<br>(2) \(a_2\)의 값</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1195</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 09 수열의 귀납적 정의의 실생활에의 활용</span></div>
+            <p>\(n\) \((n\ge2)\)명의 학생을 두 조로 나누는 방법의 수를 \(a_n\)이라 할 때, \(a_n\)과 \(a_{n+1}\) 사이의 관계식을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1196</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 09 수열의 귀납적 정의의 실생활에의 활용</span></div>
+            <p>농도가 30 %인 소금물 200 g이 들어 있는 그릇이 있다. 이 그릇에서 소금물 50 g을 덜어 낸 다음 농도가 10 %인 소금물 50 g을 다시 넣는 것을 1회 시행이라 하자. \(n\)회 시행 후 그릇에 담긴 소금물의 농도를 \(a_n\) %라 할 때,<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_{n+1}=pa_n+q\ (n=1,\ 2,\ 3,\ \cdots)\)<br>가 성립한다. 이때 상수 \(p,\ q\)에 대하여 \(pq\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1197</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 09 수열의 귀납적 정의의 실생활에의 활용</span></div>
+            <p>두 개의 그릇 A, B에 밀가루가 각각 1 kg씩 들어 있다. 그릇 A에 담긴 밀가루의 \(\dfrac{1}{4}\)을 그릇 B에 담은 다음 그릇 B에 담긴 밀가루의 절반을 그릇 A에 담는 것을 1회 시행이라 하자. \(n\)회 시행 후 그릇 A에 담긴 밀가루의 양을 \(a_n\) kg이라 할 때,<br>&nbsp;&nbsp;&nbsp;&nbsp;\(a_{n+1}=pa_n+q\ (n=1,\ 2,\ 3,\ \cdots)\)<br>가 성립한다. 이때 상수 \(p,\ q\)에 대하여 \(p-q\)의 값은?</p>
+            <div class="choices"><span>① \(-\dfrac{1}{8}\)</span><span>② \(-\dfrac{1}{4}\)</span><span>③ \(-\dfrac{3}{8}\)</span><span>④ \(-\dfrac{1}{2}\)</span><span>⑤ \(-\dfrac{5}{8}\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1198</span><span class="prob-tag lv">상</span><span class="prob-tag">서술형</span><span class="prob-sec">유형 09 수열의 귀납적 정의의 실생활에의 활용</span></div>
+            <p>다음 그림과 같은 모양으로 4층 탑을 쌓으려면 크기가 같은 44개의 정육면체가 필요하다. 이와 같은 방법으로 10층 탑을 쌓을 때 필요한 정육면체의 개수를 구하시오.</p>
+            <div class="graph-row"><figure class="graph">
+<svg viewBox="0 0 110 96" style="max-width:110px"><polygon points="6,60 16,54 26,60 16,66" style="fill:#f6dd7e;stroke:#9c8429;stroke-width:0.8" /><polygon points="6,60 16,66 16,78 6,72" style="fill:#e8c75a;stroke:#9c8429;stroke-width:0.8" /><polygon points="16,66 26,60 26,72 16,78" style="fill:#d4b043;stroke:#9c8429;stroke-width:0.8" /><polygon points="16,66 26,60 36,66 26,72" style="fill:#f6dd7e;stroke:#9c8429;stroke-width:0.8" /><polygon points="16,66 26,72 26,84 16,78" style="fill:#e8c75a;stroke:#9c8429;stroke-width:0.8" /><polygon points="26,72 36,66 36,78 26,84" style="fill:#d4b043;stroke:#9c8429;stroke-width:0.8" /><polygon points="26,60 36,54 46,60 36,66" style="fill:#f6dd7e;stroke:#9c8429;stroke-width:0.8" /><polygon points="26,60 36,66 36,78 26,72" style="fill:#e8c75a;stroke:#9c8429;stroke-width:0.8" /><polygon points="36,66 46,60 46,72 36,78" style="fill:#d4b043;stroke:#9c8429;stroke-width:0.8" /><polygon points="36,66 46,60 56,66 46,72" style="fill:#f6dd7e;stroke:#9c8429;stroke-width:0.8" /><polygon points="36,66 46,72 46,84 36,78" style="fill:#e8c75a;stroke:#9c8429;stroke-width:0.8" /><polygon points="46,72 56,66 56,78 46,84" style="fill:#d4b043;stroke:#9c8429;stroke-width:0.8" /><polygon points="46,60 56,54 66,60 56,66" style="fill:#f6dd7e;stroke:#9c8429;stroke-width:0.8" /><polygon points="46,60 56,66 56,78 46,72" style="fill:#e8c75a;stroke:#9c8429;stroke-width:0.8" /><polygon points="56,66 66,60 66,72 56,78" style="fill:#d4b043;stroke:#9c8429;stroke-width:0.8" /><polygon points="56,66 66,60 76,66 66,72" style="fill:#f6dd7e;stroke:#9c8429;stroke-width:0.8" /><polygon points="56,66 66,72 66,84 56,78" style="fill:#e8c75a;stroke:#9c8429;stroke-width:0.8" /><polygon points="66,72 76,66 76,78 66,84" style="fill:#d4b043;stroke:#9c8429;stroke-width:0.8" /><polygon points="66,60 76,54 86,60 76,66" style="fill:#f6dd7e;stroke:#9c8429;stroke-width:0.8" /><polygon points="66,60 76,66 76,78 66,72" style="fill:#e8c75a;stroke:#9c8429;stroke-width:0.8" /><polygon points="76,66 86,60 86,72 76,78" style="fill:#d4b043;stroke:#9c8429;stroke-width:0.8" /><polygon points="16,48 26,42 36,48 26,54" style="fill:#f6dd7e;stroke:#9c8429;stroke-width:0.8" /><polygon points="16,48 26,54 26,66 16,60" style="fill:#e8c75a;stroke:#9c8429;stroke-width:0.8" /><polygon points="26,54 36,48 36,60 26,66" style="fill:#d4b043;stroke:#9c8429;stroke-width:0.8" /><polygon points="26,54 36,48 46,54 36,60" style="fill:#f6dd7e;stroke:#9c8429;stroke-width:0.8" /><polygon points="26,54 36,60 36,72 26,66" style="fill:#e8c75a;stroke:#9c8429;stroke-width:0.8" /><polygon points="36,60 46,54 46,66 36,72" style="fill:#d4b043;stroke:#9c8429;stroke-width:0.8" /><polygon points="36,48 46,42 56,48 46,54" style="fill:#f6dd7e;stroke:#9c8429;stroke-width:0.8" /><polygon points="36,48 46,54 46,66 36,60" style="fill:#e8c75a;stroke:#9c8429;stroke-width:0.8" /><polygon points="46,54 56,48 56,60 46,66" style="fill:#d4b043;stroke:#9c8429;stroke-width:0.8" /><polygon points="46,54 56,48 66,54 56,60" style="fill:#f6dd7e;stroke:#9c8429;stroke-width:0.8" /><polygon points="46,54 56,60 56,72 46,66" style="fill:#e8c75a;stroke:#9c8429;stroke-width:0.8" /><polygon points="56,60 66,54 66,66 56,72" style="fill:#d4b043;stroke:#9c8429;stroke-width:0.8" /><polygon points="56,48 66,42 76,48 66,54" style="fill:#f6dd7e;stroke:#9c8429;stroke-width:0.8" /><polygon points="56,48 66,54 66,66 56,60" style="fill:#e8c75a;stroke:#9c8429;stroke-width:0.8" /><polygon points="66,54 76,48 76,60 66,66" style="fill:#d4b043;stroke:#9c8429;stroke-width:0.8" /><polygon points="26,36 36,30 46,36 36,42" style="fill:#f6dd7e;stroke:#9c8429;stroke-width:0.8" /><polygon points="26,36 36,42 36,54 26,48" style="fill:#e8c75a;stroke:#9c8429;stroke-width:0.8" /><polygon points="36,42 46,36 46,48 36,54" style="fill:#d4b043;stroke:#9c8429;stroke-width:0.8" /><polygon points="36,42 46,36 56,42 46,48" style="fill:#f6dd7e;stroke:#9c8429;stroke-width:0.8" /><polygon points="36,42 46,48 46,60 36,54" style="fill:#e8c75a;stroke:#9c8429;stroke-width:0.8" /><polygon points="46,48 56,42 56,54 46,60" style="fill:#d4b043;stroke:#9c8429;stroke-width:0.8" /><polygon points="46,36 56,30 66,36 56,42" style="fill:#f6dd7e;stroke:#9c8429;stroke-width:0.8" /><polygon points="46,36 56,42 56,54 46,48" style="fill:#e8c75a;stroke:#9c8429;stroke-width:0.8" /><polygon points="56,42 66,36 66,48 56,54" style="fill:#d4b043;stroke:#9c8429;stroke-width:0.8" /><polygon points="36,24 46,18 56,24 46,30" style="fill:#f6dd7e;stroke:#9c8429;stroke-width:0.8" /><polygon points="36,24 46,30 46,42 36,36" style="fill:#e8c75a;stroke:#9c8429;stroke-width:0.8" /><polygon points="46,30 56,24 56,36 46,42" style="fill:#d4b043;stroke:#9c8429;stroke-width:0.8" /></svg>
+</figure></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1199</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 10 수학적 귀납법</span></div>
+            <p>모든 자연수 \(n\)에 대하여 명제 \(p(n)\)이 아래 조건을 만족시킬 때, 다음 중 반드시 참인 명제는?</p><div class="box">(가) \(p(1)\)은 참이다.<br>(나) \(p(n)\)이 참이면 \(p(2n)\)이 참이다.<br>(다) \(p(n)\)이 참이면 \(p(3n)\)이 참이다.</div>
+            <div class="choices"><span>① \(p(42)\)</span><span>② \(p(45)\)</span><span>③ \(p(66)\)</span><span>④ \(p(108)\)</span><span>⑤ \(p(120)\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1200</span><span class="prob-tag lv">하</span><span class="prob-sec">유형 10 수학적 귀납법</span></div>
+            <p>모든 자연수 \(n\)에 대하여 명제 \(p(n)\)이 참이면 명제 \(p(n+3)\)이 참이다. 옳은 것만을 <strong>보기</strong>에서 있는 대로 고른 것은?</p><div class="box">ㄱ. \(p(1)\)이 참이면 모든 3의 양의 배수 \(k\)에 대하여 \(p(k)\)가 참이다.<br>ㄴ. \(p(3)\)이 참이면 모든 3의 양의 배수 \(k\)에 대하여 \(p(k)\)가 참이다.<br>ㄷ. \(p(1),\ p(2)\)가 참이면 모든 자연수 \(k\)에 대하여 \(p(k)\)가 참이다.</div>
+            <div class="choices"><span>① ㄱ</span><span>② ㄴ</span><span>③ ㄷ</span><span>④ ㄱ, ㄴ</span><span>⑤ ㄴ, ㄷ</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1201</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 10 수학적 귀납법</span></div>
+            <p>자연수 \(n\)에 대한 명제 \(p(n)\)이 다음 조건을 만족시킨다.</p><div class="box">(가) \(p(1)\)이 참이다.<br>(나) <span style="display:inline-block;width:12em;height:1.1em;border:1px solid var(--text);vertical-align:middle"></span></div><p>위의 조건에 의하여 명제 \(p(31)\)이 참임을 알았을 때, (나)의 조건이 될 수 있는 것만을 <strong>보기</strong>에서 있는 대로 고르시오.</p><div class="box">ㄱ. \(p(k)\)가 참이면 \(p(k+2)\)도 참이다.<br>ㄴ. \(p(k)\)가 참이면 \(p(2k)\)도 참이다.<br>ㄷ. \(p(2k+1)\)이 거짓이면 \(p(k)\)도 거짓이다.</div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1202</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 11 수학적 귀납법 ; 등식의 증명</span></div>
+            <p>다음은 모든 자연수 \(n\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\(1+2+2^2+\cdots+2^{n-1}=2^n-1\qquad\cdots\cdots\) ㉠<br>이 성립함을 수학적 귀납법으로 증명한 것이다.</p><div class="box"><strong>증명</strong><br>(i) \(n=1\)일 때,<br>&nbsp;&nbsp;&nbsp;&nbsp;(좌변)\(=2^{1-1}=1\), (우변)\(=2^1-1=1\)<br>&nbsp;&nbsp;&nbsp;&nbsp;따라서 ㉠이 성립한다.<br>(ii) \(n=k\)일 때 ㉠이 성립한다고 가정하면<br>&nbsp;&nbsp;&nbsp;&nbsp;\(1+2+2^2+\cdots+2^{k-1}=2^k-1\)<br>&nbsp;&nbsp;&nbsp;&nbsp;위의 식의 양변에 <span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(가)</span>을 더하면<br>&nbsp;&nbsp;&nbsp;&nbsp;\(1+2+2^2+\cdots+2^{k-1}+\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(가)</span><br>&nbsp;&nbsp;&nbsp;&nbsp;\(=2^k-1+\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(가)</span><br>&nbsp;&nbsp;&nbsp;&nbsp;\(=\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(나)</span><br>&nbsp;&nbsp;&nbsp;&nbsp;따라서 \(n=k+1\)일 때도 ㉠이 성립한다.<br>(i), (ii)에서 모든 자연수 \(n\)에 대하여 ㉠이 성립한다.</div><p>위의 과정에서 (가), (나)에 알맞은 식을 각각 \(f(k),\ g(k)\)라 할 때, \(f(3)+g(4)\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1203</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 11 수학적 귀납법 ; 등식의 증명</span></div>
+            <p>모든 자연수 \(n\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\(\dfrac{1}{1\cdot3}+\dfrac{1}{3\cdot5}+\dfrac{1}{5\cdot7}+\cdots+\dfrac{1}{(2n-1)(2n+1)}\)<br>&nbsp;&nbsp;&nbsp;&nbsp;\(=\dfrac{n}{2n+1}\)<br>이 성립함을 수학적 귀납법으로 증명하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1204</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 11 수학적 귀납법 ; 등식의 증명</span></div>
+            <p>다음은 모든 자연수 \(n\)에 대하여<br>&nbsp;&nbsp;&nbsp;&nbsp;\(\left(\dfrac{1}{n}\right)^2-\left(\dfrac{2}{n}\right)^2+\left(\dfrac{3}{n}\right)^2-\cdots+(-1)^{n+1}\cdot\left(\dfrac{n}{n}\right)^2\)<br>&nbsp;&nbsp;&nbsp;&nbsp;\(=(-1)^{n+1}\cdot\dfrac{n+1}{2n}\)<br>이 성립함을 수학적 귀납법으로 증명한 것이다.</p><div class="box"><strong>증명</strong><br>(i) \(n=1\)일 때,<br>&nbsp;&nbsp;&nbsp;&nbsp;(좌변)\(=(-1)^2\cdot1^2=1\),<br>&nbsp;&nbsp;&nbsp;&nbsp;(우변)\(=(-1)^2\cdot\dfrac{1+1}{2}=1\)<br>&nbsp;&nbsp;&nbsp;&nbsp;따라서 주어진 등식이 성립한다.<br>(ii) \(n=k\)일 때 주어진 등식이 성립한다고 가정하면<br>&nbsp;&nbsp;&nbsp;&nbsp;\(\left(\dfrac{1}{k}\right)^2-\left(\dfrac{2}{k}\right)^2+\left(\dfrac{3}{k}\right)^2-\cdots+(-1)^{k+1}\cdot\left(\dfrac{k}{k}\right)^2\)<br>&nbsp;&nbsp;&nbsp;&nbsp;\(=(-1)^{k+1}\cdot\dfrac{k+1}{2k}\)<br>&nbsp;&nbsp;&nbsp;&nbsp;\(\therefore\left(\dfrac{1}{k+1}\right)^2-\left(\dfrac{2}{k+1}\right)^2+\left(\dfrac{3}{k+1}\right)^2\)<br>&nbsp;&nbsp;&nbsp;&nbsp;\(-\cdots+(-1)^{k+2}\cdot\left(\dfrac{k+1}{k+1}\right)^2\)<br>&nbsp;&nbsp;&nbsp;&nbsp;\(=\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(가)</span>\(\left\{\left(\dfrac{1}{k}\right)^2-\left(\dfrac{2}{k}\right)^2+\left(\dfrac{3}{k}\right)^2-\cdots+(-1)^{k+2}\cdot\left(\dfrac{k+1}{k}\right)^2\right\}\)<br>&nbsp;&nbsp;&nbsp;&nbsp;\(=\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(가)</span>\(\cdot(-1)^{k+2}\cdot\dfrac{k+1}{k}\cdot\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(나)</span><br>&nbsp;&nbsp;&nbsp;&nbsp;\(=(-1)^{(k+1)+1}\cdot\dfrac{(k+1)+1}{2(k+1)}\)<br>&nbsp;&nbsp;&nbsp;&nbsp;따라서 \(n=k+1\)일 때도 주어진 등식이 성립한다.<br>(i), (ii)에서 모든 자연수 \(n\)에 대하여 주어진 등식이 성립한다.</div><p>위의 과정에서 (가), (나)에 알맞은 식을 각각 \(f(k),\ g(k)\)라 할 때, \(f(4)g(8)\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1205</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 12 수학적 귀납법 ; 배수의 증명</span></div>
+            <p>다음은 모든 자연수 \(n\)에 대하여 \(n^3+5n\)이 6의 배수임을 수학적 귀납법으로 증명한 것이다.</p><div class="box"><strong>증명</strong><br>(i) \(n=1\)일 때,<br>&nbsp;&nbsp;&nbsp;&nbsp;\(1^3+5\cdot1=6\)<br>&nbsp;&nbsp;&nbsp;&nbsp;이므로 6의 배수이다.<br>(ii) \(n=k\)일 때 \(n^3+5n\)이 6의 배수라 가정하면<br>&nbsp;&nbsp;&nbsp;&nbsp;\(k^3+5k=6N\) (\(N\)은 자연수)<br>&nbsp;&nbsp;&nbsp;&nbsp;으로 놓을 수 있다.<br>&nbsp;&nbsp;&nbsp;&nbsp;이때 \(n=k+1\)이면<br>&nbsp;&nbsp;&nbsp;&nbsp;\((k+1)^3+5(k+1)=k^3+3k^2+\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(가)</span><br>&nbsp;&nbsp;&nbsp;&nbsp;\(=\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(나)</span>\(+6+3k(k+1)\)<br>&nbsp;&nbsp;&nbsp;&nbsp;\(=6(N+1)+3k(k+1)\)<br>&nbsp;&nbsp;&nbsp;&nbsp;이고, \(3k(k+1)\)이 <span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(다)</span>의 배수이므로 \(n=k+1\)일 때도 \(n^3+5n\)이 6의 배수이다.<br>(i), (ii)에서 모든 자연수 \(n\)에 대하여 \(n^3+5n\)은 6의 배수이다.</div><p>위의 과정에서 (가), (나)에 알맞은 식을 각각 \(f(k),\ g(k)\)라 하고, (다)에 알맞은 수를 \(a\)라 할 때, \(\dfrac{g(a)}{f(a)}=\dfrac{q}{p}\)이다. 이때 서로소인 두 자연수 \(p,\ q\)에 대하여 \(p+q\)의 값은?</p>
+            <div class="choices"><span>① 46</span><span>② 48</span><span>③ 50</span><span>④ 52</span><span>⑤ 54</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1206</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 12 수학적 귀납법 ; 배수의 증명</span></div>
+            <p>다음은 \(n\ge2\)인 모든 자연수 \(n\)에 대하여 \(8^n-7n-1\)이 49의 배수임을 수학적 귀납법으로 증명한 것이다.</p><div class="box"><strong>증명</strong><br>(i) \(n=2\)일 때,<br>&nbsp;&nbsp;&nbsp;&nbsp;\(8^2-7\cdot2-1=49\)<br>&nbsp;&nbsp;&nbsp;&nbsp;이므로 49의 배수이다.<br>(ii) \(n=k\) \((k\ge2)\)일 때 \(8^n-7n-1\)이 49의 배수라 가정하면<br>&nbsp;&nbsp;&nbsp;&nbsp;\(8^k-7k-1=49N\) (\(N\)은 자연수)<br>&nbsp;&nbsp;&nbsp;&nbsp;으로 놓을 수 있다.<br>&nbsp;&nbsp;&nbsp;&nbsp;이때 \(n=k+1\)이면<br>&nbsp;&nbsp;&nbsp;&nbsp;\(8^{k+1}-7(k+1)-1=\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(가)</span>\(-7k-8\)<br>&nbsp;&nbsp;&nbsp;&nbsp;\(=8(8^k-7k-1)+\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(나)</span><br>&nbsp;&nbsp;&nbsp;&nbsp;\(=8\cdot49N+\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(나)</span><br>&nbsp;&nbsp;&nbsp;&nbsp;\(=49(\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(다)</span>\()\)<br>&nbsp;&nbsp;&nbsp;&nbsp;이므로 \(n=k+1\)일 때도 \(8^n-7n-1\)이 49의 배수이다.<br>(i), (ii)에서 \(n\ge2\)인 모든 자연수 \(n\)에 대하여 \(8^n-7n-1\)은 49의 배수이다.</div><p>위의 과정에서 (가), (나), (다)에 알맞은 것은?</p>
+            <table><thead><tr><th></th><th>(가)</th><th>(나)</th><th>(다)</th></tr></thead><tbody><tr><td>①</td><td>\(8^k\)</td><td>\(7k\)</td><td>\(8N\)</td></tr><tr><td>②</td><td>\(8^k\)</td><td>\(49k\)</td><td>\(8N+k\)</td></tr><tr><td>③</td><td>\(8\cdot8^k\)</td><td>\(7k\)</td><td>\(8N+k\)</td></tr><tr><td>④</td><td>\(8\cdot8^k\)</td><td>\(49k\)</td><td>\(8N\)</td></tr><tr><td>⑤</td><td>\(8\cdot8^k\)</td><td>\(49k\)</td><td>\(8N+k\)</td></tr></tbody></table>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1207</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 12 수학적 귀납법 ; 배수의 증명</span></div>
+            <p>다음은 모든 자연수 \(n\)에 대하여 \(2^{n+1}+3^{2n-1}\)이 7의 배수임을 수학적 귀납법으로 증명한 것이다.</p><div class="box"><strong>증명</strong><br>(i) \(n=1\)일 때,<br>&nbsp;&nbsp;&nbsp;&nbsp;\(2^{1+1}+3^{2\cdot1-1}=7\)<br>&nbsp;&nbsp;&nbsp;&nbsp;이므로 7의 배수이다.<br>(ii) \(n=k\)일 때 \(2^{n+1}+3^{2n-1}\)이 7의 배수라 가정하면<br>&nbsp;&nbsp;&nbsp;&nbsp;\(2^{k+1}+3^{2k-1}=7N\) (\(N\)은 자연수)<br>&nbsp;&nbsp;&nbsp;&nbsp;으로 놓을 수 있다.<br>&nbsp;&nbsp;&nbsp;&nbsp;이때 \(n=k+1\)이면<br>&nbsp;&nbsp;&nbsp;&nbsp;\(2^{k+2}+3^{2k+1}=\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(가)</span>\(\cdot2^{k+1}+\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(나)</span>\(\cdot3^{2k-1}\)<br>&nbsp;&nbsp;&nbsp;&nbsp;\(=2\cdot7N+7\cdot\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(다)</span><br>&nbsp;&nbsp;&nbsp;&nbsp;\(=7(2N+\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(다)</span>\()\)<br>&nbsp;&nbsp;&nbsp;&nbsp;이므로 \(n=k+1\)일 때도 \(2^{n+1}+3^{2n-1}\)이 7의 배수이다.<br>(i), (ii)에서 모든 자연수 \(n\)에 대하여 \(2^{n+1}+3^{2n-1}\)은 7의 배수이다.</div><p>위의 과정에서 (가), (나)에 알맞은 수를 각각 \(a,\ b\)라 하고, (다)에 알맞은 식을 \(f(k)\)라 할 때, \(f(b-a)\)의 값은?</p>
+            <div class="choices"><span>① \(3^{13}\)</span><span>② \(3^{15}\)</span><span>③ \(3^{17}\)</span><span>④ \(3^{19}\)</span><span>⑤ \(3^{21}\)</span></div>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1208</span><span class="prob-tag">대표 문제</span><span class="prob-sec">유형 13 수학적 귀납법 ; 부등식의 증명</span></div>
+            <p>다음은 \(n\ge2\)인 모든 자연수 \(n\)에 대하여 부등식<br>&nbsp;&nbsp;&nbsp;&nbsp;\(1+\dfrac{1}{2^2}+\dfrac{1}{3^2}+\cdots+\dfrac{1}{n^2}&lt;2-\dfrac{1}{n}\qquad\cdots\cdots\) ㉠<br>이 성립함을 수학적 귀납법으로 증명한 것이다.</p><div class="box"><strong>증명</strong><br>(i) \(n=2\)일 때,<br>&nbsp;&nbsp;&nbsp;&nbsp;(좌변)\(=1+\dfrac{1}{2^2}=\dfrac{5}{4}\), (우변)\(=2-\dfrac{1}{2}=\dfrac{3}{2}\)<br>&nbsp;&nbsp;&nbsp;&nbsp;따라서 부등식 ㉠이 성립한다.<br>(ii) \(n=k\) \((k\ge2)\)일 때 부등식 ㉠이 성립한다고 가정하면<br>&nbsp;&nbsp;&nbsp;&nbsp;\(1+\dfrac{1}{2^2}+\dfrac{1}{3^2}+\cdots+\dfrac{1}{k^2}&lt;2-\dfrac{1}{k}\)<br>&nbsp;&nbsp;&nbsp;&nbsp;위의 식의 양변에 \(\dfrac{1}{(k+1)^2}\)을 더하면<br>&nbsp;&nbsp;&nbsp;&nbsp;\(1+\dfrac{1}{2^2}+\dfrac{1}{3^2}+\cdots+\dfrac{1}{k^2}+\dfrac{1}{(k+1)^2}&lt;2-\dfrac{1}{k}+\dfrac{1}{(k+1)^2}\)<br>&nbsp;&nbsp;&nbsp;&nbsp;이때<br>&nbsp;&nbsp;&nbsp;&nbsp;\(\left\{2-\dfrac{1}{k}+\dfrac{1}{(k+1)^2}\right\}-(\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(가)</span>\()\)<br>&nbsp;&nbsp;&nbsp;&nbsp;\(=-\dfrac{1}{k}+\dfrac{1}{(k+1)^2}+\dfrac{1}{k+1}\)<br>&nbsp;&nbsp;&nbsp;&nbsp;\(=-\dfrac{1}{k(k+1)^2}&lt;\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(나)</span><br>&nbsp;&nbsp;&nbsp;&nbsp;이므로 \(2-\dfrac{1}{k}+\dfrac{1}{(k+1)^2}&lt;\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(가)</span><br>&nbsp;&nbsp;&nbsp;&nbsp;\(\therefore\ 1+\dfrac{1}{2^2}+\dfrac{1}{3^2}+\cdots+\dfrac{1}{k^2}+\dfrac{1}{(k+1)^2}&lt;\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(가)</span><br>&nbsp;&nbsp;&nbsp;&nbsp;따라서 \(n=k+1\)일 때도 부등식 ㉠이 성립한다.<br>(i), (ii)에서 \(n\ge2\)인 모든 자연수 \(n\)에 대하여 부등식 ㉠이 성립한다.</div><p>위의 과정에서 (가)에 알맞은 식을 \(f(k)\), (나)에 알맞은 수를 \(a\)라 할 때, \(f(a)\)의 값을 구하시오.</p>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1209</span><span class="prob-tag lv">중</span><span class="prob-sec">유형 13 수학적 귀납법 ; 부등식의 증명</span></div>
+            <p>다음은 \(n\ge5\)인 모든 자연수 \(n\)에 대하여 부등식 \(2^n>n^2\)이 성립함을 수학적 귀납법으로 증명한 것이다.</p><div class="box"><strong>증명</strong><br>(i) \(n=5\)일 때,<br>&nbsp;&nbsp;&nbsp;&nbsp;(좌변)\(=2^5=32\), (우변)\(=5^2=25\)<br>&nbsp;&nbsp;&nbsp;&nbsp;따라서 주어진 부등식이 성립한다.<br>(ii) \(n=k\) \((k\ge5)\)일 때 주어진 부등식이 성립한다고 가정하면<br>&nbsp;&nbsp;&nbsp;&nbsp;\(2^k>k^2\)<br>&nbsp;&nbsp;&nbsp;&nbsp;위의 식의 양변에 2를 곱하면<br>&nbsp;&nbsp;&nbsp;&nbsp;\(2^{k+1}>2k^2\)<br>&nbsp;&nbsp;&nbsp;&nbsp;그런데 \(k\ge5\)이면<br>&nbsp;&nbsp;&nbsp;&nbsp;\(k^2-2k-1=\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(가)</span>\(-2>0\)<br>&nbsp;&nbsp;&nbsp;&nbsp;이므로 \(k^2>2k+1\)<br>&nbsp;&nbsp;&nbsp;&nbsp;\(\therefore\ 2^{k+1}>2k^2=k^2+k^2>\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(나)</span><br>&nbsp;&nbsp;&nbsp;&nbsp;따라서 \(n=k+1\)일 때도 주어진 부등식이 성립한다.<br>(i), (ii)에서 \(n\ge5\)인 모든 자연수 \(n\)에 대하여 주어진 부등식이 성립한다.</div><p>위의 과정에서 (가), (나)에 알맞은 것은?</p>
+            <table><thead><tr><th></th><th>(가)</th><th>(나)</th></tr></thead><tbody><tr><td>①</td><td>\((k+1)^2\)</td><td>\(k^2+2k\)</td></tr><tr><td>②</td><td>\((k+1)^2\)</td><td>\((k+1)^2\)</td></tr><tr><td>③</td><td>\((k-1)^2\)</td><td>\(k^2+2k\)</td></tr><tr><td>④</td><td>\((k-1)^2\)</td><td>\((k+1)^2\)</td></tr><tr><td>⑤</td><td>\((2k+1)^2\)</td><td>\(k^2+2k\)</td></tr></tbody></table>
+        </section>
+        <section class="prob">
+            <div class="prob-head"><span class="prob-no">1210</span><span class="prob-tag lv">상</span><span class="prob-sec">유형 13 수학적 귀납법 ; 부등식의 증명</span></div>
+            <p>2 이상의 자연수 \(n\)에 대하여 부등식 \(\left(1+\dfrac{1}{n}\right)^n>2\)가 성립함이 알려져 있다. 다음은 이 사실을 이용하여 \(n\ge6\)인 모든 자연수 \(n\)에 대하여 부등식<br>&nbsp;&nbsp;&nbsp;&nbsp;\(\left(\dfrac{n}{2}\right)^n>n(n-1)(n-2)\cdot\cdots\cdot1\)<br>이 성립함을 수학적 귀납법으로 증명한 것이다.</p><div class="box"><strong>증명</strong><br>(i) \(n=6\)일 때,<br>&nbsp;&nbsp;&nbsp;&nbsp;(좌변)\(=3^6=729\),<br>&nbsp;&nbsp;&nbsp;&nbsp;(우변)\(=6\cdot5\cdot4\cdot3\cdot2\cdot1=720\)<br>&nbsp;&nbsp;&nbsp;&nbsp;따라서 주어진 부등식이 성립한다.<br>(ii) \(n=k\) \((k\ge6)\)일 때 주어진 부등식이 성립한다고 가정하면<br>&nbsp;&nbsp;&nbsp;&nbsp;\(\left(\dfrac{k}{2}\right)^k>k(k-1)(k-2)\cdot\cdots\cdot1\)<br>&nbsp;&nbsp;&nbsp;&nbsp;\(\therefore\left(\dfrac{k+1}{2}\right)^{k+1}=\dfrac{k+1}{2^{k+1}}\cdot\dfrac{(k+1)^k}{k^k}\cdot\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">&nbsp;&nbsp;&nbsp;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;\(=\dfrac{k+1}{2}\cdot\dfrac{1}{2^k}\cdot\left(\dfrac{k+1}{k}\right)^k\cdot\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">&nbsp;&nbsp;&nbsp;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;\(=\dfrac{k+1}{2}\cdot\left(1+\dfrac{1}{k}\right)^k\cdot\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(가)</span><br>&nbsp;&nbsp;&nbsp;&nbsp;\(>\dfrac{k+1}{2}\cdot\)<span style="display:inline-block;min-width:2.2em;padding:0 4px;border:1px solid var(--text);text-align:center">(나)</span><br>&nbsp;&nbsp;&nbsp;&nbsp;\(=(k+1)k(k-1)\cdot\cdots\cdot1\)<br>&nbsp;&nbsp;&nbsp;&nbsp;따라서 \(n=k+1\)일 때도 주어진 부등식이 성립한다.<br>(i), (ii)에서 \(n\ge6\)인 모든 자연수 \(n\)에 대하여 주어진 부등식이 성립한다.</div><p>위의 과정에서 (가), (나)에 알맞은 식을 각각 \(f(k),\ g(k)\)라 할 때, \(f(4)+g(3)\)의 값은?</p>
+            <div class="choices"><span>① 24</span><span>② 25</span><span>③ 26</span><span>④ 27</span><span>⑤ 28</span></div>
+        </section>
+    </main>
+
+    <main class="step-grid" id="C" hidden>
+        <p class="empty-note">아직 추출한 문제가 없습니다.</p>
+    </main>
+
+    <script>
+        function showStep(s) {
+            ['A', 'B', 'C'].forEach(function (k) {
+                document.getElementById(k).hidden = (k !== s);
+                document.querySelector('[data-step="' + k + '"]').classList.toggle('active', k === s);
+            });
+            window.scrollTo(0, 0);
+        }
+
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>
