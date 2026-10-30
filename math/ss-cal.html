@@ -1111,10 +1111,11 @@
             ansA.innerHTML = card.querySelector('.ans-src').innerHTML;
             ansModal.querySelector('.ans-no').textContent = card.querySelector('.prob-no').textContent;
             ansModal.hidden = false;
+            document.documentElement.style.overflow = 'hidden';   // 모달이 떠 있는 동안 바깥 페이지는 스크롤하지 않는다
             ansBody.scrollTop = 0;
             if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([ansA]);
         }
-        function closeAns() { ansModal.hidden = true; }
+        function closeAns() { ansModal.hidden = true; document.documentElement.style.overflow = ''; }
         document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeAns(); });
 
         function showStep(s) {

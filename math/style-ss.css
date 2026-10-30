@@ -239,6 +239,11 @@
 }
 
 /* ===== 해설 버튼 · 해설 모달 ===== */
+/* 모달을 열 때 바깥 스크롤을 막아도 스크롤바 자리가 사라져 화면이 옆으로 밀리지 않게 한다 */
+html {
+    scrollbar-gutter: stable;
+}
+
 .ans-btn {
     width: 120px;
     height: 28px;
@@ -323,6 +328,7 @@
 .ans-body {
     flex: 1;
     overflow: auto;
+    overscroll-behavior: contain;
     padding: 16px 24px 24px 44px;
     font-size: 16px;
     line-height: 1.9;
@@ -434,4 +440,27 @@
 
 .ans-q > :last-child {
     margin-bottom: 0;
+}
+
+/* 사고의 기술 노란 상자: 문제 재수록 + 형광펜 + 파란 메모 + 아래 힌트 */
+.sg-box {
+    margin: 0 0 16px;
+    padding: 12px 16px;
+    border: 1px solid #ecd27a;
+    border-radius: 5px;
+    background: #fffcef;
+}
+
+.sg-box .hl {
+    background: #fff07a;
+}
+
+.sg-box .memo {
+    margin: 0 4px;
+    color: #1f63c6;
+    font-size: 13px;
+}
+
+.sg-hint {
+    margin-top: 12px;
 }
