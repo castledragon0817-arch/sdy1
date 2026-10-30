@@ -5,6 +5,10 @@
 .ss-cal { --theme: #4fcaf2; --theme-ink: #000; }
 .ss-prob { --theme: #fdcf38; --theme-ink: #000; }
 
+/* 바탕은 흰색, 카드는 연한 색: 공통 토큰 두 개를 뒤집는다(이 파일은 ss 페이지만 쓴다).
+   그림의 빈 점 채움도 var(--surface)라서 카드색을 따라간다. */
+.note-page { --bg: #ffffff; --surface: #f5f7f6; }
+
 /* ===== A · B · C 탭 ===== */
 .step-tabs {
     flex: 1;
@@ -73,7 +77,7 @@
     min-width: 0;
     padding: 14px 18px 18px;
     border: 1px solid var(--line);
-    border-radius: 4px;
+    border-radius: 5px;
     background: var(--surface);
     font-size: 15px;
     overflow-wrap: anywhere;
@@ -232,4 +236,202 @@
     grid-column: 1 / -1;
     color: var(--muted);
     text-align: center;
+}
+
+/* ===== 해설 버튼 · 해설 모달 ===== */
+.ans-btn {
+    width: 120px;
+    height: 28px;
+    margin: -6px 0 0 14px;
+    border: none;
+    border-radius: 5px;
+    background: #000;
+    color: #fff;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, box-shadow 0.15s, transform 0.15s;
+}
+
+/* hover는 흑백 반전 + 살짝 떠오름 (초록·파랑 계열은 쓰지 않는다) */
+.ans-btn:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: inset 0 0 0 2px #000, 0 3px 8px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+}
+
+/* 배경 효과 없이 화면 가운데에 모달만 띄운다. 길면 .ans-body 안에서 스크롤한다. */
+.ans-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    width: min(1190px, calc(100vw - 32px));
+    height: min(715px, calc(100vh - 48px));
+    transform: translate(-50%, -50%);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 10px 34px rgba(0, 0, 0, 0.18);
+}
+
+.ans-modal[hidden] {
+    display: none;
+}
+
+.ans-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px 8px 22px;
+}
+
+.ans-no {
+    color: var(--theme);
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.ss-prob .ans-no { color: #c99a00; }
+.ss-cal .ans-no { color: #1597c4; }
+
+.ans-close {
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 6px;
+    background: none;
+    color: #e0202e;
+    font-family: inherit;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.15s;
+}
+
+.ans-close:hover {
+    background: #fde3e5;
+    transform: scale(1.12);
+}
+
+.ans-body {
+    flex: 1;
+    overflow: auto;
+    padding: 16px 24px 24px 44px;
+    font-size: 16px;
+    line-height: 1.9;
+    overflow-wrap: anywhere;
+}
+
+.ans-body p {
+    margin: 0 0 10px;
+}
+
+.ans-key,
+.ans-label {
+    display: inline-block;
+    margin-right: 6px;
+    padding: 0 8px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+/* 답 꼬리표: 검은 바탕 + 흰 굵은 글씨 */
+.ans-key {
+    margin-top: 35px;
+    background: #000;
+    color: #fff;
+    font-weight: 700;
+}
+
+.ans-label {
+    background: var(--accent-soft);
+    color: var(--accent);
+}
+
+.ans-body mjx-container:not([display="true"]) {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+    margin: 3px 0;
+}
+
+.ans-body .graph mjx-container:not([display="true"]) {
+    max-width: none;
+}
+
+.ans-body .box {
+    margin: 8px 0;
+    padding: 8px 12px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+}
+
+/* 해설 속 표 */
+.ans-body table {
+    margin: 8px 0 14px;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: center;
+}
+
+.ans-body th,
+.ans-body td {
+    padding: 4px 12px;
+    border: 1px solid var(--line);
+}
+
+.ans-body th {
+    background: var(--accent-soft);
+}
+
+.ans-body td.l {
+    text-align: left;
+}
+
+/* 해설 모달 안: 왼쪽에 '문제'(빨강)·'해설'(초록) 꼬리표, 오른쪽에 내용. 문제와 해설 사이는 여백으로만 나눈다. */
+.ans-sec {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 10px;
+    align-items: start;
+}
+
+.ans-sec + .ans-sec {
+    margin-top: 40px;
+}
+
+.ans-sec-t {
+    margin-top: 5px;
+    padding: 1px 8px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.ans-sec-t.q { background: #e0202e; }
+.ans-sec-t.a { background: #1f9d55; }
+
+/* 모달 속 문제: 카드처럼 옅은 바탕 + 테두리 상자로 감싼다 (폭은 내용만큼) */
+.ans-q {
+    justify-self: start;
+    max-width: 100%;
+    padding: 12px 18px 14px;
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    background: var(--surface);
+}
+
+.ans-q > :last-child {
+    margin-bottom: 0;
 }

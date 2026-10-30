@@ -32,7 +32,33 @@
         <p class="empty-note">아직 추출한 문제가 없습니다.</p>
     </main>
 
+    <div class="ans-modal" id="ans-modal" hidden>
+        <div class="ans-top"><span class="ans-no"></span><button type="button" class="ans-close" onclick="closeAns()" aria-label="닫기">&times;</button></div>
+        <div class="ans-body">
+            <div class="ans-sec"><span class="ans-sec-t q">문제</span><div class="ans-q"></div></div>
+            <div class="ans-sec"><span class="ans-sec-t a">해설</span><div class="ans-a"></div></div>
+        </div>
+    </div>
+
     <script>
+        // 해설 모달: 배경 효과 없이 모달만 띄운다. 위에 문제(카드를 그대로 복사), 아래에 해설.
+        // 해설은 카드의 template에 두고, 열 때 꺼내서 MathJax로 그린다.
+        var ansModal = document.getElementById('ans-modal'), ansBody = ansModal.querySelector('.ans-body'),
+            ansQ = ansModal.querySelector('.ans-q'), ansA = ansModal.querySelector('.ans-a');
+        function openAns(btn) {
+            var card = btn.closest('.prob'), q = card.cloneNode(true);
+            q.querySelectorAll('.prob-head, .ans-src').forEach(function (e) { e.remove(); });
+            ansQ.innerHTML = q.innerHTML;
+            if (window.MathJax && MathJax.typesetClear) MathJax.typesetClear([ansA]);
+            ansA.innerHTML = card.querySelector('.ans-src').innerHTML;
+            ansModal.querySelector('.ans-no').textContent = card.querySelector('.prob-no').textContent;
+            ansModal.hidden = false;
+            ansBody.scrollTop = 0;
+            if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([ansA]);
+        }
+        function closeAns() { ansModal.hidden = true; }
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeAns(); });
+
         function showStep(s) {
             ['A', 'B', 'C'].forEach(function (k) {
                 document.getElementById(k).hidden = (k !== s);
